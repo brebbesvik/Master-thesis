@@ -30,54 +30,54 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}Workshop}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Developing a learning tool for health workers}{9}
+\contentsline {chapter}{\numberline {4}Developing a learning tool for health workers}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Extracting knowledge from the clinical practice guidelines}{9}
+\contentsline {section}{\numberline {4.1}Extracting knowledge from the clinical practice guidelines}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Data models}{9}
+\contentsline {section}{\numberline {4.2}Data models}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}DPF metamodeling}{9}
+\contentsline {subsection}{\numberline {4.2.1}DPF metamodeling}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Entity model}{9}
+\contentsline {subsection}{\numberline {4.2.2}Entity model}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.3}Workflow model}{9}
+\contentsline {subsection}{\numberline {4.2.3}Workflow model}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.4}Game model}{9}
+\contentsline {subsection}{\numberline {4.2.4}Game model}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Game engine}{9}
+\contentsline {section}{\numberline {4.3}Game engine}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Reward system}{9}
+\contentsline {subsection}{\numberline {4.3.1}Reward system}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}Unlocking harder levels at a certain category}{10}
+\contentsline {subsection}{\numberline {4.3.2}Unlocking harder levels at a certain category}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.3}Visualization of game statistics}{10}
+\contentsline {subsection}{\numberline {4.3.3}Visualization of game statistics}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.4}Automatically generating new questions}{10}
+\contentsline {subsection}{\numberline {4.3.4}Automatically generating new questions}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}The mobile application}{10}
+\contentsline {section}{\numberline {4.4}The mobile application}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}React-Native and Redux}{11}
+\contentsline {subsection}{\numberline {4.4.1}React-Native and Redux}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.2}User interface and flow of the user interaction}{11}
+\contentsline {subsection}{\numberline {4.4.2}User interface and flow of the user interaction}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Architecture of the whole system}{11}
+\contentsline {section}{\numberline {4.5}Architecture of the whole system}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.1}Visualization}{11}
+\contentsline {subsection}{\numberline {4.5.1}Visualization}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Evaluation}{11}
+\contentsline {section}{\numberline {4.6}Evaluation}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Discussion}{13}
+\contentsline {chapter}{\numberline {5}Discussion}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Research questions}{13}
+\contentsline {section}{\numberline {5.1}Research questions}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Limitations of the model}{13}
+\contentsline {section}{\numberline {5.2}Limitations of the model}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Observations}{13}
+\contentsline {section}{\numberline {5.3}Observations}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Challenges}{13}
+\contentsline {section}{\numberline {5.4}Challenges}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Reflection}{13}
+\contentsline {section}{\numberline {5.5}Reflection}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusions}{15}
+\contentsline {chapter}{\numberline {6}Conclusions}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Further research and development}{15}
+\contentsline {section}{\numberline {6.1}Further research and development}{17}

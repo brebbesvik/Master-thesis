@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.18)  15 MAR 2019 23:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.18)  16 MAR 2019 22:51
 entering extended mode
 **./main.tex
 (main.tex
@@ -901,73 +901,71 @@ Chapter 3.
 File: images/workshop220219.jpg Graphic file (type jpg)
 
 <use images/workshop220219.jpg>
-Package pdftex.def Info: images/workshop220219.jpg used on input line 44.
+Package pdftex.def Info: images/workshop220219.jpg used on input line 42.
 (pdftex.def)             Requested size: 484.81006pt x 272.51746pt.
 
-Overfull \hbox (23.8754pt too wide) in paragraph at lines 44--45
+Overfull \hbox (23.8754pt too wide) in paragraph at lines 42--43
 [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/workshop220219-2.jpg, id=78, 5171.32pt x 2906.86pt>
+[5
+
+] [6 <./images/workshop220219.jpg>]
+<images/workshop220219-2.jpg, id=84, 5171.32pt x 2906.86pt>
 File: images/workshop220219-2.jpg Graphic file (type jpg)
 
 <use images/workshop220219-2.jpg>
-Package pdftex.def Info: images/workshop220219-2.jpg used on input line 49.
+Package pdftex.def Info: images/workshop220219-2.jpg used on input line 62.
 (pdftex.def)             Requested size: 387.83228pt x 218.0051pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/workshop220219-3.jpg, id=79, 5171.32pt x 2906.86pt>
+<images/workshop220219-3.jpg, id=85, 5171.32pt x 2906.86pt>
 File: images/workshop220219-3.jpg Graphic file (type jpg)
 
 <use images/workshop220219-3.jpg>
-Package pdftex.def Info: images/workshop220219-3.jpg used on input line 54.
+Package pdftex.def Info: images/workshop220219-3.jpg used on input line 67.
 (pdftex.def)             Requested size: 387.83228pt x 218.0051pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/workshop220219-4.jpg, id=80, 5171.32pt x 2906.86pt>
+<images/workshop220219-4.jpg, id=86, 5171.32pt x 2906.86pt>
 File: images/workshop220219-4.jpg Graphic file (type jpg)
 
 <use images/workshop220219-4.jpg>
-Package pdftex.def Info: images/workshop220219-4.jpg used on input line 59.
+Package pdftex.def Info: images/workshop220219-4.jpg used on input line 72.
 (pdftex.def)             Requested size: 387.83228pt x 218.0051pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/workshop220219-5.jpg, id=81, 5171.32pt x 2906.86pt>
+[7 <./images/workshop220219-2.jpg>]
+<images/workshop220219-5.jpg, id=90, 5171.32pt x 2906.86pt>
 File: images/workshop220219-5.jpg Graphic file (type jpg)
 
 <use images/workshop220219-5.jpg>
-Package pdftex.def Info: images/workshop220219-5.jpg used on input line 64.
+Package pdftex.def Info: images/workshop220219-5.jpg used on input line 92.
 (pdftex.def)             Requested size: 387.83228pt x 218.0051pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5
+[8 <./images/workshop220219-3.jpg>] [9 <./images/workshop220219-4.jpg> <./image
+s/workshop220219-5.jpg>] [10
 
-] [6 <./images/workshop220219.jpg> <./images/workshop220219-2.jpg>] [7 <./image
-s/workshop220219-3.jpg> <./images/workshop220219-4.jpg>] [8 <./images/workshop2
-20219-5.jpg>]
+]
 Chapter 4.
-[9
-
-] [10] [11] [12
+[11] [12] [13] [14
 
 ]
 Chapter 5.
-[13] [14
+[15] [16
 
 ]
 Chapter 6.
-[15] [16
+[17] [18
 
 ] (main.aux)
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -990,9 +988,9 @@ c/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (20 pages, 2306970 bytes).
+Output written on main.pdf (22 pages, 2312981 bytes).
 PDF statistics:
- 147 PDF objects out of 1000 (max. 8388607)
+ 153 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
