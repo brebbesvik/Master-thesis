@@ -558,6 +558,45 @@
     \field{year}{2007}
   \endentry
 
+  \entry{Preece2015}{book}{}
+    \name{author}{3}{}{%
+      {{hash=PJ}{%
+         family={Preece},
+         familyi={P\bibinitperiod},
+         given={Jennifer},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Sharp},
+         familyi={S\bibinitperiod},
+         given={Helen},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=RY}{%
+         family={Rogers},
+         familyi={R\bibinitperiod},
+         given={Yvonne},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley}%
+    }
+    \strng{namehash}{PJSHRY1}
+    \strng{fullhash}{PJSHRY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{PSR15}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{year}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{edition}{4th}
+    \field{pages}{196, 224}
+    \field{title}{{Interaction Design: beyond human-computer interaction}}
+    \field{year}{2015}
+  \endentry
+
   \entry{Shortliffe1998}{article}{}
     \name{author}{1}{}{%
       {{hash=SEH}{%

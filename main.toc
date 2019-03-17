@@ -28,7 +28,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.2}Focus group}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Workshop}{5}
+\contentsline {section}{\numberline {3.3}Workshop}{6}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Developing a learning tool for health workers}{11}
 \defcounter {refsection}{0}\relax 
