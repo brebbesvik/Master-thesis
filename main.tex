@@ -17,110 +17,7 @@
 \chapter{Method}
 \section{Design study}
 
-\section{Focus group}
-The 25th of February 2018, we arranged a focus group at a kitchen in Alrek student home. The participants were:
-\begin{itemize}
-	\item 6th year medical doctor student Fredrik Hoel.
-	\item 6th year medical doctor student August Hoel.
-	\item Master degree student in computer science Mohnd Skr.
-	\item Master degree student in computer science Ben-Richard Ebbesvik.
-\end{itemize}
-
-As the project was in a very early stage, the purpose of the meeting was just exploring topics. How the CPGs are used today. How the students work in their practice periods at the hospital. What format are the CPGs in now. What challenges limits the use of CPGs among health workers and medical students at the point of care.
-
-By using a an unstructured interview form, we managed to collect broad and general information, as well as going into detail on interesting topics. As the focus group was small, the contestants could discuss between themselves, highlighting consensus and conflicts \cite{Preece2015}. A very free and exploitative approach was very successful, as the knowledge of the master degree students in computer science, were quite limited compared to the knowledge of the medical students. The discussion was documented using an audio recorder.
-
-Topics explored:
-\begin{itemize}
-	\item The students are learning new medical routines by studying typical cases. Drilling the routines.
-	\item Red and yellow flags, which are alarm systems they need to be aware of. A red flag is when the patient's condition is quite critical. What triggers the flags and how to act upon them is something the clinicians need to know by heart, as time is critical and the action needed might be advanced like surgery. No time to use the guidelines.
-	\item They a collection of short guidelines in a pocket book format for references. The guidelines are written mostly in text format and sometimes takes use of tables for presentation.
-	\item Mobile devices can't be used at the point of care because of condemnation risks. There are also techniques of consultant with a patient. A mobile device will get in the way for important non-verbal communication.
-	\item For departments they need access to specific cases where there isn't much written material. They need access to scientific articles.
-	\item They brought up the case where doctors in developing countries have so many patients, and the time to each patient is very limited. To be able to look up information in the guidelines, they need to have a format which makes it very fast to extract that kind of information. Flow-charts is more suitable for developing countries where acting quickly is more often important than in developed countries where they can have a focus on being more thorough in green flag situations.
-	\item In some situations the treatment a patient receives can be different depending on where in the country you are. For a patient with a blood clot, the medical personnel in Finnmark will start removing the blood clot immediately, because of the long distance to the nearest hospital. They want to reduce the risk for complications. While in Bergen, they will wait with such a treatment. In developing countries you might have to put into consideration what kind of equipment and staff is available at that specific hospital or health care station. The likelihood of different diseases is different from each geographically position, the patients background or the season in the year. Social and economic status also matters, even in Norway.
-	\item Discussion about presentation of learning material in an application. Medical cases are often too obvious, too simple or too complicated in existing applications. Flashcards. Show image of an ECG or a picture of a symptom.
-	\item Notifying the student about guidelines would be useful. But only for the most common and dangerous conditions, relevant for the students medical field to avoid unnecessary notifications which will only be ignored.
-%	The statistically most common and dangerous conditions first.
-%	Then look for signs where you can rule out conditions. Elimineringsmetoden
-\item The diagnostic process. The doctor have several conditions in mind, but tries to eliminate the statistically most common and dangerous first. Trying to narrow down the alternatives until the doctor is quite certain about the medical condition of the patient.
-	
-\end{itemize}
-
-
-\section{Workshop}
-The 22nd of February 2019 we had a workshop. The purpose of the workshop was to
-\begin{itemize}
-	\item Identify components in the treatment plan of asthma patients.
-	\item Identify difficulty levels, and how the questions will be more detailed for every difficulty level.
-	\item Make a learning map.
-\end{itemize}
-
-The antecedences for the meeting was 
-\begin{itemize}
-	\item Professor in computer science Yngve Lamo. Background in model driven engineering and health informatics.
-	\item Assistant professor in computer science Svein Ivar Lillehaug. Background as a researcher in health informatics.
-	\item Postdoctoral fellow Fazle Rabbi. Background in model driven engineering.
-	\item Medical doctor and PhD student in health informatics Job Nyangena.
-	\item PhD research fellow in interaction design Rosaline Barendregt. Has written a master thesis in gamification.
-	\item PhD candidate in computer science and health informatics Suresh Kumar Mukhiya.
-	\item Master degree student in computer science Ben-Richard Ebbesvik.	
-\end{itemize}
-
-\begin{figure}[h!]
-	\caption {Anticlockwise from front left: Yngve Lamo, Rosaline Barendregt, Suresh Kumar Mukhiya, Svein Ivar Lillehaug, Fazle Rabbi and Job Nyangena}
-	\includegraphics[scale=0.25]{workshop220219}
-\end{figure}
-
-The meeting started with Ben-Richard informing the status of the project by doing a cognitive walk-through and a demonstration of the application. 
-
-Yngve presented ideas for further development of the application. The important thing, was the concept of splitting up the questions in themes which relates to components in the treatment plan. Job helped identify these themes as assessment, diagnosis, management and treatment.Further we identified what type of questions we wanted to ask, and how they fits into different difficulty levels, based on the details of the questions. We ask factual questions for level 1. We use scenarios in level 2, where we apply facts and the detail level is categories. I.e. what class of medication should be administered to the patient. In level 3 we continue with scenarios, but here we ask for much more details, like the dosage of a medication or how often it should be administered.
-
-When playing level 1 the student should get questions from all themes in level 1. When the student completes level 1, the student should no longer get questions from that theme. This is to avoid boring the user by repeating the questions the student already knows the answer of. He should only get questions from themes he struggles with. I.e. on the first run level 1, the user gets every question in assessment right, but have some mistakes with diagnosis and management. Then on the next run, he only gets questions from level 1 diagnosis and management. This continues until he has reached the passing condition on every theme in level 1. 
-
-We further identified a dependency in the treatment plan. To be able to do a follow-up, the students first needs to know something about assessment, diagnosis and management of the patient. The follow-up is actually an evaluation of the treatment which have been given, based on the suggested diagnosis. The evaluation will tell how the patient responded to the treatment, and we need the student needs to take actions whether the patient responded or his condition became better or worse. When we have such a dependency, the student needs to complete assessment, diagnosis and management before follow-up gets unlocked. Since follow-up is only relevant in a situation where there has already been set a diagnosis and given a treatment, the follow-up is only part of level 2 and 3, where the questions are given as scenarios.
-
-To complete a level, all passing conditions at that level in each theme have to be met. When the student qualifies for a new level, he only gets questions from the level he plays. The same concept of only getting questions from the themes at that level you haven't met the passing condition, continues for level 2 and 3. 
-
-We planned to have a visualization of the passing condition in the application. The passing condition will be shown in a chart in the summary section after each game. The passing condition will be marked as a line over every theme for the level the student plays. The students scores for each theme at that level be shown as bars. When a bar reaches the line, a passing condition is met.
-
-
-
-
-\begin{figure}[h!]
-	\caption {Assessment and diagnosis are components in the treatment plan. In the learning map they are themes. Under each theme there are difficulty levels. Questions for each level are written on post-it notes.}
-	\includegraphics[scale=0.075]{workshop220219-2}
-\end{figure}
-
-\begin{figure}[h!]
-	\caption {Management and follow-up are components in the treatment plan. In the learning map they are themes. Under each theme there are difficulty levels. Questions for each level are written on post-it notes.}
-	\includegraphics[scale=0.075]{workshop220219-3}
-\end{figure}
-
-\begin{figure}[h!]
-	\caption {What type of questions the student will get at each level.}
-	\includegraphics[scale=0.075]{workshop220219-4}
-\end{figure}
-
-Job continued the meeting by talking about the guidelines.The paediatric guideline of asthma is called "possible asthma". That is because in an emergency situation asthma is the most dangerous airway condition and can be lethal. If the patient shows signs of asthma, he will be treated for asthma to reduce risks of an unwanted scenario.
-
-We identified users of the application: 
-\begin{itemize}
-	\item Formal training, where last year students are reading for their exams.
-	\item Anyone can learn, so it can be used to inform and educate the public.
-	\item In countries such as Kenya, where there are a large deficit in doctors and nurses, sometimes nurses has to work as doctors. Or community workers need to take the role as doctor or nurse. The application will help educating nurses and community workers for such scenarios.
-\end{itemize}
- 
- There was also talked about how the situation in medical training is for the student. When a patient comes to the emergency room with severe asthma, the medical doctors will have all their focus on that particular patient. The medical student will typically not take part in the assessment, diagnosis or the initial treatment of the patient. The medical student will typically only take part in the monitoring, evaluation and follow-up of the patient, when the situation is less critical. The application will give the medical student an alternative way to train in assessment, diagnosis and initial treatment of a made-up patient with severe asthma. 
-
-Job continued the workshop by going through the Kenyan paediatric guideline of possible asthma \cite{RepublicofKeny2016}. This is the guideline we will base our quiz on. Job answered questions from the group about details of the guideline. It is important to understand the general flow as well as the details to be able to make good questions for the quiz. The guidelines is poorly written in terms of wrong use of sentential operators. These mistakes needed to be clarified.
-
-The rest of the workshop was for the participants brainstorming around the questions which will be used in the quiz. Each participant wrote questions on post-it notes, and placed them at a suiting level and theme on the blackboard. At the end, Job went through the questions and we had a small discussion around the suggested questions. We managed to produce question templates to be used in asthma quiz of the application.
-
-\begin{figure}[h!]
-	\caption {Suggestions for questions were written on post-it notes and attached to a difficulty level under a theme on the black board.}
-	\includegraphics[scale=0.075]{workshop220219-5}
-\end{figure}
+\input{workshops}
 
 
 
@@ -133,14 +30,13 @@ The rest of the workshop was for the participants brainstorming around the quest
 \subsection{Workflow model}
 \subsection{Game model}
 \section{Game engine}
-\subsection{Reward system}
-As each question in a quiz are related to a certain discipline or a certain task, the student will be measured how well he performed on each of these disciplines. For the asthma guideline, we have identified four disciplines. Assessment where the student will be tested in the initial examination. Diagnosis, where the student will determine a diagnosis as well as the severity. Management, where the student will determine which actions should be done to treat and best give the best care to the patient. The last discipline is the follow-up, where the student will be tested in evaluating the treatment, give advise to and educate patient and caregivers, provide the right medication and regular follow-up.
+As each question in a quiz are related to a certain component in the treatment plan or theme in the learning map, the student will be measured how well he performs on each of these themes. For the asthma guideline \parencite{RepublicofKeny2016}, we have identified four themes. Assessment where the student will be tested in the initial examination. Diagnosis, where the student will determine a diagnosis as well as the severity. Management, where the student will determine which actions should be done to treat and best give the best care to the patient. The last discipline is the follow-up, where the student will be tested in evaluating the treatment, give advise to and educate patient and caregivers, provide the right medication and regular follow-up.
 
-By splitting up the score in disciplines, the student can easily see which areas he is strong and where he needs more training. 
-
+By splitting up the score in themes, the student can easily see which areas he is strong and where he needs more training. 
 
 
- We can also adapt the questions in each discipline to the students level. If the student has proven to be very good in providing the right amount of medicine to asthma patient, we can provide more difficult questions to challenge the student some more. If he struggles at setting the right diagnose, we can provide more basic questions to strengthen the students basic knowledge. 
+
+We can also adapt the questions in each discipline to the student's level. If the student has proven to be very good in providing the right amount of medicine to asthma patient, we can provide more difficult questions to challenge the student some more. If he struggles at setting the right diagnose, we can provide more basic questions to strengthen the students basic knowledge. 
 
 \textcolor{red}{The disciplines should be automatically picked from the entity (and worflow?) model.}
 
@@ -151,7 +47,60 @@ By splitting up the score in disciplines, the student can easily see which areas
 
 The student will also be provided with a total score, which will be the average score of each of the disciplines. The student can compare the total score of e.g. the asthma quiz and the jaundice quiz, and see which medical condition he needs to train more on.
 
-Each question will have several answer alternatives the student can choose from. Each answer alternative will have a reward or penalty related to them. The correct answer will have a great reward, while wrong answers will have a small penalty. The quiz author will have the opportunity to specify the rewards, such that he can give even smaller penalties for partly correct answers. The idea of the reward- penalty system is to increase learning. if the student answers wrong the first time, he will be given the possibility to reflect over the question once more or perhaps read the guideline to learn before he commits his second attempt. We are aware that providing a minus score for making an attempt can be very demotivating, but it is to avoid the situation where a student gets the same (or better) score for making ten attempts than only needing one attempt. A small penalty will have a very small impact when the reward per question is high, but in situations where the student performs very poorly and ends with a negative total score, it is possible to adjust this to a small positive score on presentation for the student. Not giving a too harsh feedback for trying to learn.
+\subsection{Multiple-try feedback}
+% https://books.google.no/books?hl=en&lr=&id=GgCPAgAAQBAJ&oi=fnd&pg=PA125&dq=Interactive+with+multiple+tries+&ots=A9Z_BJS5t2&sig=RTv1FmOzU_qic9ADjDgKdJoHamU&redir_esc=y#v=onepage&q=Interactive%20with%20multiple%20tries&f=false
+% https://onlinelibrary.wiley.com/doi/full/10.1348/000709905X39134
+The quiz uses a concept which is called multiple-try feedback (MTC). That means for every question the student gets more than one attempt to get the answer right. A feedback will be given immediately after each answer is submitted. The feedback consists of a message which tells whether the answer is correct or wrong. If the answer is correct, the user will receive "correct" and an explanation of the answer. If the answer is wrong, there will be no hints or explanations than just "incorrect".
+
+\begin{tabular}{ | m{10em} | m{6em}| m{6em} | m{6em} | m{5em} | } 
+	\hline
+	Concept & Abbreviation & Feedback after each question & Multiple attempts at each question & Hints on wrong answer \\ [0.5ex]
+	\hline
+No or delayed Feedback & NF or DF & No & No & No  \\
+Knowledge of Correct Response & KCR  & Yes & No & No \\
+Multiple-Try feedback with knowledge of Correct response  & MTC & Yes & Yes & No \\
+Multiple-Try feedback with Hints & MTH & Yes & Yes & Yes \\
+\hline
+\end{tabular}
+
+The point of doing MTC, is to make the student think over what was wrong with his first answer. Did the student misinterpreter the question? Was there a detail he missed? Does the student lack the knowledge or was he just sloppy in his first attempt?
+
+\textcite{Clariana2006} did a study where they divided 82 students into five groups. DF-, KCR, MTC and two control groups. The first control group got a text and a question at the end. The second control group got a text, but there were no question given. After 5 days,post-test was held to see what the students had learned and remembered. The post-test questions were either identical to the questions in the learning material, transposed where the order of the stem of the question and the correct-response gets reversed, paraphrased where post-test questions had the identical content as the learning material, but the phrasing was different and used different words, and a combination of transpose and paraphrasing. The results showed that DF and KCR groups performed better on identical, transposed and paraphrased-transposed questions. MTC performed better on paraphrased questions. The conclusion was that DF and KCR was much better methods for remembering the learning material word for word, but MTC was better when you have to think and reason about what you have learned.
+
+\textcite{Attali2015} further did a did a study on NF, KCR, MTC and MTH using open ended and multiple choice questions on mathematical problems. They showed that solving an open ended question rather than multiple choice was a more efficient way to learn. The learning outcome was the same for the students using NF and KCR. However the learning transfer was greater when using multiple-try (MTC), and even more so when getting a hint on incorrect answer (MTH). They explained the results effortfull and mindful problem solving. In a multiple-try feedback, the user will have to reflect on their errors, re-evaluate the problem and understand the initial error. An open ended question will also require more effort of the student, as they have to generate a an answer rather than selecting from alternatives. On the combination of multiple-try and multiple-choice, it was suggested that some users might be less likely to review their incorrect answer and mindlessly clicking on another alternative. 
+
+
+
+According to \textcite{Morrison1995}, students which perform badly on answer until correct questions,  will often become frustrated, loose interest for reviewing the material and probably depress learning.
+
+% From Attali2015, students might assosiate distractions with the scenario in multiple-choice, which is counterproductive when it comes to learning.
+
+
+As thinking and reasoning about a diagnosis, treatment plan, evaluation and follow-up of a treatment is part of a medical procedure, we believe that multiple-try feedback is the right approach. Because of the nature of a mobile app, where gestures are more convenient than typing sentences, multiple-choice seems to be the right choice even, though open ended questions has proven better results in. There's also a technical problem with evaluating free typed sentences.
+
+Some of the questions in the app are too simple for a hint to be meaningful.Example: "the symptoms for asthma is" and the answer can be "cough and wheeze". Where hinting "cough", would be giving away the answer, especially in a multiple-choice format. However, the data model supports hints as links to external learning material. E.g. the student could look for the answer in the guideline itself.
+
+We solved the "answer until correct"-problem described by \textcite{Morrison1995}, by having a "read more" button displayed upon incorrect answer. The "read more"-button will display the correct answer, an explanation and continue to the next question. Avoiding the user becoming frustrated and discouraged by having to brute-force the answer keys to progress.
+
+
+
+
+\subsection{Reward system}
+% SHOW ANSWER
+By having multiple-try feedback, another problem rises, and that is the reward system. If there is no penalty for incorrect answers, a student which needs ten attempts per questions, will get the same score as a student which answers all the questions correctly on the first attempt.
+
+\textcite{Attali2015} solved the problem by giving 1 point for answering correctly on the first attempt. 2/3 points for the second attempt, 1/3 for the third and 0 points if the third attempt was incorrect. A limitation with this method is that it makes no sense for the student to make more than three attempts. \textcite{Morrison1995} had another strategy where they adjust the scores by dividing the total score by the total number of attempts during the quiz. A consequence is that attempt number two will have a huge penalty which is halving the students total score. While attempt number twenty will give a very small penalty from attempt nineteen.
+
+The solution we used was having a fixed value for every answer alternative. The quiz author chooses the penalty for each distraction and reward for each answer key. The idea is that the distractions can have some sort of degree of wrong or right, and this can be reflected in the scoring. On the question "what are the symptoms of asthma?", "difficulty breathing" is a more correct answer than "fever", as "difficulty breathing" is a symptom of asthma in combination with wheeze. Fever is not an asthma symptom at all. In future work, the penalties can be automated as you can see from the entity model whether the symptom belongs to the asthma guideline or not. A distraction from respiratory disorders may give a larger penalty than a distraction from the asthma guideline, but smaller penalty than symptoms not belonging to respiratory diseases.
+
+Both \textcite{Attali2015} and \textcite{Morrison1995} avoids the scenario where the user gets a total minus score. This may be a strength of these methods, as a negative total score seems like a very harsh feedback and might demotivate the student. In our solution we use negative numbers as penalties on distractions, such that a negative total score may happen. We try to limit the likelihood of a negative score by providing a very reward for a correct answer and a very small penalty for a distraction. Typically the reward is 10 points and the penalty -1 og -2 points. The intention is to encourage the student to review the incorrect answer and try again. As the format is multiple-choice and the penalty-reward ratio, there is a little risk involved trying multiple times. But giving up by clicking "learn more", the student will not get an additional penalty, but will miss out on the reward. By clicking answer alternatives mindlessly and consequently clicking "learn more" will probably not end up in a negative score, but is more likely to end up in a negative score than mindlessly click answer alternatives until correct.
+
+%----------------------------------------------------------------------------------
+
+
+%Each question will have several answer alternatives the student can choose from. Each answer alternative will have a reward or penalty related to them. The correct answer will have a great reward, while wrong answers will have a small penalty. The quiz author will have the opportunity to specify the rewards, such that he can give even smaller penalties for partly correct answers. The idea of the reward- penalty system is to increase learning. if the student answers wrong the first time, he will be given the possibility to reflect over the question once more or perhaps read the guideline to learn before he commits his second attempt. We are aware that providing a minus score for making an attempt can be very demotivating, but it is to avoid the situation where a student gets the same (or better) score for making ten attempts than only needing one attempt. A small penalty will have a very small impact when the reward per question is high, but in situations where the student performs very poorly and ends with a negative total score, it is possible to adjust this to a small positive score on presentation for the student. Not giving a too harsh feedback for trying to learn.
+
+
 
 \textcolor{red}{A solution to having a not very strict game, encouraging to playing and learning, one can also have a very strict examination version. The idea is that after examination, the results will be sent to the lecturer (or a governing body of some kind) to evaluate what the overall knowledge of the students, as well as details of what the students are really good in and where do they struggle. The lecturer can then target the weak of points of the students in one of the next lectures. }
 

@@ -114,6 +114,63 @@
     \field{year}{2011}
   \endentry
 
+  \entry{Attali2015}{article}{}
+    \name{author}{1}{}{%
+      {{hash=AY}{%
+         family={Attali},
+         familyi={A\bibinitperiod},
+         given={Yigal},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Pergamon}%
+    }
+    \strng{namehash}{AY1}
+    \strng{fullhash}{AY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Att15}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{year}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{abstract}{%
+    In a study of mathematics problem solving, the effect of providing
+  multiple-try feedback on later success in solving similar problems was
+  examined. Participants solved mathematics problems that were presented as
+  either multiple-choice or open-ended questions, and were provided with one of
+  four types of feedback: no feedback (NF), immediate knowledge of the correct
+  response (KCR), multiple-try feedback with knowledge of the correct response
+  (MTC), or multiple-try feedback with hints after an initial incorrect
+  response (MTH). Results showed that gains in performance were larger in the
+  open-ended than multiple-choice condition. Furthermore, gains under NF and
+  KCR were similar, gains were larger under MTC than KCR, and gains were larger
+  under MTH than MTC. The implications of these results for the design of
+  assessments for learning are discussed.%
+    }
+    \verb{doi}
+    \verb 10.1016/J.COMPEDU.2015.08.011
+    \endverb
+    \field{issn}{0360-1315}
+    \field{pages}{260\bibrangedash 267}
+    \field{title}{{Effects of multiple-try feedback and question type during
+  mathematics problem solving on performance in similar problems}}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0360131515300312
+    \endverb
+    \field{volume}{86}
+    \verb{file}
+    \verb :C$\backslash$:/Users/Ben/AppData/Local/Mendeley Ltd./Mendeley Deskto
+    \verb p/Downloaded/Attali - 2015 - Effects of multiple-try feedback and que
+    \verb stion type during mathematics problem solving on performance in simil
+    \verb ar problems.pdf:pdf
+    \endverb
+    \field{journaltitle}{Computers {\&} Education}
+    \field{year}{2015}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{Cabana1999}{article}{}
     \name{author}{7}{}{%
       {{hash=CMD}{%
@@ -295,6 +352,55 @@
     \endverb
     \field{journaltitle}{International journal of bio-medical computing}
     \field{year}{1995}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Clariana2006}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CRB}{%
+         family={Clariana},
+         familyi={C\bibinitperiod},
+         given={Roy\bibnamedelima B.},
+         giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=KR}{%
+         family={Koul},
+         familyi={K\bibinitperiod},
+         given={Ravinder},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {John Wiley {\&} Sons, Ltd (10.1111)}%
+    }
+    \strng{namehash}{CRBKR1}
+    \strng{fullhash}{CRBKR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{CK06}
+    \field{labelyear}{2006}
+    \field{labeldatesource}{year}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{doi}
+    \verb 10.1348/000709905X39134
+    \endverb
+    \field{issn}{00070998}
+    \field{number}{2}
+    \field{pages}{259\bibrangedash 270}
+    \field{title}{{The effects of different forms of feedback on fuzzy and
+  verbatim memory of science principles}}
+    \verb{url}
+    \verb http://doi.wiley.com/10.1348/000709905X39134
+    \endverb
+    \field{volume}{76}
+    \verb{file}
+    \verb :C$\backslash$:/Users/Ben/AppData/Local/Mendeley Ltd./Mendeley Deskto
+    \verb p/Downloaded/Clariana, Koul - 2006 - The effects of different forms o
+    \verb f feedback on fuzzy and verbatim memory of science principles.pdf:pdf
+    \endverb
+    \field{journaltitle}{British Journal of Educational Psychology}
+    \field{year}{2006}
     \warn{\item Invalid format of field 'month'}
   \endentry
 
@@ -515,6 +621,82 @@
   for Medical Informatics of Bosnia {\&} Herzegovina : casopis Drustva za
   medicinsku informatiku BiH}
     \field{year}{2008}
+  \endentry
+
+  \entry{Morrison1995}{article}{}
+    \name{author}{4}{}{%
+      {{hash=MGR}{%
+         family={Morrison},
+         familyi={M\bibinitperiod},
+         given={Gary\bibnamedelima R.},
+         giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=RSM}{%
+         family={Ross},
+         familyi={R\bibinitperiod},
+         given={Steven\bibnamedelima M.},
+         giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Gopalakrishnan},
+         familyi={G\bibinitperiod},
+         given={Mala},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Casey},
+         familyi={C\bibinitperiod},
+         given={Jason},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Academic Press}%
+    }
+    \strng{namehash}{MGR+1}
+    \strng{fullhash}{MGRRSMGMCJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Mor+95}
+    \field{labelyear}{1995}
+    \field{labeldatesource}{year}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    The effects on learning of three feedback strategies (Answer Until Correct,
+  Knowledge of Correct Response, and Delayed) were compared to two control
+  strategies (No feedback and No questions) under two conditions of incentives.
+  Task incentives rewarded subjects for successful task completion regardless
+  of level of achievement while performance incentives based subjects′ actual
+  grades on level of achievement. Results showed an overall effect favoring
+  performance incentives across all levels of learning and feedback conditions.
+  KCR and Delayed feedback strategies were advantageous for lower-level
+  learning only, that is where post-test questions were similar to original
+  practice questions. AUC feedback, however, was not effective on any learning
+  measure. Results are interpreted with regard to the interaction of feedback
+  form and learner dispositions to process feedback information "mindfully"
+  rather than in a surface manner.%
+    }
+    \verb{doi}
+    \verb 10.1006/CEPS.1995.1002
+    \endverb
+    \field{issn}{0361-476X}
+    \field{number}{1}
+    \field{pages}{32\bibrangedash 50}
+    \field{title}{{The Effects of Feedback and Incentives on Achievement in
+  Computer-Based Instruction}}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0361476X85710028
+    \endverb
+    \field{volume}{20}
+    \verb{file}
+    \verb :C$\backslash$:/Users/Ben/AppData/Local/Mendeley Ltd./Mendeley Deskto
+    \verb p/Downloaded/Morrison et al. - 1995 - The Effects of Feedback and Inc
+    \verb entives on Achievement in Computer-Based Instruction.pdf:pdf
+    \endverb
+    \field{journaltitle}{Contemporary Educational Psychology}
+    \field{year}{1995}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{NationalHeartLungandBloodInstitute2007}{article}{}

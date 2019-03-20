@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.18)  17 MAR 2019 21:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.18)  20 MAR 2019 21:47
 entering extended mode
 **./main.tex
 (main.tex
@@ -703,7 +703,7 @@ Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
 \py=\skip66
 \pyy=\skip67
 \pxx=\skip68
-))
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
@@ -720,6 +720,14 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen121
+\extrarowheight=\dimen122
+\NC@list=\toks20
+\extratabsurround=\skip69
+\backup@length=\skip70
 )
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
@@ -782,16 +790,16 @@ LaTeX Font Info:    ... okay on input line 5.
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count292
-\scratchdimen=\dimen121
+\scratchdimen=\dimen123
 \scratchbox=\box28
 \nofMPsegments=\count293
 \nofMParguments=\count294
-\everyMPshowfont=\toks20
+\everyMPshowfont=\toks21
 \MPscratchCnt=\count295
-\MPscratchDim=\dimen122
+\MPscratchDim=\dimen124
 \MPnumerator=\count296
 \makeMPintoPDFobject=\count297
-\everyMPtoPDFconversion=\toks21
+\everyMPtoPDFconversion=\toks22
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -822,6 +830,11 @@ Package biblatex Info: ... file 'main.bbl' found.
 (main.bbl
 
 Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Attali2015':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                with 'Cabana1999':
 (biblatex)                - Invalid format of field 'month'.
 
@@ -832,7 +845,17 @@ Package biblatex Warning: BibTeX reported the following issues
 
 
 Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Clariana2006':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                with 'Fervers2010':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Morrison1995':
 (biblatex)                - Invalid format of field 'month'.
 
 )
@@ -897,16 +920,17 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 Chapter 2.
 [3]) [4]
 Chapter 3.
-[5
+(workshops.tex [5
 
-] [6] <images/workshop220219.jpg, id=83, 1939.245pt x 1090.0725pt>
+] [6]
+<images/workshop220219.jpg, id=83, 1939.245pt x 1090.0725pt>
 File: images/workshop220219.jpg Graphic file (type jpg)
 
 <use images/workshop220219.jpg>
-Package pdftex.def Info: images/workshop220219.jpg used on input line 72.
+Package pdftex.def Info: images/workshop220219.jpg used on input line 53.
 (pdftex.def)             Requested size: 484.81006pt x 272.51746pt.
 
-Overfull \hbox (23.8754pt too wide) in paragraph at lines 72--73
+Overfull \hbox (23.8754pt too wide) in paragraph at lines 53--54
 [][] 
  []
 
@@ -915,42 +939,77 @@ Overfull \hbox (23.8754pt too wide) in paragraph at lines 72--73
 File: images/workshop220219-2.jpg Graphic file (type jpg)
 
 <use images/workshop220219-2.jpg>
-Package pdftex.def Info: images/workshop220219-2.jpg used on input line 92.
+Package pdftex.def Info: images/workshop220219-2.jpg used on input line 73.
 (pdftex.def)             Requested size: 387.83228pt x 218.0051pt.
 
 <images/workshop220219-3.jpg, id=88, 5171.32pt x 2906.86pt>
 File: images/workshop220219-3.jpg Graphic file (type jpg)
 
 <use images/workshop220219-3.jpg>
-Package pdftex.def Info: images/workshop220219-3.jpg used on input line 97.
+Package pdftex.def Info: images/workshop220219-3.jpg used on input line 78.
 (pdftex.def)             Requested size: 387.83228pt x 218.0051pt.
  [8 <./images/workshop220219-2.jpg>]
 <images/workshop220219-4.jpg, id=92, 5171.32pt x 2906.86pt>
 File: images/workshop220219-4.jpg Graphic file (type jpg)
 
 <use images/workshop220219-4.jpg>
-Package pdftex.def Info: images/workshop220219-4.jpg used on input line 102.
+Package pdftex.def Info: images/workshop220219-4.jpg used on input line 83.
 (pdftex.def)             Requested size: 387.83228pt x 218.0051pt.
  [9 <./images/workshop220219-3.jpg> <./images/workshop220219-4.jpg>]
 <images/workshop220219-5.jpg, id=97, 5171.32pt x 2906.86pt>
 File: images/workshop220219-5.jpg Graphic file (type jpg)
 
 <use images/workshop220219-5.jpg>
-Package pdftex.def Info: images/workshop220219-5.jpg used on input line 122.
+Package pdftex.def Info: images/workshop220219-5.jpg used on input line 103.
 (pdftex.def)             Requested size: 387.83228pt x 218.0051pt.
- [10 <./images/workshop220219-5.jpg>]
+) [10 <./images/workshop220219-5.jpg>]
 Chapter 4.
 [11
 
-] [12] [13] [14
+]
+Underfull \hbox (badness 2932) in paragraph at lines 57--57
+[]|\OT1/cmr/m/n/12 Feedback af-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+[]|\OT1/cmr/m/n/12 Multiple
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+\OT1/cmr/m/n/12 at-tempts at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+[]|\OT1/cmr/m/n/12 Hints on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+\OT1/cmr/m/n/12 wrong
+ []
+
+
+Underfull \hbox (badness 1616) in paragraph at lines 59--59
+[]|\OT1/cmr/m/n/12 No or de-layed Feed-
+ []
+
+
+Overfull \hbox (6.83609pt too wide) in paragraph at lines 55--65
+[][] 
+ []
+
+[12] [13] [14] [15] [16
 
 ]
 Chapter 5.
-[15] [16
+[17] [18
 
 ]
 Chapter 6.
-[17] [18
+[19] [20
 
 ] (main.aux)
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -958,13 +1017,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 10967 strings out of 493323
- 185458 string characters out of 3139072
- 450872 words of memory out of 3000000
- 14353 multiletter control sequences out of 15000+200000
+ 11017 strings out of 493323
+ 186185 string characters out of 3139072
+ 452545 words of memory out of 3000000
+ 14397 multiletter control sequences out of 15000+200000
  19969 words of font info for 44 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,10n,51p,1201b,1334s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,10n,51p,1202b,1334s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
@@ -973,9 +1032,9 @@ c/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (22 pages, 2316624 bytes).
+Output written on main.pdf (24 pages, 2323727 bytes).
 PDF statistics:
- 153 PDF objects out of 1000 (max. 8388607)
+ 159 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

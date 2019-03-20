@@ -46,38 +46,40 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Game engine}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Reward system}{11}
+\contentsline {subsection}{\numberline {4.3.1}Multiple-try feedback}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}Unlocking harder levels at a certain category}{12}
+\contentsline {subsection}{\numberline {4.3.2}Reward system}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.3}Visualization of game statistics}{12}
+\contentsline {subsection}{\numberline {4.3.3}Unlocking harder levels at a certain category}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.4}Automatically generating new questions}{12}
+\contentsline {subsection}{\numberline {4.3.4}Visualization of game statistics}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}The mobile application}{12}
+\contentsline {subsection}{\numberline {4.3.5}Automatically generating new questions}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}React-Native and Redux}{13}
+\contentsline {section}{\numberline {4.4}The mobile application}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.2}User interface and flow of the user interaction}{13}
+\contentsline {subsection}{\numberline {4.4.1}React-Native and Redux}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Architecture of the whole system}{13}
+\contentsline {subsection}{\numberline {4.4.2}User interface and flow of the user interaction}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.1}Visualization}{13}
+\contentsline {section}{\numberline {4.5}Architecture of the whole system}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Evaluation}{13}
+\contentsline {subsection}{\numberline {4.5.1}Visualization}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Discussion}{15}
+\contentsline {section}{\numberline {4.6}Evaluation}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Research questions}{15}
+\contentsline {chapter}{\numberline {5}Discussion}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Limitations of the model}{15}
+\contentsline {section}{\numberline {5.1}Research questions}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Observations}{15}
+\contentsline {section}{\numberline {5.2}Limitations of the model}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Challenges}{15}
+\contentsline {section}{\numberline {5.3}Observations}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Reflection}{15}
+\contentsline {section}{\numberline {5.4}Challenges}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusions}{17}
+\contentsline {section}{\numberline {5.5}Reflection}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Further research and development}{17}
+\contentsline {chapter}{\numberline {6}Conclusions}{19}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Further research and development}{19}
