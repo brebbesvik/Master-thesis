@@ -468,6 +468,56 @@
     \field{year}{2008}
   \endentry
 
+  \entry{Eide2008}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=ES}{%
+         family={Eide},
+         familyi={E\bibinitperiod},
+         given={Sigvat},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KT}{%
+         family={Kristensen},
+         familyi={K\bibinitperiod},
+         given={Terje},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=LY}{%
+         family={Lamo},
+         familyi={L\bibinitperiod},
+         given={Yngve},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM Press}%
+    }
+    \strng{namehash}{ESKTLY1}
+    \strng{fullhash}{ESKTLY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{EKL08}
+    \field{labelyear}{2008}
+    \field{labeldatesource}{year}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{booktitle}{Proceedings of the 2008 Euro American Conference on
+  Telematics and Information Systems - EATIS '08}
+    \verb{doi}
+    \verb 10.1145/1621087.1621089
+    \endverb
+    \field{isbn}{9781595939883}
+    \field{pages}{1\bibrangedash 8}
+    \field{title}{{A model for dynamic content based e-learning systems}}
+    \verb{url}
+    \verb http://portal.acm.org/citation.cfm?doid=1621087.1621089
+    \endverb
+    \list{location}{1}{%
+      {New York, New York, USA}%
+    }
+    \field{year}{2008}
+  \endentry
+
   \entry{Fervers2010}{article}{}
     \name{author}{3}{}{%
       {{hash=FB}{%
