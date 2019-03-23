@@ -589,6 +589,88 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{Kristensen2013}{article}{}
+    \name{author}{3}{}{%
+      {{hash=KT}{%
+         family={Kristensen},
+         familyi={K\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=BO}{%
+         family={Bech},
+         familyi={B\bibinitperiod},
+         given={{\O}.},
+         giveni={{\O}\bibinitperiod},
+      }}%
+      {{hash=DM}{%
+         family={Dyngeland},
+         familyi={D\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KTBODM1}
+    \strng{fullhash}{KTBODM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{KBD13}
+    \field{labelyear}{2013}
+    \field{labeldatesource}{year}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \verb{doi}
+    \verb 10.5963/JCEI0102004
+    \endverb
+    \field{issn}{23070072}
+    \field{number}{2}
+    \field{pages}{64\bibrangedash 81}
+    \field{title}{{Towards a Multi-Agent E-learning Platform}}
+    \verb{url}
+    \verb http://www.academicpub.org/DownLoadPaper.aspx?paperid=5471
+    \endverb
+    \field{volume}{1}
+    \field{journaltitle}{Journal of Computer Engineering and Informatics}
+    \field{year}{2013}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Kristensen2011}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=KT}{%
+         family={Kristensen},
+         familyi={K\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{KT1}
+    \strng{fullhash}{KT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Kri11}
+    \field{labelyear}{2011}
+    \field{labeldatesource}{year}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{booktitle}{2011 International Conference on Information Technology
+  Based Higher Education and Training}
+    \verb{doi}
+    \verb 10.1109/ITHET.2011.6018677
+    \endverb
+    \field{isbn}{978-1-4577-1673-7}
+    \field{pages}{1\bibrangedash 8}
+    \field{title}{{The Dynamic Content Management system}}
+    \verb{url}
+    \verb http://ieeexplore.ieee.org/document/6018677/
+    \endverb
+    \field{year}{2011}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{Masic2008}{article}{}
     \name{author}{3}{}{%
       {{hash=MI}{%

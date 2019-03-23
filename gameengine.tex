@@ -1,10 +1,64 @@
 \section{Game engine}
-The game engine is based on some of the concepts presented in the article of \textcite{Eide2008}.
+The game engine is based on some of the concepts presented in the articles of \textcite{Eide2008}, \textcite{Kristensen2011} and \textcite{Kristensen2013}.
 
-\textcite{Eide2008} presents a dynamic content management system (DCM) made for e-learning. In DCM the focus is on removing the tight coupling between the learning material and the teaching course. By analysing the learning material and course, they can define conceptual atomic units of knowledge which they put into a knowledge repository. From this repository they may draw knowledge elements and organize into the hierarchy of a course. To model a course they use concept maps, which are directed graphs, where the vertices are concept labels and edges indicates the relationships between vertices. DCM operates with three concept maps: knowledge map, learning map and student map. The knowledge map is used to model the entire content of the knowledge repository and the hierarchy structure of a course. A learning map is used to model a specific course and is a representation of the learning process. The content units (vertices) in the knowledge map gets expanded, and becomes evaluation and resource vertices in the learning map. Content units from the knowledge map can be omitted if they are not needed in the specific course. The student map represents the progress of a specific student taking a specific course. The edges shows which resources he has used, the evaluations of the student and in which order. 
+\textcite{Eide2008} presents a dynamic content management system (DCM) made for e-learning. In DCM the focus is on removing the tight coupling between the learning material and the teaching course. By analysing the learning material and course, they can define conceptual atomic units of knowledge which they put into a knowledge repository. From this repository they may draw knowledge elements and organize into the hierarchy of a course. To model a course they use concept maps, which are directed graphs, where the vertices are concept labels and edges indicates the relationships between vertices. DCM operates with three concept maps: knowledge map, learning map and student map. The knowledge map is used to model the entire content of the knowledge repository and the hierarchy structure of a course. A learning map is used to model a specific course and is a representation of the learning process. The content units (vertices) in the knowledge map gets expanded, and becomes evaluation and resource vertices in the learning map. Content units from the knowledge map can be omitted if they are not needed in the specific course. Detailed prerequisites can be specified for the content units. The student map represents the progress of a specific student taking a specific course. The edges shows which resources he has used, the evaluations of the student and in which order. 
 
-Translated to our project, a course will be the paediatric possible asthma guideline \parencite{RepublicofKeny2016}. 
 
+When we apply this to our project, we will first decouple the content from the flow-chart of the paediatric possible asthma guideline \parencite{RepublicofKeny2016}. In figure \ref{fig:KnowledgeMap} we have identified knowledge elements and hierarchically structured the knowledge repository into a knowledge map. The edges shows the relationship between the knowledge elements. By putting investigation and surgery into the model, we have identified some vertices which are not relevant for the the paediatric possible asthma guideline \parencite{RepublicofKeny2016}, but is relevant when making courses for other guidelines. The repository and the knowledge map will expand the more we learn about other guidelines.
+
+\begin{figure}[h!]
+	\caption {Knowledge map}
+	\label{fig:KnowledgeMap}
+	\includegraphics[scale=0.5]{KnowledgeMap}
+\end{figure}
+
+In table \ref{table:ContentUnit} we have picked a knowledge element from the knowledge map, and defined a content unit. The content unit contains a theme "Assessment". Resources is the learning material, which are relevant sections of the guideline. Evaluations are the tests to see if the student has reached the learning goals. At level 1 we try to learn facts about the guideline. In level 2 and 3 we give the student scenarios to work with.
+
+\begin{table}[h!]
+	\caption{The content unit Assessment}
+	\label{table:ContentUnit}
+\begin{tabular}{ | m{16em} | m{10em}| m{6em} | } 
+	\hline
+	\multicolumn{3}{c}{\bfseries T1: Assessment} \\
+	\hline
+	Resources & Evaluations & Aspects \\
+	\hline
+	R1: History and examination sections in the possible asthma guideline \parencite{RepublicofKeny2016} & E1: Quiz Level 1 & Facts \\
+	& E2: Quiz Level 2 & Scenario \\
+	& E3: Quiz Level 3 & Scenario \\
+	\hline
+	\end{tabular}
+\end{table}
+
+In figure \ref{fig:LearningMap} we have identified four content units T1: Assessment, T2: Diagnosis, T3: Management and T4: Follow-up from the knowledge map. The importance of these content units in the asthma guideline \parencite{RepublicofKeny2016} was the reason these four got selected. The hierarchically structure of the knowledge map, makes the child nodes of the content units become learning material for their parent nodes.
+
+Inside the content units in the learning map, we see the relationships between resources and evaluation. There is also dependencies between the content units. To be able to do a follow-up, a student needs to learn the assessment, diagnosis and management first, because follow-up is an evaluation and reaction to how the patient responded to the previous steps.  We have also specified the prerequisites for each evaluation. The prerequisites are written as logical expressions, as seven edges and operators per content unit would be confusing to read. What the prerequisites says is that all level 1 evaluations need to be completed before any level 2 evaluation can be taken. All level 2 evaluations need to be completed before any level 3 evaluation can be taken.
+
+\begin{figure}[h!]
+	\caption {Learning map}
+	\label{fig:LearningMap}
+	\includegraphics[scale=0.45]{LearningMap}
+\end{figure}
+
+A student map would show the progressions for one specific student and the path he has taken. Table \ref{table:StudentMap} shows a student's student map for the Assessment part of the course. He got the score 34 on the first evaluation. 34 matches the passing condition for assessment level 1, so he got a passing grade for that test. However, he scored 43 points on evaluation 2 and didn't meet the passing condition for that test. He has no attempts for evaluation 3 has he doesn't meet the prerequisites for that test.  The tests which have been completed are stored in the database on the students phone. In that sense, the database is a model of the student map.
+
+\begin{table}[h!]
+	\caption{Student Map T1:Assessment}
+	\label{table:StudentMap}
+	\begin{tabular}{ | m{16em} | m{10em}| m{6em} | } 
+		\hline
+		\multicolumn{3}{c}{\bfseries T1: Assessment} \\
+		\hline
+		Resources & Evaluations & Passed \\
+		\hline
+		R1: History and examination guideline & E1: 35 & True \\
+		& E2: 43 & False \\
+		& E3: &  \\
+		\hline
+	\end{tabular}
+\end{table}
+
+% -----------------------------------------------------------------------------------------------
  we try to decouple the learning material from the presentation or course. In our specific case, the presentation is the flow-chart of the paediatric possible asthma guideline \parencite{RepublicofKeny2016}, and the learning material is its content. The learning material gets divided into atomic units called 
 
 The basic requirement for DCM is that we have a repository of knowledge elements. We can draw knowledge elements from this repository, organize them into a hierarchically structure 
@@ -88,6 +142,8 @@ Both \textcite{Attali2015} and \textcite{Morrison1995} avoids the scenario where
 
 \subsection{Open world, closed world assumption}
 \textcolor{red}{Rabbi Fazle has written about this. What do we do if central cyanosis is not in the patient model? According to closed world assumption he then doesn't have central cyanosis. In the open world assumption, we simply don't know when it's not in the model. In MDE, closed world assumption is the standard way og solving this problem. In our application open world assymption is probably a more correct solution. If central cyanosis is not in the model, we should simply do an examination and confirm that the patient doesn't have that symptom.}
+
+\subsection{UML model of how all the classes are connected in Game Engine}
 
 \subsection{Unlocking harder levels at a certain category}
 \textcolor{red}{(somewhere in the paper I need to refer to Eides, Kristensens and Lamos paper, and discuss the knowledge, learning and student maps and that they need to prove basic knowledge in some disciplines before they can unlock content in other disciplines.)}
