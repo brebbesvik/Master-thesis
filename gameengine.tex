@@ -1,4 +1,27 @@
 \section{Game engine}
+
+% -----------------------------------------------------------------------------------------------
+
+
+As each question in a quiz are related to a certain component in the treatment plan or theme in the learning map, the student will be measured how well he performs on each of these themes. For the asthma guideline \parencite{RepublicofKeny2016}, we have identified four themes. Assessment where the student will be tested in the initial examination. Diagnosis, where the student will determine a diagnosis as well as the severity. Management, where the student will determine which actions should be done to treat and best give the best care to the patient. The last discipline is the follow-up, where the student will be tested in evaluating the treatment, give advise to and educate patient and caregivers, provide the right medication and regular follow-up.
+
+By splitting up the score in themes, the student can easily see which areas he is strong and where he needs more training. 
+
+
+
+We can also adapt the questions in each discipline to the student's level. If the student has proven to be very good in providing the right amount of medicine to asthma patient, we can provide more difficult questions to challenge the student some more. If he struggles at setting the right diagnose, we can provide more basic questions to strengthen the students basic knowledge. 
+
+\textcolor{red}{The disciplines should be automatically picked from the entity (and worflow?) model.}
+
+\textcolor{red}{The tree structure of discipline scores. Diagnosis have examination, investigation, setting the severity. Management have advises, medication, admit, surgery and so on.}
+
+
+
+
+The student will also be provided with a total score, which will be the average score of each of the disciplines. The student can compare the total score of e.g. the asthma quiz and the jaundice quiz, and see which medical condition he needs to train more on.
+
+
+\subsection{Dynamic Content Management}
 The game engine is based on some of the concepts presented in the articles of \textcite{Eide2008}, \textcite{Kristensen2011} and \textcite{Kristensen2013}.
 
 \textcite{Eide2008} presents a dynamic content management system (DCM) made for e-learning. In DCM the focus is on removing the tight coupling between the learning material and the teaching course. By analysing the learning material and course, they can define conceptual atomic units of knowledge which they put into a knowledge repository. From this repository they may draw knowledge elements and organize into the hierarchy of a course. To model a course they use concept maps, which are directed graphs, where the vertices are concept labels and edges indicates the relationships between vertices. DCM operates with three concept maps: knowledge map, learning map and student map. The knowledge map is used to model the entire content of the knowledge repository and the hierarchy structure of a course. A learning map is used to model a specific course and is a representation of the learning process. The content units (vertices) in the knowledge map gets expanded, and becomes evaluation and resource vertices in the learning map. Content units from the knowledge map can be omitted if they are not needed in the specific course. Detailed prerequisites can be specified for the content units. The student map represents the progress of a specific student taking a specific course. The edges shows which resources he has used, the evaluations of the student and in which order. 
@@ -58,28 +81,6 @@ A student map would show the progressions for one specific student and the path 
 	\end{tabular}
 \end{table}
 
-% -----------------------------------------------------------------------------------------------
- we try to decouple the learning material from the presentation or course. In our specific case, the presentation is the flow-chart of the paediatric possible asthma guideline \parencite{RepublicofKeny2016}, and the learning material is its content. The learning material gets divided into atomic units called 
-
-The basic requirement for DCM is that we have a repository of knowledge elements. We can draw knowledge elements from this repository, organize them into a hierarchically structure 
-
-
-As each question in a quiz are related to a certain component in the treatment plan or theme in the learning map, the student will be measured how well he performs on each of these themes. For the asthma guideline \parencite{RepublicofKeny2016}, we have identified four themes. Assessment where the student will be tested in the initial examination. Diagnosis, where the student will determine a diagnosis as well as the severity. Management, where the student will determine which actions should be done to treat and best give the best care to the patient. The last discipline is the follow-up, where the student will be tested in evaluating the treatment, give advise to and educate patient and caregivers, provide the right medication and regular follow-up.
-
-By splitting up the score in themes, the student can easily see which areas he is strong and where he needs more training. 
-
-
-
-We can also adapt the questions in each discipline to the student's level. If the student has proven to be very good in providing the right amount of medicine to asthma patient, we can provide more difficult questions to challenge the student some more. If he struggles at setting the right diagnose, we can provide more basic questions to strengthen the students basic knowledge. 
-
-\textcolor{red}{The disciplines should be automatically picked from the entity (and worflow?) model.}
-
-\textcolor{red}{The tree structure of discipline scores. Diagnosis have examination, investigation, setting the severity. Management have advises, medication, admit, surgery and so on.}
-
-
-
-
-The student will also be provided with a total score, which will be the average score of each of the disciplines. The student can compare the total score of e.g. the asthma quiz and the jaundice quiz, and see which medical condition he needs to train more on.
 
 \subsection{Multiple-try feedback}
 % https://books.google.no/books?hl=en&lr=&id=GgCPAgAAQBAJ&oi=fnd&pg=PA125&dq=Interactive+with+multiple+tries+&ots=A9Z_BJS5t2&sig=RTv1FmOzU_qic9ADjDgKdJoHamU&redir_esc=y#v=onepage&q=Interactive%20with%20multiple%20tries&f=false
@@ -138,10 +139,98 @@ Both \textcite{Attali2015} and \textcite{Morrison1995} avoids the scenario where
 
 \textcolor{red}{A solution to having a not very strict game, encouraging to playing and learning, one can also have a very strict examination version. The idea is that after examination, the results will be sent to the lecturer (or a governing body of some kind) to evaluate what the overall knowledge of the students, as well as details of what the students are really good in and where do they struggle. The lecturer can then target the weak of points of the students in one of the next lectures. }
 
-\subsection{Constructing narratives and answer keys}
+\subsection{Constructing scenarios and answer keys}
+A quiz consists of several questions, where each question has answer keys and distractions. At level 1 these questions will be factual, and in level 2 and 3 we will work with scenarios. We write the questions in the format of a template, where we use tags to refer to variables in the entity model. The tag is a path in the entity graph. The game engine will traverse through the graph and return the value of the vertex specified by the path. The entity graph represents a patient at a certain point in the assessment or treatment. By replacing the entity graph, we can reuse the same template with different patients, generating many different questions with the same template. 
 
-\subsection{Open world, closed world assumption}
-\textcolor{red}{Rabbi Fazle has written about this. What do we do if central cyanosis is not in the patient model? According to closed world assumption he then doesn't have central cyanosis. In the open world assumption, we simply don't know when it's not in the model. In MDE, closed world assumption is the standard way og solving this problem. In our application open world assymption is probably a more correct solution. If central cyanosis is not in the model, we should simply do an examination and confirm that the patient doesn't have that symptom.}
+The same goes for the answer key. The answer key can be a text, one or several tags referring to variables in the entity model, or a combination of both. The application always uses the same entity graph for the scenario and the answer key. When the application traverses entity graph, the answer key and the question given always matches as they are the same patient at the same given time.
+
+One of the problems we encountered with this method, was how to present the variables returned by the graph in a text. As an example, we can look at some of the symptoms of asthma and their type.
+\begin{itemize}
+	\item Wheeze is a whistling sound when you breath. In the model it is represented as a boolean. True or false. Either you have it or you don't.
+	\item Age is relevant several places in the guideline. In the model it is stored as an integer.
+	\item AVPU is a scale system, which clinician use to measure a patient's level of conciousness. A is alert. V, the patient is verbal which means he can somehow respond to questions. P, the patient responds to pain. The patient will react if you pinch him. U is unresponsive or unconscious. He doesn't respond to either voice or pain. The AVPU is represented in the model as an enumerate.
+	\item Severity classifies the asthma severity to be either severe, model or mild. The severity is represented as a string in the model.
+\end{itemize}
+
+\begin{verbatim}
+Question:
+ A <%Patient.hasAge.Age%> months old patient arrives at the emergency department. 
+ The patient has a <%Patient.underGoesExamination.Wheeze%>, 
+ has conciousness level 
+ <%Patient.undergoesExamination.Consciousness%> 
+ and has an oxygen saturation of 
+ <%Patient.undergoesExamination.Oxygen-Saturation%>%. 
+ What is the asthma severity? 
+ 
+Answer key:
+<%Patient.hasDiagnosis.Diagnosis.hasSeverity.Severity%>
+\end{verbatim}
+
+This translates to 
+\begin{verbatim}
+Question:
+A 24 months old patient arrives at the emergency department. 
+The patient has a true, has conciousness level V 
+and has an oxygen saturation of 80%. 
+What is the asthma severity? 
+
+Answer key:
+Severe
+\end{verbatim}
+
+We see that the template author needs to be aware of how the variables will be printed. Here he knows that the model will just return an integer for the oxygen saturation. He writes a descriptive text of the value first, and then adds a percentage after the variable. The severity gets nicely printed as answer key.
+
+The problem is the boolean for wheeze, which prints a "true". It really should have printed "wheeze". We solved the presentation of consciousness in the same way as we did with oxygen saturation. However, it could be nicer to write "responds to pain", rather than just "V". When the child 12 months or older, it is often easier to read if we can present the age in years.
+
+Another problem arrives when we replace the entity graph with another, where some of the examinations haven't been done. In traditional model driven engineering, we use something called the closed world assumption. If a node doesn't exist, we say the value is false. But how can we say that patient doesn't have wheeze when we haven't examined? In open world assumption a none-existing vertex is "unknown", and this strategy seems more correct for our scenario. If the vertex doesn't exist, we simply return an empty string. This further motivates ut to remove the variable specific text from the template, as we don't want text representation for a variable we don't present. Example when consciousness and oxygen saturation haven't been examined:
+\textcolor{red}{Need citation to closed and open world assumptions!}
+
+\begin{verbatim}
+Question:
+A 24 months old patient arrives at the emergency department. 
+The patient has a true, has conciousness level 
+and has an oxygen saturation of %. 
+What is the asthma severity? 
+\end{verbatim}
+
+How we solved the problem was to add a textual presentation vertex to each of the vertices in the graph referred to by the template. If there exist a presentation for the vertex, return the presentation. If there doesn't exist a presentation, simply return the variable.
+
+\begin{figure}[h!]
+	\caption {Making graph variables fit a story format}
+	\label{fig:GeneratingScenarios1}
+	\includegraphics[scale=0.4]{GeneratingScenarios1}
+\end{figure}
+
+\begin{figure}[h!]
+	\caption {Making graph variables fit a story format}
+	\label{fig:GeneratingScenarios2}
+	\includegraphics[scale=0.4]{GeneratingScenarios2}
+\end{figure}
+
+\begin{verbatim}
+A <%Patient.hasAge.Age%> old patient arrives at the emergency department. 
+The patient <%Patient.underGoesExamination.Wheeze%> 
+<%Patient.undergoesExamination.Consciousness%> 
+<%Patient.undergoesExamination.Oxygen-Saturation%>. 
+What is the asthma severity? 
+\end{verbatim}
+
+Which translates to 
+\begin{verbatim}
+A 2 year old patient arrives at the emergency department. 
+The patient has a wheeze, is verbal but not alert 
+and has an oxygen saturation of 80%. 
+What is the asthma severity? 
+\end{verbatim}
+
+This also works with the open world assumption, as a patient which haven't undergone consciousness and oxygen saturation examinations, would result in the following text:
+
+\begin{verbatim}
+A 2 year old patient arrives at the emergency department. 
+The patient has a wheeze. 
+What is the asthma severity? 
+\end{verbatim}
+
 
 \subsection{UML model of how all the classes are connected in Game Engine}
 
