@@ -32,7 +32,7 @@ When we apply this to our project, we will first decouple the content from the f
 \begin{figure}[h!]
 	\caption {Knowledge map}
 	\label{fig:KnowledgeMap}
-	\includegraphics[scale=0.5]{KnowledgeMap}
+	\includegraphics[scale=0.4]{KnowledgeMap}
 \end{figure}
 
 In table \ref{table:ContentUnit} we have picked a knowledge element from the knowledge map, and defined a content unit. The content unit contains a theme "Assessment". Resources is the learning material, which are relevant sections of the guideline. Evaluations are the tests to see if the student has reached the learning goals. At level 1 we try to learn facts about the guideline. In level 2 and 3 we give the student scenarios to work with.
@@ -182,8 +182,7 @@ We see that the template author needs to be aware of how the variables will be p
 
 The problem is the boolean for wheeze, which prints a "true". It really should have printed "wheeze". We solved the presentation of consciousness in the same way as we did with oxygen saturation. However, it could be nicer to write "responds to pain", rather than just "V". When the child 12 months or older, it is often easier to read if we can present the age in years.
 
-Another problem arrives when we replace the entity graph with another, where some of the examinations haven't been done. In traditional model driven engineering, we use something called the closed world assumption. If a node doesn't exist, we say the value is false. But how can we say that patient doesn't have wheeze when we haven't examined? In open world assumption a none-existing vertex is "unknown", and this strategy seems more correct for our scenario. If the vertex doesn't exist, we simply return an empty string. This further motivates ut to remove the variable specific text from the template, as we don't want text representation for a variable we don't present. Example when consciousness and oxygen saturation haven't been examined:
-\textcolor{red}{Need citation to closed and open world assumptions!}
+Another problem arrives when we replace the entity graph with another, where some of the examinations haven't been done. In traditional model driven engineering, we use something called the closed world assumption \parencite{Sadowska2019}. If a node doesn't exist, we say the value is false. But how can we say that patient doesn't have wheeze when we haven't examined? In open world assumption a none-existing vertex is "unknown" \parencite{Patel-Schneider2006} \parencite{Bergman2018}, and this strategy seems more correct for our scenario. If the vertex doesn't exist, we simply return an empty string. This further motivates ut to remove the variable specific text from the template, as we don't want text representation for a variable we don't present. Example when consciousness and oxygen saturation haven't been examined:
 
 \begin{verbatim}
 Question:
@@ -231,6 +230,7 @@ The patient has a wheeze.
 What is the asthma severity? 
 \end{verbatim}
 
+For future work, the commas and "and" should not be in the presentation vertex. This becomes a limitation where the variable can only be used in a list and has to be in a specific place in the list. The solution would be to have a list tag in the template, and have all the paths inside that tag. Then the game engine can see how many of the list items are in the graph, and can set the commas and "and" at the appropriate places.
 
 \subsection{UML model of how all the classes are connected in Game Engine}
 

@@ -16,105 +16,7 @@
   {}
 \endgroup
 
-\datalist[entry]{anyt/global//global/global}
-  \entry{Guidelines2011}{book}{}
-    \name{author}{6}{}{%
-      {{hash=UIoM}{%
-         family={(US)},
-         familyi={U\bibinitperiod},
-         given={Institute of\bibnamedelima Medicine},
-         giveni={I\bibinitperiod\bibinitdelim o\bibinitperiod\bibinitdelim
-  M\bibinitperiod},
-      }}%
-      {{hash=GR}{%
-         family={Graham},
-         familyi={G\bibinitperiod},
-         given={Robin},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=MM}{%
-         family={Mancher},
-         familyi={M\bibinitperiod},
-         given={Michelle},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=WDM}{%
-         family={Wolman},
-         familyi={W\bibinitperiod},
-         given={Dianne\bibnamedelima Miller},
-         giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-      {{hash=GS}{%
-         family={Greenfield},
-         familyi={G\bibinitperiod},
-         given={Sheldon},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=SE}{%
-         family={Steinberg},
-         familyi={S\bibinitperiod},
-         given={Earl},
-         giveni={E\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {National Academies Press (US)}%
-    }
-    \strng{namehash}{UIoM+1}
-    \strng{fullhash}{UIoMGRMMWDMGSSE1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{(US+11}
-    \field{labelyear}{2011}
-    \field{labeldatesource}{year}
-    \field{sortinit}{(}
-    \field{sortinithash}{(}
-    \field{abstract}{%
-    Advances in medical, biomedical and health services research have reduced
-  the level of uncertainty in clinical practice. Clinical practice guidelines
-  (CPGs) complement this progress by establishing standards of care backed by
-  strong scientific evidence. CPGs are statements that include recommendations
-  intended to optimize patient care. These statements are informed by a
-  systematic review of evidence and an assessment of the benefits and costs of
-  alternative care options. Clinical Practice Guidelines We Can Trust examines
-  the current state of clinical practice guidelines and how they can be
-  improved to enhance healthcare quality and patient outcomes. Clinical
-  practice guidelines now are ubiquitous in our healthcare system. The
-  Guidelines International Network (GIN) database currently lists more than
-  3,700 guidelines from 39 countries. Developing guidelines presents a number
-  of challenges including lack of transparent methodological practices,
-  difficulty reconciling conflicting guidelines, and conflicts of interest.
-  Clinical Practice Guidelines We Can Trust explores questions surrounding the
-  quality of CPG development processes and the establishment of standards. It
-  proposes eight standards for developing trustworthy clinical practice
-  guidelines emphasizing transparency; management of conflict of interest ;
-  systematic review--guideline development intersection; establishing evidence
-  foundations for and rating strength of guideline recommendations;
-  articulation of recommendations; external review; and updating. Clinical
-  Practice Guidelines We Can Trust shows how clinical practice guidelines can
-  enhance clinician and patient decision-making by translating complex
-  scientific research findings into recommendations for clinical practice that
-  are relevant to the individual patient encounter, instead of implementing a
-  one size fits all approach to patient care. This book contains information
-  directly related to the work of the Agency for Healthcare Research and
-  Quality (AHRQ), as well as various Congressional staff and policymakers. It
-  is a vital resource for medical specialty societies, disease advocacy groups,
-  health professionals, private and international organizations that develop or
-  use clinical practice guidelines, consumers, clinicians, and payers.%
-    }
-    \field{booktitle}{Clinical Practice Guidelines We Can Trust}
-    \verb{doi}
-    \verb 10.17226/13058
-    \endverb
-    \field{isbn}{9780309164221}
-    \field{pages}{abstract}
-    \field{title}{{Clinical Practice Guidelines We Can Trust}}
-    \verb{url}
-    \verb http://www.ncbi.nlm.nih.gov/pubmed/24983061
-    \endverb
-    \field{year}{2011}
-  \endentry
-
+\datalist[entry]{nty/global//global/global}
   \entry{Attali2015}{article}{}
     \name{author}{1}{}{%
       {{hash=AY}{%
@@ -131,7 +33,6 @@
     \strng{fullhash}{AY1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelalpha}{Att15}
     \field{labelyear}{2015}
     \field{labeldatesource}{year}
     \field{sortinit}{A}
@@ -170,6 +71,45 @@
     \field{journaltitle}{Computers {\&} Education}
     \field{year}{2015}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Bergman2018}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=BMK}{%
+         family={Bergman},
+         familyi={B\bibinitperiod},
+         given={Michael\bibnamedelima K.},
+         giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer International Publishing}%
+    }
+    \strng{namehash}{BMK1}
+    \strng{fullhash}{BMK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{year}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{booktitle}{A Knowledge Representation Practionary}
+    \verb{doi}
+    \verb 10.1007/978-3-319-98092-8_9
+    \endverb
+    \field{pages}{183\bibrangedash 205}
+    \field{title}{{Keeping the Design Open}}
+    \verb{url}
+    \verb http://link.springer.com/10.1007/978-3-319-98092-8{\_}9
+    \endverb
+    \list{location}{1}{%
+      {Cham}%
+    }
+    \verb{file}
+    \verb :C$\backslash$:/Users/Ben/AppData/Local/Mendeley Ltd./Mendeley Deskto
+    \verb p/Downloaded/Bergman - 2018 - Keeping the Design Open.pdf:pdf
+    \endverb
+    \field{year}{2018}
   \endentry
 
   \entry{Cabana1999}{article}{}
@@ -227,7 +167,6 @@
     \strng{fullhash}{CMDRCSPNRWAWWMHAPACRHR1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelalpha}{Cab+99}
     \field{labelyear}{1999}
     \field{labeldatesource}{year}
     \field{sortinit}{C}
@@ -285,6 +224,54 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{Clariana2006}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CRB}{%
+         family={Clariana},
+         familyi={C\bibinitperiod},
+         given={Roy\bibnamedelima B.},
+         giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=KR}{%
+         family={Koul},
+         familyi={K\bibinitperiod},
+         given={Ravinder},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {John Wiley {\&} Sons, Ltd (10.1111)}%
+    }
+    \strng{namehash}{CRBKR1}
+    \strng{fullhash}{CRBKR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{labeldatesource}{year}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{doi}
+    \verb 10.1348/000709905X39134
+    \endverb
+    \field{issn}{00070998}
+    \field{number}{2}
+    \field{pages}{259\bibrangedash 270}
+    \field{title}{{The effects of different forms of feedback on fuzzy and
+  verbatim memory of science principles}}
+    \verb{url}
+    \verb http://doi.wiley.com/10.1348/000709905X39134
+    \endverb
+    \field{volume}{76}
+    \verb{file}
+    \verb :C$\backslash$:/Users/Ben/AppData/Local/Mendeley Ltd./Mendeley Deskto
+    \verb p/Downloaded/Clariana, Koul - 2006 - The effects of different forms o
+    \verb f feedback on fuzzy and verbatim memory of science principles.pdf:pdf
+    \endverb
+    \field{journaltitle}{British Journal of Educational Psychology}
+    \field{year}{2006}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{Clayton1995}{article}{}
     \name{author}{2}{}{%
       {{hash=CPD}{%
@@ -309,7 +296,6 @@
     \strng{fullhash}{CPDHG1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelalpha}{CH95}
     \field{labelyear}{1995}
     \field{labeldatesource}{year}
     \field{sortinit}{C}
@@ -356,55 +342,6 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{Clariana2006}{article}{}
-    \name{author}{2}{}{%
-      {{hash=CRB}{%
-         family={Clariana},
-         familyi={C\bibinitperiod},
-         given={Roy\bibnamedelima B.},
-         giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
-      }}%
-      {{hash=KR}{%
-         family={Koul},
-         familyi={K\bibinitperiod},
-         given={Ravinder},
-         giveni={R\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {John Wiley {\&} Sons, Ltd (10.1111)}%
-    }
-    \strng{namehash}{CRBKR1}
-    \strng{fullhash}{CRBKR1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{CK06}
-    \field{labelyear}{2006}
-    \field{labeldatesource}{year}
-    \field{sortinit}{C}
-    \field{sortinithash}{C}
-    \verb{doi}
-    \verb 10.1348/000709905X39134
-    \endverb
-    \field{issn}{00070998}
-    \field{number}{2}
-    \field{pages}{259\bibrangedash 270}
-    \field{title}{{The effects of different forms of feedback on fuzzy and
-  verbatim memory of science principles}}
-    \verb{url}
-    \verb http://doi.wiley.com/10.1348/000709905X39134
-    \endverb
-    \field{volume}{76}
-    \verb{file}
-    \verb :C$\backslash$:/Users/Ben/AppData/Local/Mendeley Ltd./Mendeley Deskto
-    \verb p/Downloaded/Clariana, Koul - 2006 - The effects of different forms o
-    \verb f feedback on fuzzy and verbatim memory of science principles.pdf:pdf
-    \endverb
-    \field{journaltitle}{British Journal of Educational Psychology}
-    \field{year}{2006}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
   \entry{DeClercq2008}{article}{}
     \name{author}{3}{}{%
       {{hash=DP}{%
@@ -433,7 +370,6 @@
     \strng{fullhash}{DPKKHA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelalpha}{DKH08}
     \field{labelyear}{2008}
     \field{labeldatesource}{year}
     \field{sortinit}{D}
@@ -497,7 +433,6 @@
     \strng{fullhash}{ESKTLY1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelalpha}{EKL08}
     \field{labelyear}{2008}
     \field{labeldatesource}{year}
     \field{sortinit}{E}
@@ -547,7 +482,6 @@
     \strng{fullhash}{FBCJBA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelalpha}{FCB10}
     \field{labelyear}{2010}
     \field{labeldatesource}{year}
     \field{sortinit}{F}
@@ -590,6 +524,41 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{Kristensen2011}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=KT}{%
+         family={Kristensen},
+         familyi={K\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{KT1}
+    \strng{fullhash}{KT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2011}
+    \field{labeldatesource}{year}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{booktitle}{2011 International Conference on Information Technology
+  Based Higher Education and Training}
+    \verb{doi}
+    \verb 10.1109/ITHET.2011.6018677
+    \endverb
+    \field{isbn}{978-1-4577-1673-7}
+    \field{pages}{1\bibrangedash 8}
+    \field{title}{{The Dynamic Content Management system}}
+    \verb{url}
+    \verb http://ieeexplore.ieee.org/document/6018677/
+    \endverb
+    \field{year}{2011}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{Kristensen2013}{article}{}
     \name{author}{3}{}{%
       {{hash=KT}{%
@@ -615,7 +584,6 @@
     \strng{fullhash}{KTBODM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelalpha}{KBD13}
     \field{labelyear}{2013}
     \field{labeldatesource}{year}
     \field{sortinit}{K}
@@ -633,42 +601,6 @@
     \field{volume}{1}
     \field{journaltitle}{Journal of Computer Engineering and Informatics}
     \field{year}{2013}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{Kristensen2011}{inproceedings}{}
-    \name{author}{1}{}{%
-      {{hash=KT}{%
-         family={Kristensen},
-         familyi={K\bibinitperiod},
-         given={T.},
-         giveni={T\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {IEEE}%
-    }
-    \strng{namehash}{KT1}
-    \strng{fullhash}{KT1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{Kri11}
-    \field{labelyear}{2011}
-    \field{labeldatesource}{year}
-    \field{sortinit}{K}
-    \field{sortinithash}{K}
-    \field{booktitle}{2011 International Conference on Information Technology
-  Based Higher Education and Training}
-    \verb{doi}
-    \verb 10.1109/ITHET.2011.6018677
-    \endverb
-    \field{isbn}{978-1-4577-1673-7}
-    \field{pages}{1\bibrangedash 8}
-    \field{title}{{The Dynamic Content Management system}}
-    \verb{url}
-    \verb http://ieeexplore.ieee.org/document/6018677/
-    \endverb
-    \field{year}{2011}
     \warn{\item Invalid format of field 'month'}
   \endentry
 
@@ -702,7 +634,6 @@
     \strng{fullhash}{MIMMMB1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelalpha}{MMM08}
     \field{labelyear}{2008}
     \field{labeldatesource}{year}
     \field{sortinit}{M}
@@ -790,7 +721,6 @@
     \strng{fullhash}{MGRRSMGMCJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelalpha}{Mor+95}
     \field{labelyear}{1995}
     \field{labeldatesource}{year}
     \field{sortinit}{M}
@@ -847,7 +777,6 @@
     \strng{fullhash}{NU1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelalpha}{NU07}
     \field{labelyear}{2007}
     \field{labeldatesource}{year}
     \field{sortinit}{N}
@@ -871,6 +800,56 @@
     \verb gement-of-asthma
     \endverb
     \field{year}{2007}
+  \endentry
+
+  \entry{Patel-Schneider2006}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=PSPF}{%
+         family={Patel-Schneider},
+         familyi={P\bibinitperiod-S\bibinitperiod},
+         given={Peter\bibnamedelima F.},
+         giveni={P\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=HI}{%
+         family={Horrocks},
+         familyi={H\bibinitperiod},
+         given={Ian},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM Press}%
+    }
+    \keyw{Semantic Web,modelling,philosophical foundations,representation}
+    \strng{namehash}{PSPFHI1}
+    \strng{fullhash}{PSPFHI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{labeldatesource}{year}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{booktitle}{Proceedings of the 15th international conference on World
+  Wide Web - WWW '06}
+    \verb{doi}
+    \verb 10.1145/1135777.1135784
+    \endverb
+    \field{isbn}{1595933239}
+    \field{pages}{3}
+    \field{title}{{A comparison of two modelling paradigms in the Semantic
+  Web}}
+    \verb{url}
+    \verb http://portal.acm.org/citation.cfm?doid=1135777.1135784
+    \endverb
+    \list{location}{1}{%
+      {New York, New York, USA}%
+    }
+    \verb{file}
+    \verb :C$\backslash$:/Users/Ben/AppData/Local/Mendeley Ltd./Mendeley Deskto
+    \verb p/Downloaded/Patel-Schneider, Horrocks - 2006 - Position paper.pdf:pd
+    \verb f
+    \endverb
+    \field{year}{2006}
   \endentry
 
   \entry{Preece2015}{book}{}
@@ -901,7 +880,6 @@
     \strng{fullhash}{PJSHRY1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelalpha}{PSR15}
     \field{labelyear}{2015}
     \field{labeldatesource}{year}
     \field{sortinit}{P}
@@ -910,32 +888,6 @@
     \field{pages}{196, 224}
     \field{title}{{Interaction Design: beyond human-computer interaction}}
     \field{year}{2015}
-  \endentry
-
-  \entry{Shortliffe1998}{article}{}
-    \name{author}{1}{}{%
-      {{hash=SEH}{%
-         family={Shortliffe},
-         familyi={S\bibinitperiod},
-         given={Edward\bibnamedelima H.},
-         giveni={E\bibinitperiod\bibinitdelim H\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{SEH1}
-    \strng{fullhash}{SEH1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{Sho98}
-    \field{labelyear}{1998}
-    \field{labeldatesource}{year}
-    \field{sortinit}{S}
-    \field{sortinithash}{S}
-    \field{title}{{The Evolution of Health-Care Records in the Era of the
-  Internet}}
-    \verb{url}
-    \verb http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.18.2653
-    \endverb
-    \field{year}{1998}
   \endentry
 
   \entry{RepublicofKeny2016}{book}{}
@@ -956,15 +908,171 @@
     \strng{fullhash}{RMoH1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelalpha}{{Rep}16}
     \field{labelyear}{2016}
     \field{labeldatesource}{year}
-    \field{sortinit}{{R}}
-    \field{sortinithash}{{R}}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
     \field{edition}{4th}
     \field{pages}{32}
     \field{title}{{Basic Paediatric Protocols for ages up to 5 years}}
     \field{year}{2016}
+  \endentry
+
+  \entry{Sadowska2019}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SM}{%
+         family={Sadowska},
+         familyi={S\bibinitperiod},
+         given={Ma{\l}gorzata},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HZ}{%
+         family={Huzar},
+         familyi={H\bibinitperiod},
+         given={Zbigniew},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SMHZ1}
+    \strng{fullhash}{SMHZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{pages}{89}
+    \field{title}{{Representation of UML Class Diagrams in OWL 2 on the
+  Background of Domain Ontologies}}
+    \verb{url}
+    \verb http://www.e-informatyka.pl/attach/e-Informatica{\_}-{\_}Volume{\_}13
+    \verb /eInformatica2019Art03.pdf
+    \endverb
+    \field{volume}{13}
+    \field{journaltitle}{e-Informatica Software Engineering Journal}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Shortliffe1998}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SEH}{%
+         family={Shortliffe},
+         familyi={S\bibinitperiod},
+         given={Edward\bibnamedelima H.},
+         giveni={E\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SEH1}
+    \strng{fullhash}{SEH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1998}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{{The Evolution of Health-Care Records in the Era of the
+  Internet}}
+    \verb{url}
+    \verb http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.18.2653
+    \endverb
+    \field{year}{1998}
+  \endentry
+
+  \entry{Guidelines2011}{book}{}
+    \name{author}{6}{}{%
+      {{hash=UIoM}{%
+         family={(US)},
+         familyi={U\bibinitperiod},
+         given={Institute of\bibnamedelima Medicine},
+         giveni={I\bibinitperiod\bibinitdelim o\bibinitperiod\bibinitdelim
+  M\bibinitperiod},
+      }}%
+      {{hash=GR}{%
+         family={Graham},
+         familyi={G\bibinitperiod},
+         given={Robin},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Mancher},
+         familyi={M\bibinitperiod},
+         given={Michelle},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WDM}{%
+         family={Wolman},
+         familyi={W\bibinitperiod},
+         given={Dianne\bibnamedelima Miller},
+         giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Greenfield},
+         familyi={G\bibinitperiod},
+         given={Sheldon},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SE}{%
+         family={Steinberg},
+         familyi={S\bibinitperiod},
+         given={Earl},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {National Academies Press (US)}%
+    }
+    \strng{namehash}{UIoM+1}
+    \strng{fullhash}{UIoMGRMMWDMGSSE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2011}
+    \field{labeldatesource}{year}
+    \field{sortinit}{U}
+    \field{sortinithash}{U}
+    \field{abstract}{%
+    Advances in medical, biomedical and health services research have reduced
+  the level of uncertainty in clinical practice. Clinical practice guidelines
+  (CPGs) complement this progress by establishing standards of care backed by
+  strong scientific evidence. CPGs are statements that include recommendations
+  intended to optimize patient care. These statements are informed by a
+  systematic review of evidence and an assessment of the benefits and costs of
+  alternative care options. Clinical Practice Guidelines We Can Trust examines
+  the current state of clinical practice guidelines and how they can be
+  improved to enhance healthcare quality and patient outcomes. Clinical
+  practice guidelines now are ubiquitous in our healthcare system. The
+  Guidelines International Network (GIN) database currently lists more than
+  3,700 guidelines from 39 countries. Developing guidelines presents a number
+  of challenges including lack of transparent methodological practices,
+  difficulty reconciling conflicting guidelines, and conflicts of interest.
+  Clinical Practice Guidelines We Can Trust explores questions surrounding the
+  quality of CPG development processes and the establishment of standards. It
+  proposes eight standards for developing trustworthy clinical practice
+  guidelines emphasizing transparency; management of conflict of interest ;
+  systematic review--guideline development intersection; establishing evidence
+  foundations for and rating strength of guideline recommendations;
+  articulation of recommendations; external review; and updating. Clinical
+  Practice Guidelines We Can Trust shows how clinical practice guidelines can
+  enhance clinician and patient decision-making by translating complex
+  scientific research findings into recommendations for clinical practice that
+  are relevant to the individual patient encounter, instead of implementing a
+  one size fits all approach to patient care. This book contains information
+  directly related to the work of the Agency for Healthcare Research and
+  Quality (AHRQ), as well as various Congressional staff and policymakers. It
+  is a vital resource for medical specialty societies, disease advocacy groups,
+  health professionals, private and international organizations that develop or
+  use clinical practice guidelines, consumers, clinicians, and payers.%
+    }
+    \field{booktitle}{Clinical Practice Guidelines We Can Trust}
+    \verb{doi}
+    \verb 10.17226/13058
+    \endverb
+    \field{isbn}{9780309164221}
+    \field{pages}{abstract}
+    \field{title}{{Clinical Practice Guidelines We Can Trust}}
+    \verb{url}
+    \verb http://www.ncbi.nlm.nih.gov/pubmed/24983061
+    \endverb
+    \field{year}{2011}
   \endentry
 \enddatalist
 \endinput
