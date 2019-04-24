@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 2.9 $
+% $ biblatex bbl format version 3.0 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -148,7 +148,8 @@
          family={Abboud},
          familyi={A\bibinitperiod},
          given={Paul-Andr{\'{e}}\bibnamedelima C.},
-         giveni={P\bibinitperiod-A\bibinitperiod\bibinitdelim C\bibinitperiod},
+         giveni={P\bibinithyphendelim A\bibinitperiod\bibinitdelim
+  C\bibinitperiod},
       }}%
       {{hash=RHR}{%
          family={Rubin},
@@ -524,6 +525,108 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{Guyatt2008}{article}{}
+    \name{author}{8}{}{%
+      {{hash=GGH}{%
+         family={Guyatt},
+         familyi={G\bibinitperiod},
+         given={Gordon\bibnamedelima H},
+         giveni={G\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=OAD}{%
+         family={Oxman},
+         familyi={O\bibinitperiod},
+         given={Andrew\bibnamedelima D},
+         giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=VGE}{%
+         family={Vist},
+         familyi={V\bibinitperiod},
+         given={Gunn\bibnamedelima E},
+         giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=KR}{%
+         family={Kunz},
+         familyi={K\bibinitperiod},
+         given={Regina},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=FYY}{%
+         family={Falck-Ytter},
+         familyi={F\bibinithyphendelim Y\bibinitperiod},
+         given={Yngve},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=ACP}{%
+         family={Alonso-Coello},
+         familyi={A\bibinithyphendelim C\bibinitperiod},
+         given={Pablo},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SHJ}{%
+         family={Sch{\"{u}}nemann},
+         familyi={S\bibinitperiod},
+         given={Holger\bibnamedelima J},
+         giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=G}{%
+         family={{GRADE Working Group}},
+         familyi={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {British Medical Journal Publishing Group}%
+    }
+    \strng{namehash}{GGH+1}
+    \strng{fullhash}{GGHOADVGEKRFYYACPSHJG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2008}
+    \field{labeldatesource}{year}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    Guidelines are inconsistent in how they rate the quality of evidence and
+  the strength of recommendations. This article explores the advantages of the
+  GRADE system, which is increasingly being adopted by organisations worldwide
+  {\#}{\#}{\#}{\#} Summary points Guideline developers around the world are
+  inconsistent in how they rate quality of evidence and grade strength of
+  recommendations. As a result, guideline users face challenges in
+  understanding the messages that grading systems try to communicate. Since
+  2006 the BMJ has requested in its “Instructions to Authors” on bmj.com
+  that authors should preferably use the Grading of Recommendations Assessment,
+  Development and Evaluation (GRADE) system for grading evidence when
+  submitting a clinical guidelines article. What was behind this decision? In
+  this first in a series of five articles we will explain why many
+  organisations use formal systems to grade evidence and recommendations and
+  why this is important for clinicians; we will focus on the GRADE approach to
+  recommendations. In the next two articles we will examine how the GRADE
+  system categorises quality of evidence and strength of recommendations. The
+  final two articles will {\ldots}%
+    }
+    \verb{doi}
+    \verb 10.1136/bmj.39489.470347.AD
+    \endverb
+    \field{issn}{1756-1833}
+    \field{number}{7650}
+    \field{pages}{924\bibrangedash 6}
+    \field{title}{{GRADE: an emerging consensus on rating quality of evidence
+  and strength of recommendations.}}
+    \verb{url}
+    \verb http://www.ncbi.nlm.nih.gov/pubmed/18436948 http://www.pubmedcentral.
+    \verb nih.gov/articlerender.fcgi?artid=PMC2335261
+    \endverb
+    \field{volume}{336}
+    \verb{file}
+    \verb :C$\backslash$:/Users/Ben/AppData/Local/Mendeley Ltd./Mendeley Deskto
+    \verb p/Downloaded/Guyatt et al. - 2008 - GRADE an emerging consensus on ra
+    \verb ting quality of evidence and strength of recommendations.pdf:pdf
+    \endverb
+    \field{journaltitle}{BMJ (Clinical research ed.)}
+    \field{year}{2008}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{Kristensen2011}{inproceedings}{}
     \name{author}{1}{}{%
       {{hash=KT}{%
@@ -806,7 +909,7 @@
     \name{author}{2}{}{%
       {{hash=PSPF}{%
          family={Patel-Schneider},
-         familyi={P\bibinitperiod-S\bibinitperiod},
+         familyi={P\bibinithyphendelim S\bibinitperiod},
          given={Peter\bibnamedelima F.},
          giveni={P\bibinitperiod\bibinitdelim F\bibinitperiod},
       }}%
@@ -1073,6 +1176,70 @@
     \verb http://www.ncbi.nlm.nih.gov/pubmed/24983061
     \endverb
     \field{year}{2011}
+  \endentry
+
+  \entry{Woolf1999}{article}{}
+    \name{author}{5}{}{%
+      {{hash=WSH}{%
+         family={Woolf},
+         familyi={W\bibinitperiod},
+         given={S\bibnamedelima H},
+         giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=GR}{%
+         family={Grol},
+         familyi={G\bibinitperiod},
+         given={R},
+         giveni={R},
+      }}%
+      {{hash=HA}{%
+         family={Hutchinson},
+         familyi={H\bibinitperiod},
+         given={A},
+         giveni={A},
+      }}%
+      {{hash=EM}{%
+         family={Eccles},
+         familyi={E\bibinitperiod},
+         given={M},
+         giveni={M},
+      }}%
+      {{hash=GJ}{%
+         family={Grimshaw},
+         familyi={G\bibinitperiod},
+         given={J},
+         giveni={J},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {BMJ Publishing Group}%
+    }
+    \strng{namehash}{WSH+1}
+    \strng{fullhash}{WSHGRHAEMGJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1999}
+    \field{labeldatesource}{year}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{issn}{0959-8138}
+    \field{number}{7182}
+    \field{pages}{527\bibrangedash 30}
+    \field{title}{{Clinical guidelines: potential benefits, limitations, and
+  harms of clinical guidelines.}}
+    \verb{url}
+    \verb http://www.ncbi.nlm.nih.gov/pubmed/10024268 http://www.pubmedcentral.
+    \verb nih.gov/articlerender.fcgi?artid=PMC1114973
+    \endverb
+    \field{volume}{318}
+    \verb{file}
+    \verb :C$\backslash$:/Users/Ben/AppData/Local/Mendeley Ltd./Mendeley Deskto
+    \verb p/Downloaded/Woolf et al. - 1999 - Clinical guidelines potential bene
+    \verb fits, limitations, and harms of clinical guidelines(2).pdf:pdf
+    \endverb
+    \field{journaltitle}{BMJ (Clinical research ed.)}
+    \field{year}{1999}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 \enddatalist
 \endinput
