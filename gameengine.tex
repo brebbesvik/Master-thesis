@@ -22,20 +22,33 @@ The student will also be provided with a total score, which will be the average 
 
 
 \subsection{Dynamic Content Management}
-The game engine is based on some of the concepts presented in the articles of \textcite{Eide2008}, \textcite{Kristensen2011} and \textcite{Kristensen2013}.
+The game engine is based on some of the concepts presented in the articles of \textcite{Eide2008}, \textcite{Kristensen2011} and \textcite{Kristensen2013}. The motivation for using DCM, is to support the principles of adaptive learning as well as flexibility in the learning process. Adaptive learning means that the student can solve problems which are suited to his knowledge level. Flexibility in the sense that the student can go through the learning content in many different ways.
 
 \textcite{Eide2008} presents a dynamic content management system (DCM) made for e-learning. In DCM the focus is on removing the tight coupling between the learning material and the teaching course. By analysing the learning material and course, they can define conceptual atomic units of knowledge which they put into a knowledge repository. From this repository they may draw knowledge elements and organize into the hierarchy of a course. To model a course they use concept maps, which are directed graphs, where the vertices are concept labels and edges indicates the relationships between vertices. DCM operates with three concept maps: knowledge map, learning map and student map. The knowledge map is used to model the entire content of the knowledge repository and the hierarchy structure of a course. A learning map is used to model a specific course and is a representation of the learning process. The content units (vertices) in the knowledge map gets expanded, and becomes evaluation and resource vertices in the learning map. Content units from the knowledge map can be omitted if they are not needed in the specific course. Detailed prerequisites can be specified for the content units. The student map represents the progress of a specific student taking a specific course. The edges shows which resources he has used, the evaluations of the student and in which order. 
 
 
-When we apply this to our project, we will first decouple the content from the flow-chart of the paediatric possible asthma guideline \parencite{RepublicofKeny2016}. In figure \ref{fig:KnowledgeMap} we have identified knowledge elements and hierarchically structured the knowledge repository into a knowledge map. The edges shows the relationship between the knowledge elements. By putting investigation and surgery into the model, we have identified some vertices which are not relevant for the the paediatric possible asthma guideline \parencite{RepublicofKeny2016}, but is relevant when making courses for other guidelines. The repository and the knowledge map will expand the more we learn about other guidelines.
+When we apply this to our project, we will first decouple the content from the flow-chart of the paediatric possible asthma guideline \parencite{RepublicofKeny2016}. To decouple the flow-chart, we use the workflow model as a helping tool. In figure \ref{fig:KnowledgeMap} we have identified knowledge elements and hierarchically structured the knowledge repository into a knowledge map. The edges shows the dependencies in the learning process. To learn how to evaluate a treatment and act accordingly to the evaluation, the student needs to know something about how to set a diagnosis and how to initially treat it. Hence there is an edge between follow-up and the other knowledge units.
 
 \begin{figure}[h!]
 	\caption {Knowledge map}
 	\label{fig:KnowledgeMap}
-	\includegraphics[scale=0.4]{KnowledgeMap}
+	\includegraphics[scale=0.6]{KnowledgeMap3}
 \end{figure}
 
-In table \ref{table:ContentUnit} we have picked a knowledge element from the knowledge map, and defined a content unit. The content unit contains a theme "Assessment". Resources is the learning material, which are relevant sections of the guideline. Evaluations are the tests to see if the student has reached the learning goals. At level 1 we try to learn facts about the guideline. In level 2 and 3 we give the student scenarios to work with.
+% TODO NEED TO DO SOMETHING HERE
+We can further expand the model by looking at the entity model and the workflow model combined. Then we can identify the very specific resources for each content unit. Se figure \ref{fig:ExpandedKnowledgeMap}. By putting investigation and surgery into the model, we have identified some vertices which are not relevant for the the paediatric possible asthma guideline \parencite{RepublicofKeny2016}, but is relevant when making courses for other guidelines. The repository and the knowledge map will expand the more we learn about other guidelines.
+
+\begin{figure}[h!]
+	\caption {The knowledge map has been expanded to identify the specific resources for each content unit. The content units are the parent nodes, while the leaves are the resources}
+	\label{fig:ExpandedKnowledgeMap}
+	\includegraphics[scale=0.4]{KnowledgeMap2}
+\end{figure}
+ 
+ 
+
+
+
+In table \ref{table:ContentUnit} we have chosen a knowledge element from the knowledge map, and defined a content unit. The content unit contains a theme "Assessment". Resources is the learning material, which are relevant sections of the guideline. Evaluations are the tests to see if the student has reached the learning goals. At level 1 we try to learn facts about the guideline. In level 2 and 3 we give the student scenarios to work with.
 
 \begin{table}[h!]
 	\caption{The content unit Assessment}
@@ -63,7 +76,7 @@ Inside the content units in the learning map, we see the relationships between r
 	\includegraphics[scale=0.45]{LearningMap}
 \end{figure}
 
-A student map would show the progressions for one specific student and the path he has taken. Table \ref{table:StudentMap} shows a student's student map for the Assessment part of the course. He got the score 34 on the first evaluation. 34 matches the passing condition for assessment level 1, so he got a passing grade for that test. However, he scored 43 points on evaluation 2 and didn't meet the passing condition for that test. He has no attempts for evaluation 3 has he doesn't meet the prerequisites for that test.  The tests which have been completed are stored in the database on the students phone. In that sense, the database is a model of the student map.
+A student map would show the progressions for one specific student, and the path he has taken and the scores for each evaluation. Table \ref{table:StudentMap} shows a student's student map for the Assessment part of the course. He got the score 34 on the first evaluation. 34 matches the passing condition for assessment level 1, so he got a passing grade for that test. However, he scored 43 points on evaluation 2 and didn't meet the passing condition for that test. He has no attempts for evaluation 3, as he doesn't meet the prerequisites for that test.  The tests which have been completed are stored in the database on the students phone. In that sense, the database shows the student's current position in the learning map.
 
 \begin{table}[h!]
 	\caption{Student Map T1:Assessment}
@@ -152,10 +165,16 @@ One of the problems we encountered with this method, was how to present the vari
 	\item Severity classifies the asthma severity to be either severe, model or mild. The severity is represented as a string in the model.
 \end{itemize}
 
+\begin{figure}[h!]
+	\caption {The patient object used with the template}
+	\label{fig:EntityInstanceGraph}
+	\includegraphics[scale=0.4]{EntityInstanceGraph}
+\end{figure}
+
 \begin{verbatim}
 Question:
  A <%Patient.hasAge.Age%> months old patient arrives at the emergency department. 
- The patient has a <%Patient.underGoesExamination.Wheeze%>, 
+ The patient has a <%Patient.underGoesExamination.Wheeze%>,
  has conciousness level 
  <%Patient.undergoesExamination.Consciousness%> 
  and has an oxygen saturation of 
@@ -170,7 +189,8 @@ This translates to
 \begin{verbatim}
 Question:
 A 24 months old patient arrives at the emergency department. 
-The patient has a true, has conciousness level V 
+The patient has a true,
+has conciousness level V 
 and has an oxygen saturation of 80%. 
 What is the asthma severity? 
 
@@ -235,6 +255,11 @@ For future work, the commas and "and" should not be in the presentation vertex. 
 \subsection{UML model of how all the classes are connected in Game Engine}
 
 \subsection{Unlocking harder levels at a certain category}
+One of the strengths with Dynamic Content Management is the focus on adaptive learning and flexible learning \parencite{Eide2008}. By adaptive learning, we mean that the student can solve problems which are suited for his knowledge level. While flexible learning means that the student can go through the learning material in the way he prefers, as long as the knowledge dependencies are met.
+
+ 
+
+
 \textcolor{red}{(somewhere in the paper I need to refer to Eides, Kristensens and Lamos paper, and discuss the knowledge, learning and student maps and that they need to prove basic knowledge in some disciplines before they can unlock content in other disciplines.)}
 \subsection{Visualization of game statistics}
 \subsection{Automatically generating new questions}
