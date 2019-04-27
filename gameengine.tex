@@ -35,19 +35,6 @@ When we apply this to our project, we will first decouple the content from the f
 	\includegraphics[scale=0.6]{KnowledgeMap3}
 \end{figure}
 
-% TODO NEED TO DO SOMETHING HERE
-We can further expand the model by looking at the entity model and the workflow model combined. Then we can identify the very specific resources for each content unit. Se figure \ref{fig:ExpandedKnowledgeMap}. By putting investigation and surgery into the model, we have identified some vertices which are not relevant for the the paediatric possible asthma guideline \parencite{RepublicofKeny2016}, but is relevant when making courses for other guidelines. The repository and the knowledge map will expand the more we learn about other guidelines.
-
-\begin{figure}[h!]
-	\caption {The knowledge map has been expanded to identify the specific resources for each content unit. The content units are the parent nodes, while the leaves are the resources}
-	\label{fig:ExpandedKnowledgeMap}
-	\includegraphics[scale=0.4]{KnowledgeMap2}
-\end{figure}
- 
- 
-
-
-
 In table \ref{table:ContentUnit} we have chosen a knowledge element from the knowledge map, and defined a content unit. The content unit contains a theme "Assessment". Resources is the learning material, which are relevant sections of the guideline. Evaluations are the tests to see if the student has reached the learning goals. At level 1 we try to learn facts about the guideline. In level 2 and 3 we give the student scenarios to work with.
 
 \begin{table}[h!]
@@ -93,6 +80,8 @@ A student map would show the progressions for one specific student, and the path
 		\hline
 	\end{tabular}
 \end{table}
+
+
 
 
 \subsection{Multiple-try feedback}
@@ -254,12 +243,57 @@ For future work, the commas and "and" should not be in the presentation vertex. 
 
 \subsection{UML model of how all the classes are connected in Game Engine}
 
+\subsection{Types of questions}
+We can further identify which kind of questions we are going to ask, by further examining the entity model and the workflow model combined. When we are doing an assessment in the workflow model, we are looking at the examination and history vertices of the entity graph. History is what the patient or the patient's dependent can tell around the patient's condition. Such that he has been coughing a lot the last days. Examination and history will provide the clinician with an idea of a diagnosis.
+
+Diagnosis in the workflow model is connected to the history, examination and investigation. The clinician will continue asking questions, do examinations and probably order some tests to strengthen his assumption of the diagnosis. The clinician can also set a more specific diagnosis, such as in the asthma guideline \parencite{RepublicofKeny2016}, where we categorize in severe, mild and moderate asthma.
+
+Management is how we manage the patient with the given diagnosis. Hospitalization is if we are going to set patient status to inpatient or outpatient. Medication is given to treat the patient or relieve the symptoms. Surgery is not part of the asthma guideline \parencite{RepublicofKeny2016}, but it is important to be aware that management procedures needs to be added when making quizzes for other conditions than asthma.
+
+Follow-up will contain questions related how to evaluate the treatment and how to act upon the evaluation. The symptoms of the patient may have worsen, getting better or are unchanged after the treatment, and the clinician needs to act accordingly. The treatment may have been given at the hospital or it may have been something the patient have had to do at home. The patient may also get some instructions from the clinician when there is something he should do on his own. 
+\begin{figure}[h!]
+	\caption {By looking at the workflow- and entity models we can identify the type of questions for each content unit in the knowledge map. The content units are the parent nodes, while the leaves are the type of questions}
+	\label{fig:ExpandedKnowledgeMap}
+	\includegraphics[scale=0.4]{KnowledgeMap2}
+\end{figure}
+
+As the student learns, the questions need to adapt to the student's new level of knowledge. How we do this is by defining levels, where the questions becomes more detailed at higher levels. At level 1 the questions are all about stating facts. In level 2, we create scenarios such that we follow one patient through all of the steps assessment, diagnosis, management and follow-up. The same for level 3, but the detail level will be higher. Typically the student will only be asked for categories of medication in level 2, but in level 3 the students needs to be specific about the names of the medication as well as measurements for both dosages and symptoms. See table \ref{table:ProgressionGranularity}.
+\begin{table}[h!]
+	\label{table:ProgressionGranularity}
+	\begin{tabular}{|m{2em}|m{6em}|m{6em}|m{6em}|m{6em}|}
+		\hline
+		Level & Assessment & Diagnosis & Management & Follow-up \\
+		\hline
+		1  & Factual & Factual & Factual & - \\
+		2 & Scenario & Scenario & Scenario & Scenario \\
+		3 & Detailed scenario  & Detailed scenario & Detailed scenario & Detailed scenario \\
+		\hline
+	\end{tabular}
+\end{table}
+
+
+
+
 \subsection{Unlocking harder levels at a certain category}
 One of the strengths with Dynamic Content Management is the focus on adaptive learning and flexible learning \parencite{Eide2008}. By adaptive learning, we mean that the student can solve problems which are suited for his knowledge level. While flexible learning means that the student can go through the learning material in the way he prefers, as long as the knowledge dependencies are met.
 
- 
+For the adaptability we have already covered how we progress from factual statements to scenarios and the scenarios with a higher ability to make the questions more difficult. For the flexibility we have divided the content into knowledge units: assessment, diagnosis, management and follow-up. It doesn't matter which of assessment, diagnosis and management the student finishes first.
+
+The evaluations in each content unit has passing conditions. As an example; to complete assessment level 1, you need a score of 30 in assessment. These passing conditions are provided by the quiz author. We also recall that to unlock questions, such as management level 2, there are certain prerequisites that need to be fulfilled. In this example, all evaluations in level 1 need to be completed to unlock any level 2 questions. The flexibility is that it doesn't matter the order of level 1 evaluations the student finishes first, as long as all of them are finished.
+
+To avoid that the student gets bored, he will not have to redo an evaluation once the passing condition is met. That means that if the student meets the passing condition of level 1 assessment and diagnosis, but not management, the student will only get questions from management level 1 the next time he takes the quiz. This makes a challenge for the scenarios. All scenario questions must be formed in a way, such that the student doesn't have to remember information from one question to another. All the necessary information should be listed in every scenario question. In that way the student won't miss important information if he completes diagnosis in a run before management and follow-up. 
+
+Each evaluation also has a minimum required skill value. If the student gets a lower score than the required minimum skill, the evaluation gets locked and the student needs to complete the evaluation at lower level. An example is that the student plays management level 2. He completes the evaluation with a lower score than the required minimum skill. The student will have to redo management level 1 evaluation to learn the basic skills necessary to play level 2. When this situation happens, the student no longer meets the prerequisite for the other level 2 evaluations. Level 1 management needs to be completed before any level 2 evaluations can be taken. 
 
 
-\textcolor{red}{(somewhere in the paper I need to refer to Eides, Kristensens and Lamos paper, and discuss the knowledge, learning and student maps and that they need to prove basic knowledge in some disciplines before they can unlock content in other disciplines.)}
 \subsection{Visualization of game statistics}
+The student needs some feedback, where he is in the learning map, how close he is to pass an evaluation, how close he is to progress to the next level and in the case where he gets relegated to an easier difficulty level.
+
+The scores for the evaluations can be shown as bars in a graph, and the passing conditions as a line. When the bars reaches or passes the line, the student knows that the he has met the passing condition for the evaluation at that level. This can also work as a motivation for the student, as he sees that he gets closer and closer to the passing condition as he learns he more and performs better.
+
+To visualizing where the student is in the learning map, has been solved by showing the learning map in almost a table format. Colour combinations shows which evaluations have been unlocked, which are locked and which are the current ones the student plays. Red and green indicates whether a student gets relegated from a level or whether he progresses to the next level.
+
+
+
+ 
 \subsection{Automatically generating new questions}
