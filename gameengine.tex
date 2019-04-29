@@ -242,6 +242,40 @@ What is the asthma severity?
 For future work, the commas and "and" should not be in the presentation vertex. This becomes a limitation where the variable can only be used in a list and has to be in a specific place in the list. The solution would be to have a list tag in the template, and have all the paths inside that tag. Then the game engine can see how many of the list items are in the graph, and can set the commas and "and" at the appropriate places.
 
 \subsection{UML model of how all the classes are connected in Game Engine}
+The conceptual model of the game engine is shown in figure \ref{fig:ConceptualGameElements}. Category is a quiz game for a certain CPG, such as the paediatric possible asthma guideline \cite{RepublicofKeny2016}. Each of these quiz categories are divided into several disciplines. Disciplines are themes in knowledge units, which we identified using DCM (dynamic content management). Each of these knowledge units contain evaluations at different difficulty levels. These evaluations are collections of questions, which contain a collection of multiple choice questions and answer elements.
+
+The quiz data are read from JSON-files, which are produced by a content author. The quiz author defines a quiz for a specific CPG. He identifies themes for content units, which contains evaluations with varying difficulty levels. The questions are written in a template format, which we have already covered. The templates contain tags, which refer to vertices in the entity graph, representing a given patient. The answer key is also such a tag, referring to one or more vertices in the entity graph. When the quiz is initialized, the tags will be replaced with values from the entity graph. The content author will write answer alternatives for each question, where he specifies a reward (or penalty) for each of the answer alternatives. An answer alternative which matches the answer key value in the entity graph will represent the correct answer. The content author needs to know what is in the entity graph to be able to provide meaningful rewards.
+
+The student skills is the scores from the last played game, and is fetched from the database on the student's phone. The allowed- and unallowed levels are calculated from the student skills and the requiredMinSkill for each level. Unallowed levels are levels that the student can't play and are locked for the student, as the student's score is lower than the required minimum skill.
+
+A new instance of skill will be created when the student starts a new game. This instance will hold the scores for the current game, and will be stored to the phone's database once the game has been completed. This score determines which levels the student can play in the next game of this category.
+
+
+\begin{figure}[h!]
+	\caption {Conceptual model for the game elements. \textcolor{red}{There are two instances of skill. One which represents the student's previous game stored in database. The other one represents the ongoing game in memory.}}
+	\label{fig:ConceptualGameElements}
+	\includegraphics[scale=0.4]{ConceptualModelGameElements}
+\end{figure}
+
+One problem with the conceptual model is that it is somewhat complex. Once we have determined which levels we should pick questions from and we have generated the questions, we really don't need the structure. Especially when playing scenarios, it is nice to just go through an ordered array, instead of dealing with "now I've played the third question of level 2 diagnosis, the next question in this scenario is the third question in level 2 management, unless I've already completed level 2 management in the previous run of the game. Then the next question is follow-up instead". We rather deal with the problem at the initialization phase and just go through the array when playing the game. A solutions is to implement the façade pattern \parencite{Gamma1994}, such that other parts of the system can use the game engine, without having to deal with the underlying complexity. 
+
+% Not sure whether this is facade or mediator pattern thouh
+
+\begin{figure}[h!]
+	\caption {Façade pattern hides the complexity of the game engine and makes it easier for other parts of the system to use it.}
+	\label{fig:GameEngineFacadePattern}
+	\includegraphics[scale=0.4]{GameEngineFacadePattern}
+\end{figure}
+
+\textcolor{red}{Should I show how I populate the models with data from JSON and database? I'm not very happy about the code on that part.}
+% DON'T KNOW IF I SHOULD SHOW THE GAME ENGINE PACKAGE HOW TO POPULATE THE MODELS AS THIS CONTAINS HARDCODED AND NASTY STUFF TO GET PROGRESS QUIKLY
+
+%\begin{itemize}
+%	\item DAO
+%	\item Models
+%	\item Templates/Narratives/AnswerKey
+%	\item Quiz is kind of an interface
+%\end{itemize}
 
 \subsection{Types of questions}
 We can further identify which kind of questions we are going to ask, by further examining the entity model and the workflow model combined. When we are doing an assessment in the workflow model, we are looking at the examination and history vertices of the entity graph. History is what the patient or the patient's dependent can tell around the patient's condition. Such that he has been coughing a lot the last days. Examination and history will provide the clinician with an idea of a diagnosis.
@@ -291,7 +325,7 @@ The student needs some feedback, where he is in the learning map, how close he i
 
 The scores for the evaluations can be shown as bars in a graph, and the passing conditions as a line. When the bars reaches or passes the line, the student knows that the he has met the passing condition for the evaluation at that level. This can also work as a motivation for the student, as he sees that he gets closer and closer to the passing condition as he learns he more and performs better.
 
-To visualizing where the student is in the learning map, has been solved by showing the learning map in almost a table format. Colour combinations shows which evaluations have been unlocked, which are locked and which are the current ones the student plays. Red and green indicates whether a student gets relegated from a level or whether he progresses to the next level.
+To visualizing where the student is in the learning map, has been solved by showing the learning map in almost a table format. Colour combinations shows which evaluations have been unlocked, which are locked and which are the current ones the student plays. Red and green indicates whether a student gets relegated from a level or whether he progresses to the next level.	
 
 
 

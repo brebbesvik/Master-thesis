@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.28)  27 APR 2019 23:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.28)  29 APR 2019 21:45
 entering extended mode
 **./main.tex
 (main.tex
@@ -785,81 +785,113 @@ y department.[]
  []
 
 [25 <./images/GeneratingScenarios1.pdf> <./images/GeneratingScenarios2.pdf>]
-<images/KnowledgeMap2.pdf, id=174, 1063.975pt x 140.525pt>
-File: images/KnowledgeMap2.pdf Graphic file (type pdf)
-<use images/KnowledgeMap2.pdf>
-Package pdftex.def Info: images/KnowledgeMap2.pdf  used on input line 257.
-(pdftex.def)             Requested size: 425.58246pt x 56.20898pt.
-
-Overfull \hbox (35.58246pt too wide) in paragraph at lines 257--258
-[][] 
- []
-
-
 Overfull \hbox (39.30276pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/12 26 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
 HEALTH WORKERS
  []
 
 [26]
+<images/ConceptualModelGameElements.pdf, id=177, 1053.9375pt x 381.425pt>
+File: images/ConceptualModelGameElements.pdf Graphic file (type pdf)
+<use images/ConceptualModelGameElements.pdf>
+Package pdftex.def Info: images/ConceptualModelGameElements.pdf  used on input 
+line 257.
+(pdftex.def)             Requested size: 421.56754pt x 152.56729pt.
 
-Package caption Warning: \label without proper reference on input line 262.
+Overfull \hbox (31.56754pt too wide) in paragraph at lines 257--258
+[][] 
+ []
+
+<images/GameEngineFacadePattern.pdf, id=178, 632.3625pt x 311.1625pt>
+File: images/GameEngineFacadePattern.pdf Graphic file (type pdf)
+<use images/GameEngineFacadePattern.pdf>
+Package pdftex.def Info: images/GameEngineFacadePattern.pdf  used on input line
+ 267.
+(pdftex.def)             Requested size: 252.94052pt x 124.46278pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[27 <./images/ConceptualModelGameElements.pdf>]
+<images/KnowledgeMap2.pdf, id=188, 1063.975pt x 140.525pt>
+File: images/KnowledgeMap2.pdf Graphic file (type pdf)
+<use images/KnowledgeMap2.pdf>
+Package pdftex.def Info: images/KnowledgeMap2.pdf  used on input line 291.
+(pdftex.def)             Requested size: 425.58246pt x 56.20898pt.
+
+Overfull \hbox (35.58246pt too wide) in paragraph at lines 291--292
+[][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package caption Warning: \label without proper reference on input line 296.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `table:ProgressionGranularity' on page 27 undefined on
- input line 260.
+LaTeX Warning: Reference `table:ProgressionGranularity' on page 28 undefined on
+ input line 294.
 
 
-Overfull \hbox (3.42497pt too wide) in paragraph at lines 265--265
+Overfull \hbox (3.42497pt too wide) in paragraph at lines 299--299
 []|\OT1/cmr/m/n/12 Level| 
  []
 
 
-Underfull \hbox (badness 1354) in paragraph at lines 269--269
+Underfull \hbox (badness 1354) in paragraph at lines 303--303
 []|\OT1/cmr/m/n/12 Detailed sce-
  []
 
 
-Underfull \hbox (badness 1354) in paragraph at lines 269--269
+Underfull \hbox (badness 1354) in paragraph at lines 303--303
 []|\OT1/cmr/m/n/12 Detailed sce-
  []
 
 
-Underfull \hbox (badness 1354) in paragraph at lines 269--269
+Underfull \hbox (badness 1354) in paragraph at lines 303--303
 []|\OT1/cmr/m/n/12 Detailed sce-
  []
 
 
-Underfull \hbox (badness 1354) in paragraph at lines 269--270
+Underfull \hbox (badness 1354) in paragraph at lines 303--304
 []|\OT1/cmr/m/n/12 Detailed sce-
  []
 
-[27 <./images/KnowledgeMap2.pdf>]
+
 Overfull \hbox (39.30276pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/12 28 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
 HEALTH WORKERS
  []
 
-[28]) [29]
+[28 <./images/GameEngineFacadePattern.pdf>] [29 <./images/KnowledgeMap2.pdf>])
+Underfull \vbox (badness 4832) has occurred while \output is active []
+
+
 Overfull \hbox (39.30276pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/12 30 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
 HEALTH WORKERS
  []
 
-[30
+[30] [31]
+Overfull \hbox (39.30276pt too wide) has occurred while \output is active
+\OT1/cmr/m/n/12 32 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
+HEALTH WORKERS
+ []
+
+[32
 
 ]
 Chapter 5.
 
 Underfull \vbox (badness 5274) has occurred while \output is active []
 
- [31]
-[32]
+ [33]
+[34]
 Chapter 6.
-[33
+[35
 
-] [34
+] [36
 
 ]
 Overfull \hbox (32.62881pt too wide) in paragraph at lines 78--78
@@ -874,9 +906,9 @@ Overfull \hbox (47.52502pt too wide) in paragraph at lines 78--78
 {\ _ }careflows{\ _
  []
 
-[35
+[37
 
-] [36] [37] (main.aux)
+] [38] [39] (main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -885,10 +917,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 11736 strings out of 492945
- 203106 string characters out of 3135519
- 471985 words of memory out of 3000000
- 15483 multiletter control sequences out of 15000+200000
+ 11754 strings out of 492945
+ 203719 string characters out of 3135519
+ 474902 words of memory out of 3000000
+ 15499 multiletter control sequences out of 15000+200000
  20786 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,11n,55p,1462b,1611s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -903,9 +935,9 @@ b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/Mi
 KTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (41 pages, 2416375 bytes).
+Output written on main.pdf (43 pages, 2425864 bytes).
 PDF statistics:
- 257 PDF objects out of 1000 (max. 8388607)
+ 275 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

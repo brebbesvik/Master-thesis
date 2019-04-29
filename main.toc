@@ -56,38 +56,38 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3.5}UML model of how all the classes are connected in Game Engine}{26}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.6}Types of questions}{26}% 
+\contentsline {subsection}{\numberline {4.3.6}Types of questions}{27}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.7}Unlocking harder levels at a certain category}{27}% 
+\contentsline {subsection}{\numberline {4.3.7}Unlocking harder levels at a certain category}{29}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.8}Visualization of game statistics}{28}% 
+\contentsline {subsection}{\numberline {4.3.8}Visualization of game statistics}{30}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.9}Automatically generating new questions}{29}% 
+\contentsline {subsection}{\numberline {4.3.9}Automatically generating new questions}{31}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}The mobile application}{29}% 
+\contentsline {section}{\numberline {4.4}The mobile application}{31}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}React-Native and Redux}{29}% 
+\contentsline {subsection}{\numberline {4.4.1}React-Native and Redux}{31}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.2}User interface and flow of the user interaction}{29}% 
+\contentsline {subsection}{\numberline {4.4.2}User interface and flow of the user interaction}{31}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Architecture of the whole system}{29}% 
+\contentsline {section}{\numberline {4.5}Architecture of the whole system}{31}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.1}Visualization}{29}% 
+\contentsline {subsection}{\numberline {4.5.1}Visualization}{31}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Evaluation}{29}% 
+\contentsline {section}{\numberline {4.6}Evaluation}{31}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Discussion}{31}% 
+\contentsline {chapter}{\numberline {5}Discussion}{33}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Research questions}{31}% 
+\contentsline {section}{\numberline {5.1}Research questions}{33}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Limitations of the model}{31}% 
+\contentsline {section}{\numberline {5.2}Limitations of the model}{33}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Observations}{32}% 
+\contentsline {section}{\numberline {5.3}Observations}{34}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Challenges}{32}% 
+\contentsline {section}{\numberline {5.4}Challenges}{34}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Reflection}{32}% 
+\contentsline {section}{\numberline {5.5}Reflection}{34}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusions}{33}% 
+\contentsline {chapter}{\numberline {6}Conclusions}{35}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Further research and development}{33}% 
+\contentsline {section}{\numberline {6.1}Further research and development}{35}% 
