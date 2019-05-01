@@ -24,6 +24,37 @@ A diagnosis has a name. In the paediatric possible asthma guideline \cite{Republ
 	\includegraphics[scale=0.6]{EntityGraphPatientDiagnosis}
 \end{figure}
 
+In figure \ref{fig:EntityGraphHistory} we have shown our implementation of the History vertex from figure \ref{fig:EntityGraphExcerpt}. History is what the patient or the caregiver tells about the patient's condition. In the paediatric possible asthma guideline \cite{RepublicofKeny2016} we have identified three symptoms which the clinician can ask the patient or the caregiver about. Here we introduce inheritance, where the specific symptoms inherits the examination vertex. Each symptom the patient or caregiver tell about, will have a measurement. In this specific case, all the history symptoms are boolean. Either they have the symptom or they don't. The symptom values inherits from a Measurement vertex.
+
+\begin{figure}[h!]
+	\caption {Showing the implementation of History in the entity graph. What the patient or caregiver tell about the patient's condition}
+	\label{fig:EntityGraphHistory}
+	\includegraphics[scale=0.6]{EntityGraphHistory}
+\end{figure}
+
+For Examination we follow the same principles as History. We implement it by letting each symptom inherit an Examination vertex. Each symptom has value which inherits from a Measurement vertex. In figure \ref{fig:EntityGraphExamination} we have shown the inheritances with one arrow and a box. This is of practical reasons when drawing, as there are so many symptoms and it will be confusing to draw an arrow for each of them. Here the values which are stored are a bit more mixed than for History. Consciousness is measured using an AVPU scale, where A is the patient is Alert, V is Verbal, P is responding to pain and U unconscious. These are enumerates, where we store either A, V, P or U. Pulse Rate, Respiratory Rate, Oxygen Saturation are all numerical values. The other symptoms are registered as boolean values.
+\textcolor{red}{Should I mention clan morphism? I am not sure I have implemented it as it is defined in the papers}
+\textcolor{red}{There is a possibility that a patient tells about a symptom and when the clinician examines the symptom, he finds something else. I haven't asked Job about this, and I don't think it matters for our game.}
+
+The implementation of Investigation would be just as we did with History and Examination. For asthma they use a lab test called spirometry, but it is not included in the paediatric possible asthma guideline \cite{RepublicofKeny2016}, so we don't include it in our model
+
+\begin{figure}[h!]
+	\caption {Showing the implementation of History in the entity graph. What the patient or caregiver tell about the patient's condition}
+	\label{fig:EntityGraphExamination}
+	\includegraphics[scale=0.45]{EntityGraphExamination}
+\end{figure}
+ 
+ \textcolor{red}{Talk to Job about this model tomorrow. Oxygen, prednisolone and ipratopium bromide may all have a route and form. Talk to Job also about evaluation.}
+\begin{figure}[h!]
+	\caption {Showing the implementation of History in the entity graph. What the patient or caregiver tell about the patient's condition}
+	\label{fig:EntityGraphMedication}
+	\includegraphics[scale=0.45]{EntityGraphMedication}
+\end{figure}
+
+
+
+
+
 \subsection{Workflow model}
 \begin{figure}[h!]
 	\caption {The workflow models is a model of the clinical encounter}
