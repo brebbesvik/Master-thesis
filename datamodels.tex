@@ -43,6 +43,24 @@ The implementation of Investigation would be just as we did with History and Exa
 	\label{fig:EntityGraphExamination}
 	\includegraphics[scale=0.45]{EntityGraphExamination}
 \end{figure}
+
+In the paediatric possible asthma guideline \cite{RepublicofKeny2016}, there are used six medications to treat the patient. I will talk about each medicine in the model, as they are being administered differentially. Medication is modelled in figure \ref{fig:EntityGraphMedication}.
+
+
+\begin{itemize}
+	\item \textbf{Oxygen} is a medication. The CPG doesn't think it is necessary to elaborate on how giving it to the patient.
+	
+	\item For \textbf{antibiotics}, the CPG refers to a separate guideline just for administering antibiotics and is therefore out of this scope. For this reason, we just say administer antibiotics here, and don't go into the details.
+	
+	\item \textbf{Prednisolone} is a steroid. The clinician will administer a low dosage and increase the dosage over time until getting the desired effect. The clinician will then decrease the dosage over time to stop the treatment. For this reason we have a dosage vertex in the model, which represents the current dosage of prednisolone administered to the patient. The dosage will change as the clinician adjust it. Prednisolone has a duration vertex, as the medication should be administered for 3-5 days.
+	
+	\item \textbf{Corticosteroid} is another steroid, which is given to in scenarios of recurrence asthma symptoms. The CPG specifies that corticosteroid should be inhaled. This is represented in the model by the Route vertex, where other medication can be inhaled, injected, taken orally (as with pills) as some examples. The method the which will be used to inhale corticosteroid is represented by the Form-vertex. The Form is MDI with spacer, preferably with spacer with face mask. Form and Route are represented by strings as free text. However, we could make predefined vertices which inherits Corticosteroid-Route to give the content author to choose from. The Route of a medication is quite limited compared to Form for all medications.
+	
+	\item \textbf{Salbutamol} is inhaled to open the airways of an asthma patient. It is modelled much like corticosteroid, except it has a Rate vertex. The Rate vertex tells at which rate the patient should be taking salbutamol. Asthma patient is given salbutamol at a rate of 2.5mg per hour. The Duration is up to one hour or three doses if needed.
+	
+	\item \textbf{Ipratropium bromide} is modelled much like salbutamol with a Rate and a Duration. The CPG doesn't specify a route or a method.
+\end{itemize}
+
  
  \textcolor{red}{Talk to Job about this model tomorrow. Oxygen, prednisolone and ipratopium bromide may all have a route and form. Talk to Job also about evaluation.}
 \begin{figure}[h!]

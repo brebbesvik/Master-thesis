@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.28)  1 MAY 2019 22:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.28)  3 MAY 2019 20:27
 entering extended mode
 **./main.tex
 (main.tex
@@ -696,27 +696,34 @@ Overfull \hbox (39.09917pt too wide) in paragraph at lines 44--45
 [][] 
  []
 
-<images/EntityGraphMedication.pdf, id=140, 1013.7875pt x 511.9125pt>
+
+Overfull \hbox (39.30276pt too wide) has occurred while \output is active
+\OT1/cmr/m/n/12 18 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
+HEALTH WORKERS
+ []
+
+[18 <./images/EntityGraphExamination.pdf>]
+<images/EntityGraphMedication.pdf, id=147, 1013.7875pt x 511.9125pt>
 File: images/EntityGraphMedication.pdf Graphic file (type pdf)
 <use images/EntityGraphMedication.pdf>
-Package pdftex.def Info: images/EntityGraphMedication.pdf  used on input line 5
-0.
+Package pdftex.def Info: images/EntityGraphMedication.pdf  used on input line 6
+4.
 (pdftex.def)             Requested size: 456.20016pt x 230.35849pt.
 
-Overfull \hbox (66.20016pt too wide) in paragraph at lines 50--51
+Overfull \hbox (66.20016pt too wide) in paragraph at lines 64--65
 [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/WorkflowGraph.pdf, id=141, 712.6625pt x 210.7875pt>
+<images/WorkflowGraph.pdf, id=148, 712.6625pt x 210.7875pt>
 File: images/WorkflowGraph.pdf Graphic file (type pdf)
 <use images/WorkflowGraph.pdf>
-Package pdftex.def Info: images/WorkflowGraph.pdf  used on input line 61.
+Package pdftex.def Info: images/WorkflowGraph.pdf  used on input line 75.
 (pdftex.def)             Requested size: 427.6008pt x 126.47346pt.
 
-Overfull \hbox (37.6008pt too wide) in paragraph at lines 61--62
+Overfull \hbox (37.6008pt too wide) in paragraph at lines 75--76
 [][] 
  []
 
@@ -724,23 +731,16 @@ Overfull \hbox (37.6008pt too wide) in paragraph at lines 61--62
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (gameengine.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 6125) has occurred while \output is active []
 
-
-Overfull \hbox (39.30276pt too wide) has occurred while \output is active
-\OT1/cmr/m/n/12 18 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
-HEALTH WORKERS
- []
-
-[18 <./images/EntityGraphExamination.pdf>] [19 <./images/EntityGraphMedication.
-pdf> <./images/WorkflowGraph.pdf>]
+ [19]
 Overfull \hbox (39.30276pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/12 20 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
 HEALTH WORKERS
  []
 
-[20]
-<images/KnowledgeMap3.pdf, id=165, 321.2pt x 220.825pt>
+[20 <./images/EntityGraphMedication.pdf> <./images/WorkflowGraph.pdf>] [21]
+<images/KnowledgeMap3.pdf, id=169, 321.2pt x 220.825pt>
 File: images/KnowledgeMap3.pdf Graphic file (type pdf)
 <use images/KnowledgeMap3.pdf>
 Package pdftex.def Info: images/KnowledgeMap3.pdf  used on input line 35.
@@ -753,8 +753,14 @@ Overfull \hbox (23.59607pt too wide) in paragraph at lines 43--54
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[21 <./images/KnowledgeMap3.pdf>]
-<images/LearningMap.pdf, id=174, 1003.75pt x 582.175pt>
+
+Overfull \hbox (39.30276pt too wide) has occurred while \output is active
+\OT1/cmr/m/n/12 22 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
+HEALTH WORKERS
+ []
+
+[22 <./images/KnowledgeMap3.pdf>]
+<images/LearningMap.pdf, id=177, 1003.75pt x 582.175pt>
 File: images/LearningMap.pdf Graphic file (type pdf)
 <use images/LearningMap.pdf>
 Package pdftex.def Info: images/LearningMap.pdf  used on input line 63.
@@ -775,13 +781,7 @@ Overfull \hbox (23.59607pt too wide) in paragraph at lines 71--82
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Overfull \hbox (39.30276pt too wide) has occurred while \output is active
-\OT1/cmr/m/n/12 22 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
-HEALTH WORKERS
- []
-
-[22]
+[23]
 Underfull \hbox (badness 2932) in paragraph at lines 94--94
 []|\OT1/cmr/m/n/12 Feedback af-
  []
@@ -819,20 +819,20 @@ Overfull \hbox (77.77075pt too wide) in paragraph at lines 92--102
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23 <./images/LearningMap.pdf>]
+
 Overfull \hbox (39.30276pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/12 24 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
 HEALTH WORKERS
  []
 
-[24] [25]
+[24 <./images/LearningMap.pdf>] [25]
 Overfull \hbox (39.30276pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/12 26 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
 HEALTH WORKERS
  []
 
-[26]
-<images/EntityInstanceGraph.pdf, id=194, 923.45pt x 250.9375pt>
+[26] [27]
+<images/EntityInstanceGraph.pdf, id=198, 923.45pt x 250.9375pt>
 File: images/EntityInstanceGraph.pdf Graphic file (type pdf)
 <use images/EntityInstanceGraph.pdf>
 Package pdftex.def Info: images/EntityInstanceGraph.pdf  used on input line 160
@@ -848,14 +848,14 @@ Overfull \hbox (110.17525pt too wide) in paragraph at lines 175--175
 emergency department.[] 
  []
 
-[27]
+
 Overfull \hbox (39.30276pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/12 28 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
 HEALTH WORKERS
  []
 
-[28 <./images/EntityInstanceGraph.pdf>]
-<images/GeneratingScenarios1.pdf, id=207, 1104.125pt x 301.125pt>
+[28] [29 <./images/EntityInstanceGraph.pdf>]
+<images/GeneratingScenarios1.pdf, id=210, 1104.125pt x 301.125pt>
 File: images/GeneratingScenarios1.pdf Graphic file (type pdf)
 <use images/GeneratingScenarios1.pdf>
 Package pdftex.def Info: images/GeneratingScenarios1.pdf  used on input line 20
@@ -866,7 +866,7 @@ Overfull \hbox (51.64218pt too wide) in paragraph at lines 209--210
 [][] 
  []
 
-<images/GeneratingScenarios2.pdf, id=208, 813.0375pt x 170.6375pt>
+<images/GeneratingScenarios2.pdf, id=211, 813.0375pt x 170.6375pt>
 File: images/GeneratingScenarios2.pdf Graphic file (type pdf)
 <use images/GeneratingScenarios2.pdf>
 Package pdftex.def Info: images/GeneratingScenarios2.pdf  used on input line 21
@@ -878,14 +878,15 @@ Overfull \hbox (60.77522pt too wide) in paragraph at lines 224--224
 y department.[] 
  []
 
-[29 <./images/GeneratingScenarios1.pdf> <./images/GeneratingScenarios2.pdf>]
+
 Overfull \hbox (39.30276pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/12 30 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
 HEALTH WORKERS
  []
 
-[30]
-<images/ConceptualModelGameElements.pdf, id=223, 1053.9375pt x 381.425pt>
+[30 <./images/GeneratingScenarios1.pdf> <./images/GeneratingScenarios2.pdf>]
+[31]
+<images/ConceptualModelGameElements.pdf, id=226, 1053.9375pt x 381.425pt>
 File: images/ConceptualModelGameElements.pdf Graphic file (type pdf)
 <use images/ConceptualModelGameElements.pdf>
 Package pdftex.def Info: images/ConceptualModelGameElements.pdf  used on input 
@@ -896,14 +897,20 @@ Overfull \hbox (31.56754pt too wide) in paragraph at lines 257--258
 [][] 
  []
 
-<images/GameEngineFacadePattern.pdf, id=224, 632.3625pt x 311.1625pt>
+<images/GameEngineFacadePattern.pdf, id=227, 632.3625pt x 311.1625pt>
 File: images/GameEngineFacadePattern.pdf Graphic file (type pdf)
 <use images/GameEngineFacadePattern.pdf>
 Package pdftex.def Info: images/GameEngineFacadePattern.pdf  used on input line
  267.
 (pdftex.def)             Requested size: 252.94052pt x 124.46278pt.
-[31 <./images/ConceptualModelGameElements.pdf>]
-<images/KnowledgeMap2.pdf, id=233, 1063.975pt x 140.525pt>
+
+Overfull \hbox (39.30276pt too wide) has occurred while \output is active
+\OT1/cmr/m/n/12 32 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
+HEALTH WORKERS
+ []
+
+[32 <./images/ConceptualModelGameElements.pdf>]
+<images/KnowledgeMap2.pdf, id=236, 1063.975pt x 140.525pt>
 File: images/KnowledgeMap2.pdf Graphic file (type pdf)
 <use images/KnowledgeMap2.pdf>
 Package pdftex.def Info: images/KnowledgeMap2.pdf  used on input line 291.
@@ -913,19 +920,13 @@ Overfull \hbox (35.58246pt too wide) in paragraph at lines 291--292
 [][] 
  []
 
-
-Overfull \hbox (39.30276pt too wide) has occurred while \output is active
-\OT1/cmr/m/n/12 32 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
-HEALTH WORKERS
- []
-
-[32 <./images/GameEngineFacadePattern.pdf>]
+[33 <./images/GameEngineFacadePattern.pdf>]
 
 Package caption Warning: \label without proper reference on input line 296.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `table:ProgressionGranularity' on page 33 undefined on
+LaTeX Warning: Reference `table:ProgressionGranularity' on page 34 undefined on
  input line 294.
 
 
@@ -953,26 +954,26 @@ Underfull \hbox (badness 1354) in paragraph at lines 303--304
 []|\OT1/cmr/m/n/12 Detailed sce-
  []
 
-[33 <./images/KnowledgeMap2.pdf>]
+
 Overfull \hbox (39.30276pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/12 34 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
 HEALTH WORKERS
  []
 
-[34]) [35]
+[34 <./images/KnowledgeMap2.pdf>] [35])
 Overfull \hbox (39.30276pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/12 36 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
 HEALTH WORKERS
  []
 
-[36
-
-]
+[36]
 Chapter 5.
 
 Underfull \vbox (badness 5274) has occurred while \output is active []
 
- [37]
+ [37
+
+]
 [38]
 Chapter 6.
 [39
@@ -1003,10 +1004,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 11796 strings out of 492945
- 205148 string characters out of 3135519
- 476045 words of memory out of 3000000
- 15532 multiletter control sequences out of 15000+200000
+ 11797 strings out of 492945
+ 205159 string characters out of 3135519
+ 476069 words of memory out of 3000000
+ 15533 multiletter control sequences out of 15000+200000
  20786 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,11n,55p,1462b,1611s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1021,7 +1022,7 @@ b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/Mi
 KTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (47 pages, 2446500 bytes).
+Output written on main.pdf (47 pages, 2448664 bytes).
 PDF statistics:
  320 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
