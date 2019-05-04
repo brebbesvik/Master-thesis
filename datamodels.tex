@@ -39,7 +39,7 @@ For Examination we follow the same principles as History. We implement it by let
 The implementation of Investigation would be just as we did with History and Examination. For asthma they use a lab test called spirometry, but it is not included in the paediatric possible asthma guideline \cite{RepublicofKeny2016}, so we don't include it in our model
 
 \begin{figure}[h!]
-	\caption {Showing the implementation of History in the entity graph. What the patient or caregiver tell about the patient's condition}
+	\caption {Showing the implementation of Examination in the entity graph. What symptoms the clinician can observe the patient has}
 	\label{fig:EntityGraphExamination}
 	\includegraphics[scale=0.45]{EntityGraphExamination}
 \end{figure}
@@ -52,7 +52,7 @@ In the paediatric possible asthma guideline \cite{RepublicofKeny2016}, there are
 	
 	\item For \textbf{antibiotics}, the CPG refers to a separate guideline just for administering antibiotics and is therefore out of this scope. For this reason, we just say administer antibiotics here, and don't go into the details.
 	
-	\item \textbf{Prednisolone} is a steroid. The clinician will administer a low dosage and increase the dosage over time until getting the desired effect. The clinician will then decrease the dosage over time to stop the treatment. For this reason we have a dosage vertex in the model, which represents the current dosage of prednisolone administered to the patient. The dosage will change as the clinician adjust it. Prednisolone has a duration vertex, as the medication should be administered for 3-5 days.
+	\item \textbf{Prednisolone} is a steroid. The clinician will administer a low dosage and increase the dosage over time until getting the desired effect. The clinician will then decrease the dosage over time to stop the treatment. For this reason we have a dosage vertex in the model, which represents the current dosage of prednisolone administered to the patient. The dosage will change as the clinician adjust it. Prednisolone has a duration vertex, as the medication should be administered for 3-5 days. The dosage of prednisolone is calculated in regards of the patient's weight, with a maximum dose per day depending on the age of the patient.
 	
 	\item \textbf{Corticosteroid} is another steroid, which is given to in scenarios of recurrence asthma symptoms. The CPG specifies that corticosteroid should be inhaled. This is represented in the model by the Route vertex, where other medication can be inhaled, injected, taken orally (as with pills) as some examples. The method the which will be used to inhale corticosteroid is represented by the Form-vertex. The Form is MDI with spacer, preferably with spacer with face mask. Form and Route are represented by strings as free text. However, we could make predefined vertices which inherits Corticosteroid-Route to give the content author to choose from. The Route of a medication is quite limited compared to Form for all medications.
 	
@@ -64,7 +64,7 @@ In the paediatric possible asthma guideline \cite{RepublicofKeny2016}, there are
  
  \textcolor{red}{Talk to Job about this model tomorrow. Oxygen, prednisolone and ipratopium bromide may all have a route and form. Talk to Job also about evaluation.}
 \begin{figure}[h!]
-	\caption {Showing the implementation of History in the entity graph. What the patient or caregiver tell about the patient's condition}
+	\caption {Showing the implementation of Medication in the entity graph. How to administer a medication to patient}
 	\label{fig:EntityGraphMedication}
 	\includegraphics[scale=0.45]{EntityGraphMedication}
 \end{figure}
@@ -74,11 +74,25 @@ In the paediatric possible asthma guideline \cite{RepublicofKeny2016}, there are
 
 
 \subsection{Workflow model}
+We model the clinical encounter with a workflow model. The clinician starts with the assessment, where he examine the patient and listen to what the patient and the caregiver has to say about the the patient's condition. The clinician starts to get an idea of what condition the patient may suffer from. The clinician continues with the diagnostic part, where he asks more targeted questions to the patient and caregivers about the condition, do more of the examination and perhaps order lab tests as part of the investigation. This process can strengthen the clinician's assumptions about the condition, and he may be able to set a specific diagnosis.
+
+The next step is the management and treatment. This can be changing the patient's status from outpatient to inpatient, do surgery, medication, physiotherapy, cognitive behavioural therapy or other forms of treatment. The treatment may be done in iterations or repeated.
+
+
+The final step is to evaluate. The treatment may have to be adjusted to get the right effect. The diagnosis has changed, for example severe asthma is mild asthma after treatment. Or we have initial set the wrong diagnosis, for example we have treated a patient for possible asthma, but in fact an object was stuck in the airways of the patient.
+
+
 \begin{figure}[h!]
 	\caption {The workflow models is a model of the clinical encounter}
 	\label{fig:WorkflowGraph}
 	\includegraphics[scale=0.6]{WorkflowGraph}
 \end{figure}
+
+The idea of the workflow model is to describe the process of a clinical encounter. When making scenarios for the game, we now in which order the scenarios should come. The entity model is also connected to the workflow model. When doing a an assessment and diagnosis, you are looking at the examination, history and vertices of the entity model, where the diagnosis vertex answer to what the specific diagnosis is. For doing management and treatment, you look at the vertices under management in the entity model. An evaluation will be done by looking at the examination and investigation vertices to see if the patient has become better. The treatment needs to be adjusted accordingly to the evaluation. If the evaluation says we can't do more for the patient and there's no need for a follow-up, we exit the workflow model.
+
+\textcolor{red}{Should perhaps reference to Rabbis articles here? 
+	Coordination	of multiple metamodels, with application	to healthcare systems.
+A flexible metamodelling approach for healthcare systems. }
 
 
 \subsection{Game model}
