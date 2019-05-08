@@ -406,6 +406,67 @@
     \field{year}{2008}
   \endentry
 
+  \entry{Disease2011}{book}{}
+    \name{author}{6}{}{%
+      {{hash=DDoLT}{%
+         family={Disease},
+         familyi={D\bibinitperiod},
+         given={Division of Leprosy\bibnamedelima Tuberculosis},
+         giveni={D\bibinitperiod\bibinitdelim o\bibinitperiod\bibinitdelim
+  L\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=L}{%
+         family={Lung},
+         familyi={L\bibinitperiod},
+      }}%
+      {{hash=KMoPH}{%
+         family={(KAPTLD)},
+         familyi={K\bibinitperiod},
+         given={Ministry of Public\bibnamedelima Health},
+         giveni={M\bibinitperiod\bibinitdelim o\bibinitperiod\bibinitdelim
+  P\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=DS}{%
+         family={(DLTLD)},
+         familyi={D\bibinitperiod},
+         given={Sanitation},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=ftPoTKA}{%
+         prefix={for the Prevention\bibnamedelima of},
+         prefixi={f\bibinitperiod\bibinitdelim t\bibinitperiod\bibinitdelim
+  P\bibinitperiod\bibinitdelim o\bibinitperiod},
+         family={Tuberculosis},
+         familyi={T\bibinitperiod},
+         given={Kenya\bibnamedelima Association},
+         giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=DL}{%
+         family={Diseases},
+         familyi={D\bibinitperiod},
+         given={Lung},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Division of Leprosy, Tuberculosis}%
+      {Lung Disease}%
+    }
+    \strng{namehash}{DDoLT+1}
+    \strng{fullhash}{DDoLTLKMoPHDSTKAftPoDL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2011}
+    \field{labeldatesource}{year}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{title}{{Guidelines for Asthma Management in Kenya}}
+    \verb{url}
+    \verb http://apps.who.int/medicinedocs/documents/s21973en/s21973en.pdf
+    \endverb
+    \field{year}{2011}
+  \endentry
+
   \entry{Eide2008}{inproceedings}{}
     \name{author}{3}{}{%
       {{hash=ES}{%
@@ -710,6 +771,54 @@
     \field{journaltitle}{BMJ (Clinical research ed.)}
     \field{year}{2008}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Johansen2018}{misc}{}
+    \name{author}{4}{}{%
+      {{hash=JIH}{%
+         family={Johansen},
+         familyi={J\bibinitperiod},
+         given={Ingrid\bibnamedelima H},
+         giveni={I\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Blinkenberg},
+         familyi={B\bibinitperiod},
+         given={Jesper},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=AHC}{%
+         family={Arentz-Hansen},
+         familyi={A\bibinithyphendelim H\bibinitperiod},
+         given={Cecilie},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=MK}{%
+         family={Moen},
+         familyi={M\bibinitperiod},
+         given={K{\aa}re},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JIH+1}
+    \strng{fullhash}{JIHBJAHCMK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{year}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{booktitle}{Gyldendal Akademisk}
+    \field{title}{{Astma - Obstruktiv lungesykdom - Nedre luftveier og lunger -
+  Legevakth{\aa}ndboken}}
+    \verb{url}
+    \verb https://www.lvh.no/symptomer{\_}og{\_}sykdommer/nedre{\_}luftveier{\_
+    \verb }og{\_}lunger/obstruktiv{\_}lungesykdom/astma
+    \endverb
+    \field{year}{2018}
+    \field{urlday}{08}
+    \field{urlmonth}{05}
+    \field{urlyear}{2019}
   \endentry
 
   \entry{Kristensen2011}{inproceedings}{}

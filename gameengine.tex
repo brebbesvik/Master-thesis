@@ -331,3 +331,23 @@ To visualizing where the student is in the learning map, has been solved by show
 
  
 \subsection{Automatically generating new questions}
+One of the main problems with the application is generating entity model instances used for generating questions. To make one scenario with assessment, diagnosis, management and follow-up, we need at least to instances of the entity graph. One to show the status of the patient before the treatment, and one after the treatment. As the treatment needs to be evaluated and the clinician needs to act accordingly. One single entity model can be several hundreds of lines written in JSON, as there are quite many vertices and edges to describe as well as the complexity of the model. This is tedious work, both because of the complexity, the amount of code lines, but the author also needs to put a great emphasize on writing the code correctly. The latter can be solved with an authoring tool.
+
+As so much effort has to put in typing these instances of entity graphs, a better way would be to make functionality to automatically generate new instances. We already have made template with tags to vertices in the entity graph. By generating a lot of new entity instances, one template can be reused to make just as many questions. By looking at the paediatric possible asthma guideline \cite{RepublicofKeny2016}, we see that there are described twelve symptoms we can combine in every way we like. Some of the symptoms also have more possibilities than just true/false. They have numerical ranges like pulse rate, breaths per minute and oxygen saturation. So in fact, we can generate a quite large amount of graph instances and equally as many questions per template.
+
+The method we suggest for automatically generating such graph instances, is by building up a repository of graph instances. These graph instances are written in the tedious way by a content author. An algorithm picks a set of graph instances from the repository, and randomly chooses vertices from each instance graph. These vertices will be combined to form a new instance graph. This is illustrated in figure \ref{fig:GeneratedEntityInstances}, where the bottom instance is generated from two upper ones. The colour of the vertices indicate which graph instance they come from.
+
+\begin{figure}[h!]
+	\caption {The red and green graph instances at the bottom are picked from a repository. We randomly pick vertices from each entity instance to make the new entity instance at the bottom. Red vertices indicate that they come from the red entity graph instance. The green vertices that they come from the green entity graph instance.}
+	\label{fig:GeneratedEntityInstances}
+	\includegraphics[scale=0.35]{GeneratedEntityInstances}
+\end{figure}
+
+For those who are familiar with the paediatric possible asthma guideline \cite{RepublicofKeny2016}, will know that wheeze has to be present in an asthma patient. Wheeze is not present in the generated graph, but still claims that the patient has mild asthma. This indicate the problem with automatically generated graphs without adding any domain knowledge about which vertices to pick and combine. For this reason we need a domain expert to validate which of the generated graphs we can use, and those who are invalid patient representations. Even though this method relies on a domain expert, it will save us from a ton of work. Instead of carefully write hundreds of JSON formatted lines for each graph instance, we can simply approve or disapprove the graph instances which are valid or invalid.
+
+The same method can be used for generating distractions for quiz elements. Randomly choose distractions from other entity graph instances, which corresponds to the answer key tag given by the template. A small penalty can be set on distractions from the asthma guideline. Medium penalties for distractions from respiratory diseases. A bit larger penalties for distractions from completly unrelated guidelines. Then we have automated the quiz scores as well!
+
+
+
+
+  
