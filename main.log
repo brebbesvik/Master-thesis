@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.28)  9 MAY 2019 22:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.28)  10 MAY 2019 22:31
 entering extended mode
 **./main.tex
 (main.tex
@@ -667,24 +667,10 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <images/GLIFPossibleAsthma.pdf, id=94, 3576.85455pt x 3466.46753pt>
 File: images/GLIFPossibleAsthma.pdf Graphic file (type pdf)
 <use images/GLIFPossibleAsthma.pdf>
-Package pdftex.def Info: images/GLIFPossibleAsthma.pdf  used on input line 61.
+Package pdftex.def Info: images/GLIFPossibleAsthma.pdf  used on input line 63.
 (pdftex.def)             Requested size: 472.15718pt x 457.58571pt.
 
-Overfull \hbox (82.15718pt too wide) in paragraph at lines 61--62
-[][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/AsbruPossibleAsthma.png, id=95, 764.8575pt x 289.08pt>
-File: images/AsbruPossibleAsthma.png Graphic file (type png)
-<use images/AsbruPossibleAsthma.png>
-Package pdftex.def Info: images/AsbruPossibleAsthma.png  used on input line 68.
-
-(pdftex.def)             Requested size: 420.67291pt x 158.99448pt.
-
-Overfull \hbox (30.67291pt too wide) in paragraph at lines 68--69
+Overfull \hbox (82.15718pt too wide) in paragraph at lines 63--64
 [][] 
  []
 
@@ -692,31 +678,47 @@ Overfull \hbox (30.67291pt too wide) in paragraph at lines 68--69
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [10] [11 <./images/GLIFPossibleAsthma.pdf>]
-<images/SimulationTool.pdf, id=111, 706.09978pt x 659.26544pt>
+<images/AsbruPossibleAsthma.png, id=109, 764.8575pt x 289.08pt>
+File: images/AsbruPossibleAsthma.png Graphic file (type png)
+<use images/AsbruPossibleAsthma.png>
+Package pdftex.def Info: images/AsbruPossibleAsthma.png  used on input line 76.
+
+(pdftex.def)             Requested size: 420.67291pt x 158.99448pt.
+
+Overfull \hbox (30.67291pt too wide) in paragraph at lines 76--77
+[][] 
+ []
+
+[12 <./images/AsbruPossibleAsthma.png>]
+<images/SimulationTool.pdf, id=115, 706.09978pt x 659.26544pt>
 File: images/SimulationTool.pdf Graphic file (type pdf)
 <use images/SimulationTool.pdf>
-Package pdftex.def Info: images/SimulationTool.pdf  used on input line 87.
+Package pdftex.def Info: images/SimulationTool.pdf  used on input line 99.
 (pdftex.def)             Requested size: 282.4349pt x 263.70149pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/BlackboardingDPF.png, id=112, 2915.3867pt x 817.32155pt>
+[13]
+<images/BlackboardingDPF.png, id=119, 2915.3867pt x 817.32155pt>
 File: images/BlackboardingDPF.png Graphic file (type png)
 <use images/BlackboardingDPF.png>
-Package pdftex.def Info: images/BlackboardingDPF.png  used on input line 96.
+Package pdftex.def Info: images/BlackboardingDPF.png  used on input line 108.
 (pdftex.def)             Requested size: 466.4714pt x 130.77411pt.
 
-Overfull \hbox (76.4714pt too wide) in paragraph at lines 96--97
+Overfull \hbox (76.4714pt too wide) in paragraph at lines 108--109
 [][] 
  []
 
 
-Underfull \vbox (badness 4279) has occurred while \output is active []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
- [12 <./images/AsbruPossibleAsthma.png>] [13 <./images/SimulationTool.pdf> <./i
-mages/BlackboardingDPF.png>]) (workshops.tex [14] [15] [16]
-<images/workshop220219.jpg, id=152, 1939.245pt x 1090.0725pt>
+) (workshops.tex
+Underfull \vbox (badness 1005) has occurred while \output is active []
+
+ [14 <./images/SimulationTool.pdf>] [15 <./images/BlackboardingDPF.png>] [16] [
+17]
+<images/workshop220219.jpg, id=155, 1939.245pt x 1090.0725pt>
 File: images/workshop220219.jpg Graphic file (type jpg)
 <use images/workshop220219.jpg>
 Package pdftex.def Info: images/workshop220219.jpg  used on input line 53.
@@ -726,8 +728,8 @@ Overfull \hbox (94.81006pt too wide) in paragraph at lines 53--54
 [][] 
  []
 
-[17 <./images/workshop220219.jpg>]
-<images/workshop220219-2.jpg, id=156, 5171.32pt x 2906.86pt>
+[18 <./images/workshop220219.jpg>]
+<images/workshop220219-2.jpg, id=159, 5171.32pt x 2906.86pt>
 File: images/workshop220219-2.jpg Graphic file (type jpg)
 <use images/workshop220219-2.jpg>
 Package pdftex.def Info: images/workshop220219-2.jpg  used on input line 73.
@@ -736,7 +738,7 @@ Package pdftex.def Info: images/workshop220219-2.jpg  used on input line 73.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/workshop220219-3.jpg, id=157, 5171.32pt x 2906.86pt>
+<images/workshop220219-3.jpg, id=160, 5171.32pt x 2906.86pt>
 File: images/workshop220219-3.jpg Graphic file (type jpg)
 <use images/workshop220219-3.jpg>
 Package pdftex.def Info: images/workshop220219-3.jpg  used on input line 78.
@@ -744,7 +746,7 @@ Package pdftex.def Info: images/workshop220219-3.jpg  used on input line 78.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/workshop220219-4.jpg, id=158, 5171.32pt x 2906.86pt>
+<images/workshop220219-4.jpg, id=161, 5171.32pt x 2906.86pt>
 File: images/workshop220219-4.jpg Graphic file (type jpg)
 <use images/workshop220219-4.jpg>
 Package pdftex.def Info: images/workshop220219-4.jpg  used on input line 83.
@@ -752,20 +754,18 @@ Package pdftex.def Info: images/workshop220219-4.jpg  used on input line 83.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[18]
+[19]
 
-LaTeX Warning: Text page 19 contains only floats.
+LaTeX Warning: Text page 20 contains only floats.
 
-[19 <./images/workshop220219-2.jpg> <./images/workshop220219-3.jpg>] [20 <./ima
+[20 <./images/workshop220219-2.jpg> <./images/workshop220219-3.jpg>] [21 <./ima
 ges/workshop220219-4.jpg>]
-<images/workshop220219-5.jpg, id=168, 5171.32pt x 2906.86pt>
+<images/workshop220219-5.jpg, id=172, 5171.32pt x 2906.86pt>
 File: images/workshop220219-5.jpg Graphic file (type jpg)
 <use images/workshop220219-5.jpg>
 Package pdftex.def Info: images/workshop220219-5.jpg  used on input line 103.
 (pdftex.def)             Requested size: 387.83228pt x 218.0051pt.
-) [21 <./images/workshop220219-5.jpg>] [22
-
-]
+) [22 <./images/workshop220219-5.jpg>]
 Chapter 4.
 (datamodels.tex
 <images/EntityGraphExcerpt.pdf, id=176, 562.1pt x 481.8pt>
@@ -773,7 +773,9 @@ File: images/EntityGraphExcerpt.pdf Graphic file (type pdf)
 <use images/EntityGraphExcerpt.pdf>
 Package pdftex.def Info: images/EntityGraphExcerpt.pdf  used on input line 15.
 (pdftex.def)             Requested size: 337.2626pt x 289.08221pt.
- [23]
+ [23
+
+]
 <images/EntityGraphPatientDiagnosis.pdf, id=180, 592.2125pt x 321.2pt>
 File: images/EntityGraphPatientDiagnosis.pdf Graphic file (type pdf)
 <use images/EntityGraphPatientDiagnosis.pdf>
@@ -1372,22 +1374,18 @@ ne 80.
 
 LaTeX Warning: There were undefined references.
 
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 12792 strings out of 492945
- 223129 string characters out of 3135519
- 500421 words of memory out of 3000000
- 16484 multiletter control sequences out of 15000+200000
+ 12797 strings out of 492945
+ 223184 string characters out of 3135519
+ 500527 words of memory out of 3000000
+ 16489 multiletter control sequences out of 15000+200000
  20786 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,18n,68p,1462b,1746s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,18n,68p,1462b,1742s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
@@ -1399,7 +1397,7 @@ b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/Mi
 KTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (70 pages, 5354594 bytes).
+Output written on main.pdf (70 pages, 5357590 bytes).
 PDF statistics:
  485 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
