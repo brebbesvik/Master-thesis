@@ -15,7 +15,7 @@ The prototype itself and the development process showed that the technology coul
 \begin{figure}[h!]
 	\caption {A very simple conceptual model to test one of the proposed technologies, as well as acting as a starting point for discussions}
 	\label{fig:ConseptualModel}
-	\includegraphics[scale=0.1]{ConceptualPrototype}
+	\includegraphics[scale=0.2]{ConceptualPrototype}
 \end{figure}
 
 The interface was evaluated with the supervisors, using cognitive walkthroughs. It also worked as a conceptual model, using the prototype as a base for discussing ideas. Both for discussing the purpose of the project, what the user should be able to do, how to organize content and what functionality to add.
@@ -29,10 +29,49 @@ The results from this iteration is presented in appendix \ref{appendix:Compariso
 \subsection{Technology used to represent CPGs}
 In this iteration we evaluated technologies which could be used to model CPGs.
 
+
 \begin{itemize}
-	\item \textbf{GLIF}
+	\item \textbf{GLIF} or the Guideline Interchange Format, was developed by the InterMed Collaboratory. The intention was to make a guideline representation language, which can be viewed with a various of software application as well as adapting them and making them valid for different local uses. The representation should be precise, ambiguous, readable by humans and interpretable by computers, adaptable to different clinical information standards and facilitating guideline sharing \parencite{Peleg2000}. 
+
+	To make the guidelines readable for humans, interpretable by computers and adaptable by different institutions, GLIF defines the guidelines at three different abstraction levels: conceptual, computable and implementable levels \parencite{DeClercq2008} 
+	
+	The conceptual level is the highest abstraction level. It consists offlow-charts which can be viewed by humans, using guideline viewing programs. At this level the guidelines can not
+	be used for computations in decision support \parencite{Peleg2000}. 
+	
+	At the computable level expressions, patient data elements, clinical actions and guideline flow
+	are specified at this level. The guidelines can also be verified for logical consistency and completeness \parencite{Peleg2000}.
+	
+	The implementable level contains the information to incorporate the guidelines into
+	the particular institutions knowledge or information system such as EPR \parencite{Peleg2000}.
+	
+	In figure \ref{fig:GLIFPossibleAsthma} we present a model of the paediatric possible asthma guideline \cite{RepublicofKeny2016} at the conceptual level. We will now explain the guideline steps the UML-model in figure \ref{fig:GLIFPossibleAsthma} consists of.
+	\begin{itemize}
+		\item \textbf{Action step} a representation of a recommended tasks or action. There are three types of actions steps: Medically oriented (such as a recommendation for a treatment), programming oriented (such as retrieving information from EHR), control-oriented that invokes nested control structures (subguidelines or macros to support recursive specification) \parencite{DeClercq2008}. Action steps are green squares in figure \ref{fig:GLIFPossibleAsthma}.
+		\item \textbf{Decision step} represents a decision point in the model. There are two types of decision steps: Case and Choice. In a Case step the decision will be made up of a number of logical expressions, a deterministic decision. On the other hand, the Choice step displays a various suggestions and the agent (clinician e.g.) needs to choose between them \parencite{DeClercq2008}. Decision steps are turquoise hexagons in figure \ref{fig:GLIFPossibleAsthma}.
+		\item \textbf{Patient state step} which characterizes the specific state or condition a patient is in. It can	be used as an entry point into the flow-chart, or as an summation to describe the clinical state a patient is in \parencite{Boxwala2004}. Each patient state step includes attributes which describes the condition a patient is in (e.g. iron level in the blood has been reduced since last blood sample). When this condition occurs in practice, the guideline corresponding	to the Patient state step is executed \parencite{DeClercq2008}. Decision steps are yellow diamonds in figure \ref{fig:GLIFPossibleAsthma}.
+		\item \textbf{Synchronization step} working together with the \textbf{branch step} to provide multiple concurrency paths \parencite{Boxwala2004}. Multiple guidelines that follows a branch step, eventually comes together in a synchronization step. A continuation attribute specifies	whether all or some conditions need to be fulfilled before we can continue to the next step \parencite{DeClercq2008}. Synchronization and branch steps are not used in figure \ref{fig:GLIFPossibleAsthma}.
+	\end{itemize}
+	 
+	
+	\begin{figure}[h!]
+		\caption {The paediatric possible asthma guideline \cite{RepublicofKeny2016} modelled using elements from GLIF}
+		\label{fig:GLIFPossibleAsthma}
+		\includegraphics[scale=0.132]{GLIFPossibleAsthma}
+	\end{figure}
 	\item \textbf{Proforma}
-	\item \textbf{Asbru}
+	\item \textbf{Asbru} is another approach for computer interpretable guidelines, and sort of a competitor to GLIF. The project was developed at the Stanford University, Vienna University og Technology and Ben-Gurion University. It uses time-oriented skeletal plans. These skeletal plans are schemata at different detail levels. To manage skeletal plans, Asbru introduces some key functionality: the representation of high-level goals (intentions), temporal patterns, time annotations, as well as graphical user interfaces to view the skeletal plans \parencite{DeClercq2008}.
+	
+	In Asbru, skeletal plans are used to represent guidelines. Each plan's functionality is described by attributes such as: preferences, intentions, conditions, effects and plan body \parencite{DeClercq2008}.
+	
+	We'll only focus on the plan body attribute here. They consists of other subplans and/or actions, which are plans that do not contain subplans.  
+	
+	% TO BE CONTINUED!!!!
+	
+		\begin{figure}[h!]
+		\caption {An attempt at modelling the paediatric possible asthma guideline \cite{RepublicofKeny2016}, using Asbru editor tool AsbruView \parencite{TheAasgardProject2006}}
+		\label{fig:AsbruPossibleAsthma}
+		\includegraphics[scale=0.55]{AsbruPossibleAsthma}
+	\end{figure}
 	\item \textbf{DPF}
 \end{itemize}
 
@@ -45,17 +84,24 @@ The goal of the iteration was to model patients at different stages of the clini
 
 We based our models on the paediatric possible asthma guideline \cite{RepublicofKeny2016}. The first step was to understand every symptom, medication, equipment used in the treatment and keywords such as "admit". Resources like \textcite{Disease2011} and \textcite{Johansen2018} were some of the resources used, but most importantly was an expert of domain. 
 
-The developer made a prototype of his understanding of the CPG, which simulated a clinical encounter with a patient. See figure \ref{fig:SimulationTool} The simulation would start with listing symptoms of asthma and the clinician would choose among the symptoms, redirecting to the treatment for severe, mild, moderate and no asthma. The simulation would continue with cycles of evaluating the given treatment, and the clinician needs to act accordingly to the evaluation for each cycle until the treatment can be ended. An expert of domain got the task of going through the entire simulations of use cases such as "a patient with severe asthma responds poorly to salbutamol treatment". The stimulation gave a thorough understanding of the guideline, emphasized details which would have been missed or details of the treatment which is left out of the guideline itself, such as differential diagnoses.
+The developer made a prototype of his understanding of the CPG, which simulated a clinical encounter with a patient. See figure \ref{fig:SimulationTool}. The GLIF chart presented in figure \ref{fig:GLIFPossibleAsthma} was used as a base when making the simulation tool. The simulation would start with listing symptoms of asthma and the clinician would choose among the symptoms, redirecting to the treatment for severe, mild, moderate and no asthma. The simulation would continue with cycles of evaluating the given treatment, and the clinician needs to act accordingly to the evaluation for each cycle until the treatment can be ended. An expert of domain got the task of going through the entire simulations of use cases such as "a patient with severe asthma responds poorly to salbutamol treatment". The stimulation gave a thorough understanding of the guideline, emphasized details which would have been missed or details of the treatment which is left out of the guideline itself, such as differential diagnoses.
 
 \begin{figure}[h!]
 	\caption {Screenshots of the prototype used to simulate a clinical encounter with a domain expert}
 	\label{fig:SimulationTool}
-	\includegraphics[scale=0.6]{SimulationTool}
+	\includegraphics[scale=0.4]{SimulationTool}
 \end{figure}
 
 The guideline is also unclear at some points, where a discussion with a domain expert was needed. For example: wheeze + history of cough or difficulty breathing. When parentheses are not used, it is difficult to see if wheeze always needs to be  present, or if it is enough that cough alone is. It is also difficult to understand the effect and model the situation where the presence of a symptom at a certain age gives "increased likelihood" for asthma. In computer science the terms need to be very clear.
 
-For evaluating the entity model, a domain expert made quizzes with factual questions as well as scenario based. By replacing patient related variables in the questions and scenarios, with tags pointing to variables in the entity model, we could see whether the model fulfilled the requirements of displaying good and valid sentences. The sentences were equally good and valid when using different instances of the entity model.
+A domain expert in Model Driven Engineer and DPF was consulted for discussing problems such as inheritance, how to create good sentences from vertex values in the graph, as well as metamodelling and the use of constraints in DPF. In figure \ref{fig:BlackboardingDPF} there are two images from the whiteboard during the meeting. On the left we see a workflow and an instance below. The XOR is a constraint, which tells that we can choose one of the two  paths only. On te right we see the entity model, and a suggestion with vertices which make good textual presentation of graph values which can be used in texts. 
+\begin{figure}[h!]
+	\caption {Pictures of the whiteboard during a meeting with domain expert in MDE and DPF. To the left there are some discussion around workflow models. To the right is entity models with vertices which holds a textual representation of the parent vertex.   }
+	\label{fig:BlackboardingDPF}
+	\includegraphics[scale=0.16]{BlackboardingDPF}
+\end{figure}
+
+For evaluating the entity model, a domain expert in medicine made quizzes with factual questions as well as scenario based. By replacing patient related variables in the questions and scenarios, with tags pointing to variables in the entity model, we could see whether the model fulfilled the requirements of displaying good and valid sentences. The sentences were equally good and valid when using different instances of the entity model.
 
 The workflow model got evaluated by making quiz scenarios, and by confirming that these scenarios covered the entire guideline.
 

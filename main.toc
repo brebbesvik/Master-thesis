@@ -32,88 +32,88 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.2}Studying similar products}{8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}Technology used to represent CPGs}{8}% 
+\contentsline {subsection}{\numberline {3.2.3}Technology used to represent CPGs}{9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.4}Designing alternatives}{9}% 
+\contentsline {subsection}{\numberline {3.2.4}Designing alternatives}{10}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.5}Entity and workflow models}{9}% 
+\contentsline {subsection}{\numberline {3.2.5}Entity and workflow models}{10}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.6}User interface}{10}% 
+\contentsline {subsection}{\numberline {3.2.6}User interface}{14}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.7}Game Engine}{10}% 
+\contentsline {subsection}{\numberline {3.2.7}Game Engine}{14}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.8}Content flow and creating questions}{10}% 
+\contentsline {subsection}{\numberline {3.2.8}Content flow and creating questions}{14}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.9}Focus group}{10}% 
+\contentsline {subsection}{\numberline {3.2.9}Focus group}{14}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.10}Workshop}{10}% 
+\contentsline {subsection}{\numberline {3.2.10}Workshop}{14}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Focus group}{10}% 
+\contentsline {section}{\numberline {3.3}Focus group}{14}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Workshop}{12}% 
+\contentsline {section}{\numberline {3.4}Workshop}{16}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Developing a learning tool for health workers}{19}% 
+\contentsline {chapter}{\numberline {4}Developing a learning tool for health workers}{23}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Extracting knowledge from the clinical practice guidelines}{19}% 
+\contentsline {section}{\numberline {4.1}Extracting knowledge from the clinical practice guidelines}{23}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Data models}{19}% 
+\contentsline {section}{\numberline {4.2}Data models}{23}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}DPF}{19}% 
+\contentsline {subsection}{\numberline {4.2.1}DPF}{23}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Entity model}{19}% 
+\contentsline {subsection}{\numberline {4.2.2}Entity model}{23}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.3}Workflow model}{23}% 
+\contentsline {subsection}{\numberline {4.2.3}Workflow model}{27}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.4}Metamodeling}{25}% 
+\contentsline {subsection}{\numberline {4.2.4}Metamodeling}{29}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.5}Game model}{26}% 
+\contentsline {subsection}{\numberline {4.2.5}Game model}{30}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Game engine}{26}% 
+\contentsline {section}{\numberline {4.3}Game engine}{30}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Dynamic Content Management}{28}% 
+\contentsline {subsection}{\numberline {4.3.1}Dynamic Content Management}{32}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}Multiple-try feedback}{30}% 
+\contentsline {subsection}{\numberline {4.3.2}Multiple-try feedback}{34}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.3}Reward system}{33}% 
+\contentsline {subsection}{\numberline {4.3.3}Reward system}{37}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.4}Constructing scenarios and answer keys}{34}% 
+\contentsline {subsection}{\numberline {4.3.4}Constructing scenarios and answer keys}{38}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.5}UML model of how all the classes are connected in Game Engine}{38}% 
+\contentsline {subsection}{\numberline {4.3.5}UML model of how all the classes are connected in Game Engine}{42}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.6}Types of questions}{39}% 
+\contentsline {subsection}{\numberline {4.3.6}Types of questions}{43}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.7}Unlocking harder levels at a certain category}{41}% 
+\contentsline {subsection}{\numberline {4.3.7}Unlocking harder levels at a certain category}{45}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.8}Visualization of game statistics}{42}% 
+\contentsline {subsection}{\numberline {4.3.8}Visualization of game statistics}{46}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.9}Automatically generating new questions}{42}% 
+\contentsline {subsection}{\numberline {4.3.9}Automatically generating new questions}{46}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}The mobile application}{44}% 
+\contentsline {section}{\numberline {4.4}The mobile application}{48}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}React-Native and Redux}{45}% 
+\contentsline {subsection}{\numberline {4.4.1}React-Native and Redux}{49}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.2}User interface and flow of the user interaction}{45}% 
+\contentsline {subsection}{\numberline {4.4.2}User interface and flow of the user interaction}{49}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Architecture of the whole system}{45}% 
+\contentsline {section}{\numberline {4.5}Architecture of the whole system}{49}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.1}Visualization}{45}% 
+\contentsline {subsection}{\numberline {4.5.1}Visualization}{49}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Evaluation}{45}% 
+\contentsline {section}{\numberline {4.6}Evaluation}{49}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Discussion}{47}% 
+\contentsline {chapter}{\numberline {5}Discussion}{51}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Research questions}{47}% 
+\contentsline {section}{\numberline {5.1}Research questions}{51}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Limitations of the model}{47}% 
+\contentsline {section}{\numberline {5.2}Limitations of the model}{51}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Observations}{48}% 
+\contentsline {section}{\numberline {5.3}Observations}{52}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Challenges}{48}% 
+\contentsline {section}{\numberline {5.4}Challenges}{52}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Reflection}{48}% 
+\contentsline {section}{\numberline {5.5}Reflection}{52}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusions}{49}% 
+\contentsline {chapter}{\numberline {6}Conclusions}{53}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Further research and development}{49}% 
+\contentsline {section}{\numberline {6.1}Further research and development}{53}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Comparison of CPG applications}{55}% 
+\contentsline {chapter}{Comparison of CPG applications}{59}% 

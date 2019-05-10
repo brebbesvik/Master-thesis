@@ -112,6 +112,120 @@
     \field{year}{2018}
   \endentry
 
+  \entry{Boxwala2004}{article}{}
+    \name{author}{9}{}{%
+      {{hash=BAA}{%
+         family={Boxwala},
+         familyi={B\bibinitperiod},
+         given={Aziz\bibnamedelima A},
+         giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Peleg},
+         familyi={P\bibinitperiod},
+         given={Mor},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=TS}{%
+         family={Tu},
+         familyi={T\bibinitperiod},
+         given={Samson},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=OO}{%
+         family={Ogunyemi},
+         familyi={O\bibinitperiod},
+         given={Omolola},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=ZQT}{%
+         family={Zeng},
+         familyi={Z\bibinitperiod},
+         given={Qing\bibnamedelima T},
+         giveni={Q\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=WD}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Dongwen},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=PVL}{%
+         family={Patel},
+         familyi={P\bibinitperiod},
+         given={Vimla\bibnamedelima L},
+         giveni={V\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=GRA}{%
+         family={Greenes},
+         familyi={G\bibinitperiod},
+         given={Robert\bibnamedelima A},
+         giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=SEH}{%
+         family={Shortliffe},
+         familyi={S\bibinitperiod},
+         given={Edward\bibnamedelima H},
+         giveni={E\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Academic Press}%
+    }
+    \strng{namehash}{BAA+1}
+    \strng{fullhash}{BAAPMTSOOZQTWDPVLGRASEH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2004}
+    \field{labeldatesource}{year}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    The Guideline Interchange Format (GLIF) is a model for representation of
+  sharable computer-interpretable guidelines. The current version of GLIF
+  (GLIF3) is a substantial update and enhancement of the model since the
+  previous version (GLIF2). GLIF3 enables encoding of a guideline at three
+  levels: a conceptual flowchart, a computable specification that can be
+  verified for logical consistency and completeness, and an implementable
+  specification that is intended to be incorporated into particular
+  institutional information systems. The representation has been tested on a
+  wide variety of guidelines that are typical of the range of guidelines in
+  clinical use. It builds upon GLIF2 by adding several constructs that enable
+  interpretation of encoded guidelines in computer-based decision-support
+  systems. GLIF3 leverages standards being developed in Health Level 7 in order
+  to allow integration of guidelines with clinical information systems. The
+  GLIF3 specification consists of an extensible object-oriented model and a
+  structured syntax based on the resource description framework (RDF).
+  Empirical validation of the ability to generate appropriate recommendations
+  using GLIF3 has been tested by executing encoded guidelines against actual
+  patient data. GLIF3 is accordingly ready for broader experimentation and
+  prototype use by organizations that wish to evaluate its ability to capture
+  the logic of clinical guidelines, to implement them in clinical systems, and
+  thereby to provide integrated decision support to assist clinicians.%
+    }
+    \verb{doi}
+    \verb 10.1016/J.JBI.2004.04.002
+    \endverb
+    \field{issn}{1532-0464}
+    \field{number}{3}
+    \field{pages}{147\bibrangedash 161}
+    \field{title}{{GLIF3: a representation format for sharable
+  computer-interpretable clinical practice guidelines}}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S1532046404000334
+    \endverb
+    \field{volume}{37}
+    \verb{file}
+    \verb :C$\backslash$:/Users/Ben/AppData/Local/Mendeley Ltd./Mendeley Deskto
+    \verb p/Downloaded/Boxwala et al. - 2004 - GLIF3 a representation format fo
+    \verb r sharable computer-interpretable clinical practice guidelines.pdf:pd
+    \verb f
+    \endverb
+    \field{journaltitle}{Journal of Biomedical Informatics}
+    \field{year}{2004}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{Cabana1999}{article}{}
     \name{author}{7}{}{%
       {{hash=CMD}{%
@@ -1149,6 +1263,120 @@
     \field{year}{2006}
   \endentry
 
+  \entry{Peleg2000}{article}{}
+    \name{author}{12}{}{%
+      {{hash=PM}{%
+         family={Peleg},
+         familyi={P\bibinitperiod},
+         given={M},
+         giveni={M},
+      }}%
+      {{hash=BAA}{%
+         family={Boxwala},
+         familyi={B\bibinitperiod},
+         given={A\bibnamedelima A},
+         giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=OO}{%
+         family={Ogunyemi},
+         familyi={O\bibinitperiod},
+         given={O},
+         giveni={O},
+      }}%
+      {{hash=ZQ}{%
+         family={Zeng},
+         familyi={Z\bibinitperiod},
+         given={Q},
+         giveni={Q},
+      }}%
+      {{hash=TS}{%
+         family={Tu},
+         familyi={T\bibinitperiod},
+         given={S},
+         giveni={S},
+      }}%
+      {{hash=LR}{%
+         family={Lacson},
+         familyi={L\bibinitperiod},
+         given={R},
+         giveni={R},
+      }}%
+      {{hash=BE}{%
+         family={Bernstam},
+         familyi={B\bibinitperiod},
+         given={E},
+         giveni={E},
+      }}%
+      {{hash=AN}{%
+         family={Ash},
+         familyi={A\bibinitperiod},
+         given={N},
+         giveni={N},
+      }}%
+      {{hash=MP}{%
+         family={Mork},
+         familyi={M\bibinitperiod},
+         given={P},
+         giveni={P},
+      }}%
+      {{hash=OML}{%
+         family={Ohno-Machado},
+         familyi={O\bibinithyphendelim M\bibinitperiod},
+         given={L},
+         giveni={L},
+      }}%
+      {{hash=SEH}{%
+         family={Shortliffe},
+         familyi={S\bibinitperiod},
+         given={E\bibnamedelima H},
+         giveni={E\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=GRA}{%
+         family={Greenes},
+         familyi={G\bibinitperiod},
+         given={R\bibnamedelima A},
+         giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Medical Informatics Association}%
+    }
+    \strng{namehash}{PM+1}
+    \strng{fullhash}{PMBAAOOZQTSLRBEANMPOMLSEHGRA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2000}
+    \field{labeldatesource}{year}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{abstract}{%
+    The Guideline Interchange Format (GLIF) is a language for structured
+  representation of guidelines. It was developed to facilitate sharing clinical
+  guidelines. GLIF version 2 enabled modeling a guideline as a flowchart of
+  structured steps, representing clinical actions and decisions. However, the
+  attributes of structured constructs were defined as text strings that could
+  not be parsed, and such guidelines could not be used for computer-based
+  execution that requires automatic inference. GLIF3 is a new version of GLIF
+  designed to support computer-based execution. GLIF3 builds upon the framework
+  set by GLIF2 but augments it by introducing several new constructs and
+  extending GLIF2 constructs to allow a more formal definition of decision
+  criteria, action specifications and patient data. GLIF3 enables guideline
+  encoding at three levels: a conceptual flowchart, a computable specification
+  that can be verified for logical consistency and completeness, and an
+  implementable specification that can be incorporated into particular
+  institutional information systems.%
+    }
+    \field{issn}{1531-605X}
+    \field{pages}{645\bibrangedash 9}
+    \field{title}{{GLIF3: the evolution of a guideline representation format.}}
+    \verb{url}
+    \verb http://www.ncbi.nlm.nih.gov/pubmed/11079963 http://www.pubmedcentral.
+    \verb nih.gov/articlerender.fcgi?artid=PMC2243832
+    \endverb
+    \field{journaltitle}{Proceedings. AMIA Symposium}
+    \field{year}{2000}
+  \endentry
+
   \entry{Preece2015}{book}{}
     \name{author}{3}{}{%
       {{hash=PJ}{%
@@ -1273,6 +1501,31 @@
     \verb http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.18.2653
     \endverb
     \field{year}{1998}
+  \endentry
+
+  \entry{TheAasgardProject2006}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=T}{%
+         family={{The Aasgard Project}},
+         familyi={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{T1}
+    \strng{fullhash}{T1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{labeldatesource}{year}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{{AsbruView}}
+    \verb{url}
+    \verb http://www.asgaard.tuwien.ac.at/asbruview/
+    \endverb
+    \field{year}{2006}
+    \field{urlday}{09}
+    \field{urlmonth}{05}
+    \field{urlyear}{2019}
   \endentry
 
   \entry{Guidelines2011}{book}{}
