@@ -62,43 +62,45 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.2}Entity model}{23}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.3}Workflow model}{27}% 
+\contentsline {subsection}{\numberline {4.2.3}Workflow model}{28}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.4}Metamodeling}{29}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.5}Game model}{30}% 
+\contentsline {subsection}{\numberline {4.2.5}Game model}{31}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Game engine}{30}% 
+\contentsline {section}{\numberline {4.3}Game engine}{31}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3.1}Dynamic Content Management}{32}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}Multiple-try feedback}{34}% 
+\contentsline {section}{\numberline {4.4}Gamification}{35}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.3}Reward system}{37}% 
+\contentsline {subsection}{\numberline {4.4.1}Multiple-try feedback}{35}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.4}Constructing scenarios and answer keys}{38}% 
+\contentsline {subsection}{\numberline {4.4.2}Reward system}{37}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.5}UML model of how all the classes are connected in Game Engine}{42}% 
+\contentsline {subsection}{\numberline {4.4.3}Constructing scenarios and answer keys}{38}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.6}Types of questions}{43}% 
+\contentsline {subsection}{\numberline {4.4.4}Conceptual model of how all the classes are connected in Game Engine}{42}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.7}Unlocking harder levels at a certain category}{45}% 
+\contentsline {subsection}{\numberline {4.4.5}Types of questions}{44}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.8}Visualization of game statistics}{46}% 
+\contentsline {subsection}{\numberline {4.4.6}Unlocking harder levels at a certain category}{45}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.9}Automatically generating new questions}{46}% 
+\contentsline {subsection}{\numberline {4.4.7}Visualization of game statistics}{46}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}The mobile application}{48}% 
+\contentsline {subsection}{\numberline {4.4.8}Automatically generating new questions}{47}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}React-Native and Redux}{49}% 
+\contentsline {section}{\numberline {4.5}The mobile application}{49}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.2}User interface and flow of the user interaction}{49}% 
+\contentsline {subsection}{\numberline {4.5.1}React-Native and Redux}{49}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Architecture of the whole system}{49}% 
+\contentsline {subsection}{\numberline {4.5.2}User interface and flow of the user interaction}{49}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.1}Visualization}{49}% 
+\contentsline {section}{\numberline {4.6}Architecture of the whole system}{49}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Evaluation}{49}% 
+\contentsline {subsection}{\numberline {4.6.1}Visualization}{49}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.7}Evaluation}{49}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Discussion}{51}% 
 \defcounter {refsection}{0}\relax 

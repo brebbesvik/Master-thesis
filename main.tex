@@ -43,6 +43,7 @@
 \subsection{React-Native and Redux}
 \subsection{User interface and flow of the user interaction}
 \section{Architecture of the whole system}
+\textcolor{purple}{TODO Yngve: Vil ha denne tidligere i thesis}
 \subsection{Visualization}
 \section{Evaluation}
 
@@ -54,7 +55,7 @@
 \begin{itemize}
 	\item Can't ask questions like "what are the symptoms for severe asthma?"
 	\item Difficult to ask what NOT to do. If the vertex doesn't exist, only an empty string gets returned. Can only be used were we actually have written "don't admit to the hospital" as an example with hospitalization.
-	\item The inheritance makes it difficult to generalize some questions. We can't make a template which asks about the Rate a medicine should be taken with. We need to specifically ask for that medicine. To be able to ask for a general medicine, one solution can be to introduce a new tag which compares the substring of the type of the vertex. Another solution is to use the meta model and not the instance model. We don't use inheritance on diagnosis because of this.
+	\item \textcolor{purple}{TODO Yngve: Graph QL?}The inheritance makes it difficult to generalize some questions. We can't make a template which asks about the Rate a medicine should be taken with. We need to specifically ask for that medicine. To be able to ask for a general medicine, one solution can be to introduce a new tag which compares the substring of the type of the vertex. Another solution is to use the meta model and not the instance model. We don't use inheritance on diagnosis because of this.
 	\item To avoid the problem described in the previous point, we don't use inheritance on Diagnosis. A limitation here is that  
 	a patient can only have one diagnosis.
 \end{itemize}

@@ -47,7 +47,7 @@ flow-charts which can be viewed by humans, using guideline viewing programs. At 
 	The implementable level contains the information to incorporate the guidelines into
 	the particular institutions knowledge or information system such as EPR \parencite{Peleg2000}.
 	
-	In figure \ref{fig:GLIFPossibleAsthma} we present a model of the paediatric possible asthma guideline \cite{RepublicofKeny2016} at the conceptual level. We will now explain the guideline steps the UML-model in figure \ref{fig:GLIFPossibleAsthma} consists of.
+	In figure \ref{fig:GLIFPossibleAsthma} we present a model of the paediatric possible asthma guideline \parencite{RepublicofKeny2016} at the conceptual level. We will now explain the guideline steps the UML-model in figure \ref{fig:GLIFPossibleAsthma} consists of.
 	\begin{itemize}
 		\item \textbf{Action step} a representation of a recommended tasks or action. There are three types of actions steps: Medically oriented (such as a recommendation for a treatment), programming oriented (such as retrieving information from EHR), control-oriented that invokes nested control structures (subguidelines or macros to support recursive specification) \parencite{DeClercq2008}. Action steps are green squares in figure \ref{fig:GLIFPossibleAsthma}.
 		\item \textbf{Decision step} represents a decision point in the model. There are two types of decision steps: Case and Choice. In a Case step the decision will be made up of a number of logical expressions, a deterministic decision. On the other hand, the Choice step displays a various suggestions and the agent (clinician e.g.) needs to choose between them \parencite{DeClercq2008}. Decision steps are turquoise hexagons in figure \ref{fig:GLIFPossibleAsthma}.
@@ -58,7 +58,7 @@ flow-chart, or as an summation to describe the clinical state a patient is in \p
 	 
 	
 	\begin{figure}[h!]
-		\caption {The paediatric possible asthma guideline \cite{RepublicofKeny2016} modelled using elements from GLIF}
+		\caption {The paediatric possible asthma guideline \parencite{RepublicofKeny2016} modelled using elements from GLIF}
 		\label{fig:GLIFPossibleAsthma}
 		\includegraphics[scale=0.132]{GLIFPossibleAsthma}
 	\end{figure}
@@ -66,12 +66,12 @@ flow-chart, or as an summation to describe the clinical state a patient is in \p
 	
 	In Asbru, skeletal plans are used to represent guidelines. Each plan's functionality is described by attributes such as: preferences, intentions, conditions, effects and plan body \parencite{DeClercq2008}. 
 	
-	In figure \ref{fig:AsbruPossibleAsthma}, we have modelled the paediatric possible asthma guideline \cite{RepublicofKeny2016} using a graphical interface tool AsbruView \parencite{TheAasgardProject2006}. The sequential plans are organized from a start point to an end poing along a time x-axis. Plans can be executed in a parallel, so the y-axis is lanes. Subplans are stacked in z-axis, making the presentation of a guideline 3 dimensionally. In addition to execute plans in sequential or parallel order, we also have the option to execute the in an arbitrary order or without any fixed order (unordered). There are also sequential plans and control structures with if-then-else.
+	In figure \ref{fig:AsbruPossibleAsthma}, we have modelled the paediatric possible asthma guideline \parencite{RepublicofKeny2016} using a graphical interface tool AsbruView \parencite{TheAasgardProject2006}. The sequential plans are organized from a start point to an end poing along a time x-axis. Plans can be executed in a parallel, so the y-axis is lanes. Subplans are stacked in z-axis, making the presentation of a guideline 3 dimensionally. In addition to execute plans in sequential or parallel order, we also have the option to execute the in an arbitrary order or without any fixed order (unordered). There are also sequential plans and control structures with if-then-else.
 	
 	For the skeletal plans shown in figure \ref{fig:AsbruPossibleAsthma}, we can also set the attributes conditions, intentions, effects and preferences for each of them. These describes the functionality of each plan \parencite{DeClercq2008}.
 	
 		\begin{figure}[h!]
-		\caption {An attempt at modelling the paediatric possible asthma guideline \cite{RepublicofKeny2016}, using Asbru editor tool AsbruView \parencite{TheAasgardProject2006}}
+		\caption {An attempt at modelling the paediatric possible asthma guideline \parencite{RepublicofKeny2016}, using Asbru editor tool AsbruView \parencite{TheAasgardProject2006}}
 		\label{fig:AsbruPossibleAsthma}
 		\includegraphics[scale=0.55]{AsbruPossibleAsthma}
 	\end{figure}
@@ -89,7 +89,7 @@ They also work on a higher abstraction level than the symptoms the clinician nee
 \subsection {Entity and workflow models}
 The goal of the iteration was to model patients at different stages of the clinical encounter. The entity model should be able to represent patients in scenarios in quizzes with answer keys.
 
-We based our models on the paediatric possible asthma guideline \cite{RepublicofKeny2016}. The first step was to understand every symptom, medication, equipment used in the treatment and keywords such as "admit". Resources like \textcite{Disease2011} and \textcite{Johansen2018} were some of the resources used, but most importantly was an expert of domain. 
+We based our models on the paediatric possible asthma guideline \parencite{RepublicofKeny2016}. The first step was to understand every symptom, medication, equipment used in the treatment and keywords such as "admit". Resources like \textcite{Disease2011} and \textcite{Johansen2018} were some of the resources used, but most importantly was an expert of domain. 
 
 The developer made a prototype of his understanding of the CPG, which simulated a clinical encounter with a patient. See figure \ref{fig:SimulationTool}. The GLIF chart presented in figure \ref{fig:GLIFPossibleAsthma} was used as a base when making the simulation tool. The simulation would start with listing symptoms of asthma and the clinician would choose among the symptoms, redirecting to the treatment for severe, mild, moderate and no asthma. The simulation would continue with cycles of evaluating the given treatment, and the clinician needs to act accordingly to the evaluation for each cycle until the treatment can be ended. An expert of domain got the task of going through the entire simulations of use cases such as "a patient with severe asthma responds poorly to salbutamol treatment". The stimulation gave a thorough understanding of the guideline, emphasized details which would have been missed or details of the treatment which is left out of the guideline itself, such as differential diagnoses.
 

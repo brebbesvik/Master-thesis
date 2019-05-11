@@ -11,23 +11,20 @@ By splitting up the score in themes, the student can easily see which areas he i
 
 We can also adapt the questions in each discipline to the student's level. If the student has proven to be very good in providing the right amount of medicine to asthma patient, we can provide more difficult questions to challenge the student some more. If he struggles at setting the right diagnose, we can provide more basic questions to strengthen the students basic knowledge. 
 
-\textcolor{red}{The disciplines should be automatically picked from the entity (and worflow?) model.}
-
-\textcolor{red}{The tree structure of discipline scores. Diagnosis have examination, investigation, setting the severity. Management have advises, medication, admit, surgery and so on.}
 
 
 
-
-The student will also be provided with a total score, which will be the average score of each of the disciplines. The student can compare the total score of e.g. the asthma quiz and the jaundice quiz, and see which medical condition he needs to train more on.
+The student will also be provided with a total score, which will be the aggregated score of each of the disciplines. The student can compare the total score of e.g. the asthma quiz and the jaundice quiz, and see which medical condition he needs to train more on.
 
 
 \subsection{Dynamic Content Management}
+\textcolor{purple}{TODO Yngve: Not clear when you use different concepts in figure and text}
 The game engine is based on some of the concepts presented in the articles of \textcite{Eide2008}, \textcite{Kristensen2011} and \textcite{Kristensen2013}. The motivation for using DCM, is to support the principles of adaptive learning as well as flexibility in the learning process. Adaptive learning means that the student can solve problems which are suited to his knowledge level. Flexibility in the sense that the student can go through the learning content in many different ways.
 
 \textcite{Eide2008} presents a dynamic content management system (DCM) made for e-learning. In DCM the focus is on removing the tight coupling between the learning material and the teaching course. By analysing the learning material and course, they can define conceptual atomic units of knowledge which they put into a knowledge repository. From this repository they may draw knowledge elements and organize into the hierarchy of a course. To model a course they use concept maps, which are directed graphs, where the vertices are concept labels and edges indicates the relationships between vertices. DCM operates with three concept maps: knowledge map, learning map and student map. The knowledge map is used to model the entire content of the knowledge repository and the hierarchy structure of a course. A learning map is used to model a specific course and is a representation of the learning process. The content units (vertices) in the knowledge map gets expanded, and becomes evaluation and resource vertices in the learning map. Content units from the knowledge map can be omitted if they are not needed in the specific course. Detailed prerequisites can be specified for the content units. The student map represents the progress of a specific student taking a specific course. The edges shows which resources he has used, the evaluations of the student and in which order. 
 
 
-When we apply this to our project, we will first decouple the content from the flow-chart of the paediatric possible asthma guideline \parencite{RepublicofKeny2016}. To decouple the flow-chart, we use the workflow model as a helping tool. In figure \ref{fig:KnowledgeMap} we have identified knowledge elements and hierarchically structured the knowledge repository into a knowledge map. The edges shows the dependencies in the learning process. To learn how to evaluate a treatment and act accordingly to the evaluation, the student needs to know something about how to set a diagnosis and how to initially treat it. Hence there is an edge between follow-up and the other knowledge units.
+When we apply this to our project, we will first decouple the content from the flow-chart of the paediatric possible asthma guideline \parencite{RepublicofKeny2016}. To decouple the flow-chart, we use the workflow model as a helping tool, ordering on how they should learn the clinical guideline. In figure \ref{fig:KnowledgeMap} we have identified knowledge elements and hierarchically structured the knowledge repository into a knowledge map. The edges shows the dependencies in the learning process. To learn how to evaluate a treatment and act accordingly to the evaluation, the student needs to know something about how to set a diagnosis and how to initially treat it. Hence there is an edge between follow-up and the other knowledge units.
 
 \begin{figure}[h!]
 	\caption {Knowledge map}
@@ -62,7 +59,7 @@ Inside the content units in the learning map, we see the relationships between r
 	\label{fig:LearningMap}
 	\includegraphics[scale=0.45]{LearningMap}
 \end{figure}
-
+\textcolor{purple}{TODO Yngve: Visualization of student map}
 A student map would show the progressions for one specific student, and the path he has taken and the scores for each evaluation. Table \ref{table:StudentMap} shows a student's student map for the Assessment part of the course. He got the score 34 on the first evaluation. 34 matches the passing condition for assessment level 1, so he got a passing grade for that test. However, he scored 43 points on evaluation 2 and didn't meet the passing condition for that test. He has no attempts for evaluation 3, as he doesn't meet the prerequisites for that test.  The tests which have been completed are stored in the database on the students phone. In that sense, the database shows the student's current position in the learning map.
 
 \begin{table}[h!]
@@ -83,7 +80,7 @@ A student map would show the progressions for one specific student, and the path
 
 
 
-
+\section{Gamification}
 \subsection{Multiple-try feedback}
 % https://books.google.no/books?hl=en&lr=&id=GgCPAgAAQBAJ&oi=fnd&pg=PA125&dq=Interactive+with+multiple+tries+&ots=A9Z_BJS5t2&sig=RTv1FmOzU_qic9ADjDgKdJoHamU&redir_esc=y#v=onepage&q=Interactive%20with%20multiple%20tries&f=false
 % https://onlinelibrary.wiley.com/doi/full/10.1348/000709905X39134
@@ -126,11 +123,11 @@ We solved the "answer until correct"-problem described by \textcite{Morrison1995
 % SHOW ANSWER
 By having multiple-try feedback, another problem rises, and that is the reward system. If there is no penalty for incorrect answers, a student which needs ten attempts per questions, will get the same score as a student which answers all the questions correctly on the first attempt.
 
-\textcite{Attali2015} solved the problem by giving 1 point for answering correctly on the first attempt. 2/3 points for the second attempt, 1/3 for the third and 0 points if the third attempt was incorrect. A limitation with this method is that it makes no sense for the student to make more than three attempts. \textcite{Morrison1995} had another strategy where they adjust the scores by dividing the total score by the total number of attempts during the quiz. A consequence is that attempt number two will have a huge penalty which is halving the students total score. While attempt number twenty will give a very small penalty from attempt nineteen. A method to dampen this effect could be dividing the total score by the sum of reviews and number of questions.
+\textcite{Attali2015} solved the problem by giving 1 point for answering correctly on the first attempt. 2/3 points for the second attempt, 1/3 for the third and 0 points if the third attempt was incorrect. A limitation with this method is that it makes no sense for the student to make more than three attempts. \textcite{Morrison1995} had another strategy where they adjust the scores by dividing the total score by the total number of attempts during the quiz. A consequence is that attempt number two will have a huge penalty which is halving the students total score. While attempt number twenty will give a very small penalty from attempt nineteen. A method to dampen this effect could be dividing the total score by the sum of reviews and number of questions. Another method could be taken the square root of the question reward for every attempt the student has on that question.
 
 The solution we used was having a fixed value for every answer alternative. The quiz author chooses the penalty for each distraction and reward for each answer key. The idea is that the distractions can have some sort of degree of wrong or right, and this can be reflected in the scoring. On the question "what are the symptoms of asthma?", "difficulty breathing" is a more correct answer than "fever", as "difficulty breathing" is a symptom of asthma in combination with wheeze. Fever is not an asthma symptom at all. In future work, the penalties can be automated as you can see from the entity model whether the symptom belongs to the asthma guideline or not. A distraction from respiratory disorders may give a larger penalty than a distraction from the asthma guideline, but smaller penalty than symptoms not belonging to respiratory diseases.
 
-Both \textcite{Attali2015} and \textcite{Morrison1995} avoids the scenario where the user gets a total minus score. This may be a strength of these methods, as a negative total score seems like a very harsh feedback and might demotivate the student. In our solution we use negative numbers as penalties on distractions, such that a negative total score may happen. We try to limit the likelihood of a negative score by providing a very reward for a correct answer and a very small penalty for a distraction. Typically the reward is 10 points and the penalty -1 og -2 points. The intention is to encourage the student to review the incorrect answer and try again. As the format is multiple-choice and the penalty-reward ratio, there is a little risk involved trying multiple times. But giving up by clicking "learn more", the student will not get an additional penalty, but will miss out on the reward. By clicking answer alternatives mindlessly and consequently clicking "learn more" will probably not end up in a negative score, but is more likely to end up in a negative score than mindlessly click answer alternatives until correct.
+Both \textcite{Attali2015} and \textcite{Morrison1995} avoids the scenario where the user gets a total minus score. This may be a strength of these methods, as a negative total score seems like a very harsh feedback and might demotivate the student. In our solution we use negative numbers as penalties on distractions, such that a negative total score may happen. We try to limit the likelihood of a negative score by providing a very high reward for a correct answer and a very small penalty for a distraction. Typically the reward is 10 points and the penalty -1 og -2 points. The intention is to encourage the student to review the incorrect answer and try again. As the format is multiple-choice and the penalty-reward ratio, there is a little risk involved trying multiple times. But giving up by clicking "learn more", the student will not get an additional penalty, but will miss out on the reward. By clicking answer alternatives mindlessly and consequently clicking "learn more" will probably not end up in a negative score, but is more likely to end up in a negative score than mindlessly click answer alternatives until correct.
 
 %----------------------------------------------------------------------------------
 
@@ -160,46 +157,52 @@ One of the problems we encountered with this method, was how to present the vari
 	\includegraphics[scale=0.4]{EntityInstanceGraph}
 \end{figure}
 
-\begin{verbatim}
+%\begin{lstlisting}[caption={My Caption},captionpos=b]
+\begin{lstlisting}[caption={Question template}, frame=single] 
 Question:
- A <%Patient.hasAge.Age%> months old patient arrives at the emergency department. 
- The patient has a <%Patient.underGoesExamination.Wheeze%>,
+ A <%Patient.hasAge.Age%> months old patient arrives at 
+ the  emergency department. 
+ The patient has a 
+ <%Patient.underGoesExamination.Wheeze%>,
  has conciousness level 
  <%Patient.undergoesExamination.Consciousness%> 
  and has an oxygen saturation of 
  <%Patient.undergoesExamination.Oxygen-Saturation%>%. 
  What is the asthma severity? 
- 
+ \end{lstlisting}
+ \begin{lstlisting}[caption={Answer key template}, frame=single] 
 Answer key:
 <%Patient.hasDiagnosis.Diagnosis.hasSeverity.Severity%>
-\end{verbatim}
+\end{lstlisting}
 
 This translates to 
-\begin{verbatim}
+\begin{lstlisting}[caption={Question instantiation}, frame=single] 
 Question:
-A 24 months old patient arrives at the emergency department. 
+A 24 months old patient arrives at the emergency 
+department. 
 The patient has a true,
 has conciousness level V 
 and has an oxygen saturation of 80%. 
 What is the asthma severity? 
-
+\end{lstlisting}
+ \begin{lstlisting}[caption={Answer key template}, frame=single] 
 Answer key:
 Severe
-\end{verbatim}
+\end{lstlisting}
 
 We see that the template author needs to be aware of how the variables will be printed. Here he knows that the model will just return an integer for the oxygen saturation. He writes a descriptive text of the value first, and then adds a percentage after the variable. The severity gets nicely printed as answer key.
 
 The problem is the boolean for wheeze, which prints a "true". It really should have printed "wheeze". We solved the presentation of consciousness in the same way as we did with oxygen saturation. However, it could be nicer to write "responds to pain", rather than just "V". When the child 12 months or older, it is often easier to read if we can present the age in years.
 
-Another problem arrives when we replace the entity graph with another, where some of the examinations haven't been done. In traditional model driven engineering, we use something called the closed world assumption \parencite{Sadowska2019}. If a node doesn't exist, we say the value is false. But how can we say that patient doesn't have wheeze when we haven't examined? In open world assumption a none-existing vertex is "unknown" \parencite{Patel-Schneider2006} \parencite{Bergman2018}, and this strategy seems more correct for our scenario. If the vertex doesn't exist, we simply return an empty string. This further motivates ut to remove the variable specific text from the template, as we don't want text representation for a variable we don't present. Example when consciousness and oxygen saturation haven't been examined:
+Another problem arrives when we replace the entity graph with another, where some of the examinations haven't been done. In traditional model driven engineering, we use something called the closed world assumption \parencite{Sadowska2019}. If a node doesn't exist, we say the value is false. But how can we say that patient doesn't have wheeze when we haven't examined? In open world assumption a none-existing vertex is "unknown" \parencite{Patel-Schneider2006} \parencite{Bergman2018}, and this strategy seems more correct for our scenario. If the vertex doesn't exist, we simply return an empty string. This further motivates us to remove the variable specific text from the template, as we don't want text representation for a variable we don't present. Example when consciousness and oxygen saturation haven't been examined:
 
-\begin{verbatim}
+\begin{lstlisting}[caption={Question instantiation}, frame=single] 
 Question:
 A 24 months old patient arrives at the emergency department. 
 The patient has a true, has conciousness level 
 and has an oxygen saturation of %. 
 What is the asthma severity? 
-\end{verbatim}
+\end{lstlisting}
 
 How we solved the problem was to add a textual presentation vertex to each of the vertices in the graph referred to by the template. If there exist a presentation for the vertex, return the presentation. If there doesn't exist a presentation, simply return the variable.
 
@@ -215,34 +218,36 @@ How we solved the problem was to add a textual presentation vertex to each of th
 	\includegraphics[scale=0.4]{GeneratingScenarios2}
 \end{figure}
 
-\begin{verbatim}
+\begin{lstlisting}[caption={Question template}, frame=single] 
 A <%Patient.hasAge.Age%> old patient arrives at the emergency department. 
 The patient <%Patient.underGoesExamination.Wheeze%> 
 <%Patient.undergoesExamination.Consciousness%> 
 <%Patient.undergoesExamination.Oxygen-Saturation%>. 
 What is the asthma severity? 
-\end{verbatim}
+\end{lstlisting}
 
 Which translates to 
-\begin{verbatim}
-A 2 year old patient arrives at the emergency department. 
+\begin{lstlisting}[caption={Question instantiation}, frame=single] 
+A 2 year old patient arrives at the 
+emergency department. 
 The patient has a wheeze, is verbal but not alert 
 and has an oxygen saturation of 80%. 
 What is the asthma severity? 
-\end{verbatim}
+\end{lstlisting}
 
 This also works with the open world assumption, as a patient which haven't undergone consciousness and oxygen saturation examinations, would result in the following text:
 
-\begin{verbatim}
-A 2 year old patient arrives at the emergency department. 
+\begin{lstlisting}[caption={Question instantiation}, frame=single] 
+A 2 year old patient arrives at the emergency 
+department. 
 The patient has a wheeze. 
 What is the asthma severity? 
-\end{verbatim}
+\end{lstlisting}
 
 For future work, the commas and "and" should not be in the presentation vertex. This becomes a limitation where the variable can only be used in a list and has to be in a specific place in the list. The solution would be to have a list tag in the template, and have all the paths inside that tag. Then the game engine can see how many of the list items are in the graph, and can set the commas and "and" at the appropriate places.
 
-\subsection{UML model of how all the classes are connected in Game Engine}
-The conceptual model of the game engine is shown in figure \ref{fig:ConceptualGameElements}. Category is a quiz game for a certain CPG, such as the paediatric possible asthma guideline \cite{RepublicofKeny2016}. Each of these quiz categories are divided into several disciplines. Disciplines are themes in knowledge units, which we identified using DCM (dynamic content management). Each of these knowledge units contain evaluations at different difficulty levels. These evaluations are collections of questions, which contain a collection of multiple choice questions and answer elements.
+\subsection{Conceptual model of how all the classes are connected in Game Engine}
+The conceptual model of the game engine is shown in figure \ref{fig:ConceptualGameElements}. Category is a quiz game for a certain CPG, such as the paediatric possible asthma guideline \parencite{RepublicofKeny2016}. Each of these quiz categories are divided into several disciplines. Disciplines are themes in knowledge units, which we identified using DCM (dynamic content management). Each of these knowledge units contain evaluations at different difficulty levels. These evaluations are collections of questions, which contain a collection of multiple choice questions and answer elements.
 
 The quiz data are read from JSON-files, which are produced by a content author. The quiz author defines a quiz for a specific CPG. He identifies themes for content units, which contains evaluations with varying difficulty levels. The questions are written in a template format, which we have already covered. The templates contain tags, which refer to vertices in the entity graph, representing a given patient. The answer key is also such a tag, referring to one or more vertices in the entity graph. When the quiz is initialized, the tags will be replaced with values from the entity graph. The content author will write answer alternatives for each question, where he specifies a reward (or penalty) for each of the answer alternatives. An answer alternative which matches the answer key value in the entity graph will represent the correct answer. The content author needs to know what is in the entity graph to be able to provide meaningful rewards.
 
@@ -293,7 +298,9 @@ Follow-up will contain questions related how to evaluate the treatment and how t
 
 As the student learns, the questions need to adapt to the student's new level of knowledge. How we do this is by defining levels, where the questions becomes more detailed at higher levels. At level 1 the questions are all about stating facts. In level 2, we create scenarios such that we follow one patient through all of the steps assessment, diagnosis, management and follow-up. The same for level 3, but the detail level will be higher. Typically the student will only be asked for categories of medication in level 2, but in level 3 the students needs to be specific about the names of the medication as well as measurements for both dosages and symptoms. See table \ref{table:ProgressionGranularity}.
 \begin{table}[h!]
+	\caption{The type of questions at each difficulty level}
 	\label{table:ProgressionGranularity}
+	
 	\begin{tabular}{|m{2em}|m{6em}|m{6em}|m{6em}|m{6em}|}
 		\hline
 		Level & Assessment & Diagnosis & Management & Follow-up \\
@@ -333,7 +340,7 @@ To visualizing where the student is in the learning map, has been solved by show
 \subsection{Automatically generating new questions}
 One of the main problems with the application is generating entity model instances used for generating questions. To make one scenario with assessment, diagnosis, management and follow-up, we need at least to instances of the entity graph. One to show the status of the patient before the treatment, and one after the treatment. As the treatment needs to be evaluated and the clinician needs to act accordingly. One single entity model can be several hundreds of lines written in JSON, as there are quite many vertices and edges to describe as well as the complexity of the model. This is tedious work, both because of the complexity, the amount of code lines, but the author also needs to put a great emphasize on writing the code correctly. The latter can be solved with an authoring tool.
 
-As so much effort has to put in typing these instances of entity graphs, a better way would be to make functionality to automatically generate new instances. We already have made template with tags to vertices in the entity graph. By generating a lot of new entity instances, one template can be reused to make just as many questions. By looking at the paediatric possible asthma guideline \cite{RepublicofKeny2016}, we see that there are described twelve symptoms we can combine in every way we like. Some of the symptoms also have more possibilities than just true/false. They have numerical ranges like pulse rate, breaths per minute and oxygen saturation. So in fact, we can generate a quite large amount of graph instances and equally as many questions per template.
+As so much effort has to put in typing these instances of entity graphs, a better way would be to make functionality to automatically generate new instances. We already have made template with tags to vertices in the entity graph. By generating a lot of new entity instances, one template can be reused to make just as many questions. By looking at the paediatric possible asthma guideline \parencite{RepublicofKeny2016}, we see that there are described twelve symptoms we can combine in every way we like. Some of the symptoms also have more possibilities than just true/false. They have numerical ranges like pulse rate, breaths per minute and oxygen saturation. So in fact, we can generate a quite large amount of graph instances and equally as many questions per template.
 
 The method we suggest for automatically generating such graph instances, is by building up a repository of graph instances. These graph instances are written in the tedious way by a content author. An algorithm picks a set of graph instances from the repository, and randomly chooses vertices from each instance graph. These vertices will be combined to form a new instance graph. This is illustrated in figure \ref{fig:GeneratedEntityInstances}, where the bottom instance is generated from two upper ones. The colour of the vertices indicate which graph instance they come from.
 
@@ -343,7 +350,8 @@ The method we suggest for automatically generating such graph instances, is by b
 	\includegraphics[scale=0.35]{GeneratedEntityInstances}
 \end{figure}
 
-For those who are familiar with the paediatric possible asthma guideline \cite{RepublicofKeny2016}, will know that wheeze has to be present in an asthma patient. Wheeze is not present in the generated graph, but still claims that the patient has mild asthma. This indicate the problem with automatically generated graphs without adding any domain knowledge about which vertices to pick and combine. For this reason we need a domain expert to validate which of the generated graphs we can use, and those who are invalid patient representations. Even though this method relies on a domain expert, it will save us from a ton of work. Instead of carefully write hundreds of JSON formatted lines for each graph instance, we can simply approve or disapprove the graph instances which are valid or invalid.
+\textcolor{purple}{TODO Yngve: This can be solved to a large degree by using constraints, which check validation in DPF. Make specific a layer of constraint checks for each guideline. One for asthma and another one for pneumonia. Yngve has a reference to Alloy which is in Xiauliangs paper}
+For those who are familiar with the paediatric possible asthma guideline \parencite{RepublicofKeny2016}, will know that wheeze has to be present in an asthma patient. Wheeze is not present in the generated graph, but still claims that the patient has mild asthma. This indicate the problem with automatically generated graphs without adding any domain knowledge about which vertices to pick and combine. For this reason we need a domain expert to validate which of the generated graphs we can use, and those who are invalid patient representations. Even though this method relies on a domain expert, it will save us from a ton of work. Instead of carefully write hundreds of JSON formatted lines for each graph instance, we can simply approve or disapprove the graph instances which are valid or invalid.
 
 The same method can be used for generating distractions for quiz elements. Randomly choose distractions from other entity graph instances, which corresponds to the answer key tag given by the template. A small penalty can be set on distractions from the asthma guideline. Medium penalties for distractions from respiratory diseases. A bit larger penalties for distractions from completly unrelated guidelines. Then we have automated the quiz scores as well!
 
