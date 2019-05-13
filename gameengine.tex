@@ -198,7 +198,8 @@ Another problem arrives when we replace the entity graph with another, where som
 
 \begin{lstlisting}[caption={Question instantiation}, frame=single] 
 Question:
-A 24 months old patient arrives at the emergency department. 
+A 24 months old patient arrives at the emergency 
+department. 
 The patient has a true, has conciousness level 
 and has an oxygen saturation of %. 
 What is the asthma severity? 
@@ -219,7 +220,8 @@ How we solved the problem was to add a textual presentation vertex to each of th
 \end{figure}
 
 \begin{lstlisting}[caption={Question template}, frame=single] 
-A <%Patient.hasAge.Age%> old patient arrives at the emergency department. 
+A <%Patient.hasAge.Age%> old patient arrives at 
+the emergency department. 
 The patient <%Patient.underGoesExamination.Wheeze%> 
 <%Patient.undergoesExamination.Consciousness%> 
 <%Patient.undergoesExamination.Oxygen-Saturation%>. 
@@ -245,6 +247,13 @@ What is the asthma severity?
 \end{lstlisting}
 
 For future work, the commas and "and" should not be in the presentation vertex. This becomes a limitation where the variable can only be used in a list and has to be in a specific place in the list. The solution would be to have a list tag in the template, and have all the paths inside that tag. Then the game engine can see how many of the list items are in the graph, and can set the commas and "and" at the appropriate places.
+
+In figure \ref{fig:IntegratedEntityGamelModels} we show how the entity-, workflow and game models work together to make a scenario. Because of limited space, we don't show the presentation vertices in the entity graph. We also combined entity graph E1 and E2 in the presentation, where E2 gets and additional medication vertex marked with red. 
+\begin{figure}[h!]
+	\caption {The entity- workflow- and game models working together to produce a scenario, taking the patient through the steps of a clinical encounter. Note that these are two entity graphs E1 and E2, where E2 gets updated with an additional red vertex Ipratopium bromide. This illustrates a patient which doesn't respond to the initial treatment, and then gets treated with ipratopium bromide}
+	\label{fig:IntegratedEntityGamelModels}
+	\includegraphics[scale=0.4]{IntegratedEntityGameModels}
+\end{figure}
 
 \subsection{Conceptual model of how all the classes are connected in Game Engine}
 The conceptual model of the game engine is shown in figure \ref{fig:ConceptualGameElements}. Category is a quiz game for a certain CPG, such as the paediatric possible asthma guideline \parencite{RepublicofKeny2016}. Each of these quiz categories are divided into several disciplines. Disciplines are themes in knowledge units, which we identified using DCM (dynamic content management). Each of these knowledge units contain evaluations at different difficulty levels. These evaluations are collections of questions, which contain a collection of multiple choice questions and answer elements.
@@ -342,18 +351,25 @@ One of the main problems with the application is generating entity model instanc
 
 As so much effort has to put in typing these instances of entity graphs, a better way would be to make functionality to automatically generate new instances. We already have made template with tags to vertices in the entity graph. By generating a lot of new entity instances, one template can be reused to make just as many questions. By looking at the paediatric possible asthma guideline \parencite{RepublicofKeny2016}, we see that there are described twelve symptoms we can combine in every way we like. Some of the symptoms also have more possibilities than just true/false. They have numerical ranges like pulse rate, breaths per minute and oxygen saturation. So in fact, we can generate a quite large amount of graph instances and equally as many questions per template.
 
-The method we suggest for automatically generating such graph instances, is by building up a repository of graph instances. These graph instances are written in the tedious way by a content author. An algorithm picks a set of graph instances from the repository, and randomly chooses vertices from each instance graph. These vertices will be combined to form a new instance graph. This is illustrated in figure \ref{fig:GeneratedEntityInstances}, where the bottom instance is generated from two upper ones. The colour of the vertices indicate which graph instance they come from.
 
-\begin{figure}[h!]
-	\caption {The red and green graph instances at the bottom are picked from a repository. We randomly pick vertices from each entity instance to make the new entity instance at the bottom. Red vertices indicate that they come from the red entity graph instance. The green vertices that they come from the green entity graph instance.}
-	\label{fig:GeneratedEntityInstances}
-	\includegraphics[scale=0.35]{GeneratedEntityInstances}
-\end{figure}
 
-\textcolor{purple}{TODO Yngve: This can be solved to a large degree by using constraints, which check validation in DPF. Make specific a layer of constraint checks for each guideline. One for asthma and another one for pneumonia. Yngve has a reference to Alloy which is in Xiauliangs paper}
-For those who are familiar with the paediatric possible asthma guideline \parencite{RepublicofKeny2016}, will know that wheeze has to be present in an asthma patient. Wheeze is not present in the generated graph, but still claims that the patient has mild asthma. This indicate the problem with automatically generated graphs without adding any domain knowledge about which vertices to pick and combine. For this reason we need a domain expert to validate which of the generated graphs we can use, and those who are invalid patient representations. Even though this method relies on a domain expert, it will save us from a ton of work. Instead of carefully write hundreds of JSON formatted lines for each graph instance, we can simply approve or disapprove the graph instances which are valid or invalid.
+The method we suggest for automatically generating such graph instances, is by introducing constraint checks in DPF. These constraint checks will be code which ensures that the vertices of the graph follows some predefined rules. For example, we know that the graph stores a boolean measurement value for wheeze. A constraint check will ensure that the value we generate for wheeze will be either true or false. For conciousness we have the enumeration values A, V, P and U. And we have value ranges, such as oxygen saturation and pulse rate. To get reasonable  constraints, a domain expert is needed to define the upper and lower limits a constraint should allow. For example a pulse rate for an old man shouldn't be set to 200 beats per minute, as his maximum pulse rate would be much lower than that.
 
-The same method can be used for generating distractions for quiz elements. Randomly choose distractions from other entity graph instances, which corresponds to the answer key tag given by the template. A small penalty can be set on distractions from the asthma guideline. Medium penalties for distractions from respiratory diseases. A bit larger penalties for distractions from completly unrelated guidelines. Then we have automated the quiz scores as well!
+However, some vertices are dependent on other vertices. For the paediatric guideline of possible asthma \parencite{RepublicofKeny2016}, wheeze will always have to be present to set an asthma diagnosis. For children less than 12 months, either or both of cough and difficulty breathing needs to be present in addition to wheeze. For the asthma to be severe, there are at least one additional symptom which needs to be present.
+
+When the student will be asked for medication dosages, we know that some drugs may have standard measurements. For example, a medication we want to administer to patient, is 2.5mg per tablet. Then the dosage administered to the patient will be something which can be divided by 2.5. Here the dosages can be 2.5mg, 5mg, 7.5mg and so on.
+
+Some of these constraints can be reused between guidelines. The same medication can be used for different diseases, as well as a person's maximum pulse rate probably will be the same whether he he has asthma or pneumonia. The AVPU-scale is a standard for measuring consciousness. However it can be tedious to get full constraint coverage, and when the guideline gets updated, we also need to update the constraints. In cases of not full constraint coverage, the entity instance graphs need to be validated by a domain expert, to see which of the generated instance graphs which can be used or not.  Even though this method relies on a domain expert, it will save us from a ton of work. Instead of carefully write hundreds of JSON formatted lines for each graph instance, we can simply approve or disapprove the graph instances which are valid or invalid. The constraints will also greatly reduce the noise the domain expert needs to go through. 
+
+
+
+%\begin{figure}[h!]
+%	\caption {The red and green graph instances at the bottom are picked from a repository. We randomly pick vertices from each entity instance to make the new entity instance at the bottom. Red vertices indicate that they come from the red entity graph instance. The green vertices that they come from the green entity graph instance.}
+%	\label{fig:GeneratedEntityInstances}
+%	\includegraphics[scale=0.35]{GeneratedEntityInstances}
+%\end{figure}
+
+When we have built up a repository of entity graph instances, we can use this repository to generate distractions for quiz elements. Randomly choose distractions from other entity graph instances, which corresponds to the answer key tag given by the template. A small penalty can be set on distractions from the asthma guideline. Medium penalties for distractions from respiratory diseases. A bit larger penalties for distractions from completely unrelated guidelines. Then we have automated the quiz scores as well!
 
 
 

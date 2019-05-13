@@ -85,6 +85,30 @@ They also work on a higher abstraction level than the symptoms the clinician nee
 
 
 \subsection{Designing alternatives}
+The goal of the iteration is to decide what kind of application to build. What type of application can we best promote the CPGs, and encourage health personnel to use and learn them.
+
+For this iteration it was quite critical to get background information on CPGs, how they are used in the hospital, how they are used by medical students today and how they work in different areas. For this we needed the results from the iterations about the focus group and studying similar products. We also had a medical domain expert in our project. Informal literature studies was also necessary.
+
+A lot of different prototypes at lower and higher fidelities were made. Some were made initially at higher fidelity levels as a part of testing technology. Figure \ref{fig:ConseptualModel} was such a prototype to  test technology, as well as exploring how to organize and categorize CPGs. Figure \ref{fig:SimulationTool} was a prototype of a simulation tool, but also had the purpose of uncovering details of the paediatric possible asthma guideline \parencite{RepublicofKeny2016} when communicating with a medical domain expert. 
+
+Figure \ref{fig:PrototypeInteractiveCPG} was also a prototype initially at higher fidelity as we tested SVG generation with JavaScript. The idea of the prototype was to display CPGs as interactive flow-chart. The vertices have a topic which can be clicked. By clicking, the vertex will either expand to show more detailed information or will redirect to a subguideline. The edges represent decisions and workflow. An idea was also to enter patient specific details such as gender, age and weight and possibly symptoms, and get the CPG customized for that patient.
+
+
+ \begin{figure}[h!]
+ 	\caption {Screenshots of the prototype used to simulate a clinical encounter with a domain expert}
+ 	\label{fig:PrototypeInteractiveCPG}
+ 	\includegraphics[scale=0.6]{PrototypeInteractiveCPG}
+ \end{figure}
+
+The prototype in figure \ref{fig:PrototypeGameCPG}, started as sketches with pen and paper. By going through several iterations of redesign, it reach the fidelity of figure \ref{fig:PrototypeGameCPG}. This was our first prototype where we presented the CPGs as a game. We got help from an external masters degree student in software engineering to make this prototype. The concept of the game is that you initially get presented with a list of tests you can do on the patient. By picking a test, you will immediately get presented with a test result. You can do more tests or proceed. In the next screen you will be presented with a list of treatment and advises, and you should pick the correct ones with the knowledge you acquired in the previous screen. In the last two screens, you will be presented with the answer keys. You will get points for choosing the correct treatments and advises. You will get points for picking the right tests, and you will get higher scores if you picked the tests in an optimal order.
+\begin{figure}[h!]
+	\caption {Screenshots of the prototype used to simulate a clinical encounter with a domain expert}
+	\label{fig:PrototypeGameCPG}
+	\includegraphics[scale=0.2]{PrototypeGameCPG}
+\end{figure}
+
+The design alternatives were evaluated with the project's supervisors and their master degree students. There was also separate evaluations with medical domain expert. The evaluation method was cognitive walkthroughs as well as discussions what is the best approach for promoting CPGs and encourage medical students to learn and use CPGs. The conclusion was to continue with game development. 
+
 
 \subsection {Entity and workflow models}
 The goal of the iteration was to model patients at different stages of the clinical encounter. The entity model should be able to represent patients in scenarios in quizzes with answer keys.

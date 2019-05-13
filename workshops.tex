@@ -57,15 +57,36 @@ The antecedences for the meeting was
 
 The meeting started with Ben-Richard informing the status of the project by doing a cognitive walk-through and a demonstration of the application. 
 
-Yngve presented ideas for further development of the application. The important thing, was the concept of splitting up the questions in themes which relates to components in the treatment plan. Job helped identify these themes as assessment, diagnosis, management and treatment. Further we identified what type of questions we wanted to ask, and how they fits into different difficulty levels, based on the details of the questions. We ask factual questions for level 1. We use scenarios in level 2, where we apply facts and the detail level is categories. I.e. what class of medication should be administered to the patient. In level 3 we continue with scenarios, but here we ask for much more details, like the dosage of a medication or how often it should be administered.
+Yngve presented ideas for further development of the application. The important thing, was the concept of splitting up the questions in themes which relates to components in the treatment plan. Job helped identify these themes as assessment, diagnosis, management and treatment. Further we identified what type of questions we wanted to ask, and how they fits into different difficulty levels, based on the details of the questions. We ask factual questions for level 1. We use scenarios in level 2, where we apply facts and the detail level is categories. I.e. what class of medication should be administered to the patient. In level 3 we continue with scenarios, but here we ask for much more details, like the dosage of a medication or how often it should be administered. See figure \ref{table:QuestionsDetailLevels} to for an example of how the detail level gets higher as the student progress.
 
-\textcolor{purple}{TODO Yngve: Eksempel}
+\begin{table}[h!]
+	\caption{As the student progress to higher difficulty levels, the questions will ask for more details. Here we show the detail levels of Management}
+	\label{table:QuestionsDetailLevels}
+	\begin{tabular}{ | m{2em} | m{7em}| m{5.5em} | m{5em}| m{7.5em} |} 
+		\hline
+		Level & Question & Answer key & Distractions & Explanation \\
+		\hline
+		1 & Which of the following class of drugs is NOT indicated in the immediate management of severe asthma? & Inhaled corticosteroids & Short acting beta agonists, Oral corticosteroids, Anti-cholinergics & Inhaled corticosteroids are not indicated for acute management of asthma, they're indicated for long term control of symptoms \\
+		\hline
+		2 & Karen is found to be experiencing severe asthma and is given salbutamol. What other medications should she be given? & Prednisolone and oxygen & Ipratropium bromide, Formoterol & When  treating a patient with severe asthma, always start with oxygen, salbutamol and prednisolone. The evaluation of how the patient responds, will determine the next step of the treatment \\ 
+		\hline
+		3 & You diagnos Malin with severe asthma and initiate a treatment plan. What dose of salbutamol will you administer with the nebulizer? & 2.5mg & 3.5mg, 4.5mg, 5.5mg & In the scenario of severe asthma, nebulize 2.5mg of salbutamol \\
+		\hline
+		
+		
+		
+	\end{tabular}
+\end{table}
 
 When playing level 1 the student should get questions from all themes in level 1. When the student completes level 1, the student should no longer get questions from that theme. This is to avoid boring the user by repeating the questions the student already knows the answer of. He should only get questions from themes he struggles with. I.e. on the first run level 1, the user gets every question in assessment right, but have some mistakes with diagnosis and management. Then on the next run, he only gets questions from level 1 diagnosis and management. This continues until he has reached the passing condition on every theme in level 1. 
 
 We further identified a dependency in the treatment plan. To be able to do a follow-up, the students first needs to know something about assessment, diagnosis and management of the patient. The follow-up is actually an evaluation of the treatment which have been given, based on the suggested diagnosis. The evaluation will tell how the patient responded to the treatment, and the student needs to take actions whether the patient responded or his condition became better or worse. When we have such a dependency, the student needs to complete assessment, diagnosis and management before follow-up gets unlocked. Since follow-up is only relevant in a situation where there has already been set a diagnosis and given a treatment, the follow-up is only part of level 2 and 3, where the questions are given as scenarios.
 
-\textcolor{purple}{TODO Yngve: Vis en graf der follow-up blir låst opp}
+\begin{figure}[h!]
+	\caption {The student needs to acquire basic knowledge about assessment, diagnosis, management, before he can follow-up the treatment. This is a prerequisite for follow-up}
+	\label{fig:FollowUpDependencies}
+	\includegraphics[scale=0.6]{FollowUpDependencies}
+\end{figure}
 
 To complete a level, all passing conditions at that level in each theme have to be met. When the student qualifies for a new level, he only gets questions from the level he plays. The same concept of only getting questions from the themes at that level you haven't met the passing condition, continues for level 2 and 3. 
 
@@ -89,7 +110,7 @@ We planned to have a visualization of the passing condition in the application. 
 	\includegraphics[scale=0.075]{workshop220219-4}
 \end{figure}
 
-Job continued the meeting by talking about the guidelines.The paediatric guideline of asthma is called "possible asthma". That is because in an emergency situation asthma is the most dangerous airway condition and can be lethal. If the patient shows signs of asthma, he will be treated for asthma to reduce risks of an unwanted scenario.
+Job continued the meeting by talking about the guidelines. The paediatric guideline of asthma is called "possible asthma". That is because in an emergency situation asthma is the most dangerous airway condition and can be lethal. If the patient shows signs of asthma, he will be treated for asthma to reduce risks of an unwanted scenario.
 
 We identified users of the application: 
 \begin{itemize}
