@@ -95,14 +95,14 @@ Figure \ref{fig:PrototypeInteractiveCPG} was also a prototype initially at highe
 
 
  \begin{figure}[h!]
- 	\caption {Screenshots of the prototype used to simulate a clinical encounter with a domain expert}
+ 	\caption {A design alternative, displaying the CPGs as interactive flow-charts. The edges represents the flow, while clicking vertices will display more information or redirect to subguideline. A suggestion was to fill in with patient and examination data, to get a customized CPG for a patient }
  	\label{fig:PrototypeInteractiveCPG}
  	\includegraphics[scale=0.6]{PrototypeInteractiveCPG}
  \end{figure}
 
 The prototype in figure \ref{fig:PrototypeGameCPG}, started as sketches with pen and paper. By going through several iterations of redesign, it reach the fidelity of figure \ref{fig:PrototypeGameCPG}. This was our first prototype where we presented the CPGs as a game. We got help from an external masters degree student in software engineering to make this prototype. The concept of the game is that you initially get presented with a list of tests you can do on the patient. By picking a test, you will immediately get presented with a test result. You can do more tests or proceed. In the next screen you will be presented with a list of treatment and advises, and you should pick the correct ones with the knowledge you acquired in the previous screen. In the last two screens, you will be presented with the answer keys. You will get points for choosing the correct treatments and advises. You will get points for picking the right tests, and you will get higher scores if you picked the tests in an optimal order.
 \begin{figure}[h!]
-	\caption {Screenshots of the prototype used to simulate a clinical encounter with a domain expert}
+	\caption {The first design alternative proposed as a game. The student tries to pick the right tests in the right order for that patient. As well as choosing the correct treatment and give the right advises to the patient. A high score for choosing the right treatment and advises, as well as correct tests in the right order. Medium score for right tests in the wrong order}
 	\label{fig:PrototypeGameCPG}
 	\includegraphics[scale=0.2]{PrototypeGameCPG}
 \end{figure}
@@ -139,7 +139,32 @@ The workflow model got evaluated by making quiz scenarios, and by confirming tha
 
 
  
-\subsection{User interface}
+\subsection{User experience}
+The goal of the iteration is to facilitate the application for good user experiences.
+
+First of all we need to clarify what a good user experience is. We are not going to dive in detail into figure \ref{fig:Hassenzahl}, but shortly explain the components he \textcite{Hassenzahl2006} defines.  
+\begin{itemize}
+	\item Beyond instrumental, has to do with other aspects than reaching a work related goal or solving a work related task. It has to do with attraction and feelings, such as attraction to a beautiful design, the feeling of trust, quality and reliability or the user feels motivated through personal growth and increase of knowledge and skills \parencite{Hassenzahl2006}. 
+	\item Emotion and effect, has to do with how the users feel when interacting with the application. Typically we want the user to feel joy and excitement, and damper or prevent feelings such as frustration, anger and disappointment \parencite{Hassenzahl2006}. Typically the user feels satisfaction when completed a work task, or frustrated when the work task takes a long time to complete. 
+	\item The experiential emphasizes that the experience is strongly related to the situation it is used in and at which time. \parencite{Hassenzahl2006}. As an example the user experience of listening to your favourite music artist in the car on the way to work, is different from being at a concert in the weekend with the same music artist.
+\end{itemize}
+\begin{figure}[h!]
+	\caption {User experience copied from \textcite{Hassenzahl2006}}
+	\label{fig:Hassenzahl}
+	\includegraphics[scale=0.66]{Hassenzahl}
+\end{figure}
+
+For the beyond instrumental, we used several iterations to make a pretty user interface to make the application desirable. As this is an educational tool, it is important that the user feels his skills and knowledge grow, so the visualization of progress was quite important. Both that the user advances in levels, but also that we visualize the progress during a level, where the user stretches to slowly meet the requirement of the next level.
+
+For emotion and effect, we should trigger joyful emotions, such as emphasizing when the user answers correctly and progresses. We should use kind and encouraging wording when the user makes an attempt and doesn't get the right answer or doesn't progress to the next level. The interactions should be clear such that the user easily can fulfil his goals and doesn't make mistakes. Keep system errors to a minimal. In our evaluations we could probably more encouraging to the user when he gives a wrong answer.
+
+The experiential use is a bit hard to adapt to. We have been thinking that this is a mobile app, often played when the user is bored and can be situated anywhere. Perhaps on the bus to the university, or waiting for his friends in the cafeteria. The buttons should be large, large font size and small amounts of text on the screen, clear instructions and that the user doesn't have to remember information from previous screens are good guidelines in an environment which can be distracting.
+
+The user experience was evaluated using cognitive walkthroughs with the supervisors and their master degree students. We had a cognitive walkthrough with a domain expert in interaction design and gamification, followed by discussion and tips for further improvement. Some of the feedbacks were "wrong" in red colour may be too harsh, as well as a penalty of negative points even though the penalty is not displayed. A user should be able to get a higher score than just the requirement for the next level.
+
+We used usability tests in controlled environment, where friends, family, fellow students and domain expert in medicine were asked to start the application and play a full quiz. Notes were taken at points where the user would do  mistakes, get confused or do a mistake. Typically the user would become very confused when seeing the screen with the learning map, displaying which levels have been completed, which we are currently playing and the locked levels. The user would typically try to click on completed or current levels. We also noticed that the students wouldn't revise a wrong answer, just continue to the next question.
+
+
 \subsection{Game Engine}
 \subsection{Content flow and creating questions}
 

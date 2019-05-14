@@ -514,7 +514,7 @@
     \verb{file}
     \verb :C$\backslash$:/Users/Ben/AppData/Local/Mendeley Ltd./Mendeley Deskto
     \verb p/Downloaded/De Clercq, Kaiser, Hasman - 2008 - Computer-Interpretabl
-    \verb e Guideline formalisms.pdf:pdf
+    \verb e Guideline formalisms(2).pdf:pdf
     \endverb
     \field{journaltitle}{Studies in health technology and informatics}
     \field{year}{2008}
@@ -884,6 +884,64 @@
     \endverb
     \field{journaltitle}{BMJ (Clinical research ed.)}
     \field{year}{2008}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Hassenzahl2006}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HM}{%
+         family={Hassenzahl},
+         familyi={H\bibinitperiod},
+         given={Marc},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=TN}{%
+         family={Tractinsky},
+         familyi={T\bibinitperiod},
+         given={Noam},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Taylor {\&} Francis Group}%
+    }
+    \strng{namehash}{HMTN1}
+    \strng{fullhash}{HMTN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{labeldatesource}{year}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{abstract}{%
+    Over the last decade, 'user experience' (UX) became a buzzword in the field
+  of human - computer interaction (HCI) and interaction design. As technology
+  matured, interactive products became not only more useful and usable, but
+  also fashionable, fascinating things to desire. Driven by the impression that
+  a narrow focus on interactive products as tools does not capture the variety
+  and emerging aspects of technology use, practitioners and researchers alike,
+  seem to readily embrace the notion of UX as a viable alternative to
+  traditional HCI. And, indeed, the term promises change and a fresh look,
+  without being too specific about its definite meaning. The present
+  introduction to the special issue on 'Empirical studies of the user
+  experience' attempts to give a provisional answer to the question of what is
+  meant by 'the user experience'. It provides a cursory sketch of UX and how we
+  think UX research will look like in the future. It is not so much meant as a
+  forecast of the future, but as a proposal - a stimulus...%
+    }
+    \verb{doi}
+    \verb 10.1080/01449290500330331
+    \endverb
+    \field{issn}{0144-929X}
+    \field{number}{2}
+    \field{pages}{91\bibrangedash 97}
+    \field{title}{{User experience - a research agenda}}
+    \verb{url}
+    \verb http://www.tandfonline.com/doi/abs/10.1080/01449290500330331
+    \endverb
+    \field{volume}{25}
+    \field{journaltitle}{Behaviour {\&} Information Technology}
+    \field{year}{2006}
     \warn{\item Invalid format of field 'month'}
   \endentry
 
