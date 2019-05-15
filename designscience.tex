@@ -165,8 +165,17 @@ The user experience was evaluated using cognitive walkthroughs with the supervis
 We used usability tests in controlled environment, where friends, family, fellow students and domain expert in medicine were asked to start the application and play a full quiz. Notes were taken at points where the user would do  mistakes, get confused or do a mistake. Typically the user would become very confused when seeing the screen with the learning map, displaying which levels have been completed, which we are currently playing and the locked levels. The user would typically try to click on completed or current levels. We also noticed that the students wouldn't revise a wrong answer, just continue to the next question.
 
 
-\subsection{Game Engine}
-\subsection{Content flow and creating questions}
+\subsection{Game Engine and Content Flow}
+The goal of the iteration is to have a playable game, which produces questions, answering elements, rewards, several difficulty levels and the flow of the game content.
+
+This iteration draws upon the work which have been produced in other iterations. Producing the content quiz questions was done together with a domain expert in medicine. As part of the Game Engine, we developed a template system, where we replace variables in the question content with tags which refers to vertices in the entity graphs. We can evaluate to see that the game engine produces sensible questions and answer elements.
+
+The ideas of difficulty levels and the flow of the game content were discussed in the workshop section. This iteration was about implementing and testing these parts of the Game Engine.
+
+The scoringsystem was developed, where we give scores per question element in the workflow model.  A penalty system was introduced, such that a student with many attempts on each question doesn't get the same total score as a student which answered every question correctly on the first try.
+
+The evaluations of the iteration were done as part of the user experience iteration. Mainly cognitive walkthroughs with domain experts, but also usability testing in controlled environment with non-experts.
+
 
 
 
