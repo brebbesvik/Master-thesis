@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.28)  15 MAY 2019 22:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.28)  19 MAY 2019 20:23
 entering extended mode
 **./main.tex
 (main.tex
@@ -645,15 +645,15 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 9.
-) (background.tex
-[1
+ [1
 
 
-] [2
-
-]
+]) (background.tex
+[2]
 Chapter 2.
-[3] [4]) [5] [6
+[3
+
+] [4]) [5] [6
 
 ]
 Chapter 3.
@@ -1083,28 +1083,15 @@ HEALTH WORKERS
  []
 
 [34 <./images/EntityGraphHistory.pdf> <./images/EntityGraphExamination.pdf>]
-<images/EntityGraphMedication.pdf, id=259, 1013.7875pt x 511.9125pt>
+[35]
+<images/EntityGraphMedication.pdf, id=262, 1013.7875pt x 752.8125pt>
 File: images/EntityGraphMedication.pdf Graphic file (type pdf)
 <use images/EntityGraphMedication.pdf>
-Package pdftex.def Info: images/EntityGraphMedication.pdf  used on input line 6
-9.
-(pdftex.def)             Requested size: 456.20016pt x 230.35849pt.
+Package pdftex.def Info: images/EntityGraphMedication.pdf  used on input line 7
+0.
+(pdftex.def)             Requested size: 456.20016pt x 338.76248pt.
 
-Overfull \hbox (66.20016pt too wide) in paragraph at lines 69--70
-[][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[35]
-<images/WorkflowGraph.pdf, id=263, 712.6625pt x 210.7875pt>
-File: images/WorkflowGraph.pdf Graphic file (type pdf)
-<use images/WorkflowGraph.pdf>
-Package pdftex.def Info: images/WorkflowGraph.pdf  used on input line 88.
-(pdftex.def)             Requested size: 427.6008pt x 126.47346pt.
-
-Overfull \hbox (37.6008pt too wide) in paragraph at lines 88--89
+Overfull \hbox (66.20016pt too wide) in paragraph at lines 70--71
 [][] 
  []
 
@@ -1117,35 +1104,31 @@ Overfull \hbox (39.30276pt too wide) has occurred while \output is active
 HEALTH WORKERS
  []
 
-[36 <./images/EntityGraphMedication.pdf>]
-<images/MetamodelEntityGraph.pdf, id=272, 1074.0125pt x 401.5pt>
-File: images/MetamodelEntityGraph.pdf Graphic file (type pdf)
-<use images/MetamodelEntityGraph.pdf>
-Package pdftex.def Info: images/MetamodelEntityGraph.pdf  used on input line 11
-1.
-(pdftex.def)             Requested size: 429.59738pt x 160.59715pt.
+[36]
+<images/WorkflowGraph.pdf, id=266, 712.6625pt x 210.7875pt>
+File: images/WorkflowGraph.pdf Graphic file (type pdf)
+<use images/WorkflowGraph.pdf>
+Package pdftex.def Info: images/WorkflowGraph.pdf  used on input line 89.
+(pdftex.def)             Requested size: 427.6008pt x 126.47346pt.
 
-Overfull \hbox (39.59738pt too wide) in paragraph at lines 111--112
-[][] 
- []
-
-[37 <./images/WorkflowGraph.pdf>]
-<images/IntegratedEntityWorkflowModels.pdf, id=281, 1013.7875pt x 662.475pt>
-File: images/IntegratedEntityWorkflowModels.pdf Graphic file (type pdf)
-<use images/IntegratedEntityWorkflowModels.pdf>
-Package pdftex.def Info: images/IntegratedEntityWorkflowModels.pdf  used on inp
-ut line 119.
-(pdftex.def)             Requested size: 405.50783pt x 264.9853pt.
-
-Overfull \hbox (15.50783pt too wide) in paragraph at lines 119--120
+Overfull \hbox (37.6008pt too wide) in paragraph at lines 89--90
 [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (gameengine.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[37 <./images/EntityGraphMedication.pdf>]
+<images/MetamodelEntityGraph.pdf, id=275, 1074.0125pt x 401.5pt>
+File: images/MetamodelEntityGraph.pdf Graphic file (type pdf)
+<use images/MetamodelEntityGraph.pdf>
+Package pdftex.def Info: images/MetamodelEntityGraph.pdf  used on input line 11
+2.
+(pdftex.def)             Requested size: 429.59738pt x 160.59715pt.
+
+Overfull \hbox (39.59738pt too wide) in paragraph at lines 112--113
+[][] 
+ []
 
 
 Overfull \hbox (39.30276pt too wide) has occurred while \output is active
@@ -1153,26 +1136,53 @@ Overfull \hbox (39.30276pt too wide) has occurred while \output is active
 HEALTH WORKERS
  []
 
-[38 <./images/MetamodelEntityGraph.pdf>] [39 <./images/IntegratedEntityWorkflow
-Models.pdf>]
+[38 <./images/WorkflowGraph.pdf>]
+<images/IntegratedEntityWorkflowModels.pdf, id=284, 1013.7875pt x 662.475pt>
+File: images/IntegratedEntityWorkflowModels.pdf Graphic file (type pdf)
+<use images/IntegratedEntityWorkflowModels.pdf>
+Package pdftex.def Info: images/IntegratedEntityWorkflowModels.pdf  used on inp
+ut line 120.
+(pdftex.def)             Requested size: 405.50783pt x 264.9853pt.
+
+Overfull \hbox (15.50783pt too wide) in paragraph at lines 120--121
+[][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (gameengine.tex [39 <./images/MetamodelEntityGraph.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Overfull \hbox (39.30276pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/12 40 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
 HEALTH WORKERS
  []
 
-[40]
+[40 <./images/IntegratedEntityWorkflowModels.pdf>]
 <images/KnowledgeMap3.pdf, id=300, 321.2pt x 220.825pt>
 File: images/KnowledgeMap3.pdf Graphic file (type pdf)
 <use images/KnowledgeMap3.pdf>
 Package pdftex.def Info: images/KnowledgeMap3.pdf  used on input line 32.
 (pdftex.def)             Requested size: 192.72148pt x 132.496pt.
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[41]
 Overfull \hbox (23.59607pt too wide) in paragraph at lines 40--51
 [][] 
  []
 
-[41 <./images/KnowledgeMap3.pdf>]
-<images/LearningMap.pdf, id=308, 1003.75pt x 582.175pt>
+
+Overfull \hbox (39.30276pt too wide) has occurred while \output is active
+\OT1/cmr/m/n/12 42 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
+HEALTH WORKERS
+ []
+
+[42 <./images/KnowledgeMap3.pdf>]
+<images/LearningMap.pdf, id=311, 1003.75pt x 582.175pt>
 File: images/LearningMap.pdf Graphic file (type pdf)
 <use images/LearningMap.pdf>
 Package pdftex.def Info: images/LearningMap.pdf  used on input line 60.
@@ -1183,17 +1193,17 @@ Overfull \hbox (61.68333pt too wide) in paragraph at lines 60--61
  []
 
 
-Overfull \hbox (39.30276pt too wide) has occurred while \output is active
-\OT1/cmr/m/n/12 42 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
-HEALTH WORKERS
- []
-
-[42 <./images/LearningMap.pdf>]
 Overfull \hbox (23.59607pt too wide) in paragraph at lines 68--79
 [][] 
  []
 
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [43 <./images/LearningMap.pdf>]
 Underfull \hbox (badness 2932) in paragraph at lines 91--91
 []|\OT1/cmr/m/n/12 Feedback af-
  []
@@ -1228,7 +1238,7 @@ Overfull \hbox (77.77075pt too wide) in paragraph at lines 89--99
 [][] 
  []
 
-[43]
+
 Overfull \hbox (39.30276pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/12 44 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
 HEALTH WORKERS
@@ -1240,8 +1250,8 @@ Overfull \hbox (39.30276pt too wide) has occurred while \output is active
 HEALTH WORKERS
  []
 
-[46]
-<images/EntityInstanceGraph.pdf, id=329, 923.45pt x 250.9375pt>
+[46] [47]
+<images/EntityInstanceGraph.pdf, id=332, 923.45pt x 250.9375pt>
 File: images/EntityInstanceGraph.pdf Graphic file (type pdf)
 <use images/EntityInstanceGraph.pdf>
 Package pdftex.def Info: images/EntityInstanceGraph.pdf  used on input line 157
@@ -1254,14 +1264,14 @@ File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 163.
- [47 <./images/EntityInstanceGraph.pdf>]
+
 Overfull \hbox (39.30276pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/12 48 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
 HEALTH WORKERS
  []
 
-[48]
-<images/GeneratingScenarios1.pdf, id=341, 1104.125pt x 301.125pt>
+[48 <./images/EntityInstanceGraph.pdf>] [49]
+<images/GeneratingScenarios1.pdf, id=344, 1104.125pt x 301.125pt>
 File: images/GeneratingScenarios1.pdf Graphic file (type pdf)
 <use images/GeneratingScenarios1.pdf>
 Package pdftex.def Info: images/GeneratingScenarios1.pdf  used on input line 21
@@ -1272,14 +1282,20 @@ Overfull \hbox (51.64218pt too wide) in paragraph at lines 213--214
 [][] 
  []
 
-<images/GeneratingScenarios2.pdf, id=342, 813.0375pt x 170.6375pt>
+<images/GeneratingScenarios2.pdf, id=345, 813.0375pt x 170.6375pt>
 File: images/GeneratingScenarios2.pdf Graphic file (type pdf)
 <use images/GeneratingScenarios2.pdf>
 Package pdftex.def Info: images/GeneratingScenarios2.pdf  used on input line 21
 9.
 (pdftex.def)             Requested size: 325.20924pt x 68.25378pt.
-[49 <./images/GeneratingScenarios1.pdf> <./images/GeneratingScenarios2.pdf>]
-<images/IntegratedEntityGameModels.pdf, id=354, 1023.825pt x 863.225pt>
+
+Overfull \hbox (39.30276pt too wide) has occurred while \output is active
+\OT1/cmr/m/n/12 50 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
+HEALTH WORKERS
+ []
+
+[50 <./images/GeneratingScenarios1.pdf> <./images/GeneratingScenarios2.pdf>]
+<images/IntegratedEntityGameModels.pdf, id=357, 1023.825pt x 863.225pt>
 File: images/IntegratedEntityGameModels.pdf Graphic file (type pdf)
 <use images/IntegratedEntityGameModels.pdf>
 Package pdftex.def Info: images/IntegratedEntityGameModels.pdf  used on input l
@@ -1293,14 +1309,14 @@ Overfull \hbox (19.52274pt too wide) in paragraph at lines 255--256
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
+[51]
 Overfull \hbox (39.30276pt too wide) has occurred while \output is active
-\OT1/cmr/m/n/12 50 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
+\OT1/cmr/m/n/12 52 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
 HEALTH WORKERS
  []
 
-[50] [51 <./images/IntegratedEntityGameModels.pdf>]
-<images/ConceptualModelGameElements.pdf, id=366, 1053.9375pt x 381.425pt>
+[52 <./images/IntegratedEntityGameModels.pdf>]
+<images/ConceptualModelGameElements.pdf, id=369, 1053.9375pt x 381.425pt>
 File: images/ConceptualModelGameElements.pdf Graphic file (type pdf)
 <use images/ConceptualModelGameElements.pdf>
 Package pdftex.def Info: images/ConceptualModelGameElements.pdf  used on input 
@@ -1311,20 +1327,20 @@ Overfull \hbox (31.56754pt too wide) in paragraph at lines 271--272
 [][] 
  []
 
-<images/GameEngineFacadePattern.pdf, id=367, 632.3625pt x 311.1625pt>
+<images/GameEngineFacadePattern.pdf, id=370, 632.3625pt x 311.1625pt>
 File: images/GameEngineFacadePattern.pdf Graphic file (type pdf)
 <use images/GameEngineFacadePattern.pdf>
 Package pdftex.def Info: images/GameEngineFacadePattern.pdf  used on input line
  281.
 (pdftex.def)             Requested size: 252.94052pt x 124.46278pt.
 
-Overfull \hbox (39.30276pt too wide) has occurred while \output is active
-\OT1/cmr/m/n/12 52 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
-HEALTH WORKERS
- []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[52 <./images/ConceptualModelGameElements.pdf>]
-<images/KnowledgeMap2.pdf, id=376, 1063.975pt x 140.525pt>
+
+Underfull \vbox (badness 1946) has occurred while \output is active []
+
+ [53 <./images/ConceptualModelGameElements.pdf>]
+<images/KnowledgeMap2.pdf, id=379, 1063.975pt x 140.525pt>
 File: images/KnowledgeMap2.pdf Graphic file (type pdf)
 <use images/KnowledgeMap2.pdf>
 Package pdftex.def Info: images/KnowledgeMap2.pdf  used on input line 305.
@@ -1334,7 +1350,10 @@ Overfull \hbox (35.58246pt too wide) in paragraph at lines 305--306
 [][] 
  []
 
-[53 <./images/GameEngineFacadePattern.pdf>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 Overfull \hbox (3.42497pt too wide) in paragraph at lines 315--315
 []|\OT1/cmr/m/n/12 Level| 
  []
@@ -1365,250 +1384,282 @@ Overfull \hbox (39.30276pt too wide) has occurred while \output is active
 HEALTH WORKERS
  []
 
-[54 <./images/KnowledgeMap2.pdf>] [55]
-Overfull \hbox (0.35706pt too wide) in paragraph at lines 356--357
-[]\OT1/cmr/m/n/12 The method we sug-gest for au-to-mat-i-cally gen-er-at-ing su
-ch graph in-stances,
- []
-
-
+[54 <./images/GameEngineFacadePattern.pdf>] [55 <./images/KnowledgeMap2.pdf>]
 Overfull \hbox (39.30276pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/12 56 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
 HEALTH WORKERS
  []
 
-[56]) [57]
+[56]
+Overfull \hbox (0.35706pt too wide) in paragraph at lines 356--357
+[]\OT1/cmr/m/n/12 The method we sug-gest for au-to-mat-i-cally gen-er-at-ing su
+ch graph in-stances,
+ []
+
+[57])
 Overfull \hbox (39.30276pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/12 58 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
 HEALTH WORKERS
  []
 
-[58]
+[58] [59]
+Overfull \hbox (39.30276pt too wide) has occurred while \output is active
+\OT1/cmr/m/n/12 60 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
+HEALTH WORKERS
+ []
+
+[60
+
+]
 Chapter 5.
-<images/PneumoniaEntityGraph.pdf, id=404, 1194.4625pt x 843.15pt>
+[61]
+<images/PneumoniaEntityGraph.pdf, id=413, 1074.0125pt x 963.6pt>
 File: images/PneumoniaEntityGraph.pdf Graphic file (type pdf)
 <use images/PneumoniaEntityGraph.pdf>
-Package pdftex.def Info: images/PneumoniaEntityGraph.pdf  used on input line 60
+Package pdftex.def Info: images/PneumoniaEntityGraph.pdf  used on input line 70
 .
-(pdftex.def)             Requested size: 394.17384pt x 278.24036pt.
-
-Overfull \hbox (4.17384pt too wide) in paragraph at lines 60--61
-[][] 
- []
+(pdftex.def)             Requested size: 354.42522pt x 317.98898pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[59
+<images/PneumoniaIntegratedEntityWorkflowModels.pdf, id=414, 1033.8625pt x 833.
+1125pt>
+File: images/PneumoniaIntegratedEntityWorkflowModels.pdf Graphic file (type pdf
+)
+<use images/PneumoniaIntegratedEntityWorkflowModels.pdf>
+Package pdftex.def Info: images/PneumoniaIntegratedEntityWorkflowModels.pdf  us
+ed on input line 79.
+(pdftex.def)             Requested size: 413.53767pt x 333.23909pt.
 
-] [60 <./images/PneumoniaEntityGraph.pdf>]
-Chapter 6.
-[61
+Overfull \hbox (23.53767pt too wide) in paragraph at lines 79--80
+[][] 
+ []
 
-] [62
+[62]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [63 <./images/PneumoniaEntityGraph.pdf>] [64 <./images/PneumoniaIntegratedEnti
+tyWorkflowModels.pdf>] [65] [66
 
 ]
-Overfull \hbox (5.46484pt too wide) in paragraph at lines 85--85
+Chapter 6.
+[67] [68
+
+]
+Overfull \hbox (5.46484pt too wide) in paragraph at lines 104--104
 \OT1/cmr/m/n/12 computer-interpretable clin-i-cal prac-tice guide-lines''. In: 
 \OT1/cmr/m/it/12 Jour-nal of Biomed-
  []
 
 
-Overfull \hbox (32.62881pt too wide) in paragraph at lines 85--85
+Overfull \hbox (32.62881pt too wide) in paragraph at lines 104--104
 \OT1/cmr/m/it/12 in-for-mat-ics \OT1/cmr/m/n/12 139, pp. 22{43. \OT1/cmr/m/sc/1
 2 issn\OT1/cmr/m/n/12 : 0926-9630. \OT1/cmr/m/sc/12 url\OT1/cmr/m/n/12 : $\OT1/
 cmtt/m/n/12 https : / / www . researchgate .
  []
 
 
-Overfull \hbox (47.52502pt too wide) in paragraph at lines 85--85
+Overfull \hbox (47.52502pt too wide) in paragraph at lines 104--104
 \OT1/cmtt/m/n/12 net / publication / 23271685{\ _ }From{\ _ }guidelines{\ _ }to
 {\ _ }careflows{\ _
  []
 
-[63
+[69
 
 ]
-Overfull \hbox (2.18968pt too wide) in paragraph at lines 85--85
+Overfull \hbox (2.18968pt too wide) in paragraph at lines 104--104
 \OT1/cmr/m/n/12 ease. \OT1/cmr/m/sc/12 url\OT1/cmr/m/n/12 : $\OT1/cmtt/m/n/12 h
 ttp : / / apps . who . int / medicinedocs / documents / s21973en /
  []
 
-[64] [65] [66]
-<appendices/comparisonApps.pdf, id=437, 597.53635pt x 845.04686pt>
+[70] [71] [72]
+<appendices/comparisonApps.pdf, id=461, 597.53635pt x 845.04686pt>
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf>
-Package pdftex.def Info: appendices/comparisonApps.pdf  used on input line 91.
+Package pdftex.def Info: appendices/comparisonApps.pdf  used on input line 110.
+
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf>
-Package pdftex.def Info: appendices/comparisonApps.pdf  used on input line 91.
+Package pdftex.def Info: appendices/comparisonApps.pdf  used on input line 110.
+
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf>
-Package pdftex.def Info: appendices/comparisonApps.pdf  used on input line 91.
+Package pdftex.def Info: appendices/comparisonApps.pdf  used on input line 110.
+
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf>
-Package pdftex.def Info: appendices/comparisonApps.pdf  used on input line 91.
+Package pdftex.def Info: appendices/comparisonApps.pdf  used on input line 110.
+
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf>
-Package pdftex.def Info: appendices/comparisonApps.pdf  used on input line 91.
+Package pdftex.def Info: appendices/comparisonApps.pdf  used on input line 110.
+
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf>
-Package pdftex.def Info: appendices/comparisonApps.pdf  used on input line 91.
+Package pdftex.def Info: appendices/comparisonApps.pdf  used on input line 110.
+
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf>
-Package pdftex.def Info: appendices/comparisonApps.pdf  used on input line 91.
+Package pdftex.def Info: appendices/comparisonApps.pdf  used on input line 110.
+
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf>
-Package pdftex.def Info: appendices/comparisonApps.pdf  used on input line 91.
+Package pdftex.def Info: appendices/comparisonApps.pdf  used on input line 110.
+
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
-<appendices/comparisonApps.pdf, id=446, page=1, 597.53635pt x 845.04686pt>
+<appendices/comparisonApps.pdf, id=470, page=1, 597.53635pt x 845.04686pt>
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf, page 1>
 Package pdftex.def Info: appendices/comparisonApps.pdf , page1 used on input li
-ne 91.
+ne 110.
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf, page 1>
 Package pdftex.def Info: appendices/comparisonApps.pdf , page1 used on input li
-ne 91.
+ne 110.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
- [67
+ [73
 
 ]
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf, page 1>
 Package pdftex.def Info: appendices/comparisonApps.pdf , page1 used on input li
-ne 91.
+ne 110.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf, page 1>
 Package pdftex.def Info: appendices/comparisonApps.pdf , page1 used on input li
-ne 91.
+ne 110.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf, page 1>
 Package pdftex.def Info: appendices/comparisonApps.pdf , page1 used on input li
-ne 91.
+ne 110.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
- [68 <./appendices/comparisonApps.pdf>]
-<appendices/comparisonApps.pdf, id=470, page=2, 597.53635pt x 845.04686pt>
+ [74 <./appendices/comparisonApps.pdf>]
+<appendices/comparisonApps.pdf, id=494, page=2, 597.53635pt x 845.04686pt>
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf, page 2>
 Package pdftex.def Info: appendices/comparisonApps.pdf , page2 used on input li
-ne 91.
-(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
-File: appendices/comparisonApps.pdf Graphic file (type pdf)
-<use appendices/comparisonApps.pdf, page 2>
-Package pdftex.def Info: appendices/comparisonApps.pdf , page2 used on input li
-ne 91.
+ne 110.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf, page 2>
 Package pdftex.def Info: appendices/comparisonApps.pdf , page2 used on input li
-ne 91.
+ne 110.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
- [69 <./appendices/comparisonApps.pdf>]
-<appendices/comparisonApps.pdf, id=476, page=3, 597.53635pt x 845.04686pt>
+File: appendices/comparisonApps.pdf Graphic file (type pdf)
+<use appendices/comparisonApps.pdf, page 2>
+Package pdftex.def Info: appendices/comparisonApps.pdf , page2 used on input li
+ne 110.
+(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
+ [75 <./appendices/comparisonApps.pdf>]
+<appendices/comparisonApps.pdf, id=500, page=3, 597.53635pt x 845.04686pt>
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf, page 3>
 Package pdftex.def Info: appendices/comparisonApps.pdf , page3 used on input li
-ne 91.
+ne 110.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf, page 3>
 Package pdftex.def Info: appendices/comparisonApps.pdf , page3 used on input li
-ne 91.
+ne 110.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf, page 3>
 Package pdftex.def Info: appendices/comparisonApps.pdf , page3 used on input li
-ne 91.
+ne 110.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
- [70 <./appendices/comparisonApps.pdf>]
-<appendices/comparisonApps.pdf, id=481, page=4, 597.53635pt x 845.04686pt>
+ [76 <./appendices/comparisonApps.pdf>]
+<appendices/comparisonApps.pdf, id=505, page=4, 597.53635pt x 845.04686pt>
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf, page 4>
 Package pdftex.def Info: appendices/comparisonApps.pdf , page4 used on input li
-ne 91.
-(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
-File: appendices/comparisonApps.pdf Graphic file (type pdf)
-<use appendices/comparisonApps.pdf, page 4>
-Package pdftex.def Info: appendices/comparisonApps.pdf , page4 used on input li
-ne 91.
+ne 110.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf, page 4>
 Package pdftex.def Info: appendices/comparisonApps.pdf , page4 used on input li
-ne 91.
+ne 110.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
- [71 <./appendices/comparisonApps.pdf>]
-<appendices/comparisonApps.pdf, id=486, page=5, 597.53635pt x 845.04686pt>
+File: appendices/comparisonApps.pdf Graphic file (type pdf)
+<use appendices/comparisonApps.pdf, page 4>
+Package pdftex.def Info: appendices/comparisonApps.pdf , page4 used on input li
+ne 110.
+(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
+ [77 <./appendices/comparisonApps.pdf>]
+<appendices/comparisonApps.pdf, id=510, page=5, 597.53635pt x 845.04686pt>
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf, page 5>
 Package pdftex.def Info: appendices/comparisonApps.pdf , page5 used on input li
-ne 91.
+ne 110.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf, page 5>
 Package pdftex.def Info: appendices/comparisonApps.pdf , page5 used on input li
-ne 91.
+ne 110.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf, page 5>
 Package pdftex.def Info: appendices/comparisonApps.pdf , page5 used on input li
-ne 91.
+ne 110.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
- [72 <./appendices/comparisonApps.pdf>]
-<appendices/comparisonApps.pdf, id=491, page=6, 597.53635pt x 845.04686pt>
+ [78 <./appendices/comparisonApps.pdf>]
+<appendices/comparisonApps.pdf, id=515, page=6, 597.53635pt x 845.04686pt>
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf, page 6>
 Package pdftex.def Info: appendices/comparisonApps.pdf , page6 used on input li
-ne 91.
-(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
-File: appendices/comparisonApps.pdf Graphic file (type pdf)
-<use appendices/comparisonApps.pdf, page 6>
-Package pdftex.def Info: appendices/comparisonApps.pdf , page6 used on input li
-ne 91.
+ne 110.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf, page 6>
 Package pdftex.def Info: appendices/comparisonApps.pdf , page6 used on input li
-ne 91.
+ne 110.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
- [73 <./appendices/comparisonApps.pdf>]
-<appendices/comparisonApps.pdf, id=496, page=7, 597.53635pt x 845.04686pt>
+File: appendices/comparisonApps.pdf Graphic file (type pdf)
+<use appendices/comparisonApps.pdf, page 6>
+Package pdftex.def Info: appendices/comparisonApps.pdf , page6 used on input li
+ne 110.
+(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
+ [79 <./appendices/comparisonApps.pdf>]
+<appendices/comparisonApps.pdf, id=520, page=7, 597.53635pt x 845.04686pt>
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf, page 7>
 Package pdftex.def Info: appendices/comparisonApps.pdf , page7 used on input li
-ne 91.
+ne 110.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf, page 7>
 Package pdftex.def Info: appendices/comparisonApps.pdf , page7 used on input li
-ne 91.
+ne 110.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf, page 7>
 Package pdftex.def Info: appendices/comparisonApps.pdf , page7 used on input li
-ne 91.
+ne 110.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
- [74 <./appendices/comparisonApps.pdf>] (main.aux)
+ [80 <./appendices/comparisonApps.pdf>] (main.aux)
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 13111 strings out of 492945
- 226598 string characters out of 3135519
- 508408 words of memory out of 3000000
- 16797 multiletter control sequences out of 15000+200000
+ 13127 strings out of 492945
+ 227060 string characters out of 3135519
+ 509697 words of memory out of 3000000
+ 16812 multiletter control sequences out of 15000+200000
  18900 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  51i,18n,70p,1462b,1745s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1623,9 +1674,9 @@ b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (78 pages, 6051829 bytes).
+Output written on main.pdf (84 pages, 6067522 bytes).
 PDF statistics:
- 540 PDF objects out of 1000 (max. 8388607)
+ 564 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 251 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 256 words of extra memory for PDF output out of 10000 (max. 10000000)
 

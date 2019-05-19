@@ -74,7 +74,7 @@ hasMeasurement</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>400</x>
+      <x>340</x>
       <y>290</y>
       <w>100</w>
       <h>40</h>
@@ -87,7 +87,7 @@ condition
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>520</x>
+      <x>460</x>
       <y>290</y>
       <w>100</w>
       <h>30</h>
@@ -215,7 +215,7 @@ value</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>780</x>
+      <x>730</x>
       <y>290</y>
       <w>100</w>
       <h>60</h>
@@ -229,7 +229,7 @@ value
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>900</x>
+      <x>840</x>
       <y>290</y>
       <w>100</w>
       <h>30</h>
@@ -370,5 +370,28 @@ drink value</panel_attributes>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>580</x>
+      <y>290</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Jaundice</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>960</x>
+      <y>290</y>
+      <w>100</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Jaundice
+value</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
