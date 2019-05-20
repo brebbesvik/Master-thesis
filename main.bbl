@@ -945,6 +945,29 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{Highsoft}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=H}{%
+         family={Highsoft},
+         familyi={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{H1}
+    \strng{fullhash}{H1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{title}{{Interactive JavaScript charts for your webpage |
+  Highcharts}}
+    \verb{url}
+    \verb https://www.highcharts.com/
+    \endverb
+    \field{urlday}{20}
+    \field{urlmonth}{05}
+    \field{urlyear}{2019}
+  \endentry
+
   \entry{Johansen2018}{misc}{}
     \name{author}{4}{}{%
       {{hash=JIH}{%
@@ -1154,6 +1177,57 @@
   for Medical Informatics of Bosnia {\&} Herzegovina : casopis Drustva za
   medicinsku informatiku BiH}
     \field{year}{2008}
+  \endentry
+
+  \entry{Molich1990}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MR}{%
+         family={Molich},
+         familyi={M\bibinitperiod},
+         given={Rolf},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=NJ}{%
+         family={Nielsen},
+         familyi={N\bibinitperiod},
+         given={Jakob},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{Consistency,dialogue design,error
+  messages,feedback,guidelines,industrial designers,industrial
+  programmers,interaction accelerators,iterative design,memory load,prevention
+  of errors,user exits,user interfaces}
+    \strng{namehash}{MRNJ1}
+    \strng{fullhash}{MRNJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1990}
+    \field{labeldatesource}{year}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \verb{doi}
+    \verb 10.1145/77481.77486
+    \endverb
+    \field{issn}{00010782}
+    \field{number}{3}
+    \field{pages}{338\bibrangedash 348}
+    \field{title}{{Improving a human-computer dialogue}}
+    \verb{url}
+    \verb http://portal.acm.org/citation.cfm?doid=77481.77486
+    \endverb
+    \field{volume}{33}
+    \verb{file}
+    \verb :C$\backslash$:/Users/Ben/AppData/Local/Mendeley Ltd./Mendeley Deskto
+    \verb p/Downloaded/Molich, Nielsen - 1990 - Improving a human-computer dial
+    \verb ogue.pdf:pdf
+    \endverb
+    \field{journaltitle}{Communications of the ACM}
+    \field{year}{1990}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{Morrison1995}{article}{}
@@ -1473,6 +1547,111 @@
     \field{year}{2015}
   \endentry
 
+  \entry{React}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=R}{%
+         family={React},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{R1}
+    \strng{fullhash}{R1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{abstract}{%
+    A JavaScript library for building user interfaces%
+    }
+    \field{title}{{React – A JavaScript library for building user
+  interfaces}}
+    \verb{url}
+    \verb https://reactjs.org/
+    \endverb
+    \field{urlday}{20}
+    \field{urlmonth}{05}
+    \field{urlyear}{2019}
+  \endentry
+
+  \entry{ReactNative}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=RN}{%
+         family={React-Native},
+         familyi={R\bibinithyphendelim N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RN1}
+    \strng{fullhash}{RN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{abstract}{%
+    Build native mobile apps using JavaScript and React%
+    }
+    \field{title}{{React Native {\textperiodcentered} A framework for building
+  native apps using React}}
+    \verb{url}
+    \verb https://facebook.github.io/react-native/
+    \endverb
+    \field{urlday}{20}
+    \field{urlmonth}{05}
+    \field{urlyear}{2019}
+  \endentry
+
+  \entry{Redux}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=R}{%
+         family={Redux},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{R2}
+    \strng{fullhash}{R2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{abstract}{%
+    A predictable state container for JavaScript apps.%
+    }
+    \field{title}{{Redux {\textperiodcentered} A Predictable State Container
+  for JS Apps}}
+    \verb{url}
+    \verb https://redux.js.org/
+    \endverb
+    \field{urlday}{20}
+    \field{urlmonth}{05}
+    \field{urlyear}{2019}
+  \endentry
+
+  \entry{ReduxJS-thunk}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=Rt}{%
+         family={ReduxJS-thunk},
+         familyi={R\bibinithyphendelim t\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{Rt1}
+    \strng{fullhash}{Rt1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{abstract}{%
+    With a plain basic Redux store, you can only do simple synchronous updates
+  by dispatching an action. Middleware extend the store's abilities, and let
+  you write async logic that interacts with the store.%
+    }
+    \field{title}{{reduxjs/redux-thunk: Thunk middleware for Redux}}
+    \verb{url}
+    \verb https://github.com/reduxjs/redux-thunk
+    \endverb
+    \field{urlday}{20}
+    \field{urlmonth}{05}
+    \field{urlyear}{2019}
+  \endentry
+
   \entry{RepublicofKeny2016}{book}{}
     \name{author}{1}{}{%
       {{hash=RMoH}{%
@@ -1681,6 +1860,33 @@
     \verb http://www.ncbi.nlm.nih.gov/pubmed/24983061
     \endverb
     \field{year}{2011}
+  \endentry
+
+  \entry{Wix}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=W}{%
+         family={Wix},
+         familyi={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{W1}
+    \strng{fullhash}{W1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{abstract}{%
+    React Native Navigation provides 100{\%} native platform navigation on both
+  iOS and Android for React Native apps%
+    }
+    \field{title}{{Home - React Native Navigation - truly native navigation for
+  iOS and Android}}
+    \verb{url}
+    \verb https://wix.github.io/react-native-navigation/{\#}/
+    \endverb
+    \field{urlday}{20}
+    \field{urlmonth}{05}
+    \field{urlyear}{2019}
   \endentry
 
   \entry{Woolf1999}{article}{}

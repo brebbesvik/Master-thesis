@@ -63,15 +63,21 @@ In the paediatric possible asthma guideline \parencite{RepublicofKeny2016}, ther
 
  We have kept the Dosage vertex, while it is not in use. It can be used to represent the total amount of a specific medication given to the patient during this treatment.
  
- Another detail must be clarified when implementing instances of the medications. The route must be given names which can be uniquely identified for each medication. An example is Ipratopium Bromide and Salbutamol which both uses the Route Inhaled. Ipratopium Bromide uses only the inhaler, while Salbutamol can be given using the nebulizer. If Ipratopium Bromide is sharing the same Inhaled vertex as Salbutamol during instantiation, it will look like Ipratopum Bromide can be nebulized. By creating a new instansiation of Route per medication, and uniquely identify them by name Inhaled1, Inhaled2 or InhaledSalbutamol, InhaledIpratopium, we avoid this problem. Now we can connect Salbutamol with Inhaled1 and have edges to Form Inhaler and Nebulizer. Ipratopium Bromide has an edge to Inhaled2, which has an edge to Inhaler. Then we have an instantiation where Ipratopium Bromide can only be inhaled using the Inhaler.
+
 \begin{figure}[h!]
 	\caption {Showing the implementation of Medication in the entity graph. How to administer a medication to patient}
 	\label{fig:EntityGraphMedication}
 	\includegraphics[scale=0.45]{EntityGraphMedication}
 \end{figure}
 
+ Another detail must be clarified when implementing instances of the medications. The route must be given names which can be uniquely identified for each medication. An example is Ipratopium Bromide and Salbutamol which both uses the Route Inhaled. Ipratopium Bromide uses only the inhaler, while Salbutamol can be given using the nebulizer. If Ipratopium Bromide is sharing the same Inhaled vertex as Salbutamol during instantiation, it will look like Ipratopum Bromide can be nebulized. By creating a new instansiation of Route per medication, and uniquely identify them by name Inhaled1, Inhaled2 or InhaledSalbutamol, InhaledIpratopium, we avoid this problem. Now we can connect Salbutamol with Inhaled1 and have edges to Form Inhaler and Nebulizer. Ipratopium Bromide has an edge to Inhaled2, which has an edge to Inhaler. Then we have an instantiation where Ipratopium Bromide can only be inhaled using the Inhaler. See figure \ref{fig:RouteMethodProblem}.
 
 
+\begin{figure}[h!]
+	\caption {To the left we don't know which medication has been inhaled using the nebulizer or inhaler. To the right we have specified this in the instantiation, by using two Inhaled-vertices and uniquely identifying them by giving them different names}
+	\label{fig:RouteMethodProblem}
+	\includegraphics[scale=0.3]{RouteMethodProblem}
+\end{figure}
 
 
 \subsection{Workflow model}

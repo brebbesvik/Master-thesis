@@ -62,13 +62,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.2}Entity model}{31}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.3}Workflow model}{36}% 
+\contentsline {subsection}{\numberline {4.2.3}Workflow model}{37}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.4}Metamodeling}{38}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.5}Game model}{39}% 
+\contentsline {subsection}{\numberline {4.2.5}Game model}{40}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Game engine}{39}% 
+\contentsline {section}{\numberline {4.3}Game engine}{40}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3.1}Dynamic Content Management}{41}% 
 \defcounter {refsection}{0}\relax 
@@ -86,42 +86,42 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.4.6}Unlocking harder levels at a certain category}{55}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.7}Visualization of game statistics}{56}% 
+\contentsline {subsection}{\numberline {4.4.7}Visualization of game statistics}{57}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.4.8}Automatically generating new questions}{57}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}The mobile application}{58}% 
+\contentsline {section}{\numberline {4.5}The mobile application}{59}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.5.1}React-Native and Redux}{59}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.5.2}User interface and flow of the user interaction}{59}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Architecture of the whole system}{59}% 
+\contentsline {section}{\numberline {4.6}Architecture of the whole system}{65}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6.1}Visualization}{59}% 
+\contentsline {subsection}{\numberline {4.6.1}Visualization}{65}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.7}Evaluation}{59}% 
+\contentsline {section}{\numberline {4.7}Evaluation}{65}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Discussion}{61}% 
+\contentsline {chapter}{\numberline {5}Discussion}{69}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Research questions}{61}% 
+\contentsline {section}{\numberline {5.1}Research questions}{69}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Evaluation}{61}% 
+\contentsline {section}{\numberline {5.2}Evaluation}{69}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}Evaluation of the application}{61}% 
+\contentsline {subsection}{\numberline {5.2.1}Evaluation of the application}{69}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Evaluation of the models}{61}% 
+\contentsline {subsection}{\numberline {5.2.2}Evaluation of the models}{69}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Limitations of the model}{64}% 
+\contentsline {section}{\numberline {5.3}Limitations of the model}{73}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Observations}{65}% 
+\contentsline {section}{\numberline {5.4}Observations}{73}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Challenges}{65}% 
+\contentsline {section}{\numberline {5.5}Challenges}{73}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.6}Reflection}{65}% 
+\contentsline {section}{\numberline {5.6}Reflection}{73}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusions}{67}% 
+\contentsline {chapter}{\numberline {6}Conclusions}{75}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Further research and development}{67}% 
+\contentsline {section}{\numberline {6.1}Further research and development}{75}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Comparison of CPG applications}{73}% 
+\contentsline {chapter}{Comparison of CPG applications}{81}% 

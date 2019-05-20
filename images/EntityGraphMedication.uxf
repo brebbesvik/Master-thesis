@@ -397,7 +397,7 @@ hasMethod</panel_attributes>
       <x>860</x>
       <y>590</y>
       <w>230</w>
-      <h>270</h>
+      <h>230</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -615,17 +615,6 @@ Duration</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>980</x>
-      <y>750</y>
-      <w>100</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>Infusion</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
       <x>870</x>
       <y>750</y>
       <w>100</w>
@@ -637,8 +626,8 @@ Duration</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>870</x>
-      <y>790</y>
+      <x>980</x>
+      <y>750</y>
       <w>100</w>
       <h>60</h>
     </coordinates>

@@ -1189,7 +1189,7 @@ Duration</panel_attributes>
       <x>1100</x>
       <y>830</y>
       <w>230</w>
-      <h>120</h>
+      <h>90</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -1221,17 +1221,6 @@ Duration</panel_attributes>
     <coordinates>
       <x>1220</x>
       <y>880</y>
-      <w>100</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>Infusion</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>1110</x>
-      <y>910</y>
       <w>100</w>
       <h>30</h>
     </coordinates>
