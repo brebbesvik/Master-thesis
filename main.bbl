@@ -945,6 +945,53 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{Hevner2004}{article}{}
+    \name{author}{4}{}{%
+      {{hash=HAR}{%
+         family={Hevner},
+         familyi={H\bibinitperiod},
+         given={Alan\bibnamedelima R.},
+         giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=MST}{%
+         family={March},
+         familyi={M\bibinitperiod},
+         given={Salvatore\bibnamedelima T.},
+         giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=PJ}{%
+         family={Park},
+         familyi={P\bibinitperiod},
+         given={Jinsoo},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=RS}{%
+         family={Ram},
+         familyi={R\bibinitperiod},
+         given={Sudha},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HAR+1}
+    \strng{fullhash}{HARMSTPJRS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2004}
+    \field{labeldatesource}{year}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{number}{1}
+    \field{pages}{75\bibrangedash 105}
+    \field{title}{{Design Science in Information System Research}}
+    \verb{url}
+    \verb http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.103.1725{\&}
+    \verb rep=rep1{\&}type=pdf
+    \endverb
+    \field{volume}{28}
+    \field{journaltitle}{MIS Quarterly}
+    \field{year}{2004}
+  \endentry
+
   \entry{Highsoft}{misc}{}
     \name{author}{1}{}{%
       {{hash=H}{%

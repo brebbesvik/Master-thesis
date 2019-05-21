@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
-  <zoom_level>10</zoom_level>
+  <zoom_level>8</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>510</x>
-      <y>340</y>
-      <w>100</w>
-      <h>30</h>
+      <x>536</x>
+      <y>272</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Patient</panel_attributes>
     <additional_attributes/>
@@ -15,10 +15,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>510</x>
-      <y>460</y>
-      <w>100</w>
-      <h>30</h>
+      <x>536</x>
+      <y>368</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Diagnosis</panel_attributes>
     <additional_attributes/>
@@ -26,10 +26,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>770</x>
-      <y>340</y>
-      <w>100</w>
-      <h>30</h>
+      <x>744</x>
+      <y>272</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Examination</panel_attributes>
     <additional_attributes/>
@@ -37,10 +37,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>520</x>
-      <y>640</y>
-      <w>100</w>
-      <h>30</h>
+      <x>544</x>
+      <y>512</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Management</panel_attributes>
     <additional_attributes/>
@@ -48,10 +48,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>760</x>
-      <y>430</y>
-      <w>110</w>
-      <h>30</h>
+      <x>736</x>
+      <y>344</y>
+      <w>88</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>DiagnosisName</panel_attributes>
     <additional_attributes/>
@@ -59,10 +59,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>510</x>
-      <y>270</y>
-      <w>100</w>
-      <h>30</h>
+      <x>536</x>
+      <y>216</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>History</panel_attributes>
     <additional_attributes/>
@@ -70,10 +70,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>760</x>
-      <y>640</y>
-      <w>100</w>
-      <h>30</h>
+      <x>736</x>
+      <y>512</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Medication</panel_attributes>
     <additional_attributes/>
@@ -81,10 +81,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>550</x>
-      <y>290</y>
-      <w>90</w>
-      <h>70</h>
+      <x>568</x>
+      <y>232</y>
+      <w>72</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 hasHistory</panel_attributes>
@@ -93,10 +93,10 @@ hasHistory</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>600</x>
-      <y>330</y>
-      <w>190</w>
-      <h>40</h>
+      <x>608</x>
+      <y>264</y>
+      <w>152</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 undergoesExamination</panel_attributes>
@@ -105,10 +105,10 @@ undergoesExamination</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>550</x>
-      <y>360</y>
-      <w>110</w>
-      <h>120</h>
+      <x>568</x>
+      <y>288</y>
+      <w>88</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 hasDiagnosis
@@ -118,10 +118,10 @@ hasDiagnosis
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>550</x>
-      <y>480</y>
-      <w>130</w>
-      <h>180</h>
+      <x>568</x>
+      <y>384</y>
+      <w>104</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 hasManagement</panel_attributes>
@@ -130,10 +130,10 @@ hasManagement</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>610</x>
-      <y>640</y>
-      <w>170</w>
-      <h>40</h>
+      <x>616</x>
+      <y>512</y>
+      <w>136</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 involvesMedication</panel_attributes>
@@ -142,10 +142,10 @@ involvesMedication</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>580</x>
-      <y>430</y>
-      <w>200</w>
-      <h>50</h>
+      <x>592</x>
+      <y>344</y>
+      <w>160</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 hasDiagnosisName</panel_attributes>
@@ -154,10 +154,10 @@ hasDiagnosisName</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>810</x>
-      <y>290</y>
-      <w>30</w>
-      <h>70</h>
+      <x>776</x>
+      <y>232</y>
+      <w>24</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
@@ -165,10 +165,10 @@ hasDiagnosisName</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>500</x>
-      <y>130</y>
-      <w>120</w>
-      <h>100</h>
+      <x>528</x>
+      <y>104</y>
+      <w>96</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -176,10 +176,10 @@ hasDiagnosisName</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>510</x>
-      <y>140</y>
-      <w>100</w>
-      <h>30</h>
+      <x>536</x>
+      <y>112</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Cough</panel_attributes>
     <additional_attributes/>
@@ -187,10 +187,10 @@ hasDiagnosisName</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>710</x>
-      <y>30</y>
-      <w>230</w>
-      <h>270</h>
+      <x>696</x>
+      <y>24</y>
+      <w>184</w>
+      <h>216</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -198,10 +198,10 @@ hasDiagnosisName</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>550</x>
-      <y>220</y>
-      <w>30</w>
-      <h>70</h>
+      <x>568</x>
+      <y>176</y>
+      <w>24</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
@@ -209,10 +209,10 @@ hasDiagnosisName</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>510</x>
-      <y>180</y>
-      <w>100</w>
-      <h>40</h>
+      <x>536</x>
+      <y>144</y>
+      <w>80</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>Difficulty 
 breathing</panel_attributes>
@@ -221,10 +221,10 @@ breathing</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>720</x>
-      <y>120</y>
-      <w>100</w>
-      <h>40</h>
+      <x>704</x>
+      <y>96</y>
+      <w>80</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>Oxygen
 Saturation</panel_attributes>
@@ -233,10 +233,10 @@ Saturation</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>830</x>
-      <y>120</y>
-      <w>100</w>
-      <h>30</h>
+      <x>792</x>
+      <y>96</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Cyanosis</panel_attributes>
     <additional_attributes/>
@@ -244,10 +244,10 @@ Saturation</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>830</x>
-      <y>160</y>
-      <w>100</w>
-      <h>40</h>
+      <x>792</x>
+      <y>128</y>
+      <w>80</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>Inability to 
 drink</panel_attributes>
@@ -256,10 +256,10 @@ drink</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>720</x>
-      <y>170</y>
-      <w>100</w>
-      <h>30</h>
+      <x>704</x>
+      <y>136</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Consciousness</panel_attributes>
     <additional_attributes/>
@@ -267,10 +267,10 @@ drink</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>720</x>
-      <y>210</y>
-      <w>100</w>
-      <h>30</h>
+      <x>704</x>
+      <y>168</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Grunting</panel_attributes>
     <additional_attributes/>
@@ -278,10 +278,10 @@ drink</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>830</x>
-      <y>210</y>
-      <w>100</w>
-      <h>40</h>
+      <x>792</x>
+      <y>168</y>
+      <w>80</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>Lower chest
 wall indrawing</panel_attributes>
@@ -290,10 +290,10 @@ wall indrawing</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>720</x>
-      <y>250</y>
-      <w>100</w>
-      <h>40</h>
+      <x>704</x>
+      <y>200</y>
+      <w>80</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>Respiratory
 Rate</panel_attributes>
@@ -302,10 +302,10 @@ Rate</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>800</x>
-      <y>660</y>
-      <w>30</w>
-      <h>70</h>
+      <x>768</x>
+      <y>528</y>
+      <w>24</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
@@ -313,10 +313,10 @@ Rate</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>750</x>
-      <y>710</y>
-      <w>120</w>
-      <h>170</h>
+      <x>728</x>
+      <y>568</y>
+      <w>96</w>
+      <h>136</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -324,10 +324,10 @@ Rate</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>320</x>
-      <y>680</y>
-      <w>100</w>
-      <h>30</h>
+      <x>384</x>
+      <y>544</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Advise</panel_attributes>
     <additional_attributes/>
@@ -335,10 +335,10 @@ Rate</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>410</x>
-      <y>660</y>
-      <w>150</w>
-      <h>50</h>
+      <x>456</x>
+      <y>528</y>
+      <w>120</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 involvesAdvise</panel_attributes>
@@ -347,10 +347,10 @@ involvesAdvise</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>520</x>
-      <y>720</y>
-      <w>100</w>
-      <h>30</h>
+      <x>544</x>
+      <y>576</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Hospitalization</panel_attributes>
     <additional_attributes/>
@@ -358,10 +358,10 @@ involvesAdvise</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>550</x>
-      <y>660</y>
-      <w>60</w>
-      <h>80</h>
+      <x>568</x>
+      <y>528</y>
+      <w>48</w>
+      <h>64</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 admit</panel_attributes>
@@ -370,10 +370,10 @@ admit</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>760</x>
-      <y>720</y>
-      <w>100</w>
-      <h>30</h>
+      <x>736</x>
+      <y>576</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Oxygen</panel_attributes>
     <additional_attributes/>
@@ -381,10 +381,10 @@ admit</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>760</x>
-      <y>760</y>
-      <w>100</w>
-      <h>30</h>
+      <x>736</x>
+      <y>608</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Penicillin</panel_attributes>
     <additional_attributes/>
@@ -392,10 +392,10 @@ admit</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>760</x>
-      <y>800</y>
-      <w>100</w>
-      <h>30</h>
+      <x>736</x>
+      <y>640</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Gentamicin</panel_attributes>
     <additional_attributes/>
@@ -403,10 +403,10 @@ admit</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>950</x>
-      <y>690</y>
-      <w>100</w>
-      <h>30</h>
+      <x>888</x>
+      <y>552</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Route</panel_attributes>
     <additional_attributes/>
@@ -414,10 +414,10 @@ admit</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>840</x>
-      <y>660</y>
-      <w>130</w>
-      <h>60</h>
+      <x>800</x>
+      <y>528</y>
+      <w>104</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 hasRoute</panel_attributes>
@@ -426,10 +426,10 @@ hasRoute</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>950</x>
-      <y>800</y>
-      <w>100</w>
-      <h>30</h>
+      <x>888</x>
+      <y>640</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Oral</panel_attributes>
     <additional_attributes/>
@@ -437,10 +437,10 @@ hasRoute</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>990</x>
-      <y>710</y>
-      <w>30</w>
-      <h>100</h>
+      <x>920</x>
+      <y>568</y>
+      <w>24</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
@@ -448,10 +448,10 @@ hasRoute</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>760</x>
-      <y>840</y>
-      <w>100</w>
-      <h>30</h>
+      <x>736</x>
+      <y>672</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Amoxicillin</panel_attributes>
     <additional_attributes/>
@@ -459,10 +459,10 @@ hasRoute</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>710</x>
-      <y>500</y>
-      <w>100</w>
-      <h>30</h>
+      <x>696</x>
+      <y>400</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Severity</panel_attributes>
     <additional_attributes/>
@@ -470,10 +470,10 @@ hasRoute</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>580</x>
-      <y>480</y>
-      <w>150</w>
-      <h>70</h>
+      <x>592</x>
+      <y>384</y>
+      <w>120</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 hasSeverity
@@ -483,10 +483,10 @@ m1=0..1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>310</x>
-      <y>340</y>
-      <w>100</w>
-      <h>30</h>
+      <x>376</x>
+      <y>272</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Age</panel_attributes>
     <additional_attributes/>
@@ -494,10 +494,10 @@ m1=0..1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>400</x>
-      <y>330</y>
-      <w>130</w>
-      <h>40</h>
+      <x>448</x>
+      <y>264</y>
+      <w>104</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 hasAge</panel_attributes>
@@ -506,10 +506,10 @@ hasAge</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>830</x>
-      <y>260</y>
-      <w>100</w>
-      <h>30</h>
+      <x>792</x>
+      <y>208</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Wheeze</panel_attributes>
     <additional_attributes/>
@@ -517,10 +517,10 @@ hasAge</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>40</x>
-      <y>30</y>
-      <w>230</w>
-      <h>310</h>
+      <x>160</x>
+      <y>24</y>
+      <w>184</w>
+      <h>248</h>
     </coordinates>
     <panel_attributes>Questions:
 
@@ -544,10 +544,10 @@ perhaps inherit diagnosisname?
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>950</x>
-      <y>640</y>
-      <w>100</w>
-      <h>30</h>
+      <x>888</x>
+      <y>512</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Duration</panel_attributes>
     <additional_attributes/>
@@ -555,10 +555,10 @@ perhaps inherit diagnosisname?
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>950</x>
-      <y>590</y>
-      <w>100</w>
-      <h>30</h>
+      <x>888</x>
+      <y>472</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Rate</panel_attributes>
     <additional_attributes/>
@@ -566,10 +566,10 @@ perhaps inherit diagnosisname?
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1090</x>
-      <y>570</y>
-      <w>100</w>
-      <h>40</h>
+      <x>1000</x>
+      <y>456</y>
+      <w>80</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>Gentamicin
 Rate</panel_attributes>
@@ -578,10 +578,10 @@ Rate</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1090</x>
-      <y>690</y>
-      <w>100</w>
-      <h>40</h>
+      <x>1000</x>
+      <y>552</y>
+      <w>80</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>Gentamicin
 Duration</panel_attributes>
@@ -590,10 +590,10 @@ Duration</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1040</x>
-      <y>650</y>
-      <w>60</w>
-      <h>30</h>
+      <x>960</x>
+      <y>520</y>
+      <w>48</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;40.0;10.0</additional_attributes>
@@ -601,10 +601,10 @@ Duration</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1040</x>
-      <y>590</y>
-      <w>60</w>
-      <h>30</h>
+      <x>960</x>
+      <y>472</y>
+      <w>48</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;40.0;10.0</additional_attributes>
@@ -612,10 +612,10 @@ Duration</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>840</x>
-      <y>590</y>
-      <w>130</w>
-      <h>70</h>
+      <x>800</x>
+      <y>472</y>
+      <w>104</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 hasRate</panel_attributes>
@@ -624,10 +624,10 @@ hasRate</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>850</x>
-      <y>640</y>
-      <w>120</w>
-      <h>40</h>
+      <x>808</x>
+      <y>512</y>
+      <w>96</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 hasDuration</panel_attributes>
@@ -636,10 +636,10 @@ hasDuration</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1200</x>
-      <y>570</y>
-      <w>100</w>
-      <h>40</h>
+      <x>1088</x>
+      <y>456</y>
+      <w>80</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>Amoxicillin
 Rate</panel_attributes>
@@ -648,10 +648,10 @@ Rate</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1080</x>
-      <y>510</y>
-      <w>230</w>
-      <h>110</h>
+      <x>992</x>
+      <y>408</y>
+      <w>184</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -659,10 +659,10 @@ Rate</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>950</x>
-      <y>840</y>
-      <w>100</w>
-      <h>30</h>
+      <x>888</x>
+      <y>672</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Intramuscular</panel_attributes>
     <additional_attributes/>
@@ -670,10 +670,10 @@ Rate</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>950</x>
-      <y>880</y>
-      <w>100</w>
-      <h>30</h>
+      <x>888</x>
+      <y>704</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Intravenous</panel_attributes>
     <additional_attributes/>
@@ -681,10 +681,10 @@ Rate</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>940</x>
-      <y>790</y>
-      <w>120</w>
-      <h>130</h>
+      <x>880</x>
+      <y>632</y>
+      <w>96</w>
+      <h>104</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -692,10 +692,10 @@ Rate</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1010</x>
-      <y>410</y>
-      <w>100</w>
-      <h>30</h>
+      <x>936</x>
+      <y>328</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>HIV</panel_attributes>
     <additional_attributes/>
@@ -703,10 +703,10 @@ Rate</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>900</x>
-      <y>410</y>
-      <w>100</w>
-      <h>30</h>
+      <x>848</x>
+      <y>328</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Pneumonia</panel_attributes>
     <additional_attributes/>
@@ -714,10 +714,10 @@ Rate</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>890</x>
-      <y>400</y>
-      <w>450</w>
-      <h>90</h>
+      <x>840</x>
+      <y>320</y>
+      <w>360</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -725,10 +725,10 @@ Rate</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>600</x>
-      <y>470</y>
-      <w>310</w>
-      <h>30</h>
+      <x>608</x>
+      <y>376</y>
+      <w>248</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;290.0;10.0</additional_attributes>
@@ -736,10 +736,10 @@ Rate</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>950</x>
-      <y>540</y>
-      <w>100</w>
-      <h>30</h>
+      <x>888</x>
+      <y>432</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Dosage</panel_attributes>
     <additional_attributes/>
@@ -747,10 +747,10 @@ Rate</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1200</x>
-      <y>520</y>
-      <w>100</w>
-      <h>40</h>
+      <x>1088</x>
+      <y>416</y>
+      <w>80</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>Penicilin
 Rate</panel_attributes>
@@ -759,10 +759,10 @@ Rate</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>830</x>
-      <y>540</y>
-      <w>140</w>
-      <h>120</h>
+      <x>792</x>
+      <y>432</y>
+      <w>112</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 hasDosage</panel_attributes>
@@ -771,10 +771,10 @@ hasDosage</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>50</x>
-      <y>410</y>
-      <w>230</w>
-      <h>190</h>
+      <x>168</x>
+      <y>328</y>
+      <w>184</w>
+      <h>152</h>
     </coordinates>
     <panel_attributes>Asthma questions:
 
@@ -792,10 +792,10 @@ in the guideline. Inhaler,
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>720</x>
-      <y>40</y>
-      <w>100</w>
-      <h>30</h>
+      <x>704</x>
+      <y>32</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Jaundice</panel_attributes>
     <additional_attributes/>
@@ -803,10 +803,10 @@ in the guideline. Inhaler,
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1120</x>
-      <y>410</y>
-      <w>100</w>
-      <h>30</h>
+      <x>1024</x>
+      <y>328</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Tuberculosis</panel_attributes>
     <additional_attributes/>
@@ -814,10 +814,10 @@ in the guideline. Inhaler,
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1230</x>
-      <y>410</y>
-      <w>100</w>
-      <h>30</h>
+      <x>1112</x>
+      <y>328</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Asthma</panel_attributes>
     <additional_attributes/>
@@ -825,10 +825,10 @@ in the guideline. Inhaler,
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>440</x>
-      <y>350</y>
-      <w>100</w>
-      <h>320</h>
+      <x>480</x>
+      <y>280</y>
+      <w>80</w>
+      <h>256</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 recieves
@@ -838,10 +838,10 @@ recieves
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1020</x>
-      <y>340</y>
-      <w>100</w>
-      <h>30</h>
+      <x>944</x>
+      <y>272</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Measurements</panel_attributes>
     <additional_attributes/>
@@ -849,10 +849,10 @@ recieves
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>980</x>
-      <y>60</y>
-      <w>340</w>
-      <h>220</h>
+      <x>912</x>
+      <y>48</y>
+      <w>272</w>
+      <h>176</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -860,10 +860,10 @@ recieves
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1060</x>
-      <y>270</y>
-      <w>30</w>
-      <h>90</h>
+      <x>976</x>
+      <y>216</y>
+      <w>24</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
@@ -871,10 +871,10 @@ recieves
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>860</x>
-      <y>330</y>
-      <w>180</w>
-      <h>40</h>
+      <x>816</x>
+      <y>264</y>
+      <w>144</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 hasMeasurements</panel_attributes>
@@ -883,10 +883,10 @@ hasMeasurements</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>990</x>
-      <y>230</y>
-      <w>100</w>
-      <h>40</h>
+      <x>920</x>
+      <y>184</y>
+      <w>80</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>Breaths Per
 Minute</panel_attributes>
@@ -895,10 +895,10 @@ Minute</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>990</x>
-      <y>190</y>
-      <w>100</w>
-      <h>30</h>
+      <x>920</x>
+      <y>152</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>GruntingValue</panel_attributes>
     <additional_attributes/>
@@ -906,10 +906,10 @@ Minute</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>990</x>
-      <y>150</y>
-      <w>100</w>
-      <h>30</h>
+      <x>920</x>
+      <y>120</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>AVPU</panel_attributes>
     <additional_attributes/>
@@ -917,10 +917,10 @@ Minute</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>990</x>
-      <y>80</y>
-      <w>100</w>
-      <h>60</h>
+      <x>920</x>
+      <y>64</y>
+      <w>80</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>Oxygen 
 Saturation
@@ -930,10 +930,10 @@ Percentage</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1100</x>
-      <y>70</y>
-      <w>100</w>
-      <h>40</h>
+      <x>1008</x>
+      <y>56</y>
+      <w>80</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>Cyanosis
 Value</panel_attributes>
@@ -942,10 +942,10 @@ Value</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1100</x>
-      <y>120</y>
-      <w>100</w>
-      <h>40</h>
+      <x>1008</x>
+      <y>96</y>
+      <w>80</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>Inability To 
 DrinkValue</panel_attributes>
@@ -954,10 +954,10 @@ DrinkValue</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1100</x>
-      <y>170</y>
-      <w>100</w>
-      <h>60</h>
+      <x>1008</x>
+      <y>136</y>
+      <w>80</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>Lower Chest
 Wall Indrawing
@@ -967,10 +967,10 @@ Value</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1100</x>
-      <y>240</y>
-      <w>100</w>
-      <h>30</h>
+      <x>1008</x>
+      <y>192</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>WheezeValue</panel_attributes>
     <additional_attributes/>
@@ -978,10 +978,10 @@ Value</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1210</x>
-      <y>70</y>
-      <w>100</w>
-      <h>40</h>
+      <x>1096</x>
+      <y>56</y>
+      <w>80</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>Cough
 Value</panel_attributes>
@@ -990,10 +990,10 @@ Value</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1210</x>
-      <y>120</y>
-      <w>100</w>
-      <h>40</h>
+      <x>1096</x>
+      <y>96</y>
+      <w>80</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>Difficulty 
 BreathingValue</panel_attributes>
@@ -1002,10 +1002,10 @@ BreathingValue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>600</x>
+      <x>608</x>
       <y>0</y>
-      <w>770</w>
-      <h>370</h>
+      <w>616</w>
+      <h>296</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 hasMeasurements</panel_attributes>
@@ -1014,10 +1014,10 @@ hasMeasurements</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>720</x>
-      <y>80</y>
-      <w>100</w>
-      <h>30</h>
+      <x>704</x>
+      <y>64</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Cough</panel_attributes>
     <additional_attributes/>
@@ -1025,10 +1025,10 @@ hasMeasurements</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>830</x>
-      <y>70</y>
-      <w>100</w>
-      <h>40</h>
+      <x>792</x>
+      <y>56</y>
+      <w>80</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>Difficulty 
 breathing</panel_attributes>
@@ -1037,10 +1037,10 @@ breathing</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>310</x>
-      <y>290</y>
-      <w>100</w>
-      <h>30</h>
+      <x>376</x>
+      <y>232</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Weight</panel_attributes>
     <additional_attributes/>
@@ -1048,10 +1048,10 @@ breathing</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>400</x>
-      <y>290</y>
-      <w>150</w>
-      <h>70</h>
+      <x>448</x>
+      <y>232</y>
+      <w>120</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 hasWeight</panel_attributes>
@@ -1060,10 +1060,10 @@ hasWeight</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1210</x>
-      <y>170</y>
-      <w>100</w>
-      <h>30</h>
+      <x>1096</x>
+      <y>136</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>JaundiceValue</panel_attributes>
     <additional_attributes/>
@@ -1071,10 +1071,10 @@ hasWeight</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>60</x>
-      <y>630</y>
-      <w>220</w>
-      <h>240</h>
+      <x>176</x>
+      <y>504</y>
+      <w>176</w>
+      <h>192</h>
     </coordinates>
     <panel_attributes>Rabbi:
 
@@ -1095,10 +1095,10 @@ interoperability. Can make adapter</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1080</x>
-      <y>630</y>
-      <w>230</w>
-      <h>110</h>
+      <x>992</x>
+      <y>504</y>
+      <w>184</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -1106,10 +1106,10 @@ interoperability. Can make adapter</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1200</x>
-      <y>690</y>
-      <w>100</w>
-      <h>40</h>
+      <x>1088</x>
+      <y>552</y>
+      <w>80</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>Amoxicillin
 Duration</panel_attributes>
@@ -1118,10 +1118,10 @@ Duration</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1200</x>
-      <y>640</y>
-      <w>100</w>
-      <h>40</h>
+      <x>1088</x>
+      <y>512</y>
+      <w>80</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>Penicilin
 Duration</panel_attributes>
@@ -1130,10 +1130,10 @@ Duration</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1230</x>
-      <y>450</y>
-      <w>100</w>
-      <h>30</h>
+      <x>1112</x>
+      <y>360</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>No Asthma</panel_attributes>
     <additional_attributes/>
@@ -1141,10 +1141,10 @@ Duration</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1120</x>
-      <y>450</y>
-      <w>100</w>
-      <h>30</h>
+      <x>1024</x>
+      <y>360</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>NoTuberculosis</panel_attributes>
     <additional_attributes/>
@@ -1152,10 +1152,10 @@ Duration</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1010</x>
-      <y>450</y>
-      <w>100</w>
-      <h>30</h>
+      <x>936</x>
+      <y>360</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>No HIV</panel_attributes>
     <additional_attributes/>
@@ -1163,10 +1163,10 @@ Duration</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>900</x>
-      <y>450</y>
-      <w>100</w>
-      <h>30</h>
+      <x>848</x>
+      <y>360</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>No Pneumonia</panel_attributes>
     <additional_attributes/>
@@ -1174,10 +1174,10 @@ Duration</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1130</x>
-      <y>760</y>
-      <w>100</w>
-      <h>40</h>
+      <x>1032</x>
+      <y>608</y>
+      <w>80</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>Form
 {abstract}</panel_attributes>
@@ -1186,10 +1186,10 @@ Duration</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1100</x>
-      <y>830</y>
-      <w>230</w>
-      <h>90</h>
+      <x>1008</x>
+      <y>664</y>
+      <w>184</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -1197,10 +1197,10 @@ Duration</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1170</x>
-      <y>790</y>
-      <w>30</w>
-      <h>60</h>
+      <x>1064</x>
+      <y>632</y>
+      <w>24</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
@@ -1208,10 +1208,10 @@ Duration</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1220</x>
-      <y>840</y>
-      <w>100</w>
-      <h>30</h>
+      <x>1104</x>
+      <y>672</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Tablet</panel_attributes>
     <additional_attributes/>
@@ -1219,10 +1219,10 @@ Duration</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1220</x>
-      <y>880</y>
-      <w>100</w>
-      <h>30</h>
+      <x>1104</x>
+      <y>704</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Injection</panel_attributes>
     <additional_attributes/>
@@ -1230,10 +1230,10 @@ Duration</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1110</x>
-      <y>840</y>
-      <w>100</w>
-      <h>60</h>
+      <x>1016</x>
+      <y>672</y>
+      <w>80</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>Oxygen face 
 mask with 
@@ -1243,10 +1243,10 @@ reservoir bag</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1020</x>
-      <y>710</y>
-      <w>130</w>
-      <h>80</h>
+      <x>944</x>
+      <y>568</y>
+      <w>104</w>
+      <h>64</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 hasMethod</panel_attributes>
@@ -1255,10 +1255,10 @@ hasMethod</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1090</x>
-      <y>520</y>
-      <w>100</w>
-      <h>40</h>
+      <x>1000</x>
+      <y>416</y>
+      <w>80</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>Oxygen
 Rate</panel_attributes>
@@ -1267,10 +1267,10 @@ Rate</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1090</x>
-      <y>640</y>
-      <w>100</w>
-      <h>40</h>
+      <x>1000</x>
+      <y>512</y>
+      <w>80</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>Oxygen
 Duration</panel_attributes>
