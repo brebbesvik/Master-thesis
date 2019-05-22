@@ -12,10 +12,12 @@ The research methodology we used for this project was an adaptation of design sc
 	\item \textbf{Guideline 4: Research Contributions} are our data models, which are the backbone of the game. The data models should be generic enough to represent and make games for other clinical practice guidelines. Adaptable to the user's knowledge level and with flexible learning paths.
 	\item \textbf{Guideline 5: Research Rigor} and \textbf{Guideline 6: Design as a Search Process.} The construction of the artefact followed a similar process described in figure \ref{fig:InteractionDesignLifeCycle}. It's an iteratively process where requirements were established through focus group, workshop, studying similar products, talking with domain experts and informal literature studies. Then designing alternatives, which also can be functionality suggested to the artefact. Prototyping was making prototypes or constructing the artefact itself. An evaluation decides whether the new functionality/prototype can be used as it is or update the requirements and make a new version.
 	
+	Problems are uncovered and solved in the evaluation - construction iterative phases. Here the research questions appear from the design. 
+	
 		\begin{figure}[h!]
-		\caption {The project followed a similar process to the life cycle of interaction design. Figure derived from \textcite{Preece2015}}
 		\label{fig:InteractionDesignLifeCycle}
 		\includegraphics[scale=0.5]{InteractionDesignLifeCycle}
+		\caption {The project followed a similar process to the life cycle of interaction design. Figure derived from \textcite{Preece2015}}
 	\end{figure}
 	\item \textbf{Guideline 7: Communication of Research,} which is the purpose of this masters thesis. We have also published a paper, which can be found in the appendices.
 \end{itemize}
@@ -34,13 +36,41 @@ We have also used the React web  development framework in previous projects. It 
 The prototype itself and the development process showed that the technology could be used for displaying and organize CPGs. Lessons learned about content flow, databases, app navigation, displaying information and dialogues. JavaScript in the view gives a lot of flexibility compared to just tags.
 
 \begin{figure}[h!]
-	\caption {A very simple conceptual model to test one of the proposed technologies, as well as acting as a starting point for discussions}
 	\label{fig:ConseptualModel}
 	\includegraphics[scale=0.2]{ConceptualPrototype}
+	\caption {A very simple conceptual model to test one of the proposed technologies, as well as acting as a starting point for discussions}
 \end{figure}
 
 The interface was evaluated with the supervisors, using cognitive walkthroughs. It also worked as a conceptual model, using the prototype as a base for discussing ideas. Both for discussing the purpose of the project, what the user should be able to do, how to organize content and what functionality to add.
 
+\subsection{Focus group}
+The 25th of February 2018, we arranged a focus group at a kitchen in Alrek student home. The participants were:
+\textcolor{purple}{TODO Yngve: Flytt navn over i acknowledgements}
+\begin{itemize}
+	\item Two 6th year medical doctor students.
+	\item Two master degree students in computer science.
+\end{itemize}
+
+As the project was in a very early stage, the purpose of the meeting was exploring how do medical students use CPGs in their training. How the CPGs are used today. How the students work in their practice periods at the hospital. What format are the CPGs in now. What challenges limits the use of CPGs among health workers and medical students at the point of care.
+
+By using a an unstructured interview form, we managed to collect broad and general information, as well as going into detail on interesting topics. As the focus group was small, the contestants could discuss between themselves, highlighting consensus and conflicts \parencite{Preece2015}. A very free and exploitative approach was very successful, as the master degree students in computer science had a very limited knowledge of the medical domain, compared to the medical students. The discussion was documented using an audio recorder.
+
+Topics explored:
+\begin{itemize}
+	\item The students are learning new medical routines by studying typical cases. Drilling the routines.
+	\item Red and yellow flags, which are alarm systems they need to be aware of. A red flag is when the patient's condition is quite critical. What triggers the flags and how to act upon them is something the clinicians need to know by heart, as time is critical and the action needed might be advanced like surgery. No time to use the guidelines. Orange, yellow and green are further degrees of how urgent the clinician's intervention is.  Orange is less urgent than red, but more urgent than yellow. Green is the least urgent one.
+	\item Clinicians and medical students use a collection of short guidelines in a pocket book format for references. The guidelines are written mostly in text format and sometimes takes use of tables for presentation.
+	\item Mobile devices can't be used at the point of care because of condemnation risks. There are also techniques of consultant with a patient. A mobile device will get in the way for important non-verbal communication.
+	\item For departments they need access to specific cases where there isn't much written material. They need access to scientific articles.
+	\item They brought up the case where doctors in developing countries have so many patients, and the time to each patient is very limited. To be able to look up information in the guidelines, they need to have a format which makes it very fast to extract that kind of information. Flow-charts is more suitable for developing countries where acting quickly is more often important than in developed countries where they can have a focus on being more thorough in green flag situations.
+	\item In addition to guidelines, hospitals can also have their own protocols. The protocols are for situations where the treatment is more specific for this area or hospital. An example is a patient with a blood clot. The medical personnel in Finnmark will start removing the blood clot immediately, because of the long distance to the nearest hospital. They want to reduce the risk for complications. While in Bergen, they will wait with such a treatment. In developing countries you might have to put into consideration what kind of equipment and staff is available at that specific hospital or health care station. The likelihood of different diseases is different from each geographically position, the patients background or the season in the year. Social and economic status also matters, even in Norway.
+	\item Discussion about presentation of learning material in an application. Medical cases are often too obvious, too simple or too complicated in existing applications. Flashcards. Show image of an ECG or a picture of a symptom.
+	\item Notifying the student about guidelines would be useful. But only for the most common and dangerous conditions, relevant for the students medical field to avoid unnecessary notifications which will only be ignored.
+	%	The statistically most common and dangerous conditions first.
+	%	Then look for signs where you can rule out conditions. Elimineringsmetoden
+	\item The diagnostic process. The doctor have several conditions in mind, but tries to eliminate the statistically most common and dangerous first. Trying to narrow down the alternatives until the doctor is quite certain about the medical condition of the patient.
+	
+\end{itemize}
 
 \subsection{Studying similar products}
 The purpose of the iteration is to see what exists in the market. What have others done. What can we improve, where can we add value to both the medical community and to computer science.
@@ -79,9 +109,9 @@ flow-chart, or as an summation to describe the clinical state a patient is in \p
 	 
 	
 	\begin{figure}[h!]
-		\caption {The paediatric possible asthma guideline \parencite{RepublicofKeny2016} modelled using elements from GLIF}
 		\label{fig:GLIFPossibleAsthma}
 		\includegraphics[scale=0.132]{GLIFPossibleAsthma}
+		\caption {The paediatric possible asthma guideline \parencite{RepublicofKeny2016} modelled using elements from GLIF}
 	\end{figure}
 	\item \textbf{Asbru} is another approach for computer interpretable guidelines, and sort of a competitor to GLIF and PROforma. The project was developed at the Stanford University, Vienna University og Technology and Ben-Gurion University. It uses time-oriented skeletal plans. These skeletal plans are schemata at different detail levels. To manage skeletal plans, Asbru introduces some key functionality: the representation of high-level goals (intentions), temporal patterns, time annotations, as well as graphical user interfaces to view the skeletal plans \parencite{DeClercq2008}.
 	
@@ -92,9 +122,9 @@ flow-chart, or as an summation to describe the clinical state a patient is in \p
 	For the skeletal plans shown in figure \ref{fig:AsbruPossibleAsthma}, we can also set the attributes conditions, intentions, effects and preferences for each of them. These describes the functionality of each plan \parencite{DeClercq2008}.
 	
 		\begin{figure}[h!]
-		\caption {An attempt at modelling the paediatric possible asthma guideline \parencite{RepublicofKeny2016}, using Asbru editor tool AsbruView \parencite{TheAasgardProject2006}}
 		\label{fig:AsbruPossibleAsthma}
 		\includegraphics[scale=0.55]{AsbruPossibleAsthma}
+		\caption {An attempt at modelling the paediatric possible asthma guideline \parencite{RepublicofKeny2016}, using Asbru editor tool AsbruView \parencite{TheAasgardProject2006}}
 	\end{figure}
 	\item See the description of \textbf{DPF} in other parts of this thesis.
 \end{itemize}
@@ -116,16 +146,17 @@ Figure \ref{fig:PrototypeInteractiveCPG} was also a prototype initially at highe
 
 
  \begin{figure}[h!]
- 	\caption {A design alternative, displaying the CPGs as interactive flow-charts. The edges represents the flow, while clicking vertices will display more information or redirect to subguideline. A suggestion was to fill in with patient and examination data, to get a customized CPG for a patient }
  	\label{fig:PrototypeInteractiveCPG}
  	\includegraphics[scale=0.6]{PrototypeInteractiveCPG}
+ 		\caption {A design alternative, displaying the CPGs as interactive flow-charts. The edges represents the flow, while clicking vertices will display more information or redirect to subguideline. A suggestion was to fill in with patient and examination data, to get a customized CPG for a patient }
  \end{figure}
 
 The prototype in figure \ref{fig:PrototypeGameCPG}, started as sketches with pen and paper. By going through several iterations of redesign, it reach the fidelity of figure \ref{fig:PrototypeGameCPG}. This was our first prototype where we presented the CPGs as a game. We got help from an external masters degree student in software engineering to make this prototype. The concept of the game is that you initially get presented with a list of tests you can do on the patient. By picking a test, you will immediately get presented with a test result. You can do more tests or proceed. In the next screen you will be presented with a list of treatment and advises, and you should pick the correct ones with the knowledge you acquired in the previous screen. In the last two screens, you will be presented with the answer keys. You will get points for choosing the correct treatments and advises. You will get points for picking the right tests, and you will get higher scores if you picked the tests in an optimal order.
+
 \begin{figure}[h!]
-	\caption {The first design alternative proposed as a game. The student tries to pick the right tests in the right order for that patient. As well as choosing the correct treatment and give the right advises to the patient. A high score for choosing the right treatment and advises, as well as correct tests in the right order. Medium score for right tests in the wrong order}
 	\label{fig:PrototypeGameCPG}
 	\includegraphics[scale=0.2]{PrototypeGameCPG}
+	\caption {The first design alternative proposed as a game. The student tries to pick the right tests in the right order for that patient. As well as choosing the correct treatment and give the right advises to the patient. A high score for choosing the right treatment and advises, as well as correct tests in the right order. Medium score for right tests in the wrong order}
 \end{figure}
 
 The design alternatives were evaluated with the project's supervisors and their master degree students. There was also separate evaluations with medical domain expert. The evaluation method was cognitive walkthroughs as well as discussions what is the best approach for promoting CPGs and encourage medical students to learn and use CPGs. The conclusion was to continue with game development. 
@@ -139,18 +170,19 @@ We based our models on the paediatric possible asthma guideline \parencite{Repub
 The developer made a prototype of his understanding of the CPG, which simulated a clinical encounter with a patient. See figure \ref{fig:SimulationTool}. The GLIF chart presented in figure \ref{fig:GLIFPossibleAsthma} was used as a base when making the simulation tool. The simulation would start with listing symptoms of asthma and the clinician would choose among the symptoms, redirecting to the treatment for severe, mild, moderate and no asthma. The simulation would continue with cycles of evaluating the given treatment, and the clinician needs to act accordingly to the evaluation for each cycle until the treatment can be ended. An expert of domain got the task of going through the entire simulations of use cases such as "a patient with severe asthma responds poorly to salbutamol treatment". The stimulation gave a thorough understanding of the guideline, emphasized details which would have been missed or details of the treatment which is left out of the guideline itself, such as differential diagnoses.
 
 \begin{figure}[h!]
-	\caption {Screenshots of the prototype used to simulate a clinical encounter with a domain expert}
 	\label{fig:SimulationTool}
 	\includegraphics[scale=0.4]{SimulationTool}
+	\caption {Screenshots of the prototype used to simulate a clinical encounter with a domain expert}
 \end{figure}
 
 The guideline is also unclear at some points, where a discussion with a domain expert was needed. For example: wheeze + history of cough or difficulty breathing. When parentheses are not used, it is difficult to see if wheeze always needs to be  present, or if it is enough that cough alone is. It is also difficult to understand the effect and model the situation where the presence of a symptom at a certain age gives "increased likelihood" for asthma. In computer science the terms need to be very clear.
 
 A domain expert in Model Driven Engineer and DPF was consulted for discussing problems such as inheritance, how to create good sentences from vertex values in the graph, as well as metamodelling and the use of constraints in DPF. In figure \ref{fig:BlackboardingDPF} there are two images from the whiteboard during the meeting. On the left we see a workflow and an instance below. The XOR is a constraint, which tells that we can choose one of the two  paths only. On te right we see the entity model, and a suggestion with vertices which make good textual presentation of graph values which can be used in texts. 
+
 \begin{figure}[h!]
-	\caption {Pictures of the whiteboard during a meeting with domain expert in MDE and DPF. To the left there are some discussion around workflow models. To the right is entity models with vertices which holds a textual representation of the parent vertex.   }
 	\label{fig:BlackboardingDPF}
 	\includegraphics[scale=0.16]{BlackboardingDPF}
+	\caption {Pictures of the whiteboard during a meeting with domain expert in MDE and DPF. To the left there are some discussion around workflow models. To the right is entity models with vertices which holds a textual representation of the parent vertex}
 \end{figure}
 
 For evaluating the entity model, a domain expert in medicine made quizzes with factual questions as well as scenario based. By replacing patient related variables in the questions and scenarios, with tags pointing to variables in the entity model, we could see whether the model fulfilled the requirements of displaying good and valid sentences. The sentences were equally good and valid when using different instances of the entity model.
@@ -169,10 +201,11 @@ First of all we need to clarify what a good user experience is. We are not going
 	\item Emotion and effect, has to do with how the users feel when interacting with the application. Typically we want the user to feel joy and excitement, and damper or prevent feelings such as frustration, anger and disappointment \parencite{Hassenzahl2006}. Typically the user feels satisfaction when completed a work task, or frustrated when the work task takes a long time to complete. 
 	\item The experiential emphasizes that the experience is strongly related to the situation it is used in and at which time. \parencite{Hassenzahl2006}. As an example the user experience of listening to your favourite music artist in the car on the way to work, is different from being at a concert in the weekend with the same music artist.
 \end{itemize}
+
 \begin{figure}[h!]
-	\caption {User experience copied from \textcite{Hassenzahl2006}}
 	\label{fig:Hassenzahl}
 	\includegraphics[scale=0.66]{Hassenzahl}
+	\caption {User experience copied from \textcite{Hassenzahl2006}}
 \end{figure}
 
 For the beyond instrumental, we used several iterations to make a pretty user interface to make the application desirable. As this is an educational tool, it is important that the user feels his skills and knowledge grow, so the visualization of progress was quite important. Both that the user advances in levels, but also that we visualize the progress during a level, where the user stretches to slowly meet the requirement of the next level.
@@ -186,6 +219,8 @@ The user experience was evaluated using cognitive walkthroughs with the supervis
 We used usability tests in controlled environment, where friends, family, fellow students and domain expert in medicine were asked to start the application and play a full quiz. Notes were taken at points where the user would do  mistakes, get confused or do a mistake. Typically the user would become very confused when seeing the screen with the learning map, displaying which levels have been completed, which we are currently playing and the locked levels. The user would typically try to click on completed or current levels. We also noticed that the students wouldn't revise a wrong answer, just continue to the next question.
 
 
+\input{workshops}
+
 \subsection{Game Engine and Content Flow}
 The goal of the iteration is to have a playable game, which produces questions, answering elements, rewards, several difficulty levels and the flow of the game content.
 
@@ -196,10 +231,3 @@ The ideas of difficulty levels and the flow of the game content were discussed i
 The scoringsystem was developed, where we give scores per question element in the workflow model.  A penalty system was introduced, such that a student with many attempts on each question doesn't get the same total score as a student which answered every question correctly on the first try.
 
 The evaluations of the iteration were done as part of the user experience iteration. Mainly cognitive walkthroughs with domain experts, but also usability testing in controlled environment with non-experts.
-
-
-
-
-\subsection{Focus group}
-
-\subsection{Workshop}

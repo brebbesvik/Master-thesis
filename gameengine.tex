@@ -27,15 +27,14 @@ The game engine is based on some of the concepts presented in the articles of \t
 When we apply this to our project, we will first decouple the content from the flow-chart of the paediatric possible asthma guideline \parencite{RepublicofKeny2016}. To decouple the flow-chart, we use the workflow model as a helping tool, ordering on how they should learn the clinical guideline. In figure \ref{fig:KnowledgeMap} we have identified knowledge elements and hierarchically structured the knowledge repository into a knowledge map. The edges shows the dependencies in the learning process. To learn how to evaluate a treatment and act accordingly to the evaluation, the student needs to know something about how to set a diagnosis and how to initially treat it. Hence there is an edge between follow-up and the other knowledge units.
 
 \begin{figure}[h!]
-	\caption {Knowledge map}
 	\label{fig:KnowledgeMap}
 	\includegraphics[scale=0.6]{KnowledgeMap3}
+	\caption {Knowledge map}
 \end{figure}
 
 In table \ref{table:ContentUnit} we have chosen a knowledge element from the knowledge map, and defined a content unit. The content unit contains a theme "Assessment". Resources is the learning material, which are relevant sections of the guideline. Evaluations are the tests to see if the student has reached the learning goals. At level 1 we try to learn facts about the guideline. In level 2 and 3 we give the student scenarios to work with.
 
 \begin{table}[h!]
-	\caption{The content unit Assessment}
 	\label{table:ContentUnit}
 \begin{tabular}{ | m{16em} | m{10em}| m{6em} | } 
 	\hline
@@ -48,6 +47,7 @@ In table \ref{table:ContentUnit} we have chosen a knowledge element from the kno
 	& E3: Quiz Level 3 & Scenario \\
 	\hline
 	\end{tabular}
+\caption{The content unit Assessment}
 \end{table}
 
 In figure \ref{fig:LearningMap} we have identified four content units T1: Assessment, T2: Diagnosis, T3: Management and T4: Follow-up from the knowledge map. The importance of these content units in the asthma guideline \parencite{RepublicofKeny2016} was the reason these four got selected. The hierarchically structure of the knowledge map, makes the child nodes of the content units become learning material for their parent nodes.
@@ -55,15 +55,15 @@ In figure \ref{fig:LearningMap} we have identified four content units T1: Assess
 Inside the content units in the learning map, we see the relationships between resources and evaluation. There is also dependencies between the content units. To be able to do a follow-up, a student needs to learn the assessment, diagnosis and management first, because follow-up is an evaluation and reaction to how the patient responded to the previous steps.  We have also specified the prerequisites for each evaluation. The prerequisites are written as logical expressions, as seven edges and operators per content unit would be confusing to read. What the prerequisites says is that all level 1 evaluations need to be completed before any level 2 evaluation can be taken. All level 2 evaluations need to be completed before any level 3 evaluation can be taken.
 
 \begin{figure}[h!]
-	\caption {Learning map}
 	\label{fig:LearningMap}
 	\includegraphics[scale=0.45]{LearningMap}
+	\caption {Learning map}
 \end{figure}
+
 \textcolor{purple}{TODO Yngve: Visualization of student map}
 A student map would show the progressions for one specific student, and the path he has taken and the scores for each evaluation. Table \ref{table:StudentMap} shows a student's student map for the Assessment part of the course. He got the score 34 on the first evaluation. 34 matches the passing condition for assessment level 1, so he got a passing grade for that test. However, he scored 43 points on evaluation 2 and didn't meet the passing condition for that test. He has no attempts for evaluation 3, as he doesn't meet the prerequisites for that test.  The tests which have been completed are stored in the database on the students phone. In that sense, the database shows the student's current position in the learning map.
 
 \begin{table}[h!]
-	\caption{Student Map T1:Assessment}
 	\label{table:StudentMap}
 	\begin{tabular}{ | m{16em} | m{10em}| m{6em} | } 
 		\hline
@@ -76,6 +76,7 @@ A student map would show the progressions for one specific student, and the path
 		& E3: &  \\
 		\hline
 	\end{tabular}
+\caption{Student Map T1:Assessment}
 \end{table}
 
 
@@ -152,9 +153,9 @@ One of the problems we encountered with this method, was how to present the vari
 \end{itemize}
 
 \begin{figure}[h!]
-	\caption {The patient object used with the template}
 	\label{fig:EntityInstanceGraph}
 	\includegraphics[scale=0.4]{EntityInstanceGraph}
+	\caption {The patient object used with the template}
 \end{figure}
 
 %\begin{lstlisting}[caption={My Caption},captionpos=b]
@@ -208,15 +209,15 @@ What is the asthma severity?
 How we solved the problem was to add a textual presentation vertex to each of the vertices in the graph referred to by the template. If there exist a presentation for the vertex, return the presentation. If there doesn't exist a presentation, simply return the variable.
 
 \begin{figure}[h!]
-	\caption {Making graph variables fit a story format}
 	\label{fig:GeneratingScenarios1}
 	\includegraphics[scale=0.4]{GeneratingScenarios1}
+	\caption {Making graph variables fit a story format}
 \end{figure}
 
 \begin{figure}[h!]
-	\caption {Making graph variables fit a story format}
 	\label{fig:GeneratingScenarios2}
 	\includegraphics[scale=0.4]{GeneratingScenarios2}
+		\caption {Making graph variables fit a story format}
 \end{figure}
 
 \begin{lstlisting}[caption={Question template}, frame=single] 
@@ -249,10 +250,11 @@ What is the asthma severity?
 For future work, the commas and "and" should not be in the presentation vertex. This becomes a limitation where the variable can only be used in a list and has to be in a specific place in the list. The solution would be to have a list tag in the template, and have all the paths inside that tag. Then the game engine can see how many of the list items are in the graph, and can set the commas and "and" at the appropriate places.
 
 In figure \ref{fig:IntegratedEntityGamelModels} we show how the entity-, workflow and game models work together to make a scenario. Because of limited space, we don't show the presentation vertices in the entity graph. We also combined entity graph E1 and E2 in the presentation, where E2 gets and additional medication vertex marked with red. 
+
 \begin{figure}[h!]
-	\caption {The entity- workflow- and game models working together to produce a scenario, taking the patient through the steps of a clinical encounter. Note that these are two entity graphs E1 and E2, where E2 gets updated with an additional red vertex Ipratopium bromide. This illustrates a patient which doesn't respond to the initial treatment, and then gets treated with ipratopium bromide}
 	\label{fig:IntegratedEntityGamelModels}
 	\includegraphics[scale=0.4]{IntegratedEntityGameModels}
+		\caption {The entity- workflow- and game models working together to produce a scenario, taking the patient through the steps of a clinical encounter. Note that these are two entity graphs E1 and E2, where E2 gets updated with an additional red vertex Ipratopium bromide. This illustrates a patient which doesn't respond to the initial treatment, and then gets treated with ipratopium bromide}
 \end{figure}
 
 \subsection{Conceptual model of how all the classes are connected in Game Engine}
@@ -266,9 +268,9 @@ A new instance of skill will be created when the student starts a new game. This
 
 
 \begin{figure}[h!]
-	\caption {Conceptual model for the game elements. \textcolor{red}{There are two instances of skill. One which represents the student's previous game stored in database. The other one represents the ongoing game in memory.}}
 	\label{fig:ConceptualGameElements}
 	\includegraphics[scale=0.4]{ConceptualModelGameElements}
+	\caption {Conceptual model for the game elements. \textcolor{red}{There are two instances of skill. One which represents the student's previous game stored in database. The other one represents the ongoing game in memory.}}
 \end{figure}
 
 One problem with the conceptual model is that it is somewhat complex. Once we have determined which levels we should pick questions from and we have generated the questions, we really don't need the structure. Especially when playing scenarios, it is nice to just go through an ordered array, instead of dealing with "now I've played the third question of level 2 diagnosis, the next question in this scenario is the third question in level 2 management, unless I've already completed level 2 management in the previous run of the game. Then the next question is follow-up instead". We rather deal with the problem at the initialization phase and just go through the array when playing the game. A solutions is to implement the façade pattern \parencite{Gamma1994}, such that other parts of the system can use the game engine, without having to deal with the underlying complexity. 
@@ -276,9 +278,9 @@ One problem with the conceptual model is that it is somewhat complex. Once we ha
 % Not sure whether this is facade or mediator pattern thouh
 
 \begin{figure}[h!]
-	\caption {Façade pattern hides the complexity of the game engine and makes it easier for other parts of the system to use it.}
 	\label{fig:GameEngineFacadePattern}
 	\includegraphics[scale=0.4]{GameEngineFacadePattern}
+	\caption {Façade pattern hides the complexity of the game engine and makes it easier for other parts of the system to use it}
 \end{figure}
 
 \textcolor{red}{Should I show how I populate the models with data from JSON and database? I'm not very happy about the code on that part.}
@@ -298,16 +300,17 @@ Diagnosis in the workflow model is connected to the history, examination and inv
 
 Management is how we manage the patient with the given diagnosis. Hospitalization is if we are going to set patient status to inpatient or outpatient. Medication is given to treat the patient or relieve the symptoms. Surgery is not part of the asthma guideline \parencite{RepublicofKeny2016}, but it is important to be aware that management procedures needs to be added when making quizzes for other conditions than asthma.
 
-Follow-up will contain questions related how to evaluate the treatment and how to act upon the evaluation. The symptoms of the patient may have worsen, getting better or are unchanged after the treatment, and the clinician needs to act accordingly. The treatment may have been given at the hospital or it may have been something the patient have had to do at home. The patient may also get some instructions from the clinician when there is something he should do on his own. 
+Follow-up will contain questions related how to evaluate the treatment and how to act upon the evaluation. The symptoms of the patient may have worsen, getting better or are unchanged after the treatment, and the clinician needs to act accordingly. The treatment may have been given at the hospital or it may have been something the patient have had to do at home. The patient may also get some instructions from the clinician when there is something he should do on his own.
+ 
 \begin{figure}[h!]
-	\caption {By looking at the workflow- and entity models we can identify the type of questions for each content unit in the knowledge map. The content units are the parent nodes, while the leaves are the type of questions}
 	\label{fig:ExpandedKnowledgeMap}
 	\includegraphics[scale=0.4]{KnowledgeMap2}
+	\caption {By looking at the workflow- and entity models we can identify the type of questions for each content unit in the knowledge map. The content units are the parent nodes, while the leaves are the type of questions}
 \end{figure}
 
 As the student learns, the questions need to adapt to the student's new level of knowledge. How we do this is by defining levels, where the questions becomes more detailed at higher levels. At level 1 the questions are all about stating facts. In level 2, we create scenarios such that we follow one patient through all of the steps assessment, diagnosis, management and follow-up. The same for level 3, but the detail level will be higher. Typically the student will only be asked for categories of medication in level 2, but in level 3 the students needs to be specific about the names of the medication as well as measurements for both dosages and symptoms. See table \ref{table:ProgressionGranularity}.
+
 \begin{table}[h!]
-	\caption{The type of questions at each difficulty level}
 	\label{table:ProgressionGranularity}
 	
 	\begin{tabular}{|m{2em}|m{6em}|m{6em}|m{6em}|m{6em}|}
@@ -319,6 +322,7 @@ As the student learns, the questions need to adapt to the student's new level of
 		3 & Detailed scenario  & Detailed scenario & Detailed scenario & Detailed scenario \\
 		\hline
 	\end{tabular}
+\caption{The type of questions at each difficulty level}
 \end{table}
 
 

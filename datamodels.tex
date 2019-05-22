@@ -10,27 +10,29 @@ We will now present the entity model by showing en excerpt, hiding away the deta
 The entity graph stores information about a specific patient at a certain point or time in the clinical encounter. The patient comes to the emergency clinic. He has some symptoms which the clinician needs to uncover, by doing examinations and asking questions about the patients conditions. What the patient or caregiver tells is modelled as history, while quick examinations such as listening to the chest, looking at the skin, count the number of breaths per minute are modelled in the examination vertex. In some cases the clinician wants to run medical tests which require more time and resources, such as MRI scan, spirometry or blood tests. These tests are modelled as investigations.
 
 Based on the the symptoms collected in history, examination and investigation, the clinician will set a diagnosis. The procedures for what to do with a patient with a given diagnosis is modelled under management. Hospitalization is to change the patients status to outpatient, or inpatient if he is admitted into the hospital. He might need some medication or be given advise for how he should deal with his condition the in every day life. Here the model can be expanded with routines found in other guidelines, we have identified surgery as an example. 
+
 \begin{figure}[h!]
-	\caption {An excerpt of the entity graph. Entity graph represents a patient at a certain point in the clinical encounter}
 	\label{fig:EntityGraphExcerpt}
 	\includegraphics[scale=0.6]{EntityGraphExcerpt}
+	\caption {An excerpt of the entity graph. Entity graph represents a patient at a certain point in the clinical encounter}
 \end{figure}
 
 In figure \ref{fig:EntityGraphPatientDiagnosis} we have expanded the Patient and Diagnosis vertices to reveal more details. PatientName and Gender, identifies the patient with a name and gender. These attributes are important when presenting a patient and his condition in a narrative or scenario. By using a name, it is easier for the reader to see that this is the same patient in different stages of the clinical encounter.
 
 A diagnosis has a name. In the paediatric possible asthma guideline \parencite{RepublicofKeny2016}, the diagnosis has a severity. A lot of medical conditions doesn't have a severity, or they are classified in another way. Here we add multiplicity to the edge which specifies this requirement. 
+
 \begin{figure}[h!]
-	\caption {Showing the details of the Patient and Diagnosis vertices of the entity graph}
 	\label{fig:EntityGraphPatientDiagnosis}
 	\includegraphics[scale=0.6]{EntityGraphPatientDiagnosis}
+	\caption {Showing the details of the Patient and Diagnosis vertices of the entity graph}
 \end{figure}
 
 In figure \ref{fig:EntityGraphHistory} we have shown our implementation of the History vertex from figure \ref{fig:EntityGraphExcerpt}. History is what the patient or the caregiver tells about the patient's condition. In the paediatric possible asthma guideline \parencite{RepublicofKeny2016} we have identified three symptoms which the clinician can ask the patient or the caregiver about. Here we introduce inheritance, where the specific symptoms inherits the examination vertex. Each symptom the patient or caregiver tell about, will have a measurement. In this specific case, all the history symptoms are boolean. Either they have the symptom or they don't. The symptom values inherits from a Measurement vertex.
 
 \begin{figure}[h!]
-	\caption {Showing the implementation of History in the entity graph. What the patient or caregiver tell about the patient's condition}
 	\label{fig:EntityGraphHistory}
 	\includegraphics[scale=0.6]{EntityGraphHistory}
+	\caption {Showing the implementation of History in the entity graph. What the patient or caregiver tell about the patient's condition}
 \end{figure}
 
 For Examination we follow the same principles as History. We implement it by letting each symptom inherit an Examination vertex. Each symptom has value which inherits from a Measurement vertex. In figure \ref{fig:EntityGraphExamination} we have shown the inheritances for each vertex with one arrow and a box. This is of practical reasons when drawing, as there are so many symptoms and it will be confusing to draw an arrow for each of them. Here the values which are stored are a bit more mixed than for History. Consciousness is measured using an AVPU scale, where A is the patient is Alert, V is Verbal, P is responding to pain and U unconscious. These are enumerates, where we store either A, V, P or U. Pulse Rate, Respiratory Rate, Oxygen Saturation are all numerical values. The other symptoms are registered as boolean values. Keep in mind that Jaundice is really not a part of the paediatric possible asthma guideline \parencite{RepublicofKeny2016}. It is included as part of the antibiotic treatment.
@@ -39,9 +41,9 @@ For Examination we follow the same principles as History. We implement it by let
 The implementation of Investigation would be just as we did with History and Examination. For asthma they use a lab test called spirometry, but it is not included in the paediatric possible asthma guideline \parencite{RepublicofKeny2016}, so we don't include it in our model
 
 \begin{figure}[h!]
-	\caption {Showing the implementation of Examination in the entity graph. What symptoms the clinician can observe the patient has}
 	\label{fig:EntityGraphExamination}
 	\includegraphics[scale=0.45]{EntityGraphExamination}
+	\caption {Showing the implementation of Examination in the entity graph. What symptoms the clinician can observe the patient has}
 \end{figure}
 
 In the paediatric possible asthma guideline \parencite{RepublicofKeny2016}, there are used five medications to treat the patient, as well as antibiotics which is a class of medications. We will talk about each medicine in the model as there are some details which needs to be clarified. See figure \ref{fig:EntityGraphMedication}.
@@ -65,18 +67,18 @@ In the paediatric possible asthma guideline \parencite{RepublicofKeny2016}, ther
  
 
 \begin{figure}[h!]
-	\caption {Showing the implementation of Medication in the entity graph. How to administer a medication to patient}
 	\label{fig:EntityGraphMedication}
 	\includegraphics[scale=0.45]{EntityGraphMedication}
+	\caption {Showing the implementation of Medication in the entity graph. How to administer a medication to patient}
 \end{figure}
 
- Another detail must be clarified when implementing instances of the medications. The route must be given names which can be uniquely identified for each medication. An example is Ipratopium Bromide and Salbutamol which both uses the Route Inhaled. Ipratopium Bromide uses only the inhaler, while Salbutamol can be given using the nebulizer. If Ipratopium Bromide is sharing the same Inhaled vertex as Salbutamol during instantiation, it will look like Ipratopum Bromide can be nebulized. By creating a new instansiation of Route per medication, and uniquely identify them by name Inhaled1, Inhaled2 or InhaledSalbutamol, InhaledIpratopium, we avoid this problem. Now we can connect Salbutamol with Inhaled1 and have edges to Form Inhaler and Nebulizer. Ipratopium Bromide has an edge to Inhaled2, which has an edge to Inhaler. Then we have an instantiation where Ipratopium Bromide can only be inhaled using the Inhaler. See figure \ref{fig:RouteMethodProblem}.
+ Another detail must be clarified when implementing instances of the medications. The route must be given names which can be uniquely identified for each medication. An example is Ipratopium Bromide and Salbutamol which both uses the Route Inhaled. Ipratopium Bromide uses only the inhaler, while Salbutamol can be given using the nebulizer. If Ipratopium Bromide is sharing the same Inhaled vertex as Salbutamol during instantiation, it will look like Ipratopum Bromide can be nebulized. By creating a new instantiation of Route per medication, and uniquely identify them by name Inhaled1, Inhaled2 or InhaledSalbutamol, InhaledIpratopium, we avoid this problem. Now we can connect Salbutamol with Inhaled1 and have edges to Form Inhaler and Nebulizer. Ipratopium Bromide has an edge to Inhaled2, which has an edge to Inhaler. Then we have an instantiation where Ipratopium Bromide can only be inhaled using the Inhaler. See figure \ref{fig:RouteMethodProblem}.
 
 
 \begin{figure}[h!]
-	\caption {To the left we don't know which medication has been inhaled using the nebulizer or inhaler. To the right we have specified this in the instantiation, by using two Inhaled-vertices and uniquely identifying them by giving them different names}
 	\label{fig:RouteMethodProblem}
 	\includegraphics[scale=0.3]{RouteMethodProblem}
+	\caption {To the left we don't know which medication has been inhaled using the nebulizer or inhaler. To the right we have specified this in the instantiation, by using two Inhaled-vertices and uniquely identifying them by giving them different names}
 \end{figure}
 
 
@@ -90,9 +92,9 @@ The final step is to evaluate. The treatment may have to be adjusted to get the 
 
 
 \begin{figure}[h!]
-	\caption {The workflow models is a model of the clinical encounter}
 	\label{fig:WorkflowGraph}
 	\includegraphics[scale=0.6]{WorkflowGraph}
+	\caption {The workflow models is a model of the clinical encounter}
 \end{figure}
 
 The idea of the workflow model is to describe the process of a clinical encounter. When making scenarios for the game, we know in which order the scenarios should come. The entity model is also connected to the workflow model. When doing a an assessment and diagnosis, you are looking at the examination, history and vertices of the entity model, where the diagnosis vertex answer to what the specific diagnosis is. For doing management and treatment, you look at the vertices under management in the entity model. An evaluation will be done by looking at the examination and investigation vertices to see if the patient has become better. The treatment needs to be adjusted accordingly to the evaluation. If the evaluation says we can't do more for the patient and there's no need for a follow-up, we exit the workflow model.
@@ -112,18 +114,19 @@ In figure \ref{fig:MetamodelEntityGraph}, we make an instance of the entity mode
 For an instance to be valid, the vertices and edges have to correspond to a part of the model. We demonstrate this by adding dotted arrows in figure \ref{fig:MetamodelEntityGraph}. 
 
 In figure \ref{fig:MetamodelEntityGraph} a patient tells the clinician that he struggles with a wheeze and a cough. Cough and Wheeze inherit from History in the model. Difficulty breathing is part of \ref{fig:EntityGraphHistory}, but is not represented here as the patient hasn't brought up this issue or been asked about it. We see how two inheritances og History translated in the instance from the model. The Measurement vertex holds the measurements of the History vertices. A patient with a wheeze and a cough is diagnosed with asthma, which is shown in the instance.
+
 \begin{figure}[h!]
-	\caption {A model and an instance of the entity model. For a valid instance, every vertex and edge in the instance has a corresponding vertex and edge in the model.}
 	\label{fig:MetamodelEntityGraph}
 	\includegraphics[scale=0.4]{MetamodelEntityGraph}
+	\caption {A model and an instance of the entity model. For a valid instance, every vertex and edge in the instance has a corresponding vertex and edge in the model}
 \end{figure}
+
 \textcolor{purple}{TODO Yngve: shows where you are in guideline figure \ref{fig:MetamodelEntityGraph}}
 
 In figure \ref{fig:IntegratedEntityWorkflowModels} we show a entity instance working together with the workflow model. For the assessment, we look at the History and Examination vertices. For Diagnosis, the DiagnosisName and Severity. Keep in mind that under Diagnosis, the clinician may do further examinations and questions to the patient to confirm his assumption, or which may cause him to think about other diagnosis. Management, the asthma is severe so we change the patient's status to inpatient by updating the Hospitalization vertex. We also look at the Medication vertex under Management. We only care about the medications for now in this example, and not how the medications should be administered. The Evaluation holds a reference to a new entity instance, which holds the updated information about the patient's symptoms. The clinician needs to act accordingly and adjust the treatment.
+
 \begin{figure}[h!]
-	\caption {An instance of the workflow model at the bottom, working together with an instance of the entity model at the top}
 	\label{fig:IntegratedEntityWorkflowModels}
 	\includegraphics[scale=0.4]{IntegratedEntityWorkflowModels}
+		\caption {An instance of the workflow model at the bottom, working together with an instance of the entity model at the top}
 \end{figure}
-
-\subsection{Game model}
