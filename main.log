@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.28)  22 MAY 2019 21:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.28)  24 MAY 2019 19:45
 entering extended mode
 **./main.tex
 (main.tex
@@ -637,32 +637,31 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [6] (introduction.tex
+ [6] (background.tex
 Chapter 1.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 1.
 ("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 9.
+) [1
+
+
+]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 17.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 9.
- [1
-
-
-]) (background.tex
-[2]
-Chapter 2.
-[3
-
-] [4]) [5] [6
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 17.
+ [2]) (introduction.tex [3] [4
 
 ]
+Chapter 2.
+[5]) [6]
 Chapter 3.
-(designscience.tex [7]
+(designscience.tex [7
+
+]
 
 Package caption Warning: \label without proper reference on input line 18.
 See the caption package documentation for explanation.
@@ -1929,16 +1928,16 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `fig:WorkflowGraph' on page 70 undefined on input line
  20.
 
-[70] [71 <./images/PneumoniaEntityGraph.pdf>]
+[70]
 
 Package caption Warning: \label without proper reference on input line 24.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `fig:PneumoniaPneumoniaIntegratedEntityWorkflowModels'
- on page 72 undefined on input line 22.
+ on page 71 undefined on input line 22.
 
-<images/PneumoniaIntegratedEntityWorkflowModels.pdf, id=487, 1033.8625pt x 833.
+<images/PneumoniaIntegratedEntityWorkflowModels.pdf, id=480, 1033.8625pt x 833.
 1125pt>
 File: images/PneumoniaIntegratedEntityWorkflowModels.pdf Graphic file (type pdf
 )
@@ -1951,219 +1950,223 @@ Overfull \hbox (23.53767pt too wide) in paragraph at lines 25--26
 [][] 
  []
 
-[72 <./images/PneumoniaIntegratedEntityWorkflowModels.pdf>]) [73] [74
+[71 <./images/PneumoniaEntityGraph.pdf>]
+Underfull \vbox (badness 1137) has occurred while \output is active []
 
-]
+ [72 <./images/PneumoniaIntegratedEntityWorkflowModels.pdf>] [73] [74] [75]) [7
+6]
 Chapter 6.
-[75] [76
+[77
+
+] [78
 
 ]
-Overfull \hbox (5.46484pt too wide) in paragraph at lines 87--87
+Overfull \hbox (5.46484pt too wide) in paragraph at lines 88--88
 \OT1/cmr/m/n/12 computer-interpretable clin-i-cal prac-tice guide-lines''. In: 
 \OT1/cmr/m/it/12 Jour-nal of Biomed-
  []
 
 
-Overfull \hbox (32.62881pt too wide) in paragraph at lines 87--87
+Overfull \hbox (32.62881pt too wide) in paragraph at lines 88--88
 \OT1/cmr/m/it/12 in-for-mat-ics \OT1/cmr/m/n/12 139, pp. 22{43. \OT1/cmr/m/sc/1
 2 issn\OT1/cmr/m/n/12 : 0926-9630. \OT1/cmr/m/sc/12 url\OT1/cmr/m/n/12 : $\OT1/
 cmtt/m/n/12 https : / / www . researchgate .
  []
 
 
-Overfull \hbox (47.52502pt too wide) in paragraph at lines 87--87
+Overfull \hbox (47.52502pt too wide) in paragraph at lines 88--88
 \OT1/cmtt/m/n/12 net / publication / 23271685{\ _ }From{\ _ }guidelines{\ _ }to
 {\ _ }careflows{\ _
  []
 
-[77
+[79
 
 ]
-Overfull \hbox (2.18968pt too wide) in paragraph at lines 87--87
+Overfull \hbox (2.18968pt too wide) in paragraph at lines 88--88
 \OT1/cmr/m/n/12 ease. \OT1/cmr/m/sc/12 url\OT1/cmr/m/n/12 : $\OT1/cmtt/m/n/12 h
 ttp : / / apps . who . int / medicinedocs / documents / s21973en /
  []
 
-[78]
-Overfull \hbox (5.16568pt too wide) in paragraph at lines 87--87
+[80]
+Overfull \hbox (5.16568pt too wide) in paragraph at lines 88--88
 \OT1/cmr/m/n/12 logue''. In: \OT1/cmr/m/it/12 Com-mu-ni-ca-tions of the ACM \OT
 1/cmr/m/n/12 33.3, pp. 338{348. \OT1/cmr/m/sc/12 issn\OT1/cmr/m/n/12 : 00010782
 .
  []
 
-[79]
-Overfull \hbox (16.64684pt too wide) in paragraph at lines 87--87
+[81]
+Overfull \hbox (16.64684pt too wide) in paragraph at lines 88--88
 [][]\OT1/cmr/m/n/12 ReduxJS-thunk. \OT1/cmr/m/it/12 reduxjs/redux-thunk: Thunk 
 mid-dle-ware for Re-dux\OT1/cmr/m/n/12 . \OT1/cmr/m/sc/12 url\OT1/cmr/m/n/12 : 
 $\OT1/cmtt/m/n/12 https :
  []
 
-[80]
-<appendices/comparisonApps.pdf, id=523, 597.53635pt x 845.04686pt>
+[82]
+<appendices/comparisonApps.pdf, id=529, 597.53635pt x 845.04686pt>
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf>
-Package pdftex.def Info: appendices/comparisonApps.pdf  used on input line 93.
+Package pdftex.def Info: appendices/comparisonApps.pdf  used on input line 94.
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf>
-Package pdftex.def Info: appendices/comparisonApps.pdf  used on input line 93.
+Package pdftex.def Info: appendices/comparisonApps.pdf  used on input line 94.
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf>
-Package pdftex.def Info: appendices/comparisonApps.pdf  used on input line 93.
+Package pdftex.def Info: appendices/comparisonApps.pdf  used on input line 94.
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf>
-Package pdftex.def Info: appendices/comparisonApps.pdf  used on input line 93.
+Package pdftex.def Info: appendices/comparisonApps.pdf  used on input line 94.
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf>
-Package pdftex.def Info: appendices/comparisonApps.pdf  used on input line 93.
+Package pdftex.def Info: appendices/comparisonApps.pdf  used on input line 94.
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf>
-Package pdftex.def Info: appendices/comparisonApps.pdf  used on input line 93.
+Package pdftex.def Info: appendices/comparisonApps.pdf  used on input line 94.
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf>
-Package pdftex.def Info: appendices/comparisonApps.pdf  used on input line 93.
+Package pdftex.def Info: appendices/comparisonApps.pdf  used on input line 94.
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf>
-Package pdftex.def Info: appendices/comparisonApps.pdf  used on input line 93.
+Package pdftex.def Info: appendices/comparisonApps.pdf  used on input line 94.
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
-<appendices/comparisonApps.pdf, id=532, page=1, 597.53635pt x 845.04686pt>
+<appendices/comparisonApps.pdf, id=538, page=1, 597.53635pt x 845.04686pt>
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf, page 1>
 Package pdftex.def Info: appendices/comparisonApps.pdf , page1 used on input li
-ne 93.
+ne 94.
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf, page 1>
 Package pdftex.def Info: appendices/comparisonApps.pdf , page1 used on input li
-ne 93.
+ne 94.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
- [81
+ [83
 
 ]
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf, page 1>
 Package pdftex.def Info: appendices/comparisonApps.pdf , page1 used on input li
-ne 93.
+ne 94.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf, page 1>
 Package pdftex.def Info: appendices/comparisonApps.pdf , page1 used on input li
-ne 93.
+ne 94.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf, page 1>
 Package pdftex.def Info: appendices/comparisonApps.pdf , page1 used on input li
-ne 93.
-(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
- [82 <./appendices/comparisonApps.pdf>]
-<appendices/comparisonApps.pdf, id=556, page=2, 597.53635pt x 845.04686pt>
-File: appendices/comparisonApps.pdf Graphic file (type pdf)
-<use appendices/comparisonApps.pdf, page 2>
-Package pdftex.def Info: appendices/comparisonApps.pdf , page2 used on input li
-ne 93.
-(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
-File: appendices/comparisonApps.pdf Graphic file (type pdf)
-<use appendices/comparisonApps.pdf, page 2>
-Package pdftex.def Info: appendices/comparisonApps.pdf , page2 used on input li
-ne 93.
-(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
-File: appendices/comparisonApps.pdf Graphic file (type pdf)
-<use appendices/comparisonApps.pdf, page 2>
-Package pdftex.def Info: appendices/comparisonApps.pdf , page2 used on input li
-ne 93.
-(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
- [83 <./appendices/comparisonApps.pdf>]
-<appendices/comparisonApps.pdf, id=561, page=3, 597.53635pt x 845.04686pt>
-File: appendices/comparisonApps.pdf Graphic file (type pdf)
-<use appendices/comparisonApps.pdf, page 3>
-Package pdftex.def Info: appendices/comparisonApps.pdf , page3 used on input li
-ne 93.
-(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
-File: appendices/comparisonApps.pdf Graphic file (type pdf)
-<use appendices/comparisonApps.pdf, page 3>
-Package pdftex.def Info: appendices/comparisonApps.pdf , page3 used on input li
-ne 93.
-(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
-File: appendices/comparisonApps.pdf Graphic file (type pdf)
-<use appendices/comparisonApps.pdf, page 3>
-Package pdftex.def Info: appendices/comparisonApps.pdf , page3 used on input li
-ne 93.
+ne 94.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
  [84 <./appendices/comparisonApps.pdf>]
-<appendices/comparisonApps.pdf, id=566, page=4, 597.53635pt x 845.04686pt>
+<appendices/comparisonApps.pdf, id=562, page=2, 597.53635pt x 845.04686pt>
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
-<use appendices/comparisonApps.pdf, page 4>
-Package pdftex.def Info: appendices/comparisonApps.pdf , page4 used on input li
-ne 93.
+<use appendices/comparisonApps.pdf, page 2>
+Package pdftex.def Info: appendices/comparisonApps.pdf , page2 used on input li
+ne 94.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
-<use appendices/comparisonApps.pdf, page 4>
-Package pdftex.def Info: appendices/comparisonApps.pdf , page4 used on input li
-ne 93.
+<use appendices/comparisonApps.pdf, page 2>
+Package pdftex.def Info: appendices/comparisonApps.pdf , page2 used on input li
+ne 94.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
-<use appendices/comparisonApps.pdf, page 4>
-Package pdftex.def Info: appendices/comparisonApps.pdf , page4 used on input li
-ne 93.
+<use appendices/comparisonApps.pdf, page 2>
+Package pdftex.def Info: appendices/comparisonApps.pdf , page2 used on input li
+ne 94.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
  [85 <./appendices/comparisonApps.pdf>]
-<appendices/comparisonApps.pdf, id=572, page=5, 597.53635pt x 845.04686pt>
+<appendices/comparisonApps.pdf, id=568, page=3, 597.53635pt x 845.04686pt>
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
-<use appendices/comparisonApps.pdf, page 5>
-Package pdftex.def Info: appendices/comparisonApps.pdf , page5 used on input li
-ne 93.
+<use appendices/comparisonApps.pdf, page 3>
+Package pdftex.def Info: appendices/comparisonApps.pdf , page3 used on input li
+ne 94.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
-<use appendices/comparisonApps.pdf, page 5>
-Package pdftex.def Info: appendices/comparisonApps.pdf , page5 used on input li
-ne 93.
+<use appendices/comparisonApps.pdf, page 3>
+Package pdftex.def Info: appendices/comparisonApps.pdf , page3 used on input li
+ne 94.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
-<use appendices/comparisonApps.pdf, page 5>
-Package pdftex.def Info: appendices/comparisonApps.pdf , page5 used on input li
-ne 93.
+<use appendices/comparisonApps.pdf, page 3>
+Package pdftex.def Info: appendices/comparisonApps.pdf , page3 used on input li
+ne 94.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
  [86 <./appendices/comparisonApps.pdf>]
-<appendices/comparisonApps.pdf, id=577, page=6, 597.53635pt x 845.04686pt>
+<appendices/comparisonApps.pdf, id=573, page=4, 597.53635pt x 845.04686pt>
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
-<use appendices/comparisonApps.pdf, page 6>
-Package pdftex.def Info: appendices/comparisonApps.pdf , page6 used on input li
-ne 93.
+<use appendices/comparisonApps.pdf, page 4>
+Package pdftex.def Info: appendices/comparisonApps.pdf , page4 used on input li
+ne 94.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
-<use appendices/comparisonApps.pdf, page 6>
-Package pdftex.def Info: appendices/comparisonApps.pdf , page6 used on input li
-ne 93.
+<use appendices/comparisonApps.pdf, page 4>
+Package pdftex.def Info: appendices/comparisonApps.pdf , page4 used on input li
+ne 94.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
-<use appendices/comparisonApps.pdf, page 6>
-Package pdftex.def Info: appendices/comparisonApps.pdf , page6 used on input li
-ne 93.
+<use appendices/comparisonApps.pdf, page 4>
+Package pdftex.def Info: appendices/comparisonApps.pdf , page4 used on input li
+ne 94.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
  [87 <./appendices/comparisonApps.pdf>]
-<appendices/comparisonApps.pdf, id=582, page=7, 597.53635pt x 845.04686pt>
+<appendices/comparisonApps.pdf, id=578, page=5, 597.53635pt x 845.04686pt>
+File: appendices/comparisonApps.pdf Graphic file (type pdf)
+<use appendices/comparisonApps.pdf, page 5>
+Package pdftex.def Info: appendices/comparisonApps.pdf , page5 used on input li
+ne 94.
+(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
+File: appendices/comparisonApps.pdf Graphic file (type pdf)
+<use appendices/comparisonApps.pdf, page 5>
+Package pdftex.def Info: appendices/comparisonApps.pdf , page5 used on input li
+ne 94.
+(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
+File: appendices/comparisonApps.pdf Graphic file (type pdf)
+<use appendices/comparisonApps.pdf, page 5>
+Package pdftex.def Info: appendices/comparisonApps.pdf , page5 used on input li
+ne 94.
+(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
+ [88 <./appendices/comparisonApps.pdf>]
+<appendices/comparisonApps.pdf, id=583, page=6, 597.53635pt x 845.04686pt>
+File: appendices/comparisonApps.pdf Graphic file (type pdf)
+<use appendices/comparisonApps.pdf, page 6>
+Package pdftex.def Info: appendices/comparisonApps.pdf , page6 used on input li
+ne 94.
+(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
+File: appendices/comparisonApps.pdf Graphic file (type pdf)
+<use appendices/comparisonApps.pdf, page 6>
+Package pdftex.def Info: appendices/comparisonApps.pdf , page6 used on input li
+ne 94.
+(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
+File: appendices/comparisonApps.pdf Graphic file (type pdf)
+<use appendices/comparisonApps.pdf, page 6>
+Package pdftex.def Info: appendices/comparisonApps.pdf , page6 used on input li
+ne 94.
+(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
+ [89 <./appendices/comparisonApps.pdf>]
+<appendices/comparisonApps.pdf, id=588, page=7, 597.53635pt x 845.04686pt>
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf, page 7>
 Package pdftex.def Info: appendices/comparisonApps.pdf , page7 used on input li
-ne 93.
+ne 94.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf, page 7>
 Package pdftex.def Info: appendices/comparisonApps.pdf , page7 used on input li
-ne 93.
+ne 94.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf, page 7>
 Package pdftex.def Info: appendices/comparisonApps.pdf , page7 used on input li
-ne 93.
+ne 94.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
- [88 <./appendices/comparisonApps.pdf>] (main.aux)
+ [90 <./appendices/comparisonApps.pdf>] (main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -2190,9 +2193,9 @@ b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (94 pages, 7673147 bytes).
+Output written on main.pdf (96 pages, 7679775 bytes).
 PDF statistics:
- 626 PDF objects out of 1000 (max. 8388607)
+ 632 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  306 words of extra memory for PDF output out of 10000 (max. 10000000)
 
