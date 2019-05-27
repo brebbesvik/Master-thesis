@@ -226,6 +226,48 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{Brambilla2017}{book}{}
+    \name{author}{3}{}{%
+      {{hash=BM}{%
+         family={Brambilla},
+         familyi={B\bibinitperiod},
+         given={Marco},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Cabot},
+         familyi={C\bibinitperiod},
+         given={Jordi},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Wimmer},
+         familyi={W\bibinitperiod},
+         given={Manuel},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Morgan {\&} Claypool Publishers}%
+    }
+    \strng{namehash}{BMCJWM1}
+    \strng{fullhash}{BMCJWM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{edition}{2nd}
+    \field{isbn}{1627057080, 9781627057080}
+    \field{title}{{Model-Driven Software Engineering in Practice: Second
+  Edition}}
+    \verb{url}
+    \verb https://dl.acm.org/citation.cfm?id=3103551
+    \endverb
+    \field{year}{2017}
+  \endentry
+
   \entry{Cabana1999}{article}{}
     \name{author}{7}{}{%
       {{hash=CMD}{%
@@ -708,23 +750,17 @@
          given={Erich},
          giveni={E\bibinitperiod},
       }}%
-      {{hash=sHRC}{%
-         prefix={scientist)},
-         prefixi={s\bibinitperiod},
+      {{hash=HR}{%
          family={Helm},
          familyi={H\bibinitperiod},
-         given={Richard\bibnamedelima (Computer},
-         giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
       }}%
-      {{hash=ocsJREP}{%
-         prefix={of\bibnamedelima computer\bibnamedelima science)},
-         prefixi={o\bibinitperiod\bibinitdelim c\bibinitperiod\bibinitdelim
-  s\bibinitperiod},
+      {{hash=JRE}{%
          family={Johnson},
          familyi={J\bibinitperiod},
-         given={Ralph E.\bibnamedelima (Professor},
-         giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim
-  P\bibinitperiod},
+         given={Ralph\bibnamedelima E.},
+         giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
       }}%
       {{hash=VJ}{%
          family={Vlissides},
@@ -737,7 +773,7 @@
       {Pearson Education}%
     }
     \strng{namehash}{GE+1}
-    \strng{fullhash}{GEHRCsJREPocsVJ1}
+    \strng{fullhash}{GEHRJREVJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{1994}
@@ -1725,6 +1761,103 @@
     \field{pages}{32}
     \field{title}{{Basic Paediatric Protocols for ages up to 5 years}}
     \field{year}{2016}
+  \endentry
+
+  \entry{RodriguesdaSilva2015}{article}{}
+    \name{author}{1}{}{%
+      {{hash=RA}{%
+         family={{Rodrigues da Silva}},
+         familyi={R\bibinitperiod},
+         given={Alberto},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Pergamon}%
+    }
+    \strng{namehash}{RA1}
+    \strng{fullhash}{RA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{year}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{abstract}{%
+    During the last decade a new trend of approaches has emerged, which
+  considers models not just documentation artefacts, but also central artefacts
+  in the software engineering field, allowing the creation or automatic
+  execution of software systems starting from those models. These proposals
+  have been classified generically as Model-Driven Engineering (MDE) and share
+  common concepts and terms that need to be abstracted, discussed and
+  understood. This paper presents a survey on MDE based on a unified conceptual
+  model that clearly identifies and relates these essential concepts, namely
+  the concepts of system, model, metamodel, modeling language, transformations,
+  software platform, and software product. In addition, this paper discusses
+  the terminologies relating MDE, MDD, MDA and others. This survey is based on
+  earlier work, however, contrary to those, it intends to give a simple,
+  broader and integrated view of the essential concepts and respective
+  terminology commonly involved in the MDE, answering to key questions such as:
+  What is a model? What is the relation between a model and a metamodel? What
+  are the key facets of a modeling language? How can I use models in the
+  context of a software development process? What are the relations between
+  models and source code artefacts and software platforms? and What are the
+  relations between MDE, MDD, MDA and other MD approaches?%
+    }
+    \verb{doi}
+    \verb 10.1016/J.CL.2015.06.001
+    \endverb
+    \field{issn}{1477-8424}
+    \field{pages}{139\bibrangedash 155}
+    \field{title}{{Model-driven engineering: A survey supported by the unified
+  conceptual model}}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S1477842415000408
+    \endverb
+    \field{volume}{43}
+    \verb{file}
+    \verb :C$\backslash$:/Users/Ben/AppData/Local/Mendeley Ltd./Mendeley Deskto
+    \verb p/Downloaded/Rodrigues da Silva - 2015 - Model-driven engineering A s
+    \verb urvey supported by the unified conceptual model.pdf:pdf
+    \endverb
+    \field{journaltitle}{Computer Languages, Systems {\&} Structures}
+    \field{year}{2015}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Rutle2010}{article}{}
+    \name{author}{1}{}{%
+      {{hash=RA}{%
+         family={Rutle},
+         familyi={R\bibinitperiod},
+         given={Adrian},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {The University of Bergen}%
+    }
+    \keyw{Doctoral thesis}
+    \strng{namehash}{RA2}
+    \strng{fullhash}{RA2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{labeldatesource}{year}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{isbn}{978-82-308-1650-9 (print version)}
+    \field{title}{{Diagram predicate framework: A formal approach to MDE}}
+    \verb{url}
+    \verb http://bora.uib.no/handle/1956/4469
+    \endverb
+    \verb{file}
+    \verb :C$\backslash$:/Users/Ben/AppData/Local/Mendeley Ltd./Mendeley Deskto
+    \verb p/Downloaded/Rutle - 2010 - Diagram predicate framework A formal appr
+    \verb oach to MDE.pdf:pdf
+    \endverb
+    \field{year}{2010}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{Sadowska2019}{article}{}

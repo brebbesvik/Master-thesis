@@ -1,7 +1,31 @@
 \section{Data models}
+For this project and according to the research questions, we will be using four models.
+\begin{enumerate}
+	\item An entity model, which will be a model of the domain concepts. The patient, the different methods for discovering and measuring symptoms. The patient's medical condition and the procedures done to manage the patient's medical condition.
+	\item A workflow model, which describes the different processes in a clinical encounter. This will be the flow of the guideline itself at an abstract level.
+	\item A game model which will contain the game elements. That means the questions, distractions, answer keys, answer key explanations, rewards and penalties for the different answer alternatives, as well ass passing conditions for the different difficulty levels.
+	\item A model for the student's learning progression.
+\end{enumerate}
+
+Models are good for sketches, where we can easily discuss with team members, domain experts and possibly stakeholders. The models can hold a detailed specification of the system, as well as we can use models instead of code to develop the system \parencite{Brambilla2017}.
+
+For this project communication is very important, as the developer needs to understand and be able to model the clinical practice guideline and the clinical encounter at a very high detail. The domain expert in medicine needs to be able to verify that the model is correct.
+
+
+We will be using a Model Driven Engineering (MDE) approach, mainly for the entity and workflow models. In MDE models are promoted as the primary artefact that drives the whole development process. Models are specified using a modelling language where the syntax and semantics are defined by a metamodel \parencite{RodriguesdaSilva2015}. This allows us to create Domain Specific Languages (DSL), that are using unique abstractions and notations to a specific domain. When using DSLs, we can create more expressive models, which can more easily be used by domain experts and enhancing communication. 
+
+\textcolor{red}{Dette er veldig tungt å skrive, og foregående avsnitt er hentet fra paperet vi skrev (usikker på om jeg må skrive dette mer om for at det ikke skal være plagiat?). Jeg er veldig usikker på hvor i detalj jeg skal gå. Det er mye uttrykk og prinsipper her som er vanskelig for meg å forklare. I oppgaven min har jeg presentert model og metamodel som en graf. Det er lite (eller ingen?) bruk av constraints eller predicates. Jeg har brukt arv.}
+
+\textcolor{red}{Jeg har egentlig brukt mer enn tre dager på å skrive dette lille om DPF og MDE, og har ikke tid til å fortsette på denne måten. Det er andre viktige avsnitt jeg mangler i oppgaven.}
+Metamodels are 
 
 % Say something about how the graph is implemented and a reference to the book.
 \subsection{DPF}
+For the enitity- and workflow models, we use a formal diagrammatic approach to model driven engineering (MDE), called Diagram Predicate Framework (PDF). In software engineering, diagrams are data structures based on graphs. A graph is a collection of vertices, which may be connected by edges.
+
+In DPF, models are represented by a diagrammatic specification \(\mathfrak{S} = ({\mathcal{S}}, C^{\mathfrak{S}} : \Sigma)\). It consists of a graph \(\mathcal{S}\) and set of constraints \(C^{\mathfrak{S}}\) specified by a signature constraint $\Sigma$ \parencite{Rutle2010}. 
+
+
 \textcolor{purple}{TODO Yngve: Why DPF, why not fHIR?}
 \subsection{Entity model}
 \textcolor{purple}{TODO Yngve: Explain the main entities in the entity model here}
