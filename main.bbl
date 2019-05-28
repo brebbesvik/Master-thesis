@@ -1262,6 +1262,37 @@
     \field{year}{2008}
   \endentry
 
+  \entry{Michael2006}{book}{}
+    \name{author}{2}{}{%
+      {{hash=MDR}{%
+         family={Michael},
+         familyi={M\bibinitperiod},
+         given={David\bibnamedelima R},
+         giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=CS}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Sande},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Thomson Course Technology PTR}%
+    }
+    \strng{namehash}{MDRCS1}
+    \strng{fullhash}{MDRCS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{labeldatesource}{year}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{isbn}{1-59200-622-1}
+    \field{title}{{Serious games : games that educate, train and inform}}
+    \field{year}{2006}
+  \endentry
+
   \entry{Molich1990}{article}{}
     \name{author}{2}{}{%
       {{hash=MR}{%
@@ -1920,6 +1951,43 @@
     \field{year}{1998}
   \endentry
 
+  \entry{Susi2015}{article}{}
+    \name{author}{3}{}{%
+      {{hash=ST}{%
+         family={Susi},
+         familyi={S\bibinitperiod},
+         given={Tarja},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=JM}{%
+         family={Johannesson},
+         familyi={J\bibinitperiod},
+         given={Mikael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BP}{%
+         family={Backlund},
+         familyi={B\bibinitperiod},
+         given={Per},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{STJMBP1}
+    \strng{fullhash}{STJMBP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{{Serious Games - An Overview}}
+    \verb{url}
+    \verb https://www.researchgate.net/publication/220017759{\_}Serious{\_}Game
+    \verb s{\_}-{\_}An{\_}Overview
+    \endverb
+    \field{year}{2015}
+  \endentry
+
   \entry{TheAasgardProject2006}{misc}{}
     \name{author}{1}{}{%
       {{hash=T}{%
@@ -2131,6 +2199,71 @@
     \field{journaltitle}{BMJ (Clinical research ed.)}
     \field{year}{1999}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Wouters2013}{article}{}
+    \name{author}{4}{}{%
+      {{hash=WP}{%
+         family={Wouters},
+         familyi={W\bibinitperiod},
+         given={Pieter},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=vNC}{%
+         prefix={van},
+         prefixi={v\bibinitperiod},
+         family={Nimwegen},
+         familyi={N\bibinitperiod},
+         given={Christof},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=vOH}{%
+         prefix={van},
+         prefixi={v\bibinitperiod},
+         family={Oostendorp},
+         familyi={O\bibinitperiod},
+         given={Herre},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=vdSED}{%
+         prefix={van\bibnamedelima der},
+         prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod},
+         family={Spek},
+         familyi={S\bibinitperiod},
+         given={Erik\bibnamedelima D.},
+         giveni={E\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {US: American Psychological Association}%
+    }
+    \strng{namehash}{WP+1}
+    \strng{fullhash}{WPNCvOHvSEDvd1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{labeldatesource}{year}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \verb{doi}
+    \verb 10.1037/a0031311
+    \endverb
+    \field{issn}{1939-2176}
+    \field{number}{2}
+    \field{pages}{249\bibrangedash 265}
+    \field{title}{{A meta-analysis of the cognitive and motivational effects of
+  serious games.}}
+    \verb{url}
+    \verb http://doi.apa.org/getdoi.cfm?doi=10.1037/a0031311
+    \endverb
+    \field{volume}{105}
+    \verb{file}
+    \verb :C$\backslash$:/Users/Ben/AppData/Local/Mendeley Ltd./Mendeley Deskto
+    \verb p/Downloaded/Wouters et al. - 2013 - A meta-analysis of the cognitive
+    \verb  and motivational effects of serious games.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Educational Psychology}
+    \field{year}{2013}
   \endentry
 \enddatalist
 \endinput
