@@ -381,6 +381,92 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{Carlsen2006}{article}{}
+    \name{author}{8}{}{%
+      {{hash=CKCL}{%
+         family={Carlsen},
+         familyi={C\bibinitperiod},
+         given={K.\bibnamedelima C.\bibnamedelima L.},
+         giveni={K\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim
+  L\bibinitperiod},
+      }}%
+      {{hash=HG}{%
+         family={Haland},
+         familyi={H\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=DCS}{%
+         family={Devulapalli},
+         familyi={D\bibinitperiod},
+         given={C.\bibnamedelima S.},
+         giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=MKM}{%
+         family={Munthe-Kaas},
+         familyi={M\bibinithyphendelim K\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Pettersen},
+         familyi={P\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GB}{%
+         family={Granum},
+         familyi={G\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Lovik},
+         familyi={L\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CKH}{%
+         family={Carlsen},
+         familyi={C\bibinitperiod},
+         given={K.-H.},
+         giveni={K\bibinithyphendelim H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {John Wiley {\&} Sons, Ltd (10.1111)}%
+    }
+    \keyw{Ga2len,allergy,asthma prevalence,birth cohort,child}
+    \strng{namehash}{CKCL+1}
+    \strng{fullhash}{CKCLHGDCSMKMPMGBLMCKH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{labeldatesource}{year}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{doi}
+    \verb 10.1111/j.1398-9995.2005.00938.x
+    \endverb
+    \field{issn}{0105-4538}
+    \field{number}{4}
+    \field{pages}{454\bibrangedash 460}
+    \field{title}{{Asthma in every fifth child in Oslo, Norway: a 10-year
+  follow up of a birth cohort study*}}
+    \verb{url}
+    \verb http://doi.wiley.com/10.1111/j.1398-9995.2005.00938.x
+    \endverb
+    \field{volume}{61}
+    \verb{file}
+    \verb :C$\backslash$:/Users/Ben/AppData/Local/Mendeley Ltd./Mendeley Deskto
+    \verb p/Downloaded/Carlsen et al. - 2006 - Asthma in every fifth child in O
+    \verb slo, Norway a 10-year follow up of a birth cohort study(2).pdf:pdf
+    \endverb
+    \field{journaltitle}{Allergy}
+    \field{year}{2006}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{Clariana2006}{article}{}
     \name{author}{2}{}{%
       {{hash=CRB}{%
@@ -1051,6 +1137,100 @@
     \field{urlyear}{2019}
   \endentry
 
+  \entry{Guidelines2011}{book}{}
+    \name{author}{6}{}{%
+      {{hash=I}{%
+         family={{Institute of Medicine (US)}},
+         familyi={I\bibinitperiod},
+      }}%
+      {{hash=GR}{%
+         family={Graham},
+         familyi={G\bibinitperiod},
+         given={Robin},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Mancher},
+         familyi={M\bibinitperiod},
+         given={Michelle},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WDM}{%
+         family={Wolman},
+         familyi={W\bibinitperiod},
+         given={Dianne\bibnamedelima Miller},
+         giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Greenfield},
+         familyi={G\bibinitperiod},
+         given={Sheldon},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SE}{%
+         family={Steinberg},
+         familyi={S\bibinitperiod},
+         given={Earl},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {National Academies Press (US)}%
+    }
+    \strng{namehash}{I+1}
+    \strng{fullhash}{IGRMMWDMGSSE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2011}
+    \field{labeldatesource}{year}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{abstract}{%
+    Advances in medical, biomedical and health services research have reduced
+  the level of uncertainty in clinical practice. Clinical practice guidelines
+  (CPGs) complement this progress by establishing standards of care backed by
+  strong scientific evidence. CPGs are statements that include recommendations
+  intended to optimize patient care. These statements are informed by a
+  systematic review of evidence and an assessment of the benefits and costs of
+  alternative care options. Clinical Practice Guidelines We Can Trust examines
+  the current state of clinical practice guidelines and how they can be
+  improved to enhance healthcare quality and patient outcomes. Clinical
+  practice guidelines now are ubiquitous in our healthcare system. The
+  Guidelines International Network (GIN) database currently lists more than
+  3,700 guidelines from 39 countries. Developing guidelines presents a number
+  of challenges including lack of transparent methodological practices,
+  difficulty reconciling conflicting guidelines, and conflicts of interest.
+  Clinical Practice Guidelines We Can Trust explores questions surrounding the
+  quality of CPG development processes and the establishment of standards. It
+  proposes eight standards for developing trustworthy clinical practice
+  guidelines emphasizing transparency; management of conflict of interest ;
+  systematic review--guideline development intersection; establishing evidence
+  foundations for and rating strength of guideline recommendations;
+  articulation of recommendations; external review; and updating. Clinical
+  Practice Guidelines We Can Trust shows how clinical practice guidelines can
+  enhance clinician and patient decision-making by translating complex
+  scientific research findings into recommendations for clinical practice that
+  are relevant to the individual patient encounter, instead of implementing a
+  one size fits all approach to patient care. This book contains information
+  directly related to the work of the Agency for Healthcare Research and
+  Quality (AHRQ), as well as various Congressional staff and policymakers. It
+  is a vital resource for medical specialty societies, disease advocacy groups,
+  health professionals, private and international organizations that develop or
+  use clinical practice guidelines, consumers, clinicians, and payers.%
+    }
+    \field{booktitle}{Clinical Practice Guidelines We Can Trust}
+    \verb{doi}
+    \verb 10.17226/13058
+    \endverb
+    \field{isbn}{9780309164221}
+    \field{pages}{abstract}
+    \field{title}{{Clinical Practice Guidelines We Can Trust}}
+    \verb{url}
+    \verb http://www.ncbi.nlm.nih.gov/pubmed/24983061
+    \endverb
+    \field{year}{2011}
+  \endentry
+
   \entry{Johansen2018}{misc}{}
     \name{author}{4}{}{%
       {{hash=JIH}{%
@@ -1457,6 +1637,109 @@
     \verb gement-of-asthma
     \endverb
     \field{year}{2007}
+  \endentry
+
+  \entry{Odhiambo1998}{article}{}
+    \name{author}{8}{}{%
+      {{hash=OJA}{%
+         family={Odhiambo},
+         familyi={O\bibinitperiod},
+         given={J\bibnamedelima A},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=NLW}{%
+         family={Ng'ang'a},
+         familyi={N\bibinitperiod},
+         given={L\bibnamedelima W},
+         giveni={L\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=MMW}{%
+         family={Mungai},
+         familyi={M\bibinitperiod},
+         given={M\bibnamedelima W},
+         giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=GCM}{%
+         family={Gicheha},
+         familyi={G\bibinitperiod},
+         given={C\bibnamedelima M},
+         giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=NJK}{%
+         family={Nyamwaya},
+         familyi={N\bibinitperiod},
+         given={J\bibnamedelima K},
+         giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=KF}{%
+         family={Karimi},
+         familyi={K\bibinitperiod},
+         given={F},
+         giveni={F},
+      }}%
+      {{hash=MPT}{%
+         family={Macklem},
+         familyi={M\bibinitperiod},
+         given={P\bibnamedelima T},
+         giveni={P\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=BMR}{%
+         family={Becklake},
+         familyi={B\bibinitperiod},
+         given={M\bibnamedelima R},
+         giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {European Respiratory Society}%
+    }
+    \strng{namehash}{OJA+1}
+    \strng{fullhash}{OJANLWMMWGCMNJKKFMPTBMR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1998}
+    \field{labeldatesource}{year}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{abstract}{%
+    Grade 4 Kenyan children attending 10 randomly selected public primary
+  schools in Nairobi (urban) and the Muranga District (rural) were surveyed to
+  establish the prevalence of symptom markers of asthma and to assess the
+  impact of urbanization. A respiratory health and home environment
+  questionnaire was administered at school to parents or guardians. The
+  questionnaire response rates were 94.2{\%} (568/ 603) for Nairobi and
+  89.6{\%} (604/674) for Muranga. The prevalence rates for asthma, defined as
+  "attacks of shortness of breath with wheeze", were 9.5{\%} for urban and
+  3.0{\%} for rural children (odds ratio (OR) urban versus rural: 3.42; 95{\%}
+  confidence interval (CI): -1.96-5.91). This urban-rural gradient persisted
+  after adjusting for urban-rural differences in host factors (including
+  duration of breastfeeding and family history of asthma and/or allergy), but
+  was largely explained by urban-rural differences in environmental factors,
+  including indoor animals, sharing a bedroom with a smoker, parental
+  education, house ventilation and exposure to motor vehicle fumes en route to
+  school (adjusted OR: 1.59; 95{\%} CI: 0.70-3.55). Similar results were
+  obtained for all other symptoms. These findings confirm the clinical
+  impression that asthma is an important illness in Kenya and underline the
+  need for the further study of environmental factors amenable to intervention,
+  particularly in urban areas.%
+    }
+    \field{issn}{0903-1936}
+    \field{number}{5}
+    \field{pages}{1105\bibrangedash 12}
+    \field{title}{{Urban-rural differences in questionnaire-derived markers of
+  asthma in Kenyan school children.}}
+    \verb{url}
+    \verb http://www.ncbi.nlm.nih.gov/pubmed/9864005
+    \endverb
+    \field{volume}{12}
+    \verb{file}
+    \verb :C$\backslash$:/Users/Ben/AppData/Local/Mendeley Ltd./Mendeley Deskto
+    \verb p/Downloaded/Odhiambo et al. - 1998 - Urban-rural differences in ques
+    \verb tionnaire-derived markers of asthma in Kenyan school children.pdf:pdf
+    \endverb
+    \field{journaltitle}{The European respiratory journal}
+    \field{year}{1998}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{Patel-Schneider2006}{inproceedings}{}
@@ -2011,103 +2294,6 @@
     \field{urlday}{09}
     \field{urlmonth}{05}
     \field{urlyear}{2019}
-  \endentry
-
-  \entry{Guidelines2011}{book}{}
-    \name{author}{6}{}{%
-      {{hash=UIoM}{%
-         family={(US)},
-         familyi={U\bibinitperiod},
-         given={Institute of\bibnamedelima Medicine},
-         giveni={I\bibinitperiod\bibinitdelim o\bibinitperiod\bibinitdelim
-  M\bibinitperiod},
-      }}%
-      {{hash=GR}{%
-         family={Graham},
-         familyi={G\bibinitperiod},
-         given={Robin},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=MM}{%
-         family={Mancher},
-         familyi={M\bibinitperiod},
-         given={Michelle},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=WDM}{%
-         family={Wolman},
-         familyi={W\bibinitperiod},
-         given={Dianne\bibnamedelima Miller},
-         giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-      {{hash=GS}{%
-         family={Greenfield},
-         familyi={G\bibinitperiod},
-         given={Sheldon},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=SE}{%
-         family={Steinberg},
-         familyi={S\bibinitperiod},
-         given={Earl},
-         giveni={E\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {National Academies Press (US)}%
-    }
-    \strng{namehash}{UIoM+1}
-    \strng{fullhash}{UIoMGRMMWDMGSSE1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2011}
-    \field{labeldatesource}{year}
-    \field{sortinit}{U}
-    \field{sortinithash}{U}
-    \field{abstract}{%
-    Advances in medical, biomedical and health services research have reduced
-  the level of uncertainty in clinical practice. Clinical practice guidelines
-  (CPGs) complement this progress by establishing standards of care backed by
-  strong scientific evidence. CPGs are statements that include recommendations
-  intended to optimize patient care. These statements are informed by a
-  systematic review of evidence and an assessment of the benefits and costs of
-  alternative care options. Clinical Practice Guidelines We Can Trust examines
-  the current state of clinical practice guidelines and how they can be
-  improved to enhance healthcare quality and patient outcomes. Clinical
-  practice guidelines now are ubiquitous in our healthcare system. The
-  Guidelines International Network (GIN) database currently lists more than
-  3,700 guidelines from 39 countries. Developing guidelines presents a number
-  of challenges including lack of transparent methodological practices,
-  difficulty reconciling conflicting guidelines, and conflicts of interest.
-  Clinical Practice Guidelines We Can Trust explores questions surrounding the
-  quality of CPG development processes and the establishment of standards. It
-  proposes eight standards for developing trustworthy clinical practice
-  guidelines emphasizing transparency; management of conflict of interest ;
-  systematic review--guideline development intersection; establishing evidence
-  foundations for and rating strength of guideline recommendations;
-  articulation of recommendations; external review; and updating. Clinical
-  Practice Guidelines We Can Trust shows how clinical practice guidelines can
-  enhance clinician and patient decision-making by translating complex
-  scientific research findings into recommendations for clinical practice that
-  are relevant to the individual patient encounter, instead of implementing a
-  one size fits all approach to patient care. This book contains information
-  directly related to the work of the Agency for Healthcare Research and
-  Quality (AHRQ), as well as various Congressional staff and policymakers. It
-  is a vital resource for medical specialty societies, disease advocacy groups,
-  health professionals, private and international organizations that develop or
-  use clinical practice guidelines, consumers, clinicians, and payers.%
-    }
-    \field{booktitle}{Clinical Practice Guidelines We Can Trust}
-    \verb{doi}
-    \verb 10.17226/13058
-    \endverb
-    \field{isbn}{9780309164221}
-    \field{pages}{abstract}
-    \field{title}{{Clinical Practice Guidelines We Can Trust}}
-    \verb{url}
-    \verb http://www.ncbi.nlm.nih.gov/pubmed/24983061
-    \endverb
-    \field{year}{2011}
   \endentry
 
   \entry{Wix}{misc}{}

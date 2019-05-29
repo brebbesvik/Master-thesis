@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.28)  29 MAY 2019 00:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.28)  29 MAY 2019 20:57
 entering extended mode
 **./main.tex
 (main.tex
@@ -550,6 +550,11 @@ Package biblatex Warning: BibTeX reported the following issues
 
 
 Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Carlsen2006':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                with 'Clariana2006':
 (biblatex)                - Invalid format of field 'month'.
 
@@ -591,6 +596,11 @@ Package biblatex Warning: BibTeX reported the following issues
 
 Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                with 'Morrison1995':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Odhiambo1998':
 (biblatex)                - Invalid format of field 'month'.
 
 
@@ -678,8 +688,8 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 17.
- [2] [3])
-(introduction.tex [4] [5] [6
+ [2] [3] [4])
+(introduction.tex [5] [6
 
 ]
 Chapter 2.
@@ -702,11 +712,8 @@ File: images/InteractionDesignLifeCycle.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/InteractionDesignLifeCycle.pdf  used on input l
 ine 19.
 (pdftex.def)             Requested size: 348.14699pt x 225.83917pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[10]
-<images/ConceptualPrototype.png, id=103, 803.0pt x 1284.8pt>
+[10 <./images/InteractionDesignLifeCycle.pdf>]
+<images/ConceptualPrototype.png, id=113, 803.0pt x 1284.8pt>
 File: images/ConceptualPrototype.png Graphic file (type png)
 <use images/ConceptualPrototype.png>
 Package pdftex.def Info: images/ConceptualPrototype.png  used on input line 40.
@@ -716,8 +723,7 @@ Package pdftex.def Info: images/ConceptualPrototype.png  used on input line 40.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[11 <./images/InteractionDesignLifeCycle.pdf>] [12 <./images/ConceptualPrototyp
-e.png (PNG copy)>] [13] [14]
+[11] [12 <./images/ConceptualPrototype.png (PNG copy)>] [13] [14]
 
 Package caption Warning: \label without proper reference on input line 112.
 See the caption package documentation for explanation.
@@ -750,15 +756,15 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `fig:GLIFPossibleAsthma' on page 15 undefined on input
  line 104.
 
-[15]
 
 Package caption Warning: \label without proper reference on input line 112.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:GLIFPossibleAsthma' on page 16 undefined on input
+LaTeX Warning: Reference `fig:GLIFPossibleAsthma' on page 15 undefined on input
  line 106.
 
+[15]
 
 Package caption Warning: \label without proper reference on input line 112.
 See the caption package documentation for explanation.
@@ -767,7 +773,7 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `fig:GLIFPossibleAsthma' on page 16 undefined on input
  line 107.
 
-<images/GLIFPossibleAsthma.pdf, id=128, 3576.85455pt x 3466.46753pt>
+<images/GLIFPossibleAsthma.pdf, id=130, 3576.85455pt x 3466.46753pt>
 File: images/GLIFPossibleAsthma.pdf Graphic file (type pdf)
 <use images/GLIFPossibleAsthma.pdf>
 Package pdftex.def Info: images/GLIFPossibleAsthma.pdf  used on input line 113.
@@ -775,7 +781,7 @@ Package pdftex.def Info: images/GLIFPossibleAsthma.pdf  used on input line 113.
 (pdftex.def)             Requested size: 472.15718pt x 457.58571pt.
 
 Overfull \hbox (82.15718pt too wide) in paragraph at lines 113--114
-[][] 
+ [][] 
  []
 
 
@@ -789,17 +795,16 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `fig:AsbruPossibleAsthma' on page 16 undefined on inpu
 t line 120.
 
-[16]
 
 Package caption Warning: \label without proper reference on input line 125.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:AsbruPossibleAsthma' on page 17 undefined on inpu
+LaTeX Warning: Reference `fig:AsbruPossibleAsthma' on page 16 undefined on inpu
 t line 122.
 
-[17 <./images/GLIFPossibleAsthma.pdf>]
-<images/AsbruPossibleAsthma.png, id=143, 764.8575pt x 289.08pt>
+[16]
+<images/AsbruPossibleAsthma.png, id=134, 764.8575pt x 289.08pt>
 File: images/AsbruPossibleAsthma.png Graphic file (type png)
 <use images/AsbruPossibleAsthma.png>
 Package pdftex.def Info: images/AsbruPossibleAsthma.png  used on input line 126
@@ -807,10 +812,19 @@ Package pdftex.def Info: images/AsbruPossibleAsthma.png  used on input line 126
 (pdftex.def)             Requested size: 420.67291pt x 158.99448pt.
 
 Overfull \hbox (30.67291pt too wide) in paragraph at lines 126--127
-[][] 
+ [][] 
  []
 
-[18 <./images/AsbruPossibleAsthma.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17 <./images/GLIFPossibleAsthma.pdf>]
+Underfull \vbox (badness 2626) has occurred while \output is active []
+
+ [18 <./images/AsbruPossibleAsthma.png>]
 
 Package caption Warning: \label without proper reference on input line 39.
 See the caption package documentation for explanation.
@@ -835,7 +849,7 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `fig:PrototypeInteractiveCPG' on page 19 undefined on 
 input line 145.
 
-<images/PrototypeInteractiveCPG.png, id=149, 533.49312pt x 393.47pt>
+<images/PrototypeInteractiveCPG.png, id=151, 533.49312pt x 393.47pt>
 File: images/PrototypeInteractiveCPG.png Graphic file (type png)
 <use images/PrototypeInteractiveCPG.png>
 Package pdftex.def Info: images/PrototypeInteractiveCPG.png  used on input line
@@ -860,7 +874,7 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `fig:PrototypeGameCPG' on page 19 undefined on input l
 ine 154.
 
-<images/PrototypeGameCPG.png, id=150, 1385.175pt x 2425.56187pt>
+<images/PrototypeGameCPG.png, id=152, 1385.175pt x 2425.56187pt>
 File: images/PrototypeGameCPG.png Graphic file (type png)
 <use images/PrototypeGameCPG.png>
 Package pdftex.def Info: images/PrototypeGameCPG.png  used on input line 158.
@@ -889,33 +903,30 @@ LaTeX Warning: Reference `fig:GLIFPossibleAsthma' on page 20 undefined on input
 
 LaTeX Warning: Text page 21 contains only floats.
 
-
-Overfull \vbox (3.60378pt too high) has occurred while \output is active []
-
-
 [21 <./images/PrototypeGameCPG.png>]
-<images/SimulationTool.pdf, id=163, 706.09978pt x 659.26544pt>
+<images/SimulationTool.pdf, id=165, 706.09978pt x 659.26544pt>
 File: images/SimulationTool.pdf Graphic file (type pdf)
 <use images/SimulationTool.pdf>
 Package pdftex.def Info: images/SimulationTool.pdf  used on input line 174.
 (pdftex.def)             Requested size: 282.4349pt x 263.70149pt.
- [22 <./images/SimulationTool.pdf>]
+
 
 Package caption Warning: \label without proper reference on input line 183.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:BlackboardingDPF' on page 23 undefined on input l
+LaTeX Warning: Reference `fig:BlackboardingDPF' on page 22 undefined on input l
 ine 180.
 
-<images/BlackboardingDPF.png, id=188, 2915.3867pt x 817.32155pt>
+[22 <./images/SimulationTool.pdf>]
+<images/BlackboardingDPF.png, id=190, 2915.3867pt x 817.32155pt>
 File: images/BlackboardingDPF.png Graphic file (type png)
 <use images/BlackboardingDPF.png>
 Package pdftex.def Info: images/BlackboardingDPF.png  used on input line 184.
 (pdftex.def)             Requested size: 466.4714pt x 130.77411pt.
 
 Overfull \hbox (76.4714pt too wide) in paragraph at lines 184--185
-[][] 
+ [][] 
  []
 
 
@@ -927,17 +938,14 @@ LaTeX Warning: Reference `fig:Hassenzahl' on page 23 undefined on input line 19
 8.
 
 [23 <./images/BlackboardingDPF.png>]
-<images/Hassenzahl.pdf, id=193, 401.79811pt x 368.78938pt>
+<images/Hassenzahl.pdf, id=195, 401.79811pt x 368.78938pt>
 File: images/Hassenzahl.pdf Graphic file (type pdf)
 <use images/Hassenzahl.pdf>
 Package pdftex.def Info: images/Hassenzahl.pdf  used on input line 207.
 (pdftex.def)             Requested size: 265.18756pt x 243.40173pt.
  [24 <./images/Hassenzahl.pdf>]
-(workshops.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [25]
-<images/workshop220219.jpg, id=216, 1939.245pt x 1090.0725pt>
+(workshops.tex [25]
+<images/workshop220219.jpg, id=218, 1939.245pt x 1090.0725pt>
 File: images/workshop220219.jpg Graphic file (type jpg)
 <use images/workshop220219.jpg>
 Package pdftex.def Info: images/workshop220219.jpg  used on input line 22.
@@ -954,7 +962,7 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `table:QuestionsDetailLevels' on page 26 undefined on 
 input line 28.
 
-[26]
+
 Overfull \hbox (3.42497pt too wide) in paragraph at lines 34--34
 []|\OT1/cmr/m/n/12 Level| 
  []
@@ -1162,11 +1170,8 @@ Underfull \hbox (badness 2884) in paragraph at lines 40--41
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Underfull \vbox (badness 3417) has occurred while \output is active []
-
- [27 <./images/workshop220219.jpg>]
-<images/FollowUpDependencies.pdf, id=223, 501.875pt x 220.825pt>
+[26]
+<images/FollowUpDependencies.pdf, id=222, 501.875pt x 220.825pt>
 File: images/FollowUpDependencies.pdf Graphic file (type pdf)
 <use images/FollowUpDependencies.pdf>
 Package pdftex.def Info: images/FollowUpDependencies.pdf  used on input line 52
@@ -1176,28 +1181,25 @@ Package pdftex.def Info: images/FollowUpDependencies.pdf  used on input line 52
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
+[27 <./images/workshop220219.jpg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [28]
-<images/workshop220219-2.jpg, id=227, 5171.32pt x 2906.86pt>
+<images/workshop220219-2.jpg, id=229, 5171.32pt x 2906.86pt>
 File: images/workshop220219-2.jpg Graphic file (type jpg)
 <use images/workshop220219-2.jpg>
 Package pdftex.def Info: images/workshop220219-2.jpg  used on input line 64.
 (pdftex.def)             Requested size: 387.83228pt x 218.0051pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/workshop220219-3.jpg, id=228, 5171.32pt x 2906.86pt>
+<images/workshop220219-3.jpg, id=230, 5171.32pt x 2906.86pt>
 File: images/workshop220219-3.jpg Graphic file (type jpg)
 <use images/workshop220219-3.jpg>
 Package pdftex.def Info: images/workshop220219-3.jpg  used on input line 69.
 (pdftex.def)             Requested size: 387.83228pt x 218.0051pt.
 
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/workshop220219-4.jpg, id=229, 5171.32pt x 2906.86pt>
+<images/workshop220219-4.jpg, id=231, 5171.32pt x 2906.86pt>
 File: images/workshop220219-4.jpg Graphic file (type jpg)
 <use images/workshop220219-4.jpg>
 Package pdftex.def Info: images/workshop220219-4.jpg  used on input line 74.
@@ -1205,12 +1207,9 @@ Package pdftex.def Info: images/workshop220219-4.jpg  used on input line 74.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[29 <./images/FollowUpDependencies.pdf>]
-
-LaTeX Warning: Text page 30 contains only floats.
-
-[30 <./images/workshop220219-2.jpg> <./images/workshop220219-3.jpg>]
-<images/workshop220219-5.jpg, id=240, 5171.32pt x 2906.86pt>
+[29 <./images/FollowUpDependencies.pdf> <./images/workshop220219-2.jpg>]
+[30 <./images/workshop220219-3.jpg> <./images/workshop220219-4.jpg>]
+<images/workshop220219-5.jpg, id=242, 5171.32pt x 2906.86pt>
 File: images/workshop220219-5.jpg Graphic file (type jpg)
 <use images/workshop220219-5.jpg>
 Package pdftex.def Info: images/workshop220219-5.jpg  used on input line 94.
@@ -1219,10 +1218,7 @@ Package pdftex.def Info: images/workshop220219-5.jpg  used on input line 94.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-)
-Underfull \vbox (badness 3417) has occurred while \output is active []
-
- [31 <./images/workshop220219-4.jpg>]) [32 <./images/workshop220219-5.jpg>]
+) [31]) [32 <./images/workshop220219-5.jpg>]
 Chapter 4.
 (datamodels.tex [33
 
@@ -1246,7 +1242,7 @@ HEALTH WORKERS
  []
 
 [34]
-<images/EntityGraphExcerpt.pdf, id=256, 562.1pt x 481.8pt>
+<images/EntityGraphExcerpt.pdf, id=258, 562.1pt x 481.8pt>
 File: images/EntityGraphExcerpt.pdf Graphic file (type pdf)
 <use images/EntityGraphExcerpt.pdf>
 Package pdftex.def Info: images/EntityGraphExcerpt.pdf  used on input line 40.
@@ -1263,7 +1259,7 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `fig:EntityGraphPatientDiagnosis' on page 35 undefined
  on input line 44.
 
-<images/EntityGraphPatientDiagnosis.pdf, id=257, 592.2125pt x 331.2375pt>
+<images/EntityGraphPatientDiagnosis.pdf, id=259, 592.2125pt x 331.2375pt>
 File: images/EntityGraphPatientDiagnosis.pdf Graphic file (type pdf)
 <use images/EntityGraphPatientDiagnosis.pdf>
 Package pdftex.def Info: images/EntityGraphPatientDiagnosis.pdf  used on input 
@@ -1288,14 +1284,14 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `fig:EntityGraphExcerpt' on page 35 undefined on input
  line 54.
 
-<images/EntityGraphHistory.pdf, id=258, 722.7pt x 230.8625pt>
+<images/EntityGraphHistory.pdf, id=260, 722.7pt x 230.8625pt>
 File: images/EntityGraphHistory.pdf Graphic file (type pdf)
 <use images/EntityGraphHistory.pdf>
 Package pdftex.def Info: images/EntityGraphHistory.pdf  used on input line 58.
 (pdftex.def)             Requested size: 433.62334pt x 138.51855pt.
 
 Overfull \hbox (43.62334pt too wide) in paragraph at lines 58--59
-[][] 
+ [][] 
  []
 
 
@@ -1310,7 +1306,7 @@ LaTeX Warning: Reference `fig:EntityGraphExamination' on page 35 undefined on i
 nput line 62.
 
 [35]
-<images/EntityGraphExamination.pdf, id=262, 953.5625pt x 411.5375pt>
+<images/EntityGraphExamination.pdf, id=264, 953.5625pt x 411.5375pt>
 File: images/EntityGraphExamination.pdf Graphic file (type pdf)
 <use images/EntityGraphExamination.pdf>
 Package pdftex.def Info: images/EntityGraphExamination.pdf  used on input line 
@@ -1318,7 +1314,7 @@ Package pdftex.def Info: images/EntityGraphExamination.pdf  used on input line
 (pdftex.def)             Requested size: 429.09917pt x 185.19016pt.
 
 Overfull \hbox (39.09917pt too wide) in paragraph at lines 69--70
-[][] 
+ [][] 
  []
 
 
@@ -1331,9 +1327,6 @@ See the caption package documentation for explanation.
 
 LaTeX Warning: Reference `fig:EntityGraphMedication' on page 36 undefined on in
 put line 73.
-
-
-Underfull \vbox (badness 4673) has occurred while \output is active []
 
 
 Overfull \hbox (39.30276pt too wide) has occurred while \output is active
@@ -1349,7 +1342,7 @@ HEALTH WORKERS
  []
 
 [38 <./images/EntityGraphExamination.pdf>]
-<images/EntityGraphMedication.pdf, id=290, 1013.7875pt x 712.6625pt>
+<images/EntityGraphMedication.pdf, id=292, 1013.7875pt x 712.6625pt>
 File: images/EntityGraphMedication.pdf Graphic file (type pdf)
 <use images/EntityGraphMedication.pdf>
 Package pdftex.def Info: images/EntityGraphMedication.pdf  used on input line 9
@@ -1357,7 +1350,7 @@ Package pdftex.def Info: images/EntityGraphMedication.pdf  used on input line 9
 (pdftex.def)             Requested size: 456.20016pt x 320.69516pt.
 
 Overfull \hbox (66.20016pt too wide) in paragraph at lines 95--96
-[][] 
+ [][] 
  []
 
 
@@ -1371,7 +1364,7 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `fig:RouteMethodProblem' on page 39 undefined on input
  line 99.
 
-<images/RouteMethodProblem.pdf, id=291, 1244.65pt x 351.3125pt>
+<images/RouteMethodProblem.pdf, id=293, 1244.65pt x 351.3125pt>
 File: images/RouteMethodProblem.pdf Graphic file (type pdf)
 <use images/RouteMethodProblem.pdf>
 Package pdftex.def Info: images/RouteMethodProblem.pdf  used on input line 104.
@@ -1381,23 +1374,20 @@ Package pdftex.def Info: images/RouteMethodProblem.pdf  used on input line 104.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [39]
-Overfull \vbox (13.83968pt too high) has occurred while \output is active []
-
-
 Overfull \hbox (39.30276pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/12 40 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
 HEALTH WORKERS
  []
 
 [40 <./images/EntityGraphMedication.pdf> <./images/RouteMethodProblem.pdf>]
-<images/WorkflowGraph.pdf, id=307, 712.6625pt x 210.7875pt>
+<images/WorkflowGraph.pdf, id=309, 712.6625pt x 210.7875pt>
 File: images/WorkflowGraph.pdf Graphic file (type pdf)
 <use images/WorkflowGraph.pdf>
 Package pdftex.def Info: images/WorkflowGraph.pdf  used on input line 120.
 (pdftex.def)             Requested size: 427.6008pt x 126.47346pt.
 
 Overfull \hbox (37.6008pt too wide) in paragraph at lines 120--121
-[][] 
+ [][] 
  []
 
 [41 <./images/WorkflowGraph.pdf>]
@@ -1433,7 +1423,7 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `fig:EntityGraphHistory' on page 42 undefined on input
  line 140.
 
-<images/MetamodelEntityGraph.pdf, id=316, 1074.0125pt x 401.5pt>
+<images/MetamodelEntityGraph.pdf, id=318, 1074.0125pt x 401.5pt>
 File: images/MetamodelEntityGraph.pdf Graphic file (type pdf)
 <use images/MetamodelEntityGraph.pdf>
 Package pdftex.def Info: images/MetamodelEntityGraph.pdf  used on input line 14
@@ -1441,7 +1431,7 @@ Package pdftex.def Info: images/MetamodelEntityGraph.pdf  used on input line 14
 (pdftex.def)             Requested size: 429.59738pt x 160.59715pt.
 
 Overfull \hbox (39.59738pt too wide) in paragraph at lines 144--145
-[][] 
+ [][] 
  []
 
 
@@ -1467,7 +1457,7 @@ HEALTH WORKERS
  []
 
 [42 <./images/MetamodelEntityGraph.pdf>]
-<images/IntegratedEntityWorkflowModels.pdf, id=324, 1013.7875pt x 662.475pt>
+<images/IntegratedEntityWorkflowModels.pdf, id=326, 1013.7875pt x 662.475pt>
 File: images/IntegratedEntityWorkflowModels.pdf Graphic file (type pdf)
 <use images/IntegratedEntityWorkflowModels.pdf>
 Package pdftex.def Info: images/IntegratedEntityWorkflowModels.pdf  used on inp
@@ -1475,7 +1465,7 @@ ut line 154.
 (pdftex.def)             Requested size: 405.50783pt x 264.9853pt.
 
 Overfull \hbox (15.50783pt too wide) in paragraph at lines 154--155
-[][] 
+ [][] 
  []
 
 ) (gameengine.tex [43 <./images/IntegratedEntityWorkflowModels.pdf>]
@@ -1493,7 +1483,7 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `fig:KnowledgeMap' on page 45 undefined on input line 
 27.
 
-<images/KnowledgeMap3.pdf, id=336, 321.2pt x 220.825pt>
+<images/KnowledgeMap3.pdf, id=338, 321.2pt x 220.825pt>
 File: images/KnowledgeMap3.pdf Graphic file (type pdf)
 <use images/KnowledgeMap3.pdf>
 Package pdftex.def Info: images/KnowledgeMap3.pdf  used on input line 31.
@@ -1508,7 +1498,7 @@ LaTeX Warning: Reference `table:ContentUnit' on page 45 undefined on input line
 
 
 Overfull \hbox (23.59607pt too wide) in paragraph at lines 39--50
-[][] 
+ [][] 
  []
 
 
@@ -1523,18 +1513,15 @@ LaTeX Warning: Reference `fig:LearningMap' on page 45 undefined on input line 5
 3.
 
 [45 <./images/KnowledgeMap3.pdf>]
-<images/LearningMap.pdf, id=344, 1003.75pt x 582.175pt>
+<images/LearningMap.pdf, id=346, 1003.75pt x 582.175pt>
 File: images/LearningMap.pdf Graphic file (type pdf)
 <use images/LearningMap.pdf>
 Package pdftex.def Info: images/LearningMap.pdf  used on input line 59.
 (pdftex.def)             Requested size: 451.68333pt x 261.97633pt.
 
 Overfull \hbox (61.68333pt too wide) in paragraph at lines 59--60
-[][] 
+ [][] 
  []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package caption Warning: \label without proper reference on input line 67.
@@ -1545,20 +1532,17 @@ LaTeX Warning: Reference `table:StudentMap' on page 46 undefined on input line
 64.
 
 
-Overfull \hbox (23.59607pt too wide) in paragraph at lines 68--79
-[][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
 Overfull \hbox (39.30276pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/12 46 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
 HEALTH WORKERS
  []
 
-[46]
+[46 <./images/LearningMap.pdf>]
+Overfull \hbox (23.59607pt too wide) in paragraph at lines 68--79
+ [][] 
+ []
+
+
 Underfull \hbox (badness 2932) in paragraph at lines 92--92
 []|\OT1/cmr/m/n/12 Feedback af-
  []
@@ -1596,7 +1580,7 @@ Overfull \hbox (77.77075pt too wide) in paragraph at lines 90--100
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [47 <./images/LearningMap.pdf>]
+ [47]
 Overfull \hbox (39.30276pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/12 48 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
 HEALTH WORKERS
@@ -1612,7 +1596,7 @@ HEALTH WORKERS
  []
 
 [50]
-<images/EntityInstanceGraph.pdf, id=365, 923.45pt x 250.9375pt>
+<images/EntityInstanceGraph.pdf, id=367, 923.45pt x 250.9375pt>
 File: images/EntityInstanceGraph.pdf Graphic file (type pdf)
 <use images/EntityInstanceGraph.pdf>
 Package pdftex.def Info: images/EntityInstanceGraph.pdf  used on input line 157
@@ -1636,7 +1620,7 @@ HEALTH WORKERS
  []
 
 [52 <./images/EntityInstanceGraph.pdf>]
-<images/GeneratingScenarios1.pdf, id=376, 1104.125pt x 301.125pt>
+<images/GeneratingScenarios1.pdf, id=378, 1104.125pt x 301.125pt>
 File: images/GeneratingScenarios1.pdf Graphic file (type pdf)
 <use images/GeneratingScenarios1.pdf>
 Package pdftex.def Info: images/GeneratingScenarios1.pdf  used on input line 21
@@ -1644,13 +1628,13 @@ Package pdftex.def Info: images/GeneratingScenarios1.pdf  used on input line 21
 (pdftex.def)             Requested size: 441.64218pt x 120.44786pt.
 
 Overfull \hbox (51.64218pt too wide) in paragraph at lines 213--214
-[][] 
+ [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/GeneratingScenarios2.pdf, id=377, 813.0375pt x 170.6375pt>
+<images/GeneratingScenarios2.pdf, id=379, 813.0375pt x 170.6375pt>
 File: images/GeneratingScenarios2.pdf Graphic file (type pdf)
 <use images/GeneratingScenarios2.pdf>
 Package pdftex.def Info: images/GeneratingScenarios2.pdf  used on input line 21
@@ -1675,7 +1659,7 @@ HEALTH WORKERS
  []
 
 [54 <./images/GeneratingScenarios1.pdf> <./images/GeneratingScenarios2.pdf>]
-<images/IntegratedEntityGameModels.pdf, id=392, 1023.825pt x 863.225pt>
+<images/IntegratedEntityGameModels.pdf, id=394, 1023.825pt x 863.225pt>
 File: images/IntegratedEntityGameModels.pdf Graphic file (type pdf)
 <use images/IntegratedEntityGameModels.pdf>
 Package pdftex.def Info: images/IntegratedEntityGameModels.pdf  used on input l
@@ -1683,7 +1667,7 @@ ine 256.
 (pdftex.def)             Requested size: 409.52274pt x 345.28389pt.
 
 Overfull \hbox (19.52274pt too wide) in paragraph at lines 256--257
-[][] 
+ [][] 
  []
 
 
@@ -1698,7 +1682,7 @@ nput line 261.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [55 <./images/IntegratedEntityGameModels.pdf>]
-<images/ConceptualModelGameElements.pdf, id=401, 1053.9375pt x 381.425pt>
+<images/ConceptualModelGameElements.pdf, id=403, 1053.9375pt x 381.425pt>
 File: images/ConceptualModelGameElements.pdf Graphic file (type pdf)
 <use images/ConceptualModelGameElements.pdf>
 Package pdftex.def Info: images/ConceptualModelGameElements.pdf  used on input 
@@ -1706,7 +1690,7 @@ line 272.
 (pdftex.def)             Requested size: 421.56754pt x 152.56729pt.
 
 Overfull \hbox (31.56754pt too wide) in paragraph at lines 272--273
-[][] 
+ [][] 
  []
 
 
@@ -1719,7 +1703,7 @@ HEALTH WORKERS
  []
 
 [56]
-<images/GameEngineFacadePattern.pdf, id=405, 632.3625pt x 311.1625pt>
+<images/GameEngineFacadePattern.pdf, id=407, 632.3625pt x 311.1625pt>
 File: images/GameEngineFacadePattern.pdf Graphic file (type pdf)
 <use images/GameEngineFacadePattern.pdf>
 Package pdftex.def Info: images/GameEngineFacadePattern.pdf  used on input line
@@ -1727,14 +1711,14 @@ Package pdftex.def Info: images/GameEngineFacadePattern.pdf  used on input line
 (pdftex.def)             Requested size: 252.94052pt x 124.46278pt.
  [57 <./images/ConceptualModelGameElements.pdf> <./images/GameEngineFacadePatte
 rn.pdf>]
-<images/KnowledgeMap2.pdf, id=418, 1063.975pt x 140.525pt>
+<images/KnowledgeMap2.pdf, id=420, 1063.975pt x 140.525pt>
 File: images/KnowledgeMap2.pdf Graphic file (type pdf)
 <use images/KnowledgeMap2.pdf>
 Package pdftex.def Info: images/KnowledgeMap2.pdf  used on input line 307.
 (pdftex.def)             Requested size: 425.58246pt x 56.20898pt.
 
 Overfull \hbox (35.58246pt too wide) in paragraph at lines 307--308
-[][] 
+ [][] 
  []
 
 
@@ -1806,7 +1790,7 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `fig:ScreenshotMain' on page 63 undefined on input lin
 e 19.
 
-<images/ScreenshotMain.png, id=439, 813.0375pt x 1391.95032pt>
+<images/ScreenshotMain.png, id=441, 813.0375pt x 1391.95032pt>
 File: images/ScreenshotMain.png Graphic file (type png)
 <use images/ScreenshotMain.png>
 Package pdftex.def Info: images/ScreenshotMain.png  used on input line 23.
@@ -1819,19 +1803,13 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `fig:ScreenshotLearningMap' on page 63 undefined on in
 put line 27.
 
-
-Underfull \vbox (badness 2012) has occurred while \output is active []
-
- [63 <./images/ScreenshotMain.png>]
-<images/ScreenshotLearningMap.png, id=444, 813.0375pt x 1394.20876pt>
+[63 <./images/ScreenshotMain.png>]
+<images/ScreenshotLearningMap.png, id=446, 813.0375pt x 1394.20876pt>
 File: images/ScreenshotLearningMap.png Graphic file (type png)
 <use images/ScreenshotLearningMap.png>
 Package pdftex.def Info: images/ScreenshotLearningMap.png  used on input line 3
 5.
 (pdftex.def)             Requested size: 162.60461pt x 278.8368pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package caption Warning: \label without proper reference on input line 50.
@@ -1841,53 +1819,50 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `fig:ScreenshotKarenAssessment' on page 64 undefined o
 n input line 39.
 
-<images/ScreenshotKarenAssessment.png, id=445, 1668.17041pt x 1393.99144pt>
-File: images/ScreenshotKarenAssessment.png Graphic file (type png)
-<use images/ScreenshotKarenAssessment.png>
-Package pdftex.def Info: images/ScreenshotKarenAssessment.png  used on input li
-ne 51.
-(pdftex.def)             Requested size: 333.62817pt x 278.79335pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Package caption Warning: \label without proper reference on input line 58.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:ScreenshotKarenDiagnosis' on page 64 undefined on
- input line 55.
-
-<images/ScreenshotKarenDiagnosis.png, id=446, 1668.17041pt x 1393.99144pt>
-File: images/ScreenshotKarenDiagnosis.png Graphic file (type png)
-<use images/ScreenshotKarenDiagnosis.png>
-Package pdftex.def Info: images/ScreenshotKarenDiagnosis.png  used on input lin
-e 59.
-(pdftex.def)             Requested size: 333.62817pt x 278.79335pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Package caption Warning: \label without proper reference on input line 65.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:ScreenshotKarenManagement' on page 64 undefined o
-n input line 63.
-
-<images/ScreenshotKarenManagement.png, id=447, 1668.17041pt x 1393.99144pt>
-File: images/ScreenshotKarenManagement.png Graphic file (type png)
-<use images/ScreenshotKarenManagement.png>
-Package pdftex.def Info: images/ScreenshotKarenManagement.png  used on input li
-ne 66.
-(pdftex.def)             Requested size: 333.62817pt x 278.79335pt.
 
 Overfull \hbox (39.30276pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/12 64 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
 HEALTH WORKERS
  []
 
-[64]
+[64 <./images/ScreenshotLearningMap.png>]
+<images/ScreenshotKarenAssessment.png, id=451, 1668.17041pt x 1393.99144pt>
+File: images/ScreenshotKarenAssessment.png Graphic file (type png)
+<use images/ScreenshotKarenAssessment.png>
+Package pdftex.def Info: images/ScreenshotKarenAssessment.png  used on input li
+ne 51.
+(pdftex.def)             Requested size: 333.62817pt x 278.79335pt.
+
+
+Package caption Warning: \label without proper reference on input line 58.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:ScreenshotKarenDiagnosis' on page 65 undefined on
+ input line 55.
+
+[65 <./images/ScreenshotKarenAssessment.png>]
+<images/ScreenshotKarenDiagnosis.png, id=456, 1668.17041pt x 1393.99144pt>
+File: images/ScreenshotKarenDiagnosis.png Graphic file (type png)
+<use images/ScreenshotKarenDiagnosis.png>
+Package pdftex.def Info: images/ScreenshotKarenDiagnosis.png  used on input lin
+e 59.
+(pdftex.def)             Requested size: 333.62817pt x 278.79335pt.
+
+
+Package caption Warning: \label without proper reference on input line 65.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:ScreenshotKarenManagement' on page 66 undefined o
+n input line 63.
+
+<images/ScreenshotKarenManagement.png, id=457, 1668.17041pt x 1393.99144pt>
+File: images/ScreenshotKarenManagement.png Graphic file (type png)
+<use images/ScreenshotKarenManagement.png>
+Package pdftex.def Info: images/ScreenshotKarenManagement.png  used on input li
+ne 66.
+(pdftex.def)             Requested size: 333.62817pt x 278.79335pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1896,11 +1871,17 @@ Package caption Warning: \label without proper reference on input line 77.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:ScreenshotKarenFollowUp' on page 65 undefined on 
+LaTeX Warning: Reference `fig:ScreenshotKarenFollowUp' on page 66 undefined on 
 input line 70.
 
-[65 <./images/ScreenshotLearningMap.png>]
-<images/ScreenshotKarenFollowUp.png, id=455, 2517.52917pt x 1393.99144pt>
+
+Overfull \hbox (39.30276pt too wide) has occurred while \output is active
+\OT1/cmr/m/n/12 66 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
+HEALTH WORKERS
+ []
+
+[66 <./images/ScreenshotKarenDiagnosis.png>]
+<images/ScreenshotKarenFollowUp.png, id=462, 2517.52917pt x 1393.99144pt>
 File: images/ScreenshotKarenFollowUp.png Graphic file (type png)
 <use images/ScreenshotKarenFollowUp.png>
 Package pdftex.def Info: images/ScreenshotKarenFollowUp.png  used on input line
@@ -1908,7 +1889,7 @@ Package pdftex.def Info: images/ScreenshotKarenFollowUp.png  used on input line
 (pdftex.def)             Requested size: 503.49692pt x 278.79335pt.
 
 Overfull \hbox (113.49692pt too wide) in paragraph at lines 78--79
-[][] 
+ [][] 
  []
 
 
@@ -1919,10 +1900,10 @@ Package caption Warning: \label without proper reference on input line 85.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:ScreenshotLearningMapUpdated' on page 66 undefine
+LaTeX Warning: Reference `fig:ScreenshotLearningMapUpdated' on page 67 undefine
 d on input line 82.
 
-<images/ScreenshotLearningMapUpdated.png, id=456, 813.0375pt x 1392.70313pt>
+<images/ScreenshotLearningMapUpdated.png, id=463, 813.0375pt x 1392.70313pt>
 File: images/ScreenshotLearningMapUpdated.png Graphic file (type png)
 <use images/ScreenshotLearningMapUpdated.png>
 Package pdftex.def Info: images/ScreenshotLearningMapUpdated.png  used on input
@@ -1936,17 +1917,14 @@ Package caption Warning: \label without proper reference on input line 99.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:ScreenshotHighCharts' on page 66 undefined on inp
+LaTeX Warning: Reference `fig:ScreenshotHighCharts' on page 67 undefined on inp
 ut line 90.
 
 
-Overfull \hbox (39.30276pt too wide) has occurred while \output is active
-\OT1/cmr/m/n/12 66 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
-HEALTH WORKERS
- []
+Underfull \vbox (badness 1092) has occurred while \output is active []
 
-[66 <./images/ScreenshotKarenAssessment.png>]
-<images/ScreenshotHighCharts.png, id=461, 813.0375pt x 1393.45593pt>
+ [67 <./images/ScreenshotKarenManagement.png>]
+<images/ScreenshotHighCharts.png, id=469, 813.0375pt x 1393.45593pt>
 File: images/ScreenshotHighCharts.png Graphic file (type png)
 <use images/ScreenshotHighCharts.png>
 Package pdftex.def Info: images/ScreenshotHighCharts.png  used on input line 10
@@ -1956,40 +1934,36 @@ Package pdftex.def Info: images/ScreenshotHighCharts.png  used on input line 10
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [67 <./images/ScreenshotKarenDiagnosis.png>]
+)
+Underfull \vbox (badness 2103) has occurred while \output is active []
+
+
 Overfull \hbox (39.30276pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/12 68 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
 HEALTH WORKERS
  []
 
-[68 <./images/ScreenshotKarenManagement.png>] [69 <./images/ScreenshotKarenFoll
-owUp.png>]
+[68 <./images/ScreenshotKarenFollowUp.png>] [69 <./images/ScreenshotLearningMap
+Updated.png>]
 Overfull \hbox (39.30276pt too wide) has occurred while \output is active
 \OT1/cmr/m/n/12 70 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
 HEALTH WORKERS
  []
 
-[70 <./images/ScreenshotLearningMapUpdated.png>] [71 <./images/ScreenshotHighCh
-arts.png>]
-Overfull \hbox (39.30276pt too wide) has occurred while \output is active
-\OT1/cmr/m/n/12 72 \OT1/cmr/m/sl/12 CHAPTER 4.  DEVELOPING A LEARNING TOOL FOR 
-HEALTH WORKERS
- []
-
-[72
+[70 <./images/ScreenshotHighCharts.png>]
+Chapter 5.
+(evaluation.tex [71
 
 ]
-Chapter 5.
-(evaluation.tex [73]
 
 Package caption Warning: \label without proper reference on input line 15.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:PneumoniaEntityGraph' on page 74 undefined on inp
+LaTeX Warning: Reference `fig:PneumoniaEntityGraph' on page 72 undefined on inp
 ut line 6.
 
-<images/PneumoniaEntityGraph.pdf, id=490, 1104.125pt x 963.6pt>
+<images/PneumoniaEntityGraph.pdf, id=485, 1104.125pt x 963.6pt>
 File: images/PneumoniaEntityGraph.pdf Graphic file (type pdf)
 <use images/PneumoniaEntityGraph.pdf>
 Package pdftex.def Info: images/PneumoniaEntityGraph.pdf  used on input line 16
@@ -2003,19 +1977,19 @@ Package caption Warning: \label without proper reference on input line 119.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:WorkflowGraph' on page 74 undefined on input line
+LaTeX Warning: Reference `fig:WorkflowGraph' on page 72 undefined on input line
  20.
 
-[74]
+[72]
 
 Package caption Warning: \label without proper reference on input line 24.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `fig:PneumoniaPneumoniaIntegratedEntityWorkflowModels'
- on page 75 undefined on input line 22.
+ on page 73 undefined on input line 22.
 
-<images/PneumoniaIntegratedEntityWorkflowModels.pdf, id=494, 1033.8625pt x 833.
+<images/PneumoniaIntegratedEntityWorkflowModels.pdf, id=489, 1033.8625pt x 833.
 1125pt>
 File: images/PneumoniaIntegratedEntityWorkflowModels.pdf Graphic file (type pdf
 )
@@ -2025,19 +1999,19 @@ ed on input line 25.
 (pdftex.def)             Requested size: 413.53767pt x 333.23909pt.
 
 Overfull \hbox (23.53767pt too wide) in paragraph at lines 25--26
-[][] 
+ [][] 
  []
 
-[75 <./images/PneumoniaEntityGraph.pdf>]
-Underfull \vbox (badness 1137) has occurred while \output is active []
+[73 <./images/PneumoniaEntityGraph.pdf>]
+Underfull \vbox (badness 1472) has occurred while \output is active []
 
- [76 <./images/PneumoniaIntegratedEntityWorkflowModels.pdf>] [77] [78] [79] [80
-] [81])
-[82]
+ [74 <./images/PneumoniaIntegratedEntityWorkflowModels.pdf>] [75] [76] [77] [78
+] [79])
+[80]
 Chapter 6.
-[83
+[81
 
-] [84
+] [82
 
 ]
 Overfull \hbox (5.46484pt too wide) in paragraph at lines 88--88
@@ -2045,7 +2019,7 @@ Overfull \hbox (5.46484pt too wide) in paragraph at lines 88--88
 \OT1/cmr/m/it/12 Jour-nal of Biomed-
  []
 
-[85
+[83
 
 ]
 Overfull \hbox (32.62881pt too wide) in paragraph at lines 88--88
@@ -2066,30 +2040,36 @@ Overfull \hbox (2.18968pt too wide) in paragraph at lines 88--88
 ttp : / / apps . who . int / medicinedocs / documents / s21973en /
  []
 
-[86]
+[84]
 Overfull \hbox (5.16568pt too wide) in paragraph at lines 88--88
 \OT1/cmr/m/n/12 logue''. In: \OT1/cmr/m/it/12 Com-mu-ni-ca-tions of the ACM \OT
 1/cmr/m/n/12 33.3, pp. 338{348. \OT1/cmr/m/sc/12 issn\OT1/cmr/m/n/12 : 00010782
 .
  []
 
-[87]
+[85]
+Overfull \hbox (2.61302pt too wide) in paragraph at lines 88--88
+[][]\OT1/cmr/m/n/12 Odhiambo, J A et al. (1998). ``Urban-rural dif-fer-ences in
+ questionnaire-derived
+ []
+
+
 Overfull \hbox (16.64684pt too wide) in paragraph at lines 88--88
 [][]\OT1/cmr/m/n/12 ReduxJS-thunk. \OT1/cmr/m/it/12 reduxjs/redux-thunk: Thunk 
 mid-dle-ware for Re-dux\OT1/cmr/m/n/12 . \OT1/cmr/m/sc/12 url\OT1/cmr/m/n/12 : 
 $\OT1/cmtt/m/n/12 https :
  []
 
-
+[86]
 Overfull \hbox (1.75934pt too wide) in paragraph at lines 88--88
 \OT1/cmr/m/n/12 An Overview''. In: \OT1/cmr/m/sc/12 url\OT1/cmr/m/n/12 : $\OT1/
 cmtt/m/n/12 https : / / www . researchgate . net / publication /
  []
 
-[88] [89] [90
+[87] [88
 
 ]
-<appendices/comparisonApps.pdf, id=555, 597.53635pt x 845.04686pt>
+<appendices/comparisonApps.pdf, id=551, 597.53635pt x 845.04686pt>
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf>
 Package pdftex.def Info: appendices/comparisonApps.pdf  used on input line 94.
@@ -2122,7 +2102,7 @@ File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf>
 Package pdftex.def Info: appendices/comparisonApps.pdf  used on input line 94.
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
-<appendices/comparisonApps.pdf, id=564, page=1, 597.53635pt x 845.04686pt>
+<appendices/comparisonApps.pdf, id=560, page=1, 597.53635pt x 845.04686pt>
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf, page 1>
 Package pdftex.def Info: appendices/comparisonApps.pdf , page1 used on input li
@@ -2133,7 +2113,7 @@ File: appendices/comparisonApps.pdf Graphic file (type pdf)
 Package pdftex.def Info: appendices/comparisonApps.pdf , page1 used on input li
 ne 94.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
- [91]
+ [89]
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf, page 1>
 Package pdftex.def Info: appendices/comparisonApps.pdf , page1 used on input li
@@ -2147,95 +2127,95 @@ ne 94.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf, page 1>
 Package pdftex.def Info: appendices/comparisonApps.pdf , page1 used on input li
+ne 94.
+(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
+ [90 <./appendices/comparisonApps.pdf>]
+<appendices/comparisonApps.pdf, id=584, page=2, 597.53635pt x 845.04686pt>
+File: appendices/comparisonApps.pdf Graphic file (type pdf)
+<use appendices/comparisonApps.pdf, page 2>
+Package pdftex.def Info: appendices/comparisonApps.pdf , page2 used on input li
+ne 94.
+(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
+File: appendices/comparisonApps.pdf Graphic file (type pdf)
+<use appendices/comparisonApps.pdf, page 2>
+Package pdftex.def Info: appendices/comparisonApps.pdf , page2 used on input li
+ne 94.
+(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
+File: appendices/comparisonApps.pdf Graphic file (type pdf)
+<use appendices/comparisonApps.pdf, page 2>
+Package pdftex.def Info: appendices/comparisonApps.pdf , page2 used on input li
+ne 94.
+(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
+ [91 <./appendices/comparisonApps.pdf>]
+<appendices/comparisonApps.pdf, id=590, page=3, 597.53635pt x 845.04686pt>
+File: appendices/comparisonApps.pdf Graphic file (type pdf)
+<use appendices/comparisonApps.pdf, page 3>
+Package pdftex.def Info: appendices/comparisonApps.pdf , page3 used on input li
+ne 94.
+(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
+File: appendices/comparisonApps.pdf Graphic file (type pdf)
+<use appendices/comparisonApps.pdf, page 3>
+Package pdftex.def Info: appendices/comparisonApps.pdf , page3 used on input li
+ne 94.
+(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
+File: appendices/comparisonApps.pdf Graphic file (type pdf)
+<use appendices/comparisonApps.pdf, page 3>
+Package pdftex.def Info: appendices/comparisonApps.pdf , page3 used on input li
 ne 94.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
  [92 <./appendices/comparisonApps.pdf>]
-<appendices/comparisonApps.pdf, id=589, page=2, 597.53635pt x 845.04686pt>
+<appendices/comparisonApps.pdf, id=595, page=4, 597.53635pt x 845.04686pt>
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
-<use appendices/comparisonApps.pdf, page 2>
-Package pdftex.def Info: appendices/comparisonApps.pdf , page2 used on input li
+<use appendices/comparisonApps.pdf, page 4>
+Package pdftex.def Info: appendices/comparisonApps.pdf , page4 used on input li
 ne 94.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
-<use appendices/comparisonApps.pdf, page 2>
-Package pdftex.def Info: appendices/comparisonApps.pdf , page2 used on input li
+<use appendices/comparisonApps.pdf, page 4>
+Package pdftex.def Info: appendices/comparisonApps.pdf , page4 used on input li
 ne 94.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
-<use appendices/comparisonApps.pdf, page 2>
-Package pdftex.def Info: appendices/comparisonApps.pdf , page2 used on input li
+<use appendices/comparisonApps.pdf, page 4>
+Package pdftex.def Info: appendices/comparisonApps.pdf , page4 used on input li
 ne 94.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
  [93 <./appendices/comparisonApps.pdf>]
-<appendices/comparisonApps.pdf, id=594, page=3, 597.53635pt x 845.04686pt>
+<appendices/comparisonApps.pdf, id=600, page=5, 597.53635pt x 845.04686pt>
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
-<use appendices/comparisonApps.pdf, page 3>
-Package pdftex.def Info: appendices/comparisonApps.pdf , page3 used on input li
+<use appendices/comparisonApps.pdf, page 5>
+Package pdftex.def Info: appendices/comparisonApps.pdf , page5 used on input li
 ne 94.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
-<use appendices/comparisonApps.pdf, page 3>
-Package pdftex.def Info: appendices/comparisonApps.pdf , page3 used on input li
+<use appendices/comparisonApps.pdf, page 5>
+Package pdftex.def Info: appendices/comparisonApps.pdf , page5 used on input li
 ne 94.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
-<use appendices/comparisonApps.pdf, page 3>
-Package pdftex.def Info: appendices/comparisonApps.pdf , page3 used on input li
+<use appendices/comparisonApps.pdf, page 5>
+Package pdftex.def Info: appendices/comparisonApps.pdf , page5 used on input li
 ne 94.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
  [94 <./appendices/comparisonApps.pdf>]
-<appendices/comparisonApps.pdf, id=599, page=4, 597.53635pt x 845.04686pt>
+<appendices/comparisonApps.pdf, id=605, page=6, 597.53635pt x 845.04686pt>
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
-<use appendices/comparisonApps.pdf, page 4>
-Package pdftex.def Info: appendices/comparisonApps.pdf , page4 used on input li
+<use appendices/comparisonApps.pdf, page 6>
+Package pdftex.def Info: appendices/comparisonApps.pdf , page6 used on input li
 ne 94.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
-<use appendices/comparisonApps.pdf, page 4>
-Package pdftex.def Info: appendices/comparisonApps.pdf , page4 used on input li
+<use appendices/comparisonApps.pdf, page 6>
+Package pdftex.def Info: appendices/comparisonApps.pdf , page6 used on input li
 ne 94.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
-<use appendices/comparisonApps.pdf, page 4>
-Package pdftex.def Info: appendices/comparisonApps.pdf , page4 used on input li
+<use appendices/comparisonApps.pdf, page 6>
+Package pdftex.def Info: appendices/comparisonApps.pdf , page6 used on input li
 ne 94.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
  [95 <./appendices/comparisonApps.pdf>]
-<appendices/comparisonApps.pdf, id=604, page=5, 597.53635pt x 845.04686pt>
-File: appendices/comparisonApps.pdf Graphic file (type pdf)
-<use appendices/comparisonApps.pdf, page 5>
-Package pdftex.def Info: appendices/comparisonApps.pdf , page5 used on input li
-ne 94.
-(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
-File: appendices/comparisonApps.pdf Graphic file (type pdf)
-<use appendices/comparisonApps.pdf, page 5>
-Package pdftex.def Info: appendices/comparisonApps.pdf , page5 used on input li
-ne 94.
-(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
-File: appendices/comparisonApps.pdf Graphic file (type pdf)
-<use appendices/comparisonApps.pdf, page 5>
-Package pdftex.def Info: appendices/comparisonApps.pdf , page5 used on input li
-ne 94.
-(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
- [96 <./appendices/comparisonApps.pdf>]
-<appendices/comparisonApps.pdf, id=609, page=6, 597.53635pt x 845.04686pt>
-File: appendices/comparisonApps.pdf Graphic file (type pdf)
-<use appendices/comparisonApps.pdf, page 6>
-Package pdftex.def Info: appendices/comparisonApps.pdf , page6 used on input li
-ne 94.
-(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
-File: appendices/comparisonApps.pdf Graphic file (type pdf)
-<use appendices/comparisonApps.pdf, page 6>
-Package pdftex.def Info: appendices/comparisonApps.pdf , page6 used on input li
-ne 94.
-(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
-File: appendices/comparisonApps.pdf Graphic file (type pdf)
-<use appendices/comparisonApps.pdf, page 6>
-Package pdftex.def Info: appendices/comparisonApps.pdf , page6 used on input li
-ne 94.
-(pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
- [97 <./appendices/comparisonApps.pdf>]
-<appendices/comparisonApps.pdf, id=615, page=7, 597.53635pt x 845.04686pt>
+<appendices/comparisonApps.pdf, id=610, page=7, 597.53635pt x 845.04686pt>
 File: appendices/comparisonApps.pdf Graphic file (type pdf)
 <use appendices/comparisonApps.pdf, page 7>
 Package pdftex.def Info: appendices/comparisonApps.pdf , page7 used on input li
@@ -2251,7 +2231,7 @@ File: appendices/comparisonApps.pdf Graphic file (type pdf)
 Package pdftex.def Info: appendices/comparisonApps.pdf , page7 used on input li
 ne 94.
 (pdftex.def)             Requested size: 597.56223pt x 845.08348pt.
- [98 <./appendices/comparisonApps.pdf>] (main.aux)
+ [96 <./appendices/comparisonApps.pdf>] (main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -2260,28 +2240,30 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 13586 strings out of 492945
- 234947 string characters out of 3135519
- 521902 words of memory out of 3000000
- 17231 multiletter control sequences out of 15000+200000
- 21517 words of font info for 57 fonts, out of 3000000 for 9000
+ 13607 strings out of 492945
+ 235377 string characters out of 3135519
+ 524216 words of memory out of 3000000
+ 17251 multiletter control sequences out of 15000+200000
+ 22433 words of font info for 60 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 51i,18n,70p,1462b,1753s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,18n,70p,1462b,1801s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-msl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (104 pages, 7699296 bytes).
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/euler/eufm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times
+/utmr8a.pfb>
+Output written on main.pdf (102 pages, 7741372 bytes).
 PDF statistics:
- 662 PDF objects out of 1000 (max. 8388607)
+ 663 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  306 words of extra memory for PDF output out of 10000 (max. 10000000)
 
