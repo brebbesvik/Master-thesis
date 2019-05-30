@@ -15,9 +15,9 @@ The research methodology we used for this project was an adaptation of design sc
 	Problems are uncovered and solved in the evaluation - construction iterative phases. Here the research questions appear from the design. 
 	
 		\begin{figure}[h!]
-		\label{fig:InteractionDesignLifeCycle}
-		\includegraphics[scale=0.5]{InteractionDesignLifeCycle}
+		\includegraphics[scale=0.4]{InteractionDesignLifeCycle}
 		\caption {The project followed a similar process to the life cycle of interaction design. Figure derived from \textcite{Preece2015}}
+		\label{fig:InteractionDesignLifeCycle}
 	\end{figure}
 	\item \textbf{Guideline 7: Communication of Research,} which is the purpose of this masters thesis. We have also published a paper, which can be found in the appendices.
 \end{itemize}
@@ -36,9 +36,9 @@ We have also used the React web  development framework in previous projects. It 
 The prototype itself and the development process showed that the technology could be used for displaying and organize CPGs. Lessons learned about content flow, databases, app navigation, displaying information and dialogues. JavaScript in the view gives a lot of flexibility compared to just tags.
 
 \begin{figure}[h!]
-	\label{fig:ConseptualModel}
 	\includegraphics[scale=0.2]{ConceptualPrototype}
 	\caption {A very simple conceptual model to test one of the proposed technologies, as well as acting as a starting point for discussions}
+	\label{fig:ConseptualModel}
 \end{figure}
 
 The interface was evaluated with the supervisors, using cognitive walkthroughs. It also worked as a conceptual model, using the prototype as a base for discussing ideas. Both for discussing the purpose of the project, what the user should be able to do, how to organize content and what functionality to add.
@@ -109,9 +109,9 @@ flow-chart, or as an summation to describe the clinical state a patient is in \p
 	 
 	
 	\begin{figure}[h!]
-		\label{fig:GLIFPossibleAsthma}
-		\includegraphics[scale=0.132]{GLIFPossibleAsthma}
+		\includegraphics[scale=0.1]{GLIFPossibleAsthma}
 		\caption {The paediatric possible asthma guideline \parencite{RepublicofKeny2016} modelled using elements from GLIF}
+		\label{fig:GLIFPossibleAsthma}
 	\end{figure}
 	\item \textbf{Asbru} is another approach for computer interpretable guidelines, and sort of a competitor to GLIF and PROforma. The project was developed at the Stanford University, Vienna University og Technology and Ben-Gurion University. It uses time-oriented skeletal plans. These skeletal plans are schemata at different detail levels. To manage skeletal plans, Asbru introduces some key functionality: the representation of high-level goals (intentions), temporal patterns, time annotations, as well as graphical user interfaces to view the skeletal plans \parencite{DeClercq2008}.
 	
@@ -122,9 +122,9 @@ flow-chart, or as an summation to describe the clinical state a patient is in \p
 	For the skeletal plans shown in figure \ref{fig:AsbruPossibleAsthma}, we can also set the attributes conditions, intentions, effects and preferences for each of them. These describes the functionality of each plan \parencite{DeClercq2008}.
 	
 		\begin{figure}[h!]
-		\label{fig:AsbruPossibleAsthma}
-		\includegraphics[scale=0.55]{AsbruPossibleAsthma}
+		\includegraphics[scale=0.45]{AsbruPossibleAsthma}
 		\caption {An attempt at modelling the paediatric possible asthma guideline \parencite{RepublicofKeny2016}, using Asbru editor tool AsbruView \parencite{TheAasgardProject2006}}
+		\label{fig:AsbruPossibleAsthma}
 	\end{figure}
 	\item See the description of \textbf{DPF} in other parts of this thesis.
 \end{itemize}
@@ -146,17 +146,17 @@ Figure \ref{fig:PrototypeInteractiveCPG} was also a prototype initially at highe
 
 
  \begin{figure}[h!]
- 	\label{fig:PrototypeInteractiveCPG}
  	\includegraphics[scale=0.6]{PrototypeInteractiveCPG}
  		\caption {A design alternative, displaying the CPGs as interactive flow-charts. The edges represents the flow, while clicking vertices will display more information or redirect to subguideline. A suggestion was to fill in with patient and examination data, to get a customized CPG for a patient }
+ 		\label{fig:PrototypeInteractiveCPG}
  \end{figure}
 
 The prototype in figure \ref{fig:PrototypeGameCPG}, started as sketches with pen and paper. By going through several iterations of redesign, it reach the fidelity of figure \ref{fig:PrototypeGameCPG}. This was our first prototype where we presented the CPGs as a game. We got help from an external masters degree student in software engineering to make this prototype. The concept of the game is that you initially get presented with a list of tests you can do on the patient. By picking a test, you will immediately get presented with a test result. You can do more tests or proceed. In the next screen you will be presented with a list of treatment and advises, and you should pick the correct ones with the knowledge you acquired in the previous screen. In the last two screens, you will be presented with the answer keys. You will get points for choosing the correct treatments and advises. You will get points for picking the right tests, and you will get higher scores if you picked the tests in an optimal order.
 
 \begin{figure}[h!]
-	\label{fig:PrototypeGameCPG}
 	\includegraphics[scale=0.2]{PrototypeGameCPG}
 	\caption {The first design alternative proposed as a game. The student tries to pick the right tests in the right order for that patient. As well as choosing the correct treatment and give the right advises to the patient. A high score for choosing the right treatment and advises, as well as correct tests in the right order. Medium score for right tests in the wrong order}
+	\label{fig:PrototypeGameCPG}
 \end{figure}
 
 The design alternatives were evaluated with the project's supervisors and their master degree students. There was also separate evaluations with medical domain expert. The evaluation method was cognitive walkthroughs as well as discussions what is the best approach for promoting CPGs and encourage medical students to learn and use CPGs. The conclusion was to continue with game development. 
@@ -170,9 +170,9 @@ We based our models on the paediatric possible asthma guideline \parencite{Repub
 The developer made a prototype of his understanding of the CPG, which simulated a clinical encounter with a patient. See figure \ref{fig:SimulationTool}. The GLIF chart presented in figure \ref{fig:GLIFPossibleAsthma} was used as a base when making the simulation tool. The simulation would start with listing symptoms of asthma and the clinician would choose among the symptoms, redirecting to the treatment for severe, mild, moderate and no asthma. The simulation would continue with cycles of evaluating the given treatment, and the clinician needs to act accordingly to the evaluation for each cycle until the treatment can be ended. An expert of domain got the task of going through the entire simulations of use cases such as "a patient with severe asthma responds poorly to salbutamol treatment". The stimulation gave a thorough understanding of the guideline, emphasized details which would have been missed or details of the treatment which is left out of the guideline itself, such as differential diagnoses.
 
 \begin{figure}[h!]
-	\label{fig:SimulationTool}
 	\includegraphics[scale=0.4]{SimulationTool}
 	\caption {Screenshots of the prototype used to simulate a clinical encounter with a domain expert}
+	\label{fig:SimulationTool}
 \end{figure}
 
 The guideline is also unclear at some points, where a discussion with a domain expert was needed. For example: wheeze + history of cough or difficulty breathing. When parentheses are not used, it is difficult to see if wheeze always needs to be  present, or if it is enough that cough alone is. It is also difficult to understand the effect and model the situation where the presence of a symptom at a certain age gives "increased likelihood" for asthma. In computer science the terms need to be very clear.
@@ -180,9 +180,9 @@ The guideline is also unclear at some points, where a discussion with a domain e
 A domain expert in Model Driven Engineer and DPF was consulted for discussing problems such as inheritance, how to create good sentences from vertex values in the graph, as well as metamodelling and the use of constraints in DPF. In figure \ref{fig:BlackboardingDPF} there are two images from the whiteboard during the meeting. On the left we see a workflow and an instance below. The XOR is a constraint, which tells that we can choose one of the two  paths only. On te right we see the entity model, and a suggestion with vertices which make good textual presentation of graph values which can be used in texts. 
 
 \begin{figure}[h!]
-	\label{fig:BlackboardingDPF}
 	\includegraphics[scale=0.16]{BlackboardingDPF}
 	\caption {Pictures of the whiteboard during a meeting with domain expert in MDE and DPF. To the left there are some discussion around workflow models. To the right is entity models with vertices which holds a textual representation of the parent vertex}
+	\label{fig:BlackboardingDPF}
 \end{figure}
 
 For evaluating the entity model, a domain expert in medicine made quizzes with factual questions as well as scenario based. By replacing patient related variables in the questions and scenarios, with tags pointing to variables in the entity model, we could see whether the model fulfilled the requirements of displaying good and valid sentences. The sentences were equally good and valid when using different instances of the entity model.
@@ -203,9 +203,9 @@ First of all we need to clarify what a good user experience is. We are not going
 \end{itemize}
 
 \begin{figure}[h!]
-	\label{fig:Hassenzahl}
-	\includegraphics[scale=0.66]{Hassenzahl}
+	\includegraphics[scale=0.5]{Hassenzahl}
 	\caption {User experience copied from \textcite{Hassenzahl2006}}
+	\label{fig:Hassenzahl}
 \end{figure}
 
 For the beyond instrumental, we used several iterations to make a pretty user interface to make the application desirable. As this is an educational tool, it is important that the user feels his skills and knowledge grow, so the visualization of progress was quite important. Both that the user advances in levels, but also that we visualize the progress during a level, where the user stretches to slowly meet the requirement of the next level.

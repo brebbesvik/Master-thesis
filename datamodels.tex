@@ -12,15 +12,21 @@ Models are good for sketches, where we can easily discuss with team members, dom
 For this project communication is very important, as the developer needs to understand and be able to model the clinical practice guideline and the clinical encounter at a very high detail. The domain expert in medicine needs to be able to verify that the model is correct.
 
 \subsection{MDE and meta modelling}
-We will be using a Model Driven Engineering (MDE) approach, mainly for the entity and workflow models. In MDE models serves as the key artefacts that drive the development process. Models are specified using a modelling language where the syntax and semantics are defined by a metamodel \parencite{RodriguesdaSilva2015}. This allows us to create Domain Specific Languages (DSL), that are using unique abstractions and notations to a specific domain. When using DSLs, we can create more expressive models, which can more easily be used by domain experts and enhancing communication. 
+We will be using a Model Driven Engineering (MDE) approach, mainly for the entity and workflow models. In MDE models serves as the key artefacts that drive the development process \parencite{RodriguesdaSilva2015}. A model in this case is an abstraction of a system under study. It is usually a partly and simplified version, where we often need multiple models to better represent and understand it \parencite{RodriguesdaSilva2015}. A domain model is the conceptual model of a field or expertise that we are examining to solve a problem \parencite{Brambilla2017}.
 
-Metamodels are 
+A metamodel is a further abstraction of a model, which highlights properties of the model \parencite{Brambilla2017}. In figure \ref{fig:Metamodelling} we see that moving up through the levels is an abstraction of the previous model. While moving downward, we are making instantiations of the previous metamodels. With metamodels we can define new languages, as well as defining new properties or features of the available information \parencite{Brambilla2017}. This allows us to make Domain Specific Languages (DSL), which is designes specifically for a specific domain and context \parencite{Brambilla2017}\parencite{RodriguesdaSilva2015}. By using DSLs, we can develop more expressive models, which can enhance communication with or be used by domain experts. 
+
+\begin{figure}[h!]
+	\label{fig:Metamodelling}
+	\includegraphics[scale=0.5]{Metamodelling}
+	\caption{Metamodeling from a meta-metamodel to a real world object. Derived from \parencite{Brambilla2017}}
+\end{figure}
 
 % Say something about how the graph is implemented and a reference to the book.
 \subsection{DPF}
-For the enitity- and workflow models, we use a formal diagrammatic approach to model driven engineering (MDE), called Diagram Predicate Framework (PDF). In software engineering, diagrams are data structures based on graphs. A graph is a collection of vertices, which may be connected by edges.
+For the enitity- and workflow models, we use a formal diagrammatic approach to model driven engineering, which is called Diagram Predicate Framework (PDF). In software engineering, diagrams are data structures based on graphs. A graph is a collection of vertices, which may be connected by edges.
 
-In DPF, models are represented by a diagrammatic specification \(\mathfrak{S} = ({\mathcal{S}}, C^{\mathfrak{S}} : \Sigma)\). It consists of a graph \(\mathcal{S}\) and set of constraints \(C^{\mathfrak{S}}\) specified by a signature constraint $\Sigma$ \parencite{Rutle2010}. 
+A defintion for DPF is given by \textcite{Rutle2010}: "in DPF, models are represented by a diagrammatic specification \(\mathfrak{S} = ({\mathcal{S}}, C^{\mathfrak{S}} : \Sigma)\). It consists of a graph \(\mathcal{S}\) and set of constraints \(C^{\mathfrak{S}}\) specified by a signature constraint $\Sigma$ ". To simplify the definition to how it is used in this thesis, the models and initiations are represented and implemented using graphs and a set of constraints. The following subsections will discuss these graphs in detail.
 
 
 \textcolor{purple}{TODO Yngve: Why DPF, why not fHIR?}
