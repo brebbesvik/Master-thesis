@@ -1,15 +1,4 @@
 \section{The mobile application}
-\begin{itemize}
-	\item React
-	\item React-Native
-	\item React-Native-Navigation (Wix)
-	\item Redux
-	\item React-Redux
-	\item Redux-Thunk
-	\item Highcharts
-	\item Jest
-\end{itemize}
-\subsection{React-Native and Redux}
 \subsection{User interface and flow of the user interaction}
 
 We will now go through the application, by playing a level 2 scenario. We will discuss the game elements, the user interface, the technologies which are used. Whenever it is necessary to clarify we will also go deeper into the implementation.
@@ -19,9 +8,9 @@ The application is written in JavaScript, using the mobile application framework
 When the student first starts the application, he will presented with the screen in figure \ref{fig:ScreenshotMain}. The Game Engine will keep track of which quizzes we have installed, and displays them here. At a later point we can make knowledge dependencies, where a user have to complete basic courses like prescribing oxygen \parencite{RepublicofKeny2016} and antibiotics administration \parencite{RepublicofKeny2016}, before the paediatric possible asthma guideline \parencite{RepublicofKeny2016} can be played. This is theory from Dynamic Content Management \parencite{Eide2008}.
 
 \begin{figure}[h!]
-	\label{fig:ScreenshotMain}
-	\includegraphics[scale=0.2]{ScreenshotMain}
+	\includegraphics[scale=0.15]{ScreenshotMain}
 	\caption {The entry screen where the student can choose between playing different quiz categories}
+	\label{fig:ScreenshotMain}
 \end{figure}
 
 In \ref{fig:ScreenshotLearningMap} we get presented with the learning map from Dynamic Content Management \parencite{Eide2008}, and the student's position in the learning map. The boxes with the green background indicates the student's current position and which levels he will get questions from. The other background colours indicates which levels have been completed and which levels are uncompleted and locked. 
@@ -31,9 +20,9 @@ The student's position in the learning map is fetched from the database on the s
 In the header we see a back arrow. This is React Native Navigation \parencite{Wix} which handles the navigation in the application, which makes it possible to click the arrow to go back and choose another quiz to play instead. This fulfils "Provide Clearly Marked Exits", which is one of the usability heuristics for user interface design given by Jakob Nielsen and Rolv Molich \parencite{Molich1990}.
 
 \begin{figure}[h!]
-	\label{fig:ScreenshotLearningMap}
-	\includegraphics[scale=0.2]{ScreenshotLearningMap}
+	\includegraphics[scale=0.15]{ScreenshotLearningMap}
 	\caption {The student is shown his position in the learning map. Completed, active and locked levels have all different colours}
+	\label{fig:ScreenshotLearningMap}
 \end{figure}
 
 In \ref{fig:ScreenshotKarenAssessment} we are presented with a multiple choice question. The question is in the form of a scenario, where we go through the workflow model, where the first step is the assessment.  
@@ -47,24 +36,24 @@ Here the student answers correctly, is awarded points and is being presented wit
 The student can click on "next" any time he is ready to proceed to the next question.
 
 \begin{figure}[h!]
-	\label{fig:ScreenshotKarenAssessment}
-	\includegraphics[scale=0.2]{ScreenshotKarenAssessment}
+	\includegraphics[scale=0.15]{ScreenshotKarenAssessment}
 	\caption {The first question is an assessment question. Here answered correctly and an answer key explanation is given}
+	\label{fig:ScreenshotKarenAssessment}
 \end{figure}
 
 In figure \ref{fig:ScreenshotKarenDiagnosis} we continue to the next step in the workflow model, the diagnosis. Here the student will be provided with symptoms which will determine the severity of the asthma.
 
 \begin{figure}[h!]
-	\label{fig:ScreenshotKarenDiagnosis}
-	\includegraphics[scale=0.2]{ScreenshotKarenDiagnosis}
+	\includegraphics[scale=0.15]{ScreenshotKarenDiagnosis}
 		\caption {The second question is for diagnosis}
+		\label{fig:ScreenshotKarenDiagnosis}
 \end{figure}
 
 In figure \ref{fig:ScreenshotKarenManagement}, the student gets a question from the management part of the workflow model. Management can be admitting the patient to the hospital, medication administration or advise.
 \begin{figure}[h!]
-	\label{fig:ScreenshotKarenManagement}
-	\includegraphics[scale=0.2]{ScreenshotKarenManagement}
+	\includegraphics[scale=0.15]{ScreenshotKarenManagement}
 	\caption {Third question is for management}
+	\label{fig:ScreenshotKarenManagement}
 \end{figure}
 
 In figure \ref{fig:ScreenshotKarenFollowUp}, the patient has been through the initial treatment, and the student is asked on how to follow up the patient. Here the textbox in the screenshot is a bit small for the text, but the student has the possibility to scroll inside the textbox. The question is what is the maximum of days the patient can be on prednisolone.
@@ -74,17 +63,17 @@ Initially the student picks the wrong answer. The application displays a hint an
 As we don't want to force the student to retry until correct, we have the option "learn more". When the student clicks on this button, he will be presented with the answer key explanation as well as the option to proceed to the next question. When the student decides to click on "learn more", he will miss out on the reward.
 
 \begin{figure}[h!]
-	\label{fig:ScreenshotKarenFollowUp}
-	\includegraphics[scale=0.2]{ScreenshotKarenFollowUp}
+	\includegraphics[scale=0.15]{ScreenshotKarenFollowUp}
 	\caption {The fourth question is follow up. We answer incorrectly the first time. The answer key explanation is not shown, and we can choose to revise the question by clicking "try again". If we press "learn more", the answer key explanation is instead shown, and we continue to the next question}
+	\label{fig:ScreenshotKarenFollowUp}
 \end{figure}
 
 When having answered follow-up, which is the last question in the workflow model and the scenario, the student will be presented with his updated position in the student map in figure \ref{fig:ScreenshotLearningMapUpdated}. Brown means previously unlocked levels. Grey means levels which are still locked and green means levels that have been unlocked after this game. If the student performs poorly, red boxes will appear. These boxes indicate that the current level has been locked, and that the student needs to complete quizzes at lower levels to repeat some of the more basic guideline content.
 
 \begin{figure}[h!]
-	\label{fig:ScreenshotLearningMapUpdated}
-	\includegraphics[scale=0.2]{ScreenshotLearningMapUpdated}
+	\includegraphics[scale=0.15]{ScreenshotLearningMapUpdated}
 	\caption {After completing the quiz, we are shown the student's updated position in the learning map. The brown background shows levels which has been completed. Grey is the levels which are still unlocked. Green is that we have advanced to the next level. A red box would have indicated that we had performed poorly, the level would have been locked and we have to complete an easier level before we can play it again}
+	\label{fig:ScreenshotLearningMapUpdated}
 \end{figure}
 
 The last screen in this game sequence is shown in figure \ref{fig:ScreenshotHighCharts}. The blue bars show our scores for the questions categorized according to the workflow model. The scores are for the current game we just played. The red lines show the scores needed to complete each category for the current level.
@@ -96,7 +85,7 @@ The idea of the chart is to make the student motivated, when he sees his progres
 We used Highcharts \parencite{Highsoft} to display the interactive chart of the game scores and the scores required to complete each category.
 
 \begin{figure}[h!]
-	\label{fig:ScreenshotHighCharts}
-	\includegraphics[scale=0.2]{ScreenshotHighCharts}
+	\includegraphics[scale=0.15]{ScreenshotHighCharts}
 	\caption {The bars show our scores for the played game in the different parts of the clinical encounter. The red line shows the scores needed to complete this level}
+	\label{fig:ScreenshotHighCharts}
 \end{figure}
