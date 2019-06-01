@@ -17,6 +17,7 @@ We can also adapt the questions in each discipline to the student's level. If th
 The student will also be provided with a total score, which will be the aggregated score of each of the disciplines. The student can compare the total score of e.g. the asthma quiz and the jaundice quiz, and see which medical condition he needs to train more on.
 
 
+
 \subsection{Dynamic Content Management}
 \textcolor{purple}{TODO Yngve: Not clear when you use different concepts in figure and text}
 The game engine is based on some of the concepts presented in the articles of \textcite{Eide2008}, \textcite{Kristensen2011} and \textcite{Kristensen2013}. The motivation for using DCM, is to support the principles of adaptive learning as well as flexibility in the learning process. Adaptive learning means that the student can solve problems which are suited to his knowledge level. Flexibility in the sense that the student can go through the learning content in many different ways.
@@ -79,9 +80,176 @@ A student map would show the progressions for one specific student, and the path
 	\label{table:StudentMap}
 \end{table}
 
+\subsection{Types of questions}
+We can further identify which kind of questions we are going to ask, by further examining the entity model and the workflow model combined. When we are doing an assessment in the workflow model, we are looking at the examination and history vertices of the entity graph. History is what the patient or the patient's dependent can tell around the patient's condition. Such that he has been coughing a lot the last days. Examination and history will provide the clinician with an idea of a diagnosis.
+
+Diagnosis in the workflow model is connected to the history, examination and investigation. The clinician will continue asking questions, do examinations and probably order some tests to strengthen his assumption of the diagnosis. The clinician can also set a more specific diagnosis, such as in the asthma guideline \parencite{RepublicofKeny2016}, where we categorize in severe, mild and moderate asthma.
+
+Management is how we manage the patient with the given diagnosis. Hospitalization is if we are going to set patient status to inpatient or outpatient. Medication is given to treat the patient or relieve the symptoms. Surgery is not part of the asthma guideline \parencite{RepublicofKeny2016}, but it is important to be aware that management procedures needs to be added when making quizzes for other conditions than asthma.
+
+Follow-up will contain questions related how to evaluate the treatment and how to act upon the evaluation. The symptoms of the patient may have worsen, getting better or are unchanged after the treatment, and the clinician needs to act accordingly. The treatment may have been given at the hospital or it may have been something the patient have had to do at home. The patient may also get some instructions from the clinician when there is something he should do on his own.
+
+\begin{figure}[h!]
+	\includegraphics[scale=0.36]{KnowledgeMap2}
+	\caption {By looking at the workflow- and entity models we can identify the type of questions for each content unit in the knowledge map. The content units are the parent nodes, while the leaves are the type of questions}
+	\label{fig:ExpandedKnowledgeMap}
+\end{figure}
+
+As the student learns, the questions need to adapt to the student's new level of knowledge. How we do this is by defining levels, where the questions becomes more detailed at higher levels. At level 1 the questions are all about stating facts. In level 2, we create scenarios such that we follow one patient through all of the steps assessment, diagnosis, management and follow-up. The same for level 3, but the detail level will be higher. Typically the student will only be asked for categories of medication in level 2, but in level 3 the students needs to be specific about the names of the medication as well as measurements for both dosages and symptoms. See table \ref{table:ProgressionGranularity}.
+
+\begin{table}[h!]	
+	\begin{tabular}{|m{2em}|m{6em}|m{6em}|m{6em}|m{6em}|}
+		\hline
+		Level & Assessment & Diagnosis & Management & Follow-up \\
+		\hline
+		1  & Factual & Factual & Factual & - \\
+		2 & Scenario & Scenario & Scenario & Scenario \\
+		3 & Detailed scenario  & Detailed scenario & Detailed scenario & Detailed scenario \\
+		\hline
+	\end{tabular}
+	\caption{The type of questions at each difficulty level}
+	\label{table:ProgressionGranularity}
+\end{table}
 
 
-\section{Gamification}
+
+
+\subsection{Unlocking harder levels at a certain category}
+One of the strengths with Dynamic Content Management is the focus on adaptive learning and flexible learning \parencite{Eide2008}. By adaptive learning, we mean that the student can solve problems which are suited for his knowledge level. While flexible learning means that the student can go through the learning material in the way he prefers, as long as the knowledge dependencies are met.
+
+For the adaptability we have already covered how we progress from factual statements to scenarios and the scenarios with a higher ability to make the questions more difficult. For the flexibility we have divided the content into knowledge units: assessment, diagnosis, management and follow-up. It doesn't matter which of assessment, diagnosis and management the student finishes first.
+
+The evaluations in each content unit has passing conditions. As an example; to complete assessment level 1, you need a score of 30 in assessment. These passing conditions are provided by the quiz author. We also recall that to unlock questions, such as management level 2, there are certain prerequisites that need to be fulfilled. In this example, all evaluations in level 1 need to be completed to unlock any level 2 questions. The flexibility is that it doesn't matter the order of level 1 evaluations the student finishes first, as long as all of them are finished.
+
+To avoid that the student gets bored, he will not have to redo an evaluation once the passing condition is met. That means that if the student meets the passing condition of level 1 assessment and diagnosis, but not management, the student will only get questions from management level 1 the next time he takes the quiz. This makes a challenge for the scenarios. All scenario questions must be formed in a way, such that the student doesn't have to remember information from one question to another. All the necessary information should be listed in every scenario question. In that way the student won't miss important information if he completes diagnosis in a run before management and follow-up. 
+
+Each evaluation also has a minimum required skill value. If the student gets a lower score than the required minimum skill, the evaluation gets locked and the student needs to complete the evaluation at lower level. An example is that the student plays management level 2. He completes the evaluation with a lower score than the required minimum skill. The student will have to redo management level 1 evaluation to learn the basic skills necessary to play level 2. When this situation happens, the student no longer meets the prerequisite for the other level 2 evaluations. Level 1 management needs to be completed before any level 2 evaluations can be taken. 
+
+
+
+
+
+\section{Conversation Manager}
+\subsection{Constructing scenarios and answer keys}
+A quiz consists of several questions, where each question has answer keys and distractions. At level 1 these questions will be factual, and in level 2 and 3 we will work with scenarios. We write the questions in the format of a template, where we use tags to refer to variables in the entity model. The tag is a path in the entity graph. The game engine will traverse through the graph and return the value of the vertex specified by the path. The entity graph represents a patient at a certain point in the assessment or treatment. By replacing the entity graph, we can reuse the same template with different patients, generating many different questions with the same template. 
+
+The same goes for the answer key. The answer key can be a text, one or several tags referring to variables in the entity model, or a combination of both. The application always uses the same entity graph for the scenario and the answer key. When the application traverses entity graph, the answer key and the question given always matches as they are the same patient at the same given time.
+
+One of the problems we encountered with this method, was how to present the variables returned by the graph in a text. As an example, we can look at some of the symptoms of asthma and their type.
+\begin{itemize}
+	\item Wheeze is a whistling sound when you breath. In the model it is represented as a boolean. True or false. Either you have it or you don't.
+	\item Age is relevant several places in the guideline. In the model it is stored as an integer.
+	\item AVPU is a scale system, which clinician use to measure a patient's level of conciousness. A is alert. V, the patient is verbal which means he can somehow respond to questions. P, the patient responds to pain. The patient will react if you pinch him. U is unresponsive or unconscious. He doesn't respond to either voice or pain. The AVPU is represented in the model as an enumerate.
+	\item Severity classifies the asthma severity to be either severe, model or mild. The severity is represented as a string in the model.
+\end{itemize}
+
+\begin{figure}[h!]
+	\includegraphics[scale=0.4]{EntityInstanceGraph}
+	\caption {The patient object used with the template}
+	\label{fig:EntityInstanceGraph}
+\end{figure}
+
+%\begin{lstlisting}[caption={My Caption},captionpos=b]
+\begin{lstlisting}[caption={Question template}, frame=single, captionpos=b] 
+Question:
+A <%Patient.hasAge.Age%> months old patient arrives at 
+the  emergency department. 
+The patient has a 
+<%Patient.underGoesExamination.Wheeze%>,
+has conciousness level 
+<%Patient.undergoesExamination.Consciousness%> 
+and has an oxygen saturation of 
+<%Patient.undergoesExamination.Oxygen-Saturation%>%. 
+What is the asthma severity? 
+\end{lstlisting}
+
+\begin{lstlisting}[caption={Answer key template}, frame=single, captionpos=b] 
+Answer key:
+<%Patient.hasDiagnosis.Diagnosis.hasSeverity.Severity%>
+\end{lstlisting}
+
+This translates to 
+\begin{lstlisting}[caption={Question instantiation}, frame=single, captionpos=b] 
+Question:
+A 24 months old patient arrives at the emergency 
+department. 
+The patient has a true,
+has conciousness level V 
+and has an oxygen saturation of 80%. 
+What is the asthma severity? 
+\end{lstlisting}
+
+\begin{lstlisting}[caption={Answer key template}, frame=single, captionpos=b] 
+Answer key:
+Severe
+\end{lstlisting}
+
+We see that the template author needs to be aware of how the variables will be printed. Here he knows that the model will just return an integer for the oxygen saturation. He writes a descriptive text of the value first, and then adds a percentage after the variable. The severity gets nicely printed as answer key.
+
+The problem is the boolean for wheeze, which prints a "true". It really should have printed "wheeze". We solved the presentation of consciousness in the same way as we did with oxygen saturation. However, it could be nicer to write "responds to pain", rather than just "V". When the child 12 months or older, it is often easier to read if we can present the age in years.
+
+Another problem arrives when we replace the entity graph with another, where some of the examinations haven't been done. In traditional model driven engineering, we use something called the closed world assumption \parencite{Sadowska2019}. If a node doesn't exist, we say the value is false. But how can we say that patient doesn't have wheeze when we haven't examined? In open world assumption a none-existing vertex is "unknown" \parencite{Patel-Schneider2006} \parencite{Bergman2018}, and this strategy seems more correct for our scenario. If the vertex doesn't exist, we simply return an empty string. This further motivates us to remove the variable specific text from the template, as we don't want text representation for a variable we don't present. Example when consciousness and oxygen saturation haven't been examined:
+
+\begin{lstlisting}[caption={Question instantiation}, frame=single, captionpos=b] 
+Question:
+A 24 months old patient arrives at the emergency 
+department. 
+The patient has a true, has conciousness level 
+and has an oxygen saturation of %. 
+What is the asthma severity? 
+\end{lstlisting}
+
+How we solved the problem was to add a textual presentation vertex to each of the vertices in the graph referred to by the template. If there exist a presentation for the vertex, return the presentation. If there doesn't exist a presentation, simply return the variable.
+
+\begin{figure}[h!]
+	\includegraphics[scale=0.35]{GeneratingScenarios1}
+	\caption {Making graph variables fit a story format}
+	\label{fig:GeneratingScenarios1}
+\end{figure}
+
+\begin{figure}[h!]
+	\includegraphics[scale=0.4]{GeneratingScenarios2}
+	\caption {Making graph variables fit a story format}
+	\label{fig:GeneratingScenarios2}
+\end{figure}
+
+\begin{lstlisting}[caption={Question template}, frame=single, captionpos=b] 
+A <%Patient.hasAge.Age%> old patient arrives at 
+the emergency department. 
+The patient <%Patient.underGoesExamination.Wheeze%> 
+<%Patient.undergoesExamination.Consciousness%> 
+<%Patient.undergoesExamination.Oxygen-Saturation%>. 
+What is the asthma severity? 
+\end{lstlisting}
+
+Which translates to 
+\begin{lstlisting}[caption={Question instantiation}, frame=single, captionpos=b] 
+A 2 year old patient arrives at the 
+emergency department. 
+The patient has a wheeze, is verbal but not alert 
+and has an oxygen saturation of 80%. 
+What is the asthma severity? 
+\end{lstlisting}
+
+This also works with the open world assumption, as a patient which haven't undergone consciousness and oxygen saturation examinations, would result in the following text:
+
+\begin{lstlisting}[caption={Question instantiation}, frame=single, captionpos=b] 
+A 2 year old patient arrives at the emergency 
+department. 
+The patient has a wheeze. 
+What is the asthma severity? 
+\end{lstlisting}
+
+For future work, the commas and "and" should not be in the presentation vertex. This becomes a limitation where the variable can only be used in a list and has to be in a specific place in the list. The solution would be to have a list tag in the template, and have all the paths inside that tag. Then the game engine can see how many of the list items are in the graph, and can set the commas and "and" at the appropriate places.
+
+In figure \ref{fig:IntegratedEntityGamelModels} we show how the entity-, workflow and game models work together to make a scenario. Because of limited space, we don't show the presentation vertices in the entity graph. We also combined entity graph E1 and E2 in the presentation, where E2 gets and additional medication vertex marked with red. 
+
+\begin{figure}[h!]
+	\includegraphics[scale=0.38]{IntegratedEntityGameModels}
+	\caption {The entity- workflow- and game models working together to produce a scenario, taking the patient through the steps of a clinical encounter. Note that these are two entity graphs E1 and E2, where E2 gets updated with an additional red vertex Ipratopium bromide. This illustrates a patient which doesn't respond to the initial treatment, and then gets treated with ipratopium bromide}
+	\label{fig:IntegratedEntityGamelModels}
+\end{figure}
+
 \subsection{Multiple-try feedback}
 % https://books.google.no/books?hl=en&lr=&id=GgCPAgAAQBAJ&oi=fnd&pg=PA125&dq=Interactive+with+multiple+tries+&ots=A9Z_BJS5t2&sig=RTv1FmOzU_qic9ADjDgKdJoHamU&redir_esc=y#v=onepage&q=Interactive%20with%20multiple%20tries&f=false
 % https://onlinelibrary.wiley.com/doi/full/10.1348/000709905X39134
@@ -145,127 +313,19 @@ Both \textcite{Attali2015} and \textcite{Morrison1995} avoids the scenario where
 
 \textcolor{red}{A solution to having a not very strict game, encouraging to playing and learning, one can also have a very strict examination version. The idea is that after examination, the results will be sent to the lecturer (or a governing body of some kind) to evaluate what the overall knowledge of the students, as well as details of what the students are really good in and where do they struggle. The lecturer can then target the weak of points of the students in one of the next lectures. }
 
-\subsection{Constructing scenarios and answer keys}
-A quiz consists of several questions, where each question has answer keys and distractions. At level 1 these questions will be factual, and in level 2 and 3 we will work with scenarios. We write the questions in the format of a template, where we use tags to refer to variables in the entity model. The tag is a path in the entity graph. The game engine will traverse through the graph and return the value of the vertex specified by the path. The entity graph represents a patient at a certain point in the assessment or treatment. By replacing the entity graph, we can reuse the same template with different patients, generating many different questions with the same template. 
 
-The same goes for the answer key. The answer key can be a text, one or several tags referring to variables in the entity model, or a combination of both. The application always uses the same entity graph for the scenario and the answer key. When the application traverses entity graph, the answer key and the question given always matches as they are the same patient at the same given time.
 
-One of the problems we encountered with this method, was how to present the variables returned by the graph in a text. As an example, we can look at some of the symptoms of asthma and their type.
-\begin{itemize}
-	\item Wheeze is a whistling sound when you breath. In the model it is represented as a boolean. True or false. Either you have it or you don't.
-	\item Age is relevant several places in the guideline. In the model it is stored as an integer.
-	\item AVPU is a scale system, which clinician use to measure a patient's level of conciousness. A is alert. V, the patient is verbal which means he can somehow respond to questions. P, the patient responds to pain. The patient will react if you pinch him. U is unresponsive or unconscious. He doesn't respond to either voice or pain. The AVPU is represented in the model as an enumerate.
-	\item Severity classifies the asthma severity to be either severe, model or mild. The severity is represented as a string in the model.
-\end{itemize}
 
-\begin{figure}[h!]
-	\includegraphics[scale=0.4]{EntityInstanceGraph}
-	\caption {The patient object used with the template}
-	\label{fig:EntityInstanceGraph}
-\end{figure}
+\section{User manager}
+\subsection{Visualization of game statistics}
+The student needs some feedback, where he is in the learning map, how close he is to pass an evaluation, how close he is to progress to the next level and in the case where he gets relegated to an easier difficulty level.
 
-%\begin{lstlisting}[caption={My Caption},captionpos=b]
-\begin{lstlisting}[caption={Question template}, frame=single, captionpos=b] 
-Question:
- A <%Patient.hasAge.Age%> months old patient arrives at 
- the  emergency department. 
- The patient has a 
- <%Patient.underGoesExamination.Wheeze%>,
- has conciousness level 
- <%Patient.undergoesExamination.Consciousness%> 
- and has an oxygen saturation of 
- <%Patient.undergoesExamination.Oxygen-Saturation%>%. 
- What is the asthma severity? 
- \end{lstlisting}
- 
- \begin{lstlisting}[caption={Answer key template}, frame=single, captionpos=b] 
-Answer key:
-<%Patient.hasDiagnosis.Diagnosis.hasSeverity.Severity%>
-\end{lstlisting}
+The scores for the evaluations can be shown as bars in a graph, and the passing conditions as a line. When the bars reaches or passes the line, the student knows that the he has met the passing condition for the evaluation at that level. This can also work as a motivation for the student, as he sees that he gets closer and closer to the passing condition as he learns he more and performs better.
 
-This translates to 
-\begin{lstlisting}[caption={Question instantiation}, frame=single, captionpos=b] 
-Question:
-A 24 months old patient arrives at the emergency 
-department. 
-The patient has a true,
-has conciousness level V 
-and has an oxygen saturation of 80%. 
-What is the asthma severity? 
-\end{lstlisting}
+To visualizing where the student is in the learning map, has been solved by showing the learning map in almost a table format. Colour combinations shows which evaluations have been unlocked, which are locked and which are the current ones the student plays. Red and green indicates whether a student gets relegated from a level or whether he progresses to the next level.
 
- \begin{lstlisting}[caption={Answer key template}, frame=single, captionpos=b] 
-Answer key:
-Severe
-\end{lstlisting}
 
-We see that the template author needs to be aware of how the variables will be printed. Here he knows that the model will just return an integer for the oxygen saturation. He writes a descriptive text of the value first, and then adds a percentage after the variable. The severity gets nicely printed as answer key.
-
-The problem is the boolean for wheeze, which prints a "true". It really should have printed "wheeze". We solved the presentation of consciousness in the same way as we did with oxygen saturation. However, it could be nicer to write "responds to pain", rather than just "V". When the child 12 months or older, it is often easier to read if we can present the age in years.
-
-Another problem arrives when we replace the entity graph with another, where some of the examinations haven't been done. In traditional model driven engineering, we use something called the closed world assumption \parencite{Sadowska2019}. If a node doesn't exist, we say the value is false. But how can we say that patient doesn't have wheeze when we haven't examined? In open world assumption a none-existing vertex is "unknown" \parencite{Patel-Schneider2006} \parencite{Bergman2018}, and this strategy seems more correct for our scenario. If the vertex doesn't exist, we simply return an empty string. This further motivates us to remove the variable specific text from the template, as we don't want text representation for a variable we don't present. Example when consciousness and oxygen saturation haven't been examined:
-
-\begin{lstlisting}[caption={Question instantiation}, frame=single, captionpos=b] 
-Question:
-A 24 months old patient arrives at the emergency 
-department. 
-The patient has a true, has conciousness level 
-and has an oxygen saturation of %. 
-What is the asthma severity? 
-\end{lstlisting}
-
-How we solved the problem was to add a textual presentation vertex to each of the vertices in the graph referred to by the template. If there exist a presentation for the vertex, return the presentation. If there doesn't exist a presentation, simply return the variable.
-
-\begin{figure}[h!]
-	\includegraphics[scale=0.35]{GeneratingScenarios1}
-	\caption {Making graph variables fit a story format}
-	\label{fig:GeneratingScenarios1}
-\end{figure}
-
-\begin{figure}[h!]
-	\includegraphics[scale=0.4]{GeneratingScenarios2}
-		\caption {Making graph variables fit a story format}
-		\label{fig:GeneratingScenarios2}
-\end{figure}
-
-\begin{lstlisting}[caption={Question template}, frame=single, captionpos=b] 
-A <%Patient.hasAge.Age%> old patient arrives at 
-the emergency department. 
-The patient <%Patient.underGoesExamination.Wheeze%> 
-<%Patient.undergoesExamination.Consciousness%> 
-<%Patient.undergoesExamination.Oxygen-Saturation%>. 
-What is the asthma severity? 
-\end{lstlisting}
-
-Which translates to 
-\begin{lstlisting}[caption={Question instantiation}, frame=single, captionpos=b] 
-A 2 year old patient arrives at the 
-emergency department. 
-The patient has a wheeze, is verbal but not alert 
-and has an oxygen saturation of 80%. 
-What is the asthma severity? 
-\end{lstlisting}
-
-This also works with the open world assumption, as a patient which haven't undergone consciousness and oxygen saturation examinations, would result in the following text:
-
-\begin{lstlisting}[caption={Question instantiation}, frame=single, captionpos=b] 
-A 2 year old patient arrives at the emergency 
-department. 
-The patient has a wheeze. 
-What is the asthma severity? 
-\end{lstlisting}
-
-For future work, the commas and "and" should not be in the presentation vertex. This becomes a limitation where the variable can only be used in a list and has to be in a specific place in the list. The solution would be to have a list tag in the template, and have all the paths inside that tag. Then the game engine can see how many of the list items are in the graph, and can set the commas and "and" at the appropriate places.
-
-In figure \ref{fig:IntegratedEntityGamelModels} we show how the entity-, workflow and game models work together to make a scenario. Because of limited space, we don't show the presentation vertices in the entity graph. We also combined entity graph E1 and E2 in the presentation, where E2 gets and additional medication vertex marked with red. 
-
-\begin{figure}[h!]
-	\includegraphics[scale=0.38]{IntegratedEntityGameModels}
-		\caption {The entity- workflow- and game models working together to produce a scenario, taking the patient through the steps of a clinical encounter. Note that these are two entity graphs E1 and E2, where E2 gets updated with an additional red vertex Ipratopium bromide. This illustrates a patient which doesn't respond to the initial treatment, and then gets treated with ipratopium bromide}
-		\label{fig:IntegratedEntityGamelModels}
-\end{figure}
-
-\subsection{Conceptual model of how all the classes are connected in Game Engine}
+\section{Conceptual model of how all the classes are connected in Game Engine}
 The conceptual model of the game engine is shown in figure \ref{fig:ConceptualGameElements}. Category is a quiz game for a certain CPG, such as the paediatric possible asthma guideline \parencite{RepublicofKeny2016}. Each of these quiz categories are divided into several disciplines. Disciplines are themes in knowledge units, which we identified using DCM (dynamic content management). Each of these knowledge units contain evaluations at different difficulty levels. These evaluations are collections of questions, which contain a collection of multiple choice questions and answer elements.
 
 The quiz data are read from JSON-files, which are produced by a content author. The quiz author defines a quiz for a specific CPG. He identifies themes for content units, which contains evaluations with varying difficulty levels. The questions are written in a template format, which we have already covered. The templates contain tags, which refer to vertices in the entity graph, representing a given patient. The answer key is also such a tag, referring to one or more vertices in the entity graph. When the quiz is initialized, the tags will be replaced with values from the entity graph. The content author will write answer alternatives for each question, where he specifies a reward (or penalty) for each of the answer alternatives. An answer alternative which matches the answer key value in the entity graph will represent the correct answer. The content author needs to know what is in the entity graph to be able to provide meaningful rewards.
@@ -301,63 +361,11 @@ One problem with the conceptual model is that it is somewhat complex. Once we ha
 %	\item Quiz is kind of an interface
 %\end{itemize}
 
-\subsection{Types of questions}
-We can further identify which kind of questions we are going to ask, by further examining the entity model and the workflow model combined. When we are doing an assessment in the workflow model, we are looking at the examination and history vertices of the entity graph. History is what the patient or the patient's dependent can tell around the patient's condition. Such that he has been coughing a lot the last days. Examination and history will provide the clinician with an idea of a diagnosis.
-
-Diagnosis in the workflow model is connected to the history, examination and investigation. The clinician will continue asking questions, do examinations and probably order some tests to strengthen his assumption of the diagnosis. The clinician can also set a more specific diagnosis, such as in the asthma guideline \parencite{RepublicofKeny2016}, where we categorize in severe, mild and moderate asthma.
-
-Management is how we manage the patient with the given diagnosis. Hospitalization is if we are going to set patient status to inpatient or outpatient. Medication is given to treat the patient or relieve the symptoms. Surgery is not part of the asthma guideline \parencite{RepublicofKeny2016}, but it is important to be aware that management procedures needs to be added when making quizzes for other conditions than asthma.
-
-Follow-up will contain questions related how to evaluate the treatment and how to act upon the evaluation. The symptoms of the patient may have worsen, getting better or are unchanged after the treatment, and the clinician needs to act accordingly. The treatment may have been given at the hospital or it may have been something the patient have had to do at home. The patient may also get some instructions from the clinician when there is something he should do on his own.
- 
-\begin{figure}[h!]
-	\includegraphics[scale=0.36]{KnowledgeMap2}
-	\caption {By looking at the workflow- and entity models we can identify the type of questions for each content unit in the knowledge map. The content units are the parent nodes, while the leaves are the type of questions}
-	\label{fig:ExpandedKnowledgeMap}
-\end{figure}
-
-As the student learns, the questions need to adapt to the student's new level of knowledge. How we do this is by defining levels, where the questions becomes more detailed at higher levels. At level 1 the questions are all about stating facts. In level 2, we create scenarios such that we follow one patient through all of the steps assessment, diagnosis, management and follow-up. The same for level 3, but the detail level will be higher. Typically the student will only be asked for categories of medication in level 2, but in level 3 the students needs to be specific about the names of the medication as well as measurements for both dosages and symptoms. See table \ref{table:ProgressionGranularity}.
-
-\begin{table}[h!]	
-	\begin{tabular}{|m{2em}|m{6em}|m{6em}|m{6em}|m{6em}|}
-		\hline
-		Level & Assessment & Diagnosis & Management & Follow-up \\
-		\hline
-		1  & Factual & Factual & Factual & - \\
-		2 & Scenario & Scenario & Scenario & Scenario \\
-		3 & Detailed scenario  & Detailed scenario & Detailed scenario & Detailed scenario \\
-		\hline
-	\end{tabular}
-\caption{The type of questions at each difficulty level}
-\label{table:ProgressionGranularity}
-\end{table}
-
-
-
-
-\subsection{Unlocking harder levels at a certain category}
-One of the strengths with Dynamic Content Management is the focus on adaptive learning and flexible learning \parencite{Eide2008}. By adaptive learning, we mean that the student can solve problems which are suited for his knowledge level. While flexible learning means that the student can go through the learning material in the way he prefers, as long as the knowledge dependencies are met.
-
-For the adaptability we have already covered how we progress from factual statements to scenarios and the scenarios with a higher ability to make the questions more difficult. For the flexibility we have divided the content into knowledge units: assessment, diagnosis, management and follow-up. It doesn't matter which of assessment, diagnosis and management the student finishes first.
-
-The evaluations in each content unit has passing conditions. As an example; to complete assessment level 1, you need a score of 30 in assessment. These passing conditions are provided by the quiz author. We also recall that to unlock questions, such as management level 2, there are certain prerequisites that need to be fulfilled. In this example, all evaluations in level 1 need to be completed to unlock any level 2 questions. The flexibility is that it doesn't matter the order of level 1 evaluations the student finishes first, as long as all of them are finished.
-
-To avoid that the student gets bored, he will not have to redo an evaluation once the passing condition is met. That means that if the student meets the passing condition of level 1 assessment and diagnosis, but not management, the student will only get questions from management level 1 the next time he takes the quiz. This makes a challenge for the scenarios. All scenario questions must be formed in a way, such that the student doesn't have to remember information from one question to another. All the necessary information should be listed in every scenario question. In that way the student won't miss important information if he completes diagnosis in a run before management and follow-up. 
-
-Each evaluation also has a minimum required skill value. If the student gets a lower score than the required minimum skill, the evaluation gets locked and the student needs to complete the evaluation at lower level. An example is that the student plays management level 2. He completes the evaluation with a lower score than the required minimum skill. The student will have to redo management level 1 evaluation to learn the basic skills necessary to play level 2. When this situation happens, the student no longer meets the prerequisite for the other level 2 evaluations. Level 1 management needs to be completed before any level 2 evaluations can be taken. 
-
-
-\subsection{Visualization of game statistics}
-The student needs some feedback, where he is in the learning map, how close he is to pass an evaluation, how close he is to progress to the next level and in the case where he gets relegated to an easier difficulty level.
-
-The scores for the evaluations can be shown as bars in a graph, and the passing conditions as a line. When the bars reaches or passes the line, the student knows that the he has met the passing condition for the evaluation at that level. This can also work as a motivation for the student, as he sees that he gets closer and closer to the passing condition as he learns he more and performs better.
-
-To visualizing where the student is in the learning map, has been solved by showing the learning map in almost a table format. Colour combinations shows which evaluations have been unlocked, which are locked and which are the current ones the student plays. Red and green indicates whether a student gets relegated from a level or whether he progresses to the next level.	
 
 
 
  
-\subsection{Automatically generating new questions}
+\section{Automatically generating new questions}
 One of the main problems with the application is generating entity model instances used for generating questions. To make one scenario with assessment, diagnosis, management and follow-up, we need at least to instances of the entity graph. One to show the status of the patient before the treatment, and one after the treatment. As the treatment needs to be evaluated and the clinician needs to act accordingly. One single entity model can be several hundreds of lines written in JSON, as there are quite many vertices and edges to describe as well as the complexity of the model. This is tedious work, both because of the complexity, the amount of code lines, but the author also needs to put a great emphasize on writing the code correctly. The latter can be solved with an authoring tool.
 
 As so much effort has to put in typing these instances of entity graphs, a better way would be to make functionality to automatically generate new instances. We already have made template with tags to vertices in the entity graph. By generating a lot of new entity instances, one template can be reused to make just as many questions. By looking at the paediatric possible asthma guideline \parencite{RepublicofKeny2016}, we see that there are described twelve symptoms we can combine in every way we like. Some of the symptoms also have more possibilities than just true/false. They have numerical ranges like pulse rate, breaths per minute and oxygen saturation. So in fact, we can generate a quite large amount of graph instances and equally as many questions per template.
@@ -383,6 +391,16 @@ Some of these constraints can be reused between guidelines. The same medication 
 When we have built up a repository of entity graph instances, we can use this repository to generate distractions for quiz elements. Randomly choose distractions from other entity graph instances, which corresponds to the answer key tag given by the template. A small penalty can be set on distractions from the asthma guideline. Medium penalties for distractions from respiratory diseases. A bit larger penalties for distractions from completely unrelated guidelines. Then we have automated the quiz scores as well!
 
 
+\section{Summary}
+The chapter is structured after the conceptual training managers in the game engine. Question flow manager, conversation manager and the user manager.
+
+The question flow manager uses the Dynamic Content Manager (DCM) to make the questions adaptable to the student's knowledge level and flexible such that the student can choose his own path through the learning content. We used the workflow model as a base, to categorize the learning material, and we identified knowledge dependencies between them, making a knowledge map. We saw how we could make three difficulty levels by adjusting the detail level of the questions, by going from factual questions, to scenarios and then detailed scenarios. 
+
+The conversation manager made textual questions by using instances of the entity model and templates. Tags in the template pointed to vertices in the entity model, such that we could produce many questions with one template, pairing it with different instances of the entity model. However, the entity model had to be expanded with presentation vertices as the data types couldn't be directly parsed into a textual presentation. 
+
+Further we argued why we wanted to use multiple-try questions with feedback. The student can try as many times as he wants to get the answer correct. The idea is that the student has to revise the question and reflect on why the question was wrong and how can he correct it. We also described the reward system, which will fit the multiple-try approach. A student with ten attempts should get a lower score than a student which answers correctly on the first attempt.
+
+We then described a conceptual and technical model of how all the classes are connected in the game engine.
 
 
-  
+

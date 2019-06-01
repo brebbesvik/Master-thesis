@@ -159,6 +159,40 @@ In figure \ref{fig:IntegratedEntityWorkflowModels} we show a entity instance wor
 \end{figure}
 
 
+\subsection{Game model}
+The game model is not implemented using DPF and MDE like the entity model and workflow model. However, a MDE game model could be relevant in future work.
 
+Here we will give a brief explanation of the content of the game model. It can work as a reference point for the next chapter, where we will discuss the game elements more thoroughly.
+\begin{itemize}
+	\item \textbf{Category:} a CPG is written for a specific medical condition. The quiz category will be the medical condition, or the name of the CPG the quiz is written for.
+	\item \textbf{Discipline:} a question is written for a specific step in the clinical encounter, which the workflow model is an abstraction of. Discipline is a step in the clinical encounter.
+	\item \textbf{Level}: Is the difficulty level of the question.
+	\item \textbf{Passing condition:} a condition the student has to fulfil to pass a specific  difficulty level.
+	\item \textbf{Required Minimum Skill:} a condition the student has to fulfil to be able to play questions at a specific difficulty level.
+	\item\textbf{Entity Instance}: a pointer to an instance of an entity graph. It is used together with a template to generate text.
+	\item \textbf{Question:} a pointer to a template model. By using a template model, we can reuse templates on many entity instances.
+	\item \textbf{Alternative:} or distraction. It is one of the answer alternatives for a question. 
+	\item \textbf{Reward:} a reward or penalty is given based on the correctness of the distraction. A distraction can be degrees of right or wrong, which is reflected by the reward.	
+\end{itemize} 
 
+The game model is paired with a template model. By separating the template into its own model, we can reuse the same template for many questions.
+\begin{itemize}
+	\item \textbf{Narrative:} template which represents a question. The template contains tags which points to vertices in an entity graph. When the template is paired with an instance of such a graph, it will produce a textual presentation of a question. The same template can be used with different instances of entity graphs to make many different questions.
+	\item \textbf{Answer key:} is a tag which points to a vertex in the entity graph. When paired with an instance of the entity graph, it will produce a textual presentation of the answer key. The answer key can be used with many different entity graph instances.
+	\item \textbf{Explanation:} this is the answer key explanation to a narrative/question. It gives an description of how to solve the problem and what is the correct answer.
+	\item \textbf{Evidence and Guideline:} these are not implemented yet, but are place-holders for future functionality. The evidence is the strength of the evidence the recommendations in the guideline. The guideline is a pointer to the guideline itself. Such that that the student can read the guideline itself when he is stuck on a question or need further explanation. This will hopefully enforce learning.
+\end{itemize}
 
+\subsection{Student learning model}
+The student learning model keeps track of the student's scores at different quizzes. It is based on the principles of learning map and student map, which can be read about in the next chapter about game elements. By using such a model, we can adapt the questions to the right difficulty level for the student. We can also keep track of his progression
+
+\section{Summary}
+In this chapter we have discussed the entity-, workflow-, game- and student learning models. We have been especially thorough with the two first models, which are developed using MDE and DPF. In MDE it is the models which drives the development process, and DPF is an approach to MDE where the models are represented as a graph with a set of constraints.
+
+In the entity model, we modelled the patient, the symptoms the clinician might find under examination and by the history the patient or parents give. We modelled the diagnosis, and how the clinicians manage thee medical condition of the patient. The clinician may admit the patient into the hospital, treat with medications and give some advise on how the patient or parents should manage the medical condition of the patient.
+
+A workflow model which is the workflow of the clinical encounter.
+
+We do an example where we make instances of the entity model my metamodelling. Then we instantiates the entity model together with the workflow model, to see how they work together. Describing the patient, the condition, symptoms and the management through the whole clinical encounter. Through assessment and diagnosis to management and treatment to evaluation.
+
+We gave a brief explanation of the elements in the game model, and the concept of the student learning model. 

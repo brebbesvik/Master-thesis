@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt]{book}
+\documentclass[a4paper,12pt,oneside]{book}
 \input{settings}
 
 
@@ -38,6 +38,8 @@ My family Malin, my parents, my brother and his family
 \end{flushright}
 
 \tableofcontents
+\listoffigures
+\listoftables
 \mainmatter
 
 % HUSK Å LEGGE INN LISTE OVER TABELLER, FIGURER OG LISLINGS I INNHOLDSFORTEGNELSEN!!!!
@@ -68,12 +70,15 @@ My family Malin, my parents, my brother and his family
 
 
 
+\chapter{Evaluation}
+\section{Research questions}
+\input{researchquestions}
 
-\chapter{Discussion}
+\input{evaluation}
+
+\chapter{Discussion and conclusion}
 Right now we have modelled parts of the guideline for prescribing oxygen \parencite{RepublicofKeny2016} and antibiotic administration \parencite{RepublicofKeny2016} into the entity model of the paediatric possible asthma guideline \parencite{RepublicofKeny2016}. This is to be able to ask detailed questions about relevant treatment, as well as making sure that the student knows the basics of the treatment. In a future version we can have separate quizzes for prescribing oxygen and antibiotic administration. We have already applied Dynamic Content Management (DCM) to the asthma quiz, but we can also apply it to a higher abstraction level. We can say that the student needs to complete the quizzes for prescribing oxygen and antibiotic administration, before he is allowed to play the asthma quiz. Then we have a knowledge dependency. According to DCM he can choose whether he wants to complete prescribing oxygen first or antibiotic administration first, but both have to be completed to advance to the paediatric possible asthma guideline.
 
-\section{Research questions}
-\input{evaluation}
 \section{Observations}
 \section{Challenges}
 \section{Reflection}

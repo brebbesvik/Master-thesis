@@ -1,6 +1,4 @@
-\section{Evaluation}
-
-\subsection{Evaluation of the models}
+\section{Evaluation of the models}
 To evaluate our model, we have decided to model the paediatric pneumonia guideline \parencite{RepublicofKeny2016}. As we have a strict time limitation it is better for us to evaluate a respiratory condition, as we have already worked with a respiratory condition in asthma. There is quite a lot of work for software developers to learn a new clinical guideline, so we save a lot of time when the concepts are similar.
 
 In figure \ref{fig:PneumoniaEntityGraphExcerpt} we have modelled the excerpt of the entity model of the paediatric pneumonia guideline \parencite{RepublicofKeny2016}. We have removed unnecessary vertices such as Investigation and Surgery, as neither the pneumonia guideline nor the possible asthma guideline use them. On the Diagnosis vertex we now have a new inheritance. We'll soon explain.
@@ -68,7 +66,7 @@ In figure \ref{fig:PneumoniaPneumoniaIntegratedEntityWorkflowModels} we demonstr
 After the evaluation, we see that we have modified the entity and workflow models to support both pneumonia and asthma in paediatric medicine. It is likely that further modification and expansion of the entity model is needed when modelling other CPGs. However, we see that we have identified reusable elements of the guidelines, and our models can work as a stepping stone for guideline formalization standardisation.
 
 
-\subsection{Evaluation of the application}
+\section{Evaluation of the application}
 The evaluation of the application was done with clinicians.	Two medical doctors and two specialist nurses. Both of the specialist nurses are employees at the polyclinic for pulmonary diseases at Haukeland University. One of the nurses is a specialist in sleep apnea, and his master thesis was writing clinical guidelines for sleep apnea. The other nurse is a specialist in asthma, but in adult medicine. The two doctors are educated as general practitioner, but are now working in research.
 
 The evaluation methods were a combination of the cognitive walkthrough and usability test in controlled environment, with follow-up questions. In detail what we did was, the nurses would be asked to play the most difficult level of the game, speak what they are thinking when playing the game and manoeuvring in the application.  The two medical doctors would play the entire game, from the easiest level and to completing the most difficult one. By playing all the levels, the doctors would to far greater extent evaluate the learning model.
@@ -105,11 +103,11 @@ Topics to discuss would occur when the clinicians had to think out loud. The mas
 	\begin{itemize}
 		\item 
 		\item \textbf{Nurse2:} I like how the measurements corresponds and are calculated with the scenario and the patient they are presented with. The answer key explanations gives relevant answers to the questions asked.
-		\item \textbf{Doctors:} The answer key explanations are good. Like that we get an explanation when answer correctly. We preferred to try until getting the answer right than clicking "learn more" and proceed to next question. Could be nice to get an explanation why the answer was wrong, but we are rather impatient and want to proceed and find the correct answer quickly.
+		\item \textbf{Doctors:} The answer key explanations are good. We like that we get an explanation when we answer correctly. We preferred to try until getting the answer correctly rather than clicking "learn more" and proceed to next question. It could be nice to get an explanation why the answer was wrong, but we are rather impatient, we want to proceed and find the correct answer quickly.
 	\end{itemize}
 \end{enumerate}
 
-Quality of questions
+The quality of game questions:
 \begin{enumerate}
 	\item The assessment, none of the distractions is a wrong answer. Even though wheeze is what we are looking for.
 	\item When asking for salbutamol dosage, it is relevant to know where and in which stage of the treatment it is being given. Also saying something about rate or duration can help clarify that.
@@ -133,10 +131,13 @@ User interface and game experience
  	\item When having met the passing condition of one of assessment, diagnosis, management and follow-up, it is a good thing that the passed category gets excluded from the quiz when replaying the level. This makes the game less tedious.
  	\item In the situation where the user performs very poorly and gets demoted from a difficulty level, an explanation should be shown.
  	\item The two doctors meant the "wrong" hint in red when answered a question incorrectly was ok. If sugar coating the feedback, the satisfaction of getting a green "correct" would have been dampened.
- 	
 \end{enumerate}
 
 \textcolor{red}{Er nødt til å skrive et sammendrag her, sånn at vi klarer å treffe forskningsspørsmålene mye bedre. Skal ha evaluering med en eller to leger på søndag, så det gir mening å forme og spisse dette avsnittet litt mer etter det møtet.}
+
+\section{Discussion}
+
+
 
 \section{Limitations of the model}
 \begin{itemize}
