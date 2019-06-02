@@ -18,15 +18,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Introduction}{6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Motivation}{6}% 
+\contentsline {section}{\numberline {2.1}Paper publication}{6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Old Research questions}{6}% 
+\contentsline {section}{\numberline {2.2}Research questions}{6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}New Research questions}{6}% 
+\contentsline {section}{\numberline {2.3}Structure of the thesis}{7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Structure of the thesis}{7}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Summary}{7}% 
+\contentsline {section}{\numberline {2.4}Summary}{7}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Method}{8}% 
 \defcounter {refsection}{0}\relax 
@@ -66,84 +64,90 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Datamodels}{36}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Extracting knowledge from the clinical practice guidelines}{36}% 
+\contentsline {section}{\numberline {5.1}Extracting knowledge from the clinical practice guidelines}{37}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Data models}{36}% 
+\contentsline {section}{\numberline {5.2}MDE and meta modelling}{37}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}MDE and meta modelling}{37}% 
+\contentsline {section}{\numberline {5.3}DPF}{37}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}DPF}{37}% 
+\contentsline {section}{\numberline {5.4}Entity model}{38}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.3}Entity model}{38}% 
+\contentsline {subsection}{\numberline {5.4.1}Generic entity model}{44}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.4}Workflow model}{44}% 
+\contentsline {section}{\numberline {5.5}Workflow model}{44}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.5}Metamodeling}{45}% 
+\contentsline {section}{\numberline {5.6}Metamodeling}{46}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.6}Game model}{46}% 
+\contentsline {section}{\numberline {5.7}Game model}{47}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.7}Student learning model}{48}% 
+\contentsline {section}{\numberline {5.8}Student learning model}{49}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Summary}{49}% 
+\contentsline {section}{\numberline {5.9}Summary}{50}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Game Elements}{50}% 
+\contentsline {chapter}{\numberline {6}Game Elements}{51}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Question Flow Manager}{50}% 
+\contentsline {section}{\numberline {6.1}Question Flow Manager}{51}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.1}Dynamic Content Management}{51}% 
+\contentsline {subsection}{\numberline {6.1.1}Dynamic Content Management}{52}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.2}Types of questions}{53}% 
+\contentsline {subsection}{\numberline {6.1.2}Types of questions}{54}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.3}Unlocking harder levels at a certain category}{55}% 
+\contentsline {subsection}{\numberline {6.1.3}Unlocking harder levels at a certain category}{56}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Conversation Manager}{56}% 
+\contentsline {section}{\numberline {6.2}Conversation Manager}{57}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.1}Constructing scenarios and answer keys}{56}% 
+\contentsline {subsection}{\numberline {6.2.1}Constructing scenarios and answer keys}{57}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.2}Multiple-try feedback}{60}% 
+\contentsline {subsection}{\numberline {6.2.2}Multiple-try feedback}{61}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.3}Reward system}{63}% 
+\contentsline {subsection}{\numberline {6.2.3}Reward system}{64}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}User manager}{65}% 
+\contentsline {section}{\numberline {6.3}User manager}{66}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.1}Visualization of game statistics}{65}% 
+\contentsline {subsection}{\numberline {6.3.1}Visualization of game statistics}{66}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}Conceptual model of how all the classes are connected in Game Engine}{65}% 
+\contentsline {section}{\numberline {6.4}Conceptual model of how all the classes are connected in Game Engine}{66}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.5}Automatically generating new questions}{67}% 
+\contentsline {section}{\numberline {6.5}Automatically generating new questions}{68}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.6}Summary}{69}% 
+\contentsline {section}{\numberline {6.6}Summary}{70}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Application Walkthrough}{70}% 
+\contentsline {chapter}{\numberline {7}Application Walkthrough}{71}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}The mobile application}{70}% 
+\contentsline {section}{\numberline {7.1}The mobile application}{71}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.1}User interface and flow of the user interaction}{70}% 
+\contentsline {subsection}{\numberline {7.1.1}User interface and flow of the user interaction}{71}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Summary}{75}% 
+\contentsline {section}{\numberline {7.2}Summary}{76}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Evaluation}{78}% 
+\contentsline {chapter}{\numberline {8}Evaluation}{79}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}Research questions}{78}% 
+\contentsline {section}{\numberline {8.1}Research questions}{79}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}Evaluation of the models}{78}% 
+\contentsline {section}{\numberline {8.2}Evaluation of the models}{79}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.3}Evaluation of the application}{83}% 
+\contentsline {section}{\numberline {8.3}Evaluation of the application}{84}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.4}Discussion}{88}% 
+\contentsline {section}{\numberline {8.4}Results}{89}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.5}Limitations of the model}{88}% 
+\contentsline {paragraph}{\textbf {RQ1:} Based on clinical guidelines, how can we define and represent a generic data structure that can be used to implement applications such as online guidelines or training games for such guidelines, and where applications can adapt to the level of their users?}{89}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Discussion and conclusion}{89}% 
+\contentsline {section}{\numberline {8.5}Limitations of the model}{90}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.1}Observations}{89}% 
+\contentsline {chapter}{\numberline {9}Discussion and conclusion}{91}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.2}Challenges}{89}% 
+\contentsline {section}{\numberline {9.1}Observations}{91}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.3}Reflection}{89}% 
+\contentsline {section}{\numberline {9.2}Challenges}{91}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {10}Conclusions}{90}% 
+\contentsline {section}{\numberline {9.3}Reflection}{91}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.1}Further research and development}{90}% 
+\contentsline {chapter}{\numberline {10}Conclusions}{92}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Comparison of CPG applications}{96}% 
+\contentsline {section}{\numberline {10.1}Further research and development}{92}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Appendices}{99}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Comparison of CPG applications}{99}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{A Model Driven Approach to the Development of Gamified Interactive Clinical Practice Guidelines}{107}% 

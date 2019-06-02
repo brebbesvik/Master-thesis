@@ -1,4 +1,4 @@
-\section{Data models}
+
 For this project and according to the research questions, we will be using four models.
 \begin{enumerate}
 	\item An \textbf{entity model}, which will be a model of the domain concepts. The patient, the different methods for discovering and measuring symptoms. The patient's medical condition and the procedures done to manage the patient's medical condition.
@@ -11,7 +11,9 @@ Models are good for sketches, where we can easily discuss with team members, dom
 
 For this project communication is very important, as the developer needs to understand and be able to model the clinical practice guideline and the clinical encounter at a very high detail. The domain expert in medicine needs to be able to verify that the model is correct.
 
-\subsection{MDE and meta modelling}
+\section{Extracting knowledge from the clinical  practice guidelines}
+
+\section{MDE and meta modelling}
 We will be using a Model Driven Engineering (MDE) approach, mainly for the entity and workflow models. In MDE models serves as the key artefacts that drive the development process \parencite{RodriguesdaSilva2015}. A model in this case is an abstraction of a system under study. It is usually a partly and simplified version, where we often need multiple models to better represent and understand it \parencite{RodriguesdaSilva2015}. A domain model is the conceptual model of a field or expertise that we are examining to solve a problem \parencite{Brambilla2017}.
 
 A metamodel is a further abstraction of a model, which highlights properties of the model \parencite{Brambilla2017}. In figure \ref{fig:Metamodelling} we see that moving up through the levels is an abstraction of the previous model. While moving downward, we are making instantiations of the previous metamodels. With metamodels we can define new languages, as well as defining new properties or features of the available information \parencite{Brambilla2017}. This allows us to make Domain Specific Languages (DSL), which is designes specifically for a specific domain and context \parencite{Brambilla2017}\parencite{RodriguesdaSilva2015}. By using DSLs, we can develop more expressive models, which can enhance communication with or be used by domain experts. 
@@ -23,18 +25,18 @@ A metamodel is a further abstraction of a model, which highlights properties of 
 \end{figure}
 
 % Say something about how the graph is implemented and a reference to the book.
-\subsection{DPF}
+\section{DPF}
 For the enitity- and workflow models, we use a formal diagrammatic approach to model driven engineering, which is called Diagram Predicate Framework (PDF). In software engineering, diagrams are data structures based on graphs. A graph is a collection of vertices, which may be connected by edges.
 
-A defintion for DPF is given by \textcite{Rutle2010}: "in DPF, models are represented by a diagrammatic specification \(\mathfrak{S} = ({\mathcal{S}}, C^{\mathfrak{S}} : \Sigma)\). It consists of a graph \(\mathcal{S}\) and set of constraints \(C^{\mathfrak{S}}\) specified by a signature constraint $\Sigma$ ". To simplify the definition to how it is used in this thesis, the models and initiations are represented and implemented using graphs and a set of constraints. The following subsections will discuss these graphs in detail.
+A definition for DPF is given by \textcite{Rutle2010}: "in DPF, models are represented by a diagrammatic specification \(\mathfrak{S} = ({\mathcal{S}}, C^{\mathfrak{S}} : \Sigma)\). It consists of a graph \(\mathcal{S}\) and set of constraints \(C^{\mathfrak{S}}\) specified by a signature constraint $\Sigma$ ". To simplify the definition to how it is used in this thesis, the models and initiations are represented and implemented using graphs and a set of constraints. The following sections will discuss these graphs in detail.
 
 
 \textcolor{purple}{TODO Yngve: Why DPF, why not fHIR?}
-\subsection{Entity model}
+\section{Entity model}
 \textcolor{purple}{TODO Yngve: Explain the main entities in the entity model here}
-We will now present the entity model by showing en excerpt, hiding away the details. This will let us easier focus on the concepts and the flow, as the model itself is quite large and complex. See figure \ref{fig:EntityGraphExcerpt}
+We will now present the entity model by showing an excerpt, hiding away the details. This will let us easier focus on the concepts and the flow, as the model itself is quite large and complex. See figure \ref{fig:EntityGraphExcerpt}
 
-The entity graph stores information about a specific patient at a certain point or time in the clinical encounter. The patient comes to the emergency clinic. He has some symptoms which the clinician needs to uncover, by doing examinations and asking questions about the patients conditions. What the patient or caregiver tells is modelled as history, while quick examinations such as listening to the chest, looking at the skin, count the number of breaths per minute are modelled in the examination vertex. In some cases the clinician wants to run medical tests which require more time and resources, such as MRI scan, spirometry or blood tests. These tests are modelled as investigations.
+The entity graph stores information about a specific patient at a certain point of time in the clinical encounter. The patient comes to the emergency clinic. He has some symptoms which the clinician needs to uncover, by doing examinations and asking questions about the patients conditions. What the patient or caregiver tells is modelled as history, while quick examinations such as listening to the chest, looking at the skin, count the number of breaths per minute are modelled in the examination vertex. In some cases the clinician wants to run medical tests which require more time and resources, such as MRI scan, spirometry or blood tests. These tests are modelled as investigations.
 
 Based on the the symptoms collected in history, examination and investigation, the clinician will set a diagnosis. The procedures for what to do with a patient with a given diagnosis is modelled under management. Hospitalization is to change the patients status to outpatient, or inpatient if he is admitted into the hospital. He might need some medication or be given advise for how he should deal with his condition the in every day life. Here the model can be expanded with routines found in other guidelines, we have identified surgery as an example. 
 
@@ -108,8 +110,18 @@ In the paediatric possible asthma guideline \parencite{RepublicofKeny2016}, ther
 		\label{fig:RouteMethodProblem}
 \end{figure}
 
+\subsection{Generic entity model}
+In the previous section, we had the focus on developing a specific entity model for the paediatric guideline of possible asthma \parencite{RepublicofKeny2016}. In fact by introducing inheritance, we actually made a specific and a generic model. In the model, we use the keyword \{abstract\} to note an abstracted vertex. The inheriting vertices become the specifications of the abstract vertex. 
 
-\subsection{Workflow model}
+In figure \ref{fig:GeneralEntityGraph} we have showed the the generic model. It only shows the abstracted vertices and not the specifications. A specific entity model for a specific guideline, will show both the abstractions and the specifications of them. The specifications need to be adapted for that specific guideline, and can not use the same as for paediatric guideline of possible asthma \parencite{RepublicofKeny2016}.
+
+\begin{figure}[h!]
+	\includegraphics[scale=0.4]{GeneralEntityGraph}
+	\caption {A generic entity graph contains abstractions. An entity graph for a specific guideline, contains specifications for those abstractions. Yellow boxes indicate specifications we have shown for paediatric guideline of possible asthma \parencite{RepublicofKeny2016}}
+	\label{fig:GeneralEntityGraph}
+\end{figure}
+
+\section{Workflow model}
 We model the dynamics of clinical encounters with a workflow model. The clinician starts with the assessment, where he examine the patient and listen to what the patient and the caregiver has to say about the the patient's condition. The clinician starts to get an idea of what condition the patient may suffer from. The clinician continues with the diagnostic part, where he asks more targeted questions to the patient and caregivers about the condition, do more of the examination and perhaps order lab tests as part of the investigation. This process can strengthen the clinician's assumptions about the condition, and he may be able to set a specific diagnosis.
 
 The next step is the management and treatment. This can be changing the patient's status from outpatient to inpatient, do surgery, medication, physiotherapy, cognitive behavioural therapy or other forms of treatment. The treatment may be done in iterations or repeated.
@@ -130,7 +142,7 @@ The idea of the workflow model is to describe the process of a clinical encounte
 	Coordination	of multiple metamodels, with application	to healthcare systems.
 A flexible metamodelling approach for healthcare systems. }
 
-\subsection{Metamodeling}
+\section{Metamodeling}
 
 \textcolor{red}{I struggle when it comes to talking about MDE, DPF, metamodeling and model transformation, as I lack very basic knowledge about the subjects. Rutle, Rossini, Rabbi are all hard to read}
 
@@ -159,7 +171,7 @@ In figure \ref{fig:IntegratedEntityWorkflowModels} we show a entity instance wor
 \end{figure}
 
 
-\subsection{Game model}
+\section{Game model}
 The game model is not implemented using DPF and MDE like the entity model and workflow model. However, a MDE game model could be relevant in future work.
 
 Here we will give a brief explanation of the content of the game model. It can work as a reference point for the next chapter, where we will discuss the game elements more thoroughly.
@@ -183,7 +195,7 @@ The game model is paired with a template model. By separating the template into 
 	\item \textbf{Evidence and Guideline:} these are not implemented yet, but are place-holders for future functionality. The evidence is the strength of the evidence the recommendations in the guideline. The guideline is a pointer to the guideline itself. Such that that the student can read the guideline itself when he is stuck on a question or need further explanation. This will hopefully enforce learning.
 \end{itemize}
 
-\subsection{Student learning model}
+\section{Student learning model}
 The student learning model keeps track of the student's scores at different quizzes. It is based on the principles of learning map and student map, which can be read about in the next chapter about game elements. By using such a model, we can adapt the questions to the right difficulty level for the student. We can also keep track of his progression
 
 \section{Summary}
