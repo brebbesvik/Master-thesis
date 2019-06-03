@@ -3,8 +3,8 @@ For this project and according to the research questions, we will be using four 
 \begin{enumerate}
 	\item An \textbf{entity model}, which will be a model of the domain concepts. The patient, the different methods for discovering and measuring symptoms. The patient's medical condition and the procedures done to manage the patient's medical condition.
 	\item A \textbf{workflow model}, which describes the different processes in a clinical encounter. This will be the flow of the guideline itself at an abstract level.
-	\item A \textbf{game model} which will contain the game elements. That means the questions, distractions, answer keys, answer key explanations, rewards and penalties for the different answer alternatives, as well ass passing conditions for the different difficulty levels.
-	\item A \textbf{student's learning model} for the student's learning progression.
+	\item A \textbf{game model} which will contain the game elements, as well as the order in which the student will learn parts of the guideline. By game elements we mean the questions, distractions, answer keys, answer key explanations, rewards and penalties for the different answer alternatives, as well ass passing conditions for the different difficulty levels.
+	\item A \textbf{student's learning model} for monitoring the student's learning progression.
 \end{enumerate}
 
 Models are good for sketches, where we can easily discuss with team members, domain experts and possibly stakeholders. The models can hold a detailed specification of the system, as well as we can use models instead of code to develop the system \parencite{Brambilla2017}.
@@ -14,7 +14,9 @@ For this project communication is very important, as the developer needs to unde
 \section{Extracting knowledge from the clinical  practice guidelines}
 
 \section{MDE and meta modelling}
-We will be using a Model Driven Engineering (MDE) approach, mainly for the entity and workflow models. In MDE models serves as the key artefacts that drive the development process \parencite{RodriguesdaSilva2015}. A model in this case is an abstraction of a system under study. It is usually a partly and simplified version, where we often need multiple models to better represent and understand it \parencite{RodriguesdaSilva2015}. A domain model is the conceptual model of a field or expertise that we are examining to solve a problem \parencite{Brambilla2017}.
+We will be using a Model Driven Engineering (MDE) approach, mainly for the entity and workflow models. In MDE models serves as the key artefacts that drive the development process \parencite{RodriguesdaSilva2015}. A model in this case is an abstraction of a system under study. It is usually a partly and simplified version of the system, where we often need multiple models to better represent and understand it \parencite{RodriguesdaSilva2015}. A domain model is the conceptual model of a field or expertise that we are examining to solve a problem \parencite{Brambilla2017}.
+
+A metamodel is a model where one define the modelling concepts that will be used to represent the system in.
 
 A metamodel is a further abstraction of a model, which highlights properties of the model \parencite{Brambilla2017}. In figure \ref{fig:Metamodelling} we see that moving up through the levels is an abstraction of the previous model. While moving downward, we are making instantiations of the previous metamodels. With metamodels we can define new languages, as well as defining new properties or features of the available information \parencite{Brambilla2017}. This allows us to make Domain Specific Languages (DSL), which is designes specifically for a specific domain and context \parencite{Brambilla2017}\parencite{RodriguesdaSilva2015}. By using DSLs, we can develop more expressive models, which can enhance communication with or be used by domain experts. 
 
@@ -30,8 +32,7 @@ For the enitity- and workflow models, we use a formal diagrammatic approach to m
 
 A definition for DPF is given by \textcite{Rutle2010}: "in DPF, models are represented by a diagrammatic specification \(\mathfrak{S} = ({\mathcal{S}}, C^{\mathfrak{S}} : \Sigma)\). It consists of a graph \(\mathcal{S}\) and set of constraints \(C^{\mathfrak{S}}\) specified by a signature constraint $\Sigma$ ". To simplify the definition to how it is used in this thesis, the models and initiations are represented and implemented using graphs and a set of constraints. The following sections will discuss these graphs in detail.
 
-
-\textcolor{purple}{TODO Yngve: Why DPF, why not fHIR?}
+Why do we use DPF and not a system such as fHIR? DPF is an abstract modelling formalism that could be used to model different aspects of the system. HL7 fHIR is a domain specific language to represent (and share) resources (i.e. domain concepts) in health care. 
 \section{Entity model}
 \textcolor{purple}{TODO Yngve: Explain the main entities in the entity model here}
 We will now present the entity model by showing an excerpt, hiding away the details. This will let us easier focus on the concepts and the flow, as the model itself is quite large and complex. See figure \ref{fig:EntityGraphExcerpt}

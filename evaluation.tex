@@ -1,4 +1,6 @@
-\section{Evaluation of the models}
+
+\section{Evaluations}
+\subsection{Evaluation of the models}
 To evaluate our model, we have decided to model the paediatric pneumonia guideline \parencite{RepublicofKeny2016}. As we have a strict time limitation it is better for us to evaluate a respiratory condition, as we have already worked with a respiratory condition in asthma. There is quite a lot of work for software developers to learn a new clinical guideline, so we save a lot of time when the concepts are similar.
 
 In figure \ref{fig:PneumoniaEntityGraphExcerpt} we have modelled the excerpt of the entity model of the paediatric pneumonia guideline \parencite{RepublicofKeny2016}. We have removed unnecessary vertices such as Investigation and Surgery, as neither the pneumonia guideline nor the possible asthma guideline use them. On the Diagnosis vertex we now have a new inheritance. We'll soon explain.
@@ -66,7 +68,7 @@ In figure \ref{fig:PneumoniaPneumoniaIntegratedEntityWorkflowModels} we demonstr
 After the evaluation, we see that we have modified the entity and workflow models to support both pneumonia and asthma in paediatric medicine. It is likely that further modification and expansion of the entity model is needed when modelling other CPGs. However, we see that we have identified reusable elements of the guidelines, and our models can work as a stepping stone for guideline formalization standardisation.
 
 
-\section{Evaluation of the application}
+\subsection{Evaluation of the application}
 The evaluation of the application was done with clinicians.	Two medical doctors and two specialist nurses. Both of the specialist nurses are employees at the polyclinic for pulmonary diseases at Haukeland University. One of the nurses is a specialist in sleep apnea, and his master thesis was writing clinical guidelines for sleep apnea. The other nurse is a specialist in asthma, but in adult medicine. The two doctors are educated as general practitioner, but are now working in research.
 
 The evaluation methods were a combination of the cognitive walkthrough and usability test in controlled environment, with follow-up questions. In detail what we did was, the nurses would be asked to play the most difficult level of the game, speak what they are thinking when playing the game and manoeuvring in the application.  The two medical doctors would play the entire game, from the easiest level and to completing the most difficult one. By playing all the levels, the doctors would to far greater extent evaluate the learning model.
@@ -76,7 +78,7 @@ Topics to discuss would occur when the clinicians had to think out loud. The mas
 \begin{enumerate}
 	\item Can the application be a useful learning tool for medical students, nurses and doctors?
 	\begin{itemize}
-		\item \textbf{Nurse1:} Very useful indeed. Would be nice to take a test after a lecture about asthma or after having read about asthma to see how much I have learnt and remember. A quiz is far more fun than a check list in paper format. The application is also good for scalability, as you can train a lot of clinicians without adding any resources. Also great if a course leader can see the progress or the level of his students.
+		\item \textbf{Nurse1:} Very useful indeed. Would be nice to take a test after a lecture about asthma or after having read about asthma to see how much I have learnt and remember. A quiz is far more fun than a check list in paper format. The application is also good for scalability, as you can train a lot of clinicians without adding any resources. Also great if a course leader can see the progress or the level of his students. 
 		\item \textbf{Nurse2:} Absolutely useful, and I feel I have learnt a lot by just doing this quiz. The nurse found the game to be very engaging, cheering when getting a correct answer. 
 		\item \textbf{Doctors:} For medical doctors, the quiz will be too basic. For nurse it might be good. For medical students it will be very good, as it fits with how the students works and how they will be tested for exams.
 	\end{itemize}
@@ -122,7 +124,7 @@ The quality of game questions:
 User interface and game experience
  \begin{enumerate}
  	\item All the clinicians were very positive to the multiple-try with hint approach. When they give a wrong answer, they get a new chance to revise the question and correct their answer.
- 	\item When the clinicians answer a question incorrectly, they are presented with a "learn more" button. When they click on this button they get presented with an answer key explanation. When they click on "next" they get very surprised and disapointed that were taken to the next question and don't get the chance to get the question right.
+ 	\item When the clinicians answer a question incorrectly, they are presented with a "learn more" button. When they click on this button they get presented with an answer key explanation. When they click on "next" the nurses get very surprised and disappointed that were taken to the next question and don't get the chance to get the question right. The medical doctors were fine with that approach.
  	
  	Here the specialist in asthma had a very interesting suggestion. When she clicks on "learn more", she want an explanation of why that suggestion was wrong or in which situations that answer would have been correct. Then she want to try again to collect the reward. She was noticeably disappointed at the summary when she saw that she was penalized hard for clicking "learn more".
  	\item The clinicians wanted a link or a button to display the clinical guidelines in the screen they were presented with the answer key explanation. Then they can read and learn more.
@@ -135,35 +137,100 @@ User interface and game experience
 
 \textcolor{red}{Er nødt til å skrive et sammendrag her, sånn at vi klarer å treffe forskningsspørsmålene mye bedre. Skal ha evaluering med en eller to leger på søndag, så det gir mening å forme og spisse dette avsnittet litt mer etter det møtet.}
 
-\section{Results}
+
+
+\subsection{Results}
+Here we make a brief summary of the results from the evaluation. We want to verify that we have data models at an abstraction level such that they can be used to represent other clinical practice guidelines. The models will be our contribution to the science of health informatics. We want to ensure that our serious game is a valuable contribution to the medical community. Contribution to science and to the community are requirements from design science.
+
+\paragraph{Evaluation of the models}
+We have shown by a practical example how the entity model can be used to represent the paediatric guideline of pneumonia \parencite{RepublicofKeny2016}. A requirement was identified and met by making an abstraction of the Diagnosis in the entity model. This was necessary to support differential diagnosis, and to support treatments which are dependent on which other diagnoses the patient may have. 
+
+We showed how we could make instantiations of the entity and workflow models and how they work together to represent a full clinical encounter for patient suffering from pneumonia.
+
+
+\paragraph{Evaluation of the application}
+In table \ref{table:AppEvaluation}, we have made a brief summary, where we quantify the evaluation of the game application. The  
+\begin{table}[h!]
+	\begin{tabular}{ | m{18em} | m{4em}| m{4em} | } 
+		\hline
+		\textbf{Questions} & \textbf{Positives} & \textbf{Negatives}\\
+		\hline
+		\textbf{Can the game be a useful learning tool for} &  &  \\
+		Medical students? & 2 & 0 \\
+		Nurses? & 2 & 0 \\
+		Doctors & & 2 \\
+		\hline
+		\textbf{How is the flow of the questions in scenarios} & 2 & 2 \\
+		\hline
+		\textbf{Is adjusting the detail level to make questions more difficulties the right approach?} & 4 & 0 \\
+		\hline
+		\textbf{Is the quality and approach answer key explanations correct?} & 3 & \\
+		\hline
+		\textbf{Number of feedbacks about the quality of quiz questions} & 1 & 7 \\
+		\textbf{User experience} & & \\
+		Wants the possibility to read the guideline in the game & 4 & 0  \\
+		Didn't have to remember details from previous screen & 3 & 0 \\
+		Textual questions instead of multimedia & & 2 \\
+		\hline
+		\textbf{Game elements} & & \\
+		Multiple-try feedback & 4 & 0 \\
+		"Learn more" doesn't give a last attempt to get the question right & 2 & 2 \\
+		\hline
+		\textbf{Learning model} & 2 & 0 \\
+		Don't repeat questions from completed quiz categories & 2 & \\
+		\hline
+	\end{tabular}
+	\caption{}
+	\label{table:AppEvaluation}
+\end{table}
+
+\section{Findings}
+Here we will relate our findings to the research questions.
+
 \paragraph{\textbf{RQ1:} Based on clinical guidelines, how can we define and represent a generic data structure that can be used to implement applications such as online guidelines or training games for such guidelines, and where applications can adapt to the level of their users?}
+
+For this research question, we have proposed four data models. The first two data models are a domain (entity) model \ref{fig:GeneralEntityGraph} and a guideline (workflow) model \ref{fig:WorkflowGraph}. The domain model represents a patient, his symptoms, medical condition and what the clinicians do to mange his medical condition. The guideline model represents the steps in a clinical encounter. When the domain model and the guideline model work together, we can represent the patient, symptoms, diagnosis and management of the medical condition for every step through the clinical encounter. The model allows us to make online guidelines or training games with specific patients examples through the whole guideline.
+
+We also proposed a student learning model and a game model. By using Dynamic Content Management \parencite{Eide2008}, we showed how we can split the learning content into content units. Each of these content units contain learning resources and evaluations at different difficulty levels. In that sense, the learning content can be adapted to knowledge of the student. Presenting difficult evaluations in areas where the student is strong, and easier evaluations where the student is weak. 
+
+\paragraph{RQ2: Can the generic data structure in RQ1 be used to generate a specific data model for another domain such as paediatric asthma?}
+
+In figure \ref{fig:EntityGraphExcerpt}, \ref{fig:EntityGraphHistory}, \ref{fig:EntityGraphExamination}, \ref{fig:EntityGraphPatientDiagnosis} and \ref{fig:EntityGraphMedication}, we showed a specific entity model for the paediatric guideline of possible asthma \parencite{RepublicofKeny2016}. 
+
+In figure \ref{fig:IntegratedEntityWorkflowModels}, we show an instantiation of the specific entity model, working together with an instantiation of the workflow model. This shows that also the workflow model can be used for a specific domain.
+
+For the student learning model, game model, entity model and workflow model, we also did a proof of concept. We developed a serious game which tested students in the paediatric guideline of possible asthma \parencite{RepublicofKeny2016}. Then the student learning model and the game model got applied for a specific domain, in this case paediatric possible asthma.
+
+\paragraph{RQ3: How can we use the data model in RQ2 to implement a game for guideline training that can adapt to the level and progression of users?}
+
+For the student learning model and the game model, we have applied the Dynamic Content Management \parencite{Eide2008}. We have split the learning content into content units to be able to adapt the learning content to the knowledge level of the student. Then we identify knowledge dependencies between the content units. When the student progresses, we can provide more difficult questions, given that the knowledge dependencies are followed. This ensures that the student has the basic understanding in relevant subjects to progress.
+
+We make the difficulty level tougher by adding more details to the questions. Going from factual statements, to scenarios to detailed scenarios.
+
+The adaption to the level and progression of users were demonstrated in the serious game.
+
+\paragraph{RQ4: Is the guideline meta model at an abstraction level such that it can be used for other guidelines?}
+
+In figure \ref{fig:PneumoniaEntityGraphExcerpt}, \ref{fig:PneumoniaEntityGraphHistory}, \ref{fig:PneumoniaEntityGraphExamination}, \ref{fig:PneumoniaEntityGraphDiagnosis} and \ref{fig:PneumoniaEntityMedication}, we demonstrate how the entity model can be used to to represent the paediatric guideline of pneumonia \parencite{RepublicofKeny2016}. However, the model modifications to be able to support differential diagnoses and the situation where the treatment depends on which other diagnoses the patient has.
+
+In figure \ref{fig:PneumoniaPneumoniaIntegratedEntityWorkflowModels} we show an instance of the specific entity model working with an instantiation of the workflow model. This shows that the workflow model is at an abstraction level such that it can be used for other guidelines.
+
+The student learning model and game model divides the learning content into content units based on the workflow model. When the workflow model is abstract enough to be used the paediatric guideline of pneumonia \parencite{RepublicofKeny2016}, then the student learning model and the game model would be as well. 
+
+
+
+\subsection{Limitations of the entity model}
 \begin{itemize}
-	\item \textbf{RQ1:} Based on clinical guidelines, how can we define and represent a generic data structure that can be used to implement applications such as online guidelines or training games for such guidelines, and where applications can adapt to the level of their users?
-	
-	For this research question, we have proposed three data models. The first two data models are a domain (entity) model and a guideline (workflow) model.  The domain model represents a patient, his symptoms, medical condition and what the clinicians do to mange his medical condition. The guideline model represents the steps in a clinical encounter. When the domain model and the guideline model work together, we can represent the patient, symptoms, diagnosis and management of the medical condition for every step through the clinical encounter. The model allows us to make online guidelines or training games with specific patients examples through the whole guideline.
-	
-	We also proposed a student learning model. By using Dynamic Content Management, we showed how we can split the learning content into content units. Each of these content units contain learning resources and evaluations at different difficulty levels. In that sense, the learning content can be adapted to knowledge of the student. Presenting difficult evaluations in areas where the student is strong, and easier evaluations where the student is weak. 
-	
-	\item \textbf{RQ2:} Can the generic data structure in RQ1 be used to generate a specific data model for another domain such as paediatric asthma?
-	
-	In chapter 4, we show how we develop 
-	As a proof of concept, we made a serious game which tested students in the paediatric guideline of possible asthma \parencite{RepublicofKeny2016}. The models described in RQ1 were used in the game, proofing that they can be used to generate at spcifi
-	
-	
-	\item \textbf{RQ3:} How can we use the data model in RQ2 to implement a game for guideline training that can adapt to the level and progression  of users?
-	\item \textbf{RQ4:} Is the guideline meta model at an abstraction level such that it can be used for other guidelines? 
-	\item \textbf{RQ5:}
+	\item We can't ask questions like "what are the symptoms for severe asthma?". The entity model is a model of one specific patient at one stage in the clinical encounter. To have severe asthma he may only have one of the symptoms for severe asthma and not all of them.
+	\item It is difficult to ask what NOT to do. If the vertex doesn't exist, only an empty string is returned. "NOT to do" can only be used were we actually have specified that the action should not be done. An example is "don't admit to the hospital" where we have specified "no" at the Hospitalization vertex.
+	\item The inheritance makes it difficult to generalize some questions. We can't make a template which asks about the Rate a (any) medicine should be taken with. We need to specifically ask for that medicine. To be able to ask for a general medicine, one solution can be to introduce a new tag which compares the substring of the type of the vertex. Another solution is to use the meta model and not the instance model. In future work we can study GraphQL to see if it can be used as another alternative to solve this problem.
 \end{itemize}
 
+\section{Summary}
+In this chapter, we have evaluated the  entity and workflow models by showing that they can be used to represent other guidelines, such as the paediatric pneumonia guideline \parencite{RepublicofKeny2016}.
 
+We have evaluated the serious game with two nurses and two medical doctors to ensure that we are delivering value to the medical community.
 
-\section{Limitations of the model}
-\begin{itemize}
-	\item Can't ask questions like "what are the symptoms for severe asthma?"
-	\item Difficult to ask what NOT to do. If the vertex doesn't exist, only an empty string gets returned. Can only be used were we actually have written "don't admit to the hospital" as an example with hospitalization.
-	\item \textcolor{purple}{TODO Yngve: Graph QL?}The inheritance makes it difficult to generalize some questions. We can't make a template which asks about the Rate a medicine should be taken with. We need to specifically ask for that medicine. To be able to ask for a general medicine, one solution can be to introduce a new tag which compares the substring of the type of the vertex. Another solution is to use the meta model and not the instance model. We don't use inheritance on diagnosis because of this.
-	\item To avoid the problem described in the previous point, we don't use inheritance on Diagnosis. A limitation here is that  
-	a patient can only have one diagnosis.
-\end{itemize}
+We have discussed the findings in relation to the research questions, and we have identified some of the limitations of the entity model.  
 	
 

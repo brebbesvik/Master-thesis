@@ -365,31 +365,6 @@ One problem with the conceptual model is that it is somewhat complex. Once we ha
 
 
  
-\section{Automatically generating new questions}
-One of the main problems with the application is generating entity model instances used for generating questions. To make one scenario with assessment, diagnosis, management and follow-up, we need at least to instances of the entity graph. One to show the status of the patient before the treatment, and one after the treatment. As the treatment needs to be evaluated and the clinician needs to act accordingly. One single entity model can be several hundreds of lines written in JSON, as there are quite many vertices and edges to describe as well as the complexity of the model. This is tedious work, both because of the complexity, the amount of code lines, but the author also needs to put a great emphasize on writing the code correctly. The latter can be solved with an authoring tool.
-
-As so much effort has to put in typing these instances of entity graphs, a better way would be to make functionality to automatically generate new instances. We already have made template with tags to vertices in the entity graph. By generating a lot of new entity instances, one template can be reused to make just as many questions. By looking at the paediatric possible asthma guideline \parencite{RepublicofKeny2016}, we see that there are described twelve symptoms we can combine in every way we like. Some of the symptoms also have more possibilities than just true/false. They have numerical ranges like pulse rate, breaths per minute and oxygen saturation. So in fact, we can generate a quite large amount of graph instances and equally as many questions per template.
-
-
-
-The method we suggest for automatically generating such graph instances, is by introducing constraint checks in DPF. These constraint checks will be code which ensures that the vertices of the graph follows some predefined rules. For example, we know that the graph stores a boolean measurement value for wheeze. A constraint check will ensure that the value we generate for wheeze will be either true or false. For conciousness we have the enumeration values A, V, P and U. And we have value ranges, such as oxygen saturation and pulse rate. To get reasonable  constraints, a domain expert is needed to define the upper and lower limits a constraint should allow. For example a pulse rate for an old man shouldn't be set to 200 beats per minute, as his maximum pulse rate would be much lower than that.
-
-However, some vertices are dependent on other vertices. For the paediatric guideline of possible asthma \parencite{RepublicofKeny2016}, wheeze will always have to be present to set an asthma diagnosis. For children less than 12 months, either or both of cough and difficulty breathing needs to be present in addition to wheeze. For the asthma to be severe, there are at least one additional symptom which needs to be present.
-
-When the student will be asked for medication dosages, we know that some drugs may have standard measurements. For example, a medication we want to administer to patient, is 2.5mg per tablet. Then the dosage administered to the patient will be something which can be divided by 2.5. Here the dosages can be 2.5mg, 5mg, 7.5mg and so on.
-
-Some of these constraints can be reused between guidelines. The same medication can be used for different diseases, as well as a person's maximum pulse rate probably will be the same whether he he has asthma or pneumonia. The AVPU-scale is a standard for measuring consciousness. However it can be tedious to get full constraint coverage, and when the guideline gets updated, we also need to update the constraints. In cases of not full constraint coverage, the entity instance graphs need to be validated by a domain expert, to see which of the generated instance graphs which can be used or not.  Even though this method relies on a domain expert, it will save us from a ton of work. Instead of carefully write hundreds of JSON formatted lines for each graph instance, we can simply approve or disapprove the graph instances which are valid or invalid. The constraints will also greatly reduce the noise the domain expert needs to go through. 
-
-
-
-%\begin{figure}[h!]
-%	\caption {The red and green graph instances at the bottom are picked from a repository. We randomly pick vertices from each entity instance to make the new entity instance at the bottom. Red vertices indicate that they come from the red entity graph instance. The green vertices that they come from the green entity graph instance.}
-%	\label{fig:GeneratedEntityInstances}
-%	\includegraphics[scale=0.35]{GeneratedEntityInstances}
-%\end{figure}
-
-When we have built up a repository of entity graph instances, we can use this repository to generate distractions for quiz elements. Randomly choose distractions from other entity graph instances, which corresponds to the answer key tag given by the template. A small penalty can be set on distractions from the asthma guideline. Medium penalties for distractions from respiratory diseases. A bit larger penalties for distractions from completely unrelated guidelines. Then we have automated the quiz scores as well!
-
 
 \section{Summary}
 The chapter is structured after the conceptual training managers in the game engine. Question flow manager, conversation manager and the user manager.

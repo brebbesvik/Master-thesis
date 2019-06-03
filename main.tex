@@ -62,18 +62,24 @@
 
 \input{evaluation}
 
-\chapter{Discussion and conclusion}
-Right now we have modelled parts of the guideline for prescribing oxygen \parencite{RepublicofKeny2016} and antibiotic administration \parencite{RepublicofKeny2016} into the entity model of the paediatric possible asthma guideline \parencite{RepublicofKeny2016}. This is to be able to ask detailed questions about relevant treatment, as well as making sure that the student knows the basics of the treatment. In a future version we can have separate quizzes for prescribing oxygen and antibiotic administration. We have already applied Dynamic Content Management (DCM) to the asthma quiz, but we can also apply it to a higher abstraction level. We can say that the student needs to complete the quizzes for prescribing oxygen and antibiotic administration, before he is allowed to play the asthma quiz. Then we have a knowledge dependency. According to DCM he can choose whether he wants to complete prescribing oxygen first or antibiotic administration first, but both have to be completed to advance to the paediatric possible asthma guideline.
+%\chapter{Discussion and conclusion}
+%Right now we have modelled parts of the guideline for prescribing oxygen \parencite{RepublicofKeny2016} and antibiotic administration \parencite{RepublicofKeny2016} into the entity model of the paediatric possible asthma guideline \parencite{RepublicofKeny2016}. This is to be able to ask detailed questions about relevant treatment, as well as making sure that the student knows the basics of the treatment. In a future version we can have separate quizzes for prescribing oxygen and antibiotic administration. We have already applied Dynamic Content Management (DCM) to the asthma quiz, but we can also apply it to a higher abstraction level. We can say that the student needs to complete the quizzes for prescribing oxygen and antibiotic administration, before he is allowed to play the asthma quiz. Then we have a knowledge dependency. According to DCM he can choose whether he wants to complete prescribing oxygen first or antibiotic administration first, but both have to be completed to advance to the paediatric possible asthma guideline.
 
-\section{Observations}
-\section{Challenges}
-\section{Reflection}
+%\section{Observations}
+%\section{Challenges}
+%\section{Reflection}
 
 
 
-\chapter{Conclusions}
-\section{Further research and development}
+\chapter{Discussions and conclusion}
+\section{Future work}
+\input{futurework}
+\section{Conclusion}
+Well defined clinical practice guidelines have shown the effect of improving the quality of health care at a lower cost, as well as reducing practice variability. Despite the positive effects of clinical practice guideline, they have shown a limited effect on changing the clinicians practice methods. Our contribution to the medical community is a serious game which addresses some of the reasons why clinical practice guidelines haven't been put into more use. By playing the game, clinicians will be aware of the paediatric guidelines of possible asthma \parencite{RepublicofKeny2016}, they will get familiar with the guideline content, they may gain the self-confidence to execute the recommended practices of the guideline, well defined scenarios may help the clinicians overcome inertia of previous practices, and a serious game may overcome some of the external barriers such as cumbersome format for some of the clinicians. Our evaluation verifies that our contribution is valuable to the medical community.
 
+We also proposed four data models. A guideline (workflow) model which describes the workflow of a clinical encounter. A domain (entity) model which describes a patient, the symptoms, the diagnosis and how the clinicians manages the patient for his medical condition. A student learning model which keeps track of the student's performance at different quizzes. A game model which holds information about game elements and the ordering of the game/learning material. By using information from the game model and the student learning model, we can make the game adaptable to the knowledge and progression of the student. It can also be made flexible such that the student can choose different paths through the learning material.
+
+Through evaluation we saw that the our domain (entity) model needed to be adapted to support differential diagnoses, and multiple diagnoses as the treatment can depend on which other diagnoses the patient may have. This indicate that our work may be a stepping stone. That the domain (entity) model need further adoptions the more we learn about the requirements from other clinical practice guidelines. 
 
 \backmatter
 \printbibliography
