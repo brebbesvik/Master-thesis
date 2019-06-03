@@ -1,25 +1,25 @@
 
 
 \section{Design study}
-The research methodology we used for this project was an adaptation of design science \parencite{Hevner2004}.  In short, design science requires an artefact that either solves a an organizational problem. The artefact itself and the construction of it goes through evaluations in iterations, to make sure its relevance to the problem domain. We must ensure that the research contributes value to both the health care domain as well as computer science.
+The research methodology we have used for this project was an adaptation of design science \parencite{Hevner2004}.  In short, design science requires an artefact that solves an organizational problem. The artefact itself and the construction of it goes through evaluations in iterations, to make sure about it's relevant to the problem domain. We must ensure that the research contributes value to both the health care domain as well as computer science and health informatics.
 
-\textcite{Hevner2004} proposed some guidelines design science in information system research. We will go through them and connect them to our research project.
+\textcite{Hevner2004} proposed some guidelines in information system research. We will go through them and discuss them as we have made use of them in the research project.
 
 \begin{itemize}
 	\item \textbf{Guideline 1: Design as an Artefact.} The artefact will be a serious mobile game with the associated data models.
-	\item \textbf{Guideline 2: Problem Relevance.} Clinical Practice Guidelines are improving the quality of health care, reduce practice variability and the cost of health care \parencite{DeClercq2008}. But they have had a limited effect on changing the clinicians practice methods \parencite{Cabana1999}. Some of the reasons \textcite{Cabana1999} lists are that some clinicians are not aware of the guidelines, they are not familiar with the guideline content, as well as the guidelines are difficult to use, cumbersome, inconvenient and confusing. These are issues we can address with a game.
-	\item \textbf{Guideline 3: Design Evaluation.} The design process is described in the next section, where each iteration has clear goals and evaluations. Cognitive walkthroughs and usability tests with users are some of the evaluation methods used. In the end of the thesis, we will demonstrate that the datamodels can be used to represent other clinical practice guidelines, as well as evaluating the game with medical experts.
-	\item \textbf{Guideline 4: Research Contributions} are our data models, which are the backbone of the game. The data models should be generic enough to represent and make games for other clinical practice guidelines. Adaptable to the user's knowledge level and with flexible learning paths.
-	\item \textbf{Guideline 5: Research Rigor} and \textbf{Guideline 6: Design as a Search Process.} The construction of the artefact followed a similar process described in figure \ref{fig:InteractionDesignLifeCycle}. It's an iteratively process where requirements were established through focus group, workshop, studying similar products, talking with domain experts and informal literature studies. Then designing alternatives, which also can be functionality suggested to the artefact. Prototyping was making prototypes or constructing the artefact itself. An evaluation decides whether the new functionality/prototype can be used as it is or update the requirements and make a new version.
+	\item \textbf{Guideline 2: Problem Relevance.} Clinical Practice Guidelines have the potential to improve the quality of health care, reduce practice variability and the cost of health care \parencite{DeClercq2008}, nevertheless they have had a limited effect on changing the clinicians practice methods \parencite{Cabana1999}. Some of the reasons listed by \textcite{Cabana1999}, are that some clinicians are not aware of the guidelines, they are not familiar with the guideline content, as well as that the guidelines are difficult to use, cumbersome, inconvenient and confusing. These are issues we can address through a serious game.
+	\item \textbf{Guideline 3: Design Evaluation.} The design process is described in the next section, where each iteration has clear goals and evaluations. Cognitive walkthroughs and usability tests with users are some of the evaluation methods used. In the end of this thesis, we will demonstrate that the datamodels we have developed are of a genre character, and that they can be used to represent other clinical practice guidelines, as well as for evaluation of the game through the use to medical experts.
+	\item \textbf{Guideline 4: Research Contributions} will be the data models we develop, which are the backbone of the game. The data models should be generic enough to provide a platform for and to represent and make games for other clinical practice guidelines. Those models should support adaptation to the user's knowledge level and with flexible learning paths.
+	\item \textbf{Guideline 5: Research Rigor} and \textbf{Guideline 6: Design as a Search Process.} The construction of the artefact followed a similar process as described in figure \ref{fig:InteractionDesignLifeCycle}. It's an iteratively process where requirements were established through a focus group, workshops, studying and evaluation of similar products, talking with domain experts and informal literature studies. Furthermore we designed alternatives, which also can be functionality suggested to the artefact. Prototyping was making prototypes or constructing the artefact itself. Evaluations decide whether the new functionality/prototype can be used as it is or update the requirements and make a new version.
 	
-	Problems are uncovered and solved in the evaluation - construction iterative phases. Here the research questions appear from the design. 
+	Problems are uncovered and solved in the evaluation - through construction iterative phases. Here the research questions appear from the design. 
 	
 		\begin{figure}[h!]
 		\includegraphics[scale=0.4]{InteractionDesignLifeCycle}
 		\caption {The project followed a similar process to the life cycle of interaction design. Figure derived from \textcite{Preece2015}}
 		\label{fig:InteractionDesignLifeCycle}
 	\end{figure}
-	\item \textbf{Guideline 7: Communication of Research,} which is the purpose of this masters thesis. We have also published a paper, which can be found in the appendices.
+	\item \textbf{Guideline 7: Communication of Research,} which is the purpose of this masters thesis. We have also published a paper, which can be found in the first of the appendices.
 \end{itemize}
 
 
@@ -27,13 +27,10 @@ The research methodology we used for this project was an adaptation of design sc
 
 
 \subsection {Testing mobile app technology, conceptual model}
-The goal of this iteration was to make a prototype using the proposed technology. The prototype will tell us if it is sensible to use the technology for the project, as well as having a conceptual model to use when discussing initial ideas around the aim of the project, functionality, as well as interaction design.
+The goal of this iteration was to make a prototype using the proposed technology. The prototype will tell us if it is sensible to use the technology for the project, as well as having a conceptual model to use when discussing initial ideas around the aim of the project, the initially defined functionality for the defined artefact to be.
 
-The technology to be tested was React Native. The reason for this to be the first choice, was to support multiple platforms and not having to rewrite the application for every platform. The same application can be used for Android and iPhone with little modification to the code. React Native is build upon the React front end web development framework, which means some code can be reused for web as well. But all the the views need to be modified, as they use specific React Native components for mobile units. React and React Native are JavaScript frameworks.
+The technology to be tested had to support multiple mobile platforms, such that we do not have to rewrite the application for every platform. If we can get some code carry over to a web platform, that is also a bonus. In figure \ref{fig:ConceptualModel} we see one of these conceptual models.
 
-We have also used the React web  development framework in previous projects. It s one of the more popular and mature front end web development frameworks in the market. 
-
-The prototype itself and the development process showed that the technology could be used for displaying and organize CPGs. Lessons learned about content flow, databases, app navigation, displaying information and dialogues. JavaScript in the view gives a lot of flexibility compared to just tags.
 
 \begin{figure}[h!]
 	\includegraphics[scale=0.15]{ConceptualPrototype}
@@ -41,51 +38,51 @@ The prototype itself and the development process showed that the technology coul
 	\label{fig:ConseptualModel}
 \end{figure}
 
-The interface was evaluated with the supervisors, using cognitive walkthroughs. It also worked as a conceptual model, using the prototype as a base for discussing ideas. Both for discussing the purpose of the project, what the user should be able to do, how to organize content and what functionality to add.
+The interfaces were evaluated with the supervisors, using cognitive walkthroughs. The prototypes also worked as conceptual models, using the prototypes as a base for discussing ideas, for discussing the purpose of the project, what the user should be able to do, how to organize content and what functionality to add.
 
 \subsection{Focus group}
-The 25th of February 2018, we arranged a focus group at a kitchen in Alrek student home. The participants were:
+At the 25th of February 2018, we arranged a focus group. The participants were:
 \begin{itemize}
 	\item Two 6th year medical doctor students.
 	\item Two master degree students in computer science.
 \end{itemize}
 
-As the project was in a very early stage, the purpose of the meeting was exploring how do medical students use CPGs in their training. How the CPGs are used today. How the students work in their practice periods at the hospital. What format are the CPGs in now. What challenges limits the use of CPGs among health workers and medical students at the point of care.
+As the project was in a very early stage, the purpose of the meeting was exploring: how medical students could make use ofuse CPGs in their training. How the CPGs are used today, how the students work in their practice periods at the hospital, what format are the CPGs in now and what challenges limits the use of CPGs among health workers and medical students at the point of care.
 
-By using a an unstructured interview form, we managed to collect broad and general information, as well as going into detail on interesting topics. As the focus group was small, the contestants could discuss between themselves, highlighting consensus and conflicts \parencite{Preece2015}. A very free and exploitative approach was very successful, as the master degree students in computer science had a very limited knowledge of the medical domain, compared to the medical students. The discussion was documented using an audio recorder.
+By using an unstructured interview form, we managed to collect broad and general information, as well as going into detail on interesting topics. As the focus group was small, the contestants could discuss between themselves, highlighting consensus and conflicts \parencite{Preece2015}. The discussion was documented using an audio recorder.
 
-Topics explored:
+The following topics were discussed in the focus group:
 \begin{itemize}
-	\item The students are learning new medical routines by studying typical cases. Drilling the routines.
-	\item Red and yellow flags, which are alarm systems they need to be aware of. A red flag is when the patient's condition is quite critical. What triggers the flags and how to act upon them is something the clinicians need to know by heart, as time is critical and the action needed might be advanced like surgery. No time to use the guidelines. Orange, yellow and green are further degrees of how urgent the clinician's intervention is.  Orange is less urgent than red, but more urgent than yellow. Green is the least urgent one.
-	\item Clinicians and medical students use a collection of short guidelines in a pocket book format for references. The guidelines are written mostly in text format and sometimes takes use of tables for presentation.
-	\item Mobile devices can't be used at the point of care because of condemnation risks. There are also techniques of consultant with a patient. A mobile device will get in the way for important non-verbal communication.
-	\item For departments they need access to specific cases where there isn't much written material. They need access to scientific articles.
-	\item They brought up the case where doctors in developing countries have so many patients, and the time to each patient is very limited. To be able to look up information in the guidelines, they need to have a format which makes it very fast to extract that kind of information. Flow-charts is more suitable for developing countries where acting quickly is more often important than in developed countries where they can have a focus on being more thorough in green flag situations.
-	\item In addition to guidelines, hospitals can also have their own protocols. The protocols are for situations where the treatment is more specific for this area or hospital. An example is a patient with a blood clot. The medical personnel in Finnmark will start removing the blood clot immediately, because of the long distance to the nearest hospital. They want to reduce the risk for complications. While in Bergen, they will wait with such a treatment. In developing countries you might have to put into consideration what kind of equipment and staff is available at that specific hospital or health care station. The likelihood of different diseases is different from each geographically position, the patients background or the season in the year. Social and economic status also matters, even in Norway.
-	\item Discussion about presentation of learning material in an application. Medical cases are often too obvious, too simple or too complicated in existing applications. Flashcards. Show image of an ECG or a picture of a symptom.
-	\item Notifying the student about guidelines would be useful. But only for the most common and dangerous conditions, relevant for the students medical field to avoid unnecessary notifications which will only be ignored.
+	\item The students are \textbf{learning new medical routines} by studying typical cases. Drilling the routines.
+	\item \textbf{Red and yellow flags}, which are alarm systems the clinicians to be aware of. A red flag is when the patient's condition is quite critical. What triggers the flags and how to act upon them is something the clinicians need to know by heart, as time is critical and the action needed might be advanced like surgery. No time to use the guidelines. Orange, yellow and green are further degrees of how urgent the clinician's intervention is.  Orange is less urgent than red, but more urgent than yellow. Green is the least urgent one.
+	\item Clinicians and medical students use a collection of short guidelines in a \textbf{pocket book format} for references. The guidelines are written mostly in text format and sometimes they make use of tables for presentation.
+	\item \textbf{Mobile devices can't be used at the point of care} because of condemnation risks. There are also techniques of consultations with a patient. A mobile device will get in the way for important non-verbal communication.
+	\item Sometimes a departments need access to specific cases where there isn't much written material. They need \textbf{access to scientific articles}.
+	\item They brought up the case where \textbf{doctors in developing countries have so many patients}, and where the time for each patient is very limited. To be able to look up the needed information in the guidelines, they need to have a format which makes it very fast to extract the searched and found of information. Flow-charts are more suitable for developing countries where acting quickly is often more important than in developed countries where they can have a focus on being more thorough in green flag situations.
+	\item In addition to international and/or national accepted guidelines, \textbf{hospitals can also have their own protocols}. The protocols are for situations where the treatment is more specific for the particular area or hospital. An example is a patient with a blood clot. The medical personnel in Finnmark will start removing the blood clot immediately, because of the long distance to the nearest hospital. They want to reduce the risk for complications, whereas in Bergen, they will wait initiating such a treatment. In developing countries you might have to put into consideration what kind of equipment and staff is available at the specific hospital or health care station. The likelihood of different diseases is different from each geographically position, the patients background or the season in the year. Social and economic status also matters, even in Norway.
+	\item \textbf{Discussion about presentation of learning material in an application}. Medical cases are often too obvious, too simple or too complicated in existing applications. Flashcards. Show image of an ECG or a picture of a symptom.
+	\item \textbf{Notifying the student about guidelines} would be useful, but only for the most common and dangerous conditions, relevant for the students medical field to avoid unnecessary notifications which will only be ignored.
 	%	The statistically most common and dangerous conditions first.
 	%	Then look for signs where you can rule out conditions. Elimineringsmetoden
-	\item The diagnostic process. The doctor have several conditions in mind, but tries to eliminate the statistically most common and dangerous first. Trying to narrow down the alternatives until the doctor is quite certain about the medical condition of the patient.
+	\item \textbf{The diagnostic process:} the doctor have several conditions in mind, but tries to eliminate the statistically most common and dangerous first. Trying to narrow down the alternatives until the doctor is quite certain about the medical condition of the patient.
 	
 \end{itemize}
 
 \subsection{Studying similar products}
 The purpose of the iteration is to see what exists in the market. What have others done. What can we improve, where can we add value to both the medical community and to computer science.
 
-The results from this iteration is presented in appendix \ref{appendix:ComparisonApps}, and was done together with a fellow master of science student in software engineering. As a conclusion, none of these application have a data model which can represent CPGs, nor a patient in a clinical encounter. The representations of CPGs are mostly text based, flow charts or flow charts which expand when you click on decision vertices. LIFE: Neonatal Resuscitation Training is a pretty advanced 3D game, but there is no data model representing the content in the quizzes and tasks.
+The results from this iteration is presented in appendix "Comparison of CPG applications", and was done together with a fellow master of science student in software engineering. As a conclusion, none of these application have a data model which can represent CPGs, nor a patient in a clinical encounter. The representations of CPGs are mostly text based, flow charts or flow charts which expand when you click on decision vertices. LIFE: Neonatal Resuscitation Training is a pretty advanced 3D game, but there is no data model representing the content in the quizzes and tasks.
 
 \subsection{Technology used to represent CPGs}
-In this iteration we evaluated technologies which could be used to model CPGs.
+In this iteration we evaluates technologies which could be used to model CPGs.
 
 
 \begin{itemize}
 	\item \textbf{GLIF} and \textbf{PROforma} was compared during a literature study as a semester assignment in health informatics. We will here give a brief summary of GLIF.
 	
-	 GLIF or the Guideline Interchange Format, was developed by the InterMed Collaboratory. The intention was to make a guideline representation language, which can be viewed with a various of software application as well as adapting them and making them valid for different local uses. The representation should be precise, ambiguous, readable by humans and interpretable by computers, adaptable to different clinical information standards and facilitating guideline sharing \parencite{Peleg2000}. 
+	 GLIF or the Guideline Interchange Format, was developed by the InterMed Collaboratory. The intention was to make a guideline representation language, which can be viewed by a variety of software applications as well as adapting them and making them valid for different local uses. The representation should be precise, ambiguous, readable by humans and interpretable by computers, adaptable to different clinical information standards and facilitating guideline sharing \parencite{Peleg2000}. 
 
-	To make the guidelines readable for humans, interpretable by computers and adaptable by different institutions, GLIF defines the guidelines at three different abstraction levels: conceptual, computable and implementable levels \parencite{DeClercq2008} 
+	To make the guidelines readable for humans, interpretable by computers and adaptable by different institutions, GLIF defines the guidelines at three different abstraction levels: conceptual, computable and implementable levels \parencite{DeClercq2008}. 
 	
 	The conceptual level is the highest abstraction level. It consists of
 flow-charts which can be viewed by humans, using guideline viewing programs. At this level the guidelines can not
@@ -97,13 +94,13 @@ flow-charts which can be viewed by humans, using guideline viewing programs. At 
 	The implementable level contains the information to incorporate the guidelines into
 	the particular institutions knowledge or information system such as EPR \parencite{Peleg2000}.
 	
-	In figure \ref{fig:GLIFPossibleAsthma} we present a model of the paediatric possible asthma guideline \parencite{RepublicofKeny2016} at the conceptual level. We will now explain the guideline steps the UML-model in figure \ref{fig:GLIFPossibleAsthma} consists of.
+	In figure \ref{fig:GLIFPossibleAsthma} we present a model of the paediatric possible asthma guideline \parencite{RepublicofKeny2016} at the conceptual level. We will now explain the guideline steps that the UML-model in figure \ref{fig:GLIFPossibleAsthma} consists of.
 	\begin{itemize}
-		\item \textbf{Action step} a representation of a recommended tasks or action. There are three types of actions steps: Medically oriented (such as a recommendation for a treatment), programming oriented (such as retrieving information from EHR), control-oriented that invokes nested control structures (subguidelines or macros to support recursive specification) \parencite{DeClercq2008}. Action steps are green squares in figure \ref{fig:GLIFPossibleAsthma}.
-		\item \textbf{Decision step} represents a decision point in the model. There are two types of decision steps: Case and Choice. In a Case step the decision will be made up of a number of logical expressions, a deterministic decision. On the other hand, the Choice step displays a various suggestions and the agent (clinician e.g.) needs to choose between them \parencite{DeClercq2008}. Decision steps are turquoise hexagons in figure \ref{fig:GLIFPossibleAsthma}.
+		\item \textbf{Action step} a representation of a recommended tasks or action. There are three types of actions steps: Medically oriented (such as a recommendation for a treatment), Programming oriented (such as retrieving information from EHR), Control-oriented that invokes nested control structures (subguidelines or macros to support recursive specification) \parencite{DeClercq2008}. Action steps are the green squares in figure \ref{fig:GLIFPossibleAsthma}.
+		\item \textbf{Decision step} represents a decision point in the model. There are two types of decision steps: Case and Choice. In a Case step the decision will be made up of a number of logical expressions, as a deterministic decision. On the other hand, the Choice step displays various suggestions and the agent (clinician e.g.) needs to choose between them \parencite{DeClercq2008}. Decision steps are the turquoise hexagons in figure \ref{fig:GLIFPossibleAsthma}.
 		\item \textbf{Patient state step} which characterizes the specific state or condition a patient is in. It can	be used as an entry point into the 
-flow-chart, or as an summation to describe the clinical state a patient is in \parencite{Boxwala2004}. Each patient state step includes attributes which describes the condition a patient is in (e.g. iron level in the blood has been reduced since last blood sample). When this condition occurs in practice, the guideline corresponding	to the Patient state step is executed \parencite{DeClercq2008}. Decision steps are yellow diamonds in figure \ref{fig:GLIFPossibleAsthma}.
-		\item \textbf{Synchronization step} working together with the \textbf{branch step} to provide multiple concurrency paths \parencite{Boxwala2004}. Multiple guidelines that follows a branch step, eventually comes together in a synchronization step. A continuation attribute specifies	whether all or some conditions need to be fulfilled before we can continue to the next step \parencite{DeClercq2008}. Synchronization and branch steps are not used in figure \ref{fig:GLIFPossibleAsthma}.
+flow-chart, or as an summation to describe the clinical state a patient is in \parencite{Boxwala2004}. Each patient state step includes attributes which describes the condition a patient is in (e.g. iron level in the blood has been reduced since last blood sample). When this condition occurs in practice, the guideline corresponding	to the Patient state step is executed \parencite{DeClercq2008}. Decision steps are the yellow diamonds in figure \ref{fig:GLIFPossibleAsthma}.
+		\item \textbf{Synchronization step} is working together with the \textbf{branch step} to provide multiple concurrency paths \parencite{Boxwala2004}. Multiple guidelines that follows a branch step, eventually comes together in a synchronization step. A continuation attribute specifies	whether all or some conditions need to be fulfilled before we can continue to the next step \parencite{DeClercq2008}. Synchronization and branch steps are not used in figure \ref{fig:GLIFPossibleAsthma}.
 	\end{itemize}
 	 
 	
@@ -112,11 +109,11 @@ flow-chart, or as an summation to describe the clinical state a patient is in \p
 		\caption {The paediatric possible asthma guideline \parencite{RepublicofKeny2016} modelled using elements from GLIF}
 		\label{fig:GLIFPossibleAsthma}
 	\end{figure}
-	\item \textbf{Asbru} is another approach for computer interpretable guidelines, and sort of a competitor to GLIF and PROforma. The project was developed at the Stanford University, Vienna University og Technology and Ben-Gurion University. It uses time-oriented skeletal plans. These skeletal plans are schemata at different detail levels. To manage skeletal plans, Asbru introduces some key functionality: the representation of high-level goals (intentions), temporal patterns, time annotations, as well as graphical user interfaces to view the skeletal plans \parencite{DeClercq2008}.
+	\item \textbf{Asbru} is another approach for computer interpretable guidelines, and sort of a competitor to GLIF and PROforma. According to \textcite{DeClercq2008} the project was developed at the Stanford University, Vienna University og Technology and Ben-Gurion University. It uses time-oriented skeletal plans. These skeletal plans are schemata at different detail levels. To manage skeletal plans, Asbru introduces some key functionality: the representation of high-level goals (intentions), temporal patterns, time annotations, as well as graphical user interfaces to view the skeletal plans \parencite{DeClercq2008}.
 	
-	In Asbru, skeletal plans are used to represent guidelines. Each plan's functionality is described by attributes such as: preferences, intentions, conditions, effects and plan body \parencite{DeClercq2008}. 
+	\textcite{DeClercq2008} continues: in Asbru, skeletal plans are used to represent guidelines. Each plan's functionality is described by attributes such as: preferences, intentions, conditions, effects and plan body \parencite{DeClercq2008}. 
 	
-	In figure \ref{fig:AsbruPossibleAsthma}, we have modelled the paediatric possible asthma guideline \parencite{RepublicofKeny2016} using a graphical interface tool AsbruView \parencite{TheAasgardProject2006}. The sequential plans are organized from a start point to an end poing along a time x-axis. Plans can be executed in a parallel, so the y-axis is lanes. Subplans are stacked in z-axis, making the presentation of a guideline 3 dimensionally. In addition to execute plans in sequential or parallel order, we also have the option to execute the in an arbitrary order or without any fixed order (unordered). There are also sequential plans and control structures with if-then-else.
+	In figure \ref{fig:AsbruPossibleAsthma}, we have modelled the paediatric possible asthma guideline \parencite{RepublicofKeny2016} using a graphical interface tool AsbruView \parencite{TheAasgardProject2006}. The sequential plans are organized from a start point to an end poing along a time x-axis. Plans can be executed in a parallel, the y-axis. Subplans are stacked in z-axis, making the presentation of a guideline 3 dimensionally. In addition to being able to execute plans in sequential or parallel order, we also have the option to execute the in an arbitrary order or without any fixed order (unordered). There are also sequential plans and control structures with if-then-else.
 	
 	For the skeletal plans shown in figure \ref{fig:AsbruPossibleAsthma}, we can also set the attributes conditions, intentions, effects and preferences for each of them. These describes the functionality of each plan \parencite{DeClercq2008}.
 	
@@ -127,11 +124,11 @@ flow-chart, or as an summation to describe the clinical state a patient is in \p
 	\end{figure}
 	\item See the description of \textbf{DPF} in other parts of this thesis.
 \end{itemize}
-Studying PROforma, GLIF and Asbru we learn that there are several ways to approach the task of making computer interpretable guidelines. We can learn about challenges and see how they solved them. Dissemination, where one needs to regularly update the guidelines and make sure that the different computer systems use the updated versions, is such a topic. Dissemination is relevant for this project, as you want to make sure that every student trains for the most current guideline. You don't want them to memorize old and outdated content.
+Through PROforma, GLIF and Asbru we learn that there are several ways to approach the task of making computer interpretable guidelines. We can learn about challenges and see how they solved them. Dissemination, where one needs to regularly update the guidelines and make sure that the different computer systems use the updated versions, is one approach. Dissemination is relevant for this project, as we want to make sure that every student trains for the most current guideline. We don't want them to memorize old and outdated content.
 
-Our conclusion is that Asbru, GLIF and PROforma are rather large systems, putting a lot of emphasise on working in a hospital setting, communicating with other computer systems such as decision support on the electronic health record. With large computer systems, it is much more difficult to customize.
+Our conclusion is that Asbru, GLIF and PROforma are rather large systems, putting a lot of emphasise on working in a hospital setting and communicating with other computer systems such as decision support on the electronic health record. With large computer systems, it is much more difficult to customize.
 
-They also work on a higher abstraction level than the symptoms the clinician needs to look for when doing an examination for asthma. When training clinicians, we are very interested in modeling the details a clinician has to do during a clinical encounter. Asbru, GLIF and PROforma are more concerned with customizing the workflow for one or a sequence of treatments for a medical conditions. We want to use more general models which can be reused to represent several guidelines. With DPF we can create custom domain specific modelling languages.
+Asbru, GLIF and PROforma also work on a higher abstraction level than the symptoms the clinician needs to look for when doing an examination for asthma. When training clinicians, we are very interested in modelling the details a clinician has to do during a clinical encounter. Asbru, GLIF and PROforma are more concerned with customizing the workflow for one or a sequence of treatments for a medical condition. We want to use more general models which can be reused to represent several guidelines. With DPF we can create custom domain specific modelling languages.
 
 
 \subsection{Designing alternatives}

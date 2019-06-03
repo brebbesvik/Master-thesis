@@ -12,9 +12,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.3.1}Asthma}{5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Related work}{5}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}Summary}{5}% 
+\contentsline {section}{\numberline {1.4}Summary}{5}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Introduction}{6}% 
 \defcounter {refsection}{0}\relax 
@@ -30,11 +28,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}Design study}{9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Iterations}{11}% 
+\contentsline {section}{\numberline {3.2}Iterations}{10}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Testing mobile app technology, conceptual model}{11}% 
+\contentsline {subsection}{\numberline {3.2.1}Testing mobile app technology, conceptual model}{10}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Focus group}{11}% 
+\contentsline {subsection}{\numberline {3.2.2}Focus group}{12}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.3}Studying similar products}{14}% 
 \defcounter {refsection}{0}\relax 
@@ -42,7 +40,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.5}Designing alternatives}{18}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.6}Entity and workflow models}{20}% 
+\contentsline {subsection}{\numberline {3.2.6}Entity and workflow models}{21}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.7}User experience}{23}% 
 \defcounter {refsection}{0}\relax 
@@ -52,69 +50,65 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}Summary}{32}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Architecture Overview}{34}% 
+\contentsline {chapter}{\numberline {4}Architecture Overview}{33}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Architecture of the whole system}{34}% 
+\contentsline {section}{\numberline {4.1}Architecture of the whole system}{33}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Presentation Layer}{34}% 
+\contentsline {subsection}{\numberline {4.1.1}Presentation Layer}{33}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Game Engine}{35}% 
+\contentsline {subsection}{\numberline {4.1.2}Game Engine}{34}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Summary}{36}% 
+\contentsline {section}{\numberline {4.2}Summary}{35}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Datamodels}{37}% 
+\contentsline {chapter}{\numberline {5}Datamodels}{36}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Extracting knowledge from the clinical practice guidelines}{38}% 
+\contentsline {section}{\numberline {5.1}MDE and meta modelling}{37}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}MDE and meta modelling}{38}% 
+\contentsline {section}{\numberline {5.2}DPF}{37}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}DPF}{38}% 
+\contentsline {section}{\numberline {5.3}Entity model}{38}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Entity model}{39}% 
+\contentsline {subsection}{\numberline {5.3.1}Generic entity model}{44}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.1}Generic entity model}{45}% 
+\contentsline {section}{\numberline {5.4}Workflow model}{44}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Workflow model}{46}% 
+\contentsline {section}{\numberline {5.5}Metamodeling}{46}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.6}Metamodeling}{47}% 
+\contentsline {section}{\numberline {5.6}Game model}{47}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.7}Game model}{48}% 
+\contentsline {section}{\numberline {5.7}Student learning model}{49}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.8}Student learning model}{50}% 
+\contentsline {section}{\numberline {5.8}Summary}{49}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.9}Summary}{50}% 
+\contentsline {chapter}{\numberline {6}Game Elements}{51}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Game Elements}{52}% 
+\contentsline {section}{\numberline {6.1}Question Flow Manager}{51}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Question Flow Manager}{52}% 
+\contentsline {subsection}{\numberline {6.1.1}Dynamic Content Management}{52}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.1}Dynamic Content Management}{53}% 
+\contentsline {subsection}{\numberline {6.1.2}Types of questions}{55}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.2}Types of questions}{56}% 
+\contentsline {subsection}{\numberline {6.1.3}Unlocking harder levels at a certain category}{56}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.3}Unlocking harder levels at a certain category}{57}% 
+\contentsline {section}{\numberline {6.2}Conversation Manager}{57}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Conversation Manager}{58}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.1}Constructing scenarios and answer keys}{58}% 
+\contentsline {subsection}{\numberline {6.2.1}Constructing scenarios and answer keys}{57}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.2.2}Multiple-try feedback}{62}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.3}Reward system}{65}% 
+\contentsline {subsection}{\numberline {6.2.3}Reward system}{64}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.3}User manager}{66}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.3.1}Visualization of game statistics}{66}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}Conceptual model of how all the classes are connected in Game Engine}{67}% 
+\contentsline {section}{\numberline {6.4}Conceptual model of how all the classes are connected in Game Engine}{66}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.5}Summary}{68}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {7}Application Walkthrough}{70}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}The mobile application}{70}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.1}User interface and flow of the user interaction}{70}% 
+\contentsline {section}{\numberline {7.1}Application walkthrough at level 2}{70}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.2}Summary}{75}% 
 \defcounter {refsection}{0}\relax 
@@ -122,25 +116,25 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8.1}Research questions}{78}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}Evaluations}{78}% 
+\contentsline {section}{\numberline {8.2}Evaluations}{79}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2.1}Evaluation of the models}{78}% 
+\contentsline {subsection}{\numberline {8.2.1}Evaluation of the models}{79}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2.2}Evaluation of the application}{83}% 
+\contentsline {subsection}{\numberline {8.2.2}Evaluation of the application}{84}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.2.3}Results}{88}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Evaluation of the models}{88}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Evaluation of the application}{88}% 
+\contentsline {paragraph}{Evaluation of the application}{89}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.3}Findings}{88}% 
+\contentsline {section}{\numberline {8.3}Findings}{90}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\textbf {RQ1:} Based on clinical guidelines, how can we define and represent a generic data structure that can be used to implement applications such as online guidelines or training games for such guidelines, and where applications can adapt to the level of their users?}{89}% 
+\contentsline {paragraph}{\textbf {RQ1:} Based on clinical guidelines, how can we define and represent a generic data structure that can be used to implement applications such as online guidelines or training games for such guidelines, and where applications can adapt to the level of their users?}{90}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{RQ2: Can the generic data structure in RQ1 be used to generate a specific data model for another domain such as paediatric asthma?}{90}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{RQ3: How can we use the data model in RQ2 to implement a game for guideline training that can adapt to the level and progression of users?}{90}% 
+\contentsline {paragraph}{RQ3: How can we use the data model in RQ2 to implement a game for guideline training that can adapt to the level and progression of users?}{91}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{RQ4: Is the guideline meta model at an abstraction level such that it can be used for other guidelines?}{91}% 
 \defcounter {refsection}{0}\relax 

@@ -1,3 +1,12 @@
+
+In this chapter we will try to relate the sections to the conceptual managers in the game engine. The reason for doing this is to easier identify and describe the different responsibilites the game engine has:
+\begin{itemize}
+	\item \textbf{Question flow manager}: adapts the questions to the knowledge level of the student, and is flexible such that the student can choose his own path through the completion of each difficulty level. 
+	\item \textbf{Conversation manager:} puts the questions with belonging answer elements in a sequence such that they fit to a scenario, using the workflow model. The conversation manager produces questions and answer keys from a template, in which the entity model is used to fill in data for the place holders in the template.
+	\item \textbf{User manager:} keeps track of the user's skill, based on the performance on previous quizzes. It holds track of the scores on the current quiz, and it measures the user's progression.
+\end{itemize}
+
+
 \section{Question Flow Manager}
 
 % -----------------------------------------------------------------------------------------------
@@ -315,6 +324,10 @@ Both \textcite{Attali2015} and \textcite{Morrison1995} avoids the scenario where
 
 
 \section{User manager}
+The user manager stores the scores of previously played quizzes on the student's game. By fetching the last played game for a specific quiz, it knows the student's current knowledge level. The stored scores represents the student map, and also shows the student's current position in the learning map. By analyzing the student map, we can see the student's progressions.
+
+The user manager will also keep track of the scores during a quiz game. At the end of the game, the user can be notified if he got demoted to an easier level, promoted to play more difficult content or show the student how close he is to complete the current difficulty level.
+
 \subsection{Visualization of game statistics}
 The student needs some feedback, where he is in the learning map, how close he is to pass an evaluation, how close he is to progress to the next level and in the case where he gets relegated to an easier difficulty level.
 
