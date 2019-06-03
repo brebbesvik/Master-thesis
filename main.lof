@@ -6,81 +6,81 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces The project followed a similar process to the life cycle of interaction design. Figure derived from \textcite {Preece2015}\relax }}{9}% 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The project followed a similar process to the life cycle of interaction design. Figure derived from \textcite {Preece2015}\relax }}{10}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces A very simple conceptual model to test one of the proposed technologies, as well as acting as a starting point for discussions\relax }}{11}% 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces A very simple conceptual model to test one of the proposed technologies, as well as acting as a starting point for discussions\relax }}{12}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces The paediatric possible asthma guideline \parencite {RepublicofKeny2016} modelled using elements from GLIF\relax }}{15}% 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces The paediatric possible asthma guideline \parencite {RepublicofKeny2016} modelled using elements from GLIF\relax }}{16}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces An attempt at modelling the paediatric possible asthma guideline \parencite {RepublicofKeny2016}, using Asbru editor tool AsbruView \parencite {TheAasgardProject2006}\relax }}{16}% 
+\contentsline {figure}{\numberline {3.4}{\ignorespaces An attempt at modelling the paediatric possible asthma guideline \parencite {RepublicofKeny2016}, using Asbru editor tool AsbruView \parencite {TheAasgardProject2006}\relax }}{17}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.5}{\ignorespaces A design alternative, displaying the CPGs as interactive flow-charts. The edges represents the flow, while clicking vertices will display more information or redirect to subguideline. A suggestion was to fill in with patient and examination data, to get a customized CPG for a patient \relax }}{18}% 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces A design alternative, displaying the CPGs as interactive flow-charts. The edges represents the flow, while clicking vertices will display more information or redirect to subguideline. A suggestion was to fill in with patient and examination data, to get a customized CPG for a patient \relax }}{19}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.6}{\ignorespaces The first design alternative proposed as a game. The student tries to pick the right tests in the right order for that patient. As well as choosing the correct treatment and give the right advises to the patient. A high score for choosing the right treatment and advises, as well as correct tests in the right order. Medium score for right tests in the wrong order\relax }}{20}% 
+\contentsline {figure}{\numberline {3.6}{\ignorespaces The first design alternative proposed as a game. The student tries to pick the right tests in the right order for that patient. As well as choosing the correct treatment and give the right advises to the patient. A high score for choosing the right treatment and advises, as well as correct tests in the right order. Medium score for right tests in the wrong order\relax }}{21}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Screenshots of the prototype used to simulate a clinical encounter with a domain expert\relax }}{21}% 
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Screenshots of the prototype used to simulate a clinical encounter with a domain expert\relax }}{22}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Pictures of the whiteboard during a meeting with domain expert in MDE and DPF. To the left there are some discussion around workflow models. To the right is entity models with vertices which holds a textual representation of the parent vertex\relax }}{22}% 
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Pictures of the whiteboard during a meeting with domain expert in MDE and DPF. To the left there are some discussion around workflow models. To the right is entity models with vertices which holds a textual representation of the parent vertex\relax }}{23}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.9}{\ignorespaces User experience copied from \textcite {Hassenzahl2006}\relax }}{23}% 
+\contentsline {figure}{\numberline {3.9}{\ignorespaces User experience copied from \textcite {Hassenzahl2006}\relax }}{24}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.10}{\ignorespaces The participants on the workshop. The master student is absent as he is the photographer\relax }}{25}% 
+\contentsline {figure}{\numberline {3.10}{\ignorespaces The participants on the workshop. The master student is absent as he is the photographer\relax }}{26}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.11}{\ignorespaces The student needs to acquire basic knowledge about assessment, diagnosis, management, before he can follow-up the treatment. This is a prerequisite for follow-up\relax }}{27}% 
+\contentsline {figure}{\numberline {3.11}{\ignorespaces The student needs to acquire basic knowledge about assessment, diagnosis, management, before he can follow-up the treatment. This is a prerequisite for follow-up\relax }}{28}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Assessment and diagnosis are components in the treatment plan. In the learning map they are themes. Under each theme there are difficulty levels. Questions for each level are written on post-it notes\relax }}{28}% 
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Assessment and diagnosis are components in the treatment plan. In the learning map they are themes. Under each theme there are difficulty levels. Questions for each level are written on post-it notes\relax }}{29}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Management and follow-up are components in the treatment plan. In the learning map they are themes. Under each theme there are difficulty levels. Questions for each level are written on post-it notes\relax }}{28}% 
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Management and follow-up are components in the treatment plan. In the learning map they are themes. Under each theme there are difficulty levels. Questions for each level are written on post-it notes\relax }}{29}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.14}{\ignorespaces What type of questions the student will get at each level\relax }}{29}% 
+\contentsline {figure}{\numberline {3.14}{\ignorespaces What type of questions the student will get at each level\relax }}{30}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Suggestions for questions were written on post-it notes and attached to a difficulty level under a theme on the black board\relax }}{30}% 
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Overview of the system architecture\relax }}{34}% 
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Suggestions for questions were written on post-it notes and attached to a difficulty level under a theme on the black board\relax }}{31}% 
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Metamodeling from a meta-metamodel to a real world object. Derived from \parencite {Brambilla2017}\relax }}{38}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces An excerpt of the entity graph. Entity graph represents a patient at a certain point in the clinical encounter\relax }}{39}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Showing the details of the Patient and Diagnosis vertices of the entity graph\relax }}{40}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Showing the implementation of History in the entity graph. What the patient or caregiver tell about the patient's condition\relax }}{41}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Showing the implementation of Examination in the entity graph. What symptoms the clinician can observe the patient has\relax }}{41}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Showing the implementation of Medication in the entity graph. How to administer a medication to patient\relax }}{43}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces To the left we don't know which medication has been inhaled using the nebulizer or inhaler. To the right we have specified this in the instantiation, by using two Inhaled-vertices and uniquely identifying them by giving them different names\relax }}{44}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.8}{\ignorespaces A generic entity graph contains abstractions. An entity graph for a specific guideline, contains specifications for those abstractions. Yellow boxes indicate specifications we have shown for paediatric guideline of possible asthma \parencite {RepublicofKeny2016}\relax }}{45}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces The workflow models is a model of the clinical encounter\relax }}{46}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.10}{\ignorespaces A model and an instance of the entity model. For a valid instance, every vertex and edge in the instance has a corresponding vertex and edge in the model\relax }}{47}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.11}{\ignorespaces An instance of the workflow model at the bottom, working together with an instance of the entity model at the top\relax }}{48}% 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Overview of the system architecture\relax }}{35}% 
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Knowledge map\relax }}{53}% 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Metamodeling from a meta-metamodel to a real world object. Derived from \parencite {Brambilla2017}\relax }}{39}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Learning map\relax }}{54}% 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces An excerpt of the entity graph. Entity graph represents a patient at a certain point in the clinical encounter\relax }}{40}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.3}{\ignorespaces By looking at the workflow- and entity models we can identify the type of questions for each content unit in the knowledge map. The content units are the parent nodes, while the leaves are the type of questions\relax }}{55}% 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Showing the details of the Patient and Diagnosis vertices of the entity graph\relax }}{41}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.4}{\ignorespaces The patient object used with the template\relax }}{58}% 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Showing the implementation of History in the entity graph. What the patient or caregiver tell about the patient's condition\relax }}{42}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Making graph variables fit a story format\relax }}{60}% 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Showing the implementation of Examination in the entity graph. What symptoms the clinician can observe the patient has\relax }}{42}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Making graph variables fit a story format\relax }}{60}% 
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Showing the implementation of Medication in the entity graph. How to administer a medication to patient\relax }}{44}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.7}{\ignorespaces The entity- workflow- and game models working together to produce a scenario, taking the patient through the steps of a clinical encounter. Note that these are two entity graphs E1 and E2, where E2 gets updated with an additional red vertex Ipratopium bromide. This illustrates a patient which doesn't respond to the initial treatment, and then gets treated with ipratopium bromide\relax }}{62}% 
+\contentsline {figure}{\numberline {5.7}{\ignorespaces To the left we don't know which medication has been inhaled using the nebulizer or inhaler. To the right we have specified this in the instantiation, by using two Inhaled-vertices and uniquely identifying them by giving them different names\relax }}{45}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Conceptual model for the game elements. \leavevmode {\color {red}There are two instances of skill. One which represents the student's previous game stored in database. The other one represents the ongoing game in memory.}\relax }}{67}% 
+\contentsline {figure}{\numberline {5.8}{\ignorespaces A generic entity graph contains abstractions. An entity graph for a specific guideline, contains specifications for those abstractions. Yellow boxes indicate specifications we have shown for paediatric guideline of possible asthma \parencite {RepublicofKeny2016}\relax }}{46}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.9}{\ignorespaces The workflow models is a model of the clinical encounter\relax }}{47}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.10}{\ignorespaces A model and an instance of the entity model. For a valid instance, every vertex and edge in the instance has a corresponding vertex and edge in the model\relax }}{48}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.11}{\ignorespaces An instance of the workflow model at the bottom, working together with an instance of the entity model at the top\relax }}{49}% 
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Knowledge map\relax }}{54}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Learning map\relax }}{55}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.3}{\ignorespaces By looking at the workflow- and entity models we can identify the type of questions for each content unit in the knowledge map. The content units are the parent nodes, while the leaves are the type of questions\relax }}{56}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.4}{\ignorespaces The patient object used with the template\relax }}{59}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Making graph variables fit a story format\relax }}{61}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Making graph variables fit a story format\relax }}{61}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.7}{\ignorespaces The entity- workflow- and game models working together to produce a scenario, taking the patient through the steps of a clinical encounter. Note that these are two entity graphs E1 and E2, where E2 gets updated with an additional red vertex Ipratopium bromide. This illustrates a patient which doesn't respond to the initial treatment, and then gets treated with ipratopium bromide\relax }}{63}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Conceptual model for the game elements\relax }}{68}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {6.9}{\ignorespaces Fa\IeC {\c c}ade pattern hides the complexity of the game engine and makes it easier for other parts of the system to use it\relax }}{68}% 
 \defcounter {refsection}{0}\relax 

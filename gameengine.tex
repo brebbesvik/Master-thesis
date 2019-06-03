@@ -19,7 +19,6 @@ The student will also be provided with a total score, which will be the aggregat
 
 
 \subsection{Dynamic Content Management}
-\textcolor{purple}{TODO Yngve: Not clear when you use different concepts in figure and text}
 The game engine is based on some of the concepts presented in the articles of \textcite{Eide2008}, \textcite{Kristensen2011} and \textcite{Kristensen2013}. The motivation for using DCM, is to support the principles of adaptive learning as well as flexibility in the learning process. Adaptive learning means that the student can solve problems which are suited to his knowledge level. Flexibility in the sense that the student can go through the learning content in many different ways.
 
 \textcite{Eide2008} presents a dynamic content management system (DCM) made for e-learning. In DCM the focus is on removing the tight coupling between the learning material and the teaching course. By analysing the learning material and course, they can define conceptual atomic units of knowledge which they put into a knowledge repository. From this repository they may draw knowledge elements and organize into the hierarchy of a course. To model a course they use concept maps, which are directed graphs, where the vertices are concept labels and edges indicates the relationships between vertices. DCM operates with three concept maps: knowledge map, learning map and student map. The knowledge map is used to model the entire content of the knowledge repository and the hierarchy structure of a course. A learning map is used to model a specific course and is a representation of the learning process. The content units (vertices) in the knowledge map gets expanded, and becomes evaluation and resource vertices in the learning map. Content units from the knowledge map can be omitted if they are not needed in the specific course. Detailed prerequisites can be specified for the content units. The student map represents the progress of a specific student taking a specific course. The edges shows which resources he has used, the evaluations of the student and in which order. 
@@ -61,7 +60,6 @@ Inside the content units in the learning map, we see the relationships between r
 	\label{fig:LearningMap}
 \end{figure}
 
-\textcolor{purple}{TODO Yngve: Visualization of student map}
 A student map would show the progressions for one specific student, and the path he has taken and the scores for each evaluation. Table \ref{table:StudentMap} shows a student's student map for the Assessment part of the course. He got the score 34 on the first evaluation. 34 matches the passing condition for assessment level 1, so he got a passing grade for that test. However, he scored 43 points on evaluation 2 and didn't meet the passing condition for that test. He has no attempts for evaluation 3, as he doesn't meet the prerequisites for that test.  The tests which have been completed are stored in the database on the students phone. In that sense, the database shows the student's current position in the learning map.
 
 \begin{table}[h!]
@@ -311,7 +309,7 @@ Both \textcite{Attali2015} and \textcite{Morrison1995} avoids the scenario where
 
 
 
-\textcolor{red}{A solution to having a not very strict game, encouraging to playing and learning, one can also have a very strict examination version. The idea is that after examination, the results will be sent to the lecturer (or a governing body of some kind) to evaluate what the overall knowledge of the students, as well as details of what the students are really good in and where do they struggle. The lecturer can then target the weak of points of the students in one of the next lectures. }
+%\textcolor{red}{A solution to having a not very strict game, encouraging to playing and learning, one can also have a very strict examination version. The idea is that after examination, the results will be sent to the lecturer (or a governing body of some kind) to evaluate what the overall knowledge of the students, as well as details of what the students are really good in and where do they struggle. The lecturer can then target the weak of points of the students in one of the next lectures. }
 
 
 
@@ -337,7 +335,7 @@ A new instance of skill will be created when the student starts a new game. This
 
 \begin{figure}[h!]
 	\includegraphics[scale=0.36]{ConceptualModelGameElements}
-	\caption {Conceptual model for the game elements. \textcolor{red}{There are two instances of skill. One which represents the student's previous game stored in database. The other one represents the ongoing game in memory.}}
+	\caption {Conceptual model for the game elements}
 	\label{fig:ConceptualGameElements}
 \end{figure}
 
@@ -351,7 +349,7 @@ One problem with the conceptual model is that it is somewhat complex. Once we ha
 	\label{fig:GameEngineFacadePattern}
 \end{figure}
 
-\textcolor{red}{Should I show how I populate the models with data from JSON and database? I'm not very happy about the code on that part.}
+%\textcolor{red}{Should I show how I populate the models with data from JSON and database? I'm not very happy about the code on that part.}
 % DON'T KNOW IF I SHOULD SHOW THE GAME ENGINE PACKAGE HOW TO POPULATE THE MODELS AS THIS CONTAINS HARDCODED AND NASTY STUFF TO GET PROGRESS QUIKLY
 
 %\begin{itemize}
